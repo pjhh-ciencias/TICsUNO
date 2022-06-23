@@ -48,10 +48,11 @@ html, body{
   }
 
 .top-nav ul {
-  margin:10px;
+  margin:5px;
   padding: 10px;
   border-radius: 25px;
-  background-color: rgb(191, 207, 243);
+  background-color: rgb(132, 198, 236);
+  color:    rgb(255, 0, 0);
 }
 
 
@@ -68,19 +69,19 @@ html, body{
 }
 
 .top-nav a{
-  padding: 10px;
-  font-size: 30px;
+  padding: 15px;
+  font-size: 32px;
   text-decoration: none;
 }
 
 .top-nav a:hover{
-  background-color: #d9f8d6;
+  background-color: #d2f1f7;
 }
 
 .small-nav button{
-    padding: 10px;
+    padding: 15px;
     font-size: 15px;
-    border-radius: 25px;
+    border-radius: 10px;
     text-decoration: none;
     background-color: rgb(250, 239, 210);
 }
@@ -88,13 +89,13 @@ html, body{
 
 .small-nav button:hover{
     background-color:#aef1c8;
-    border-radius:  20px  solid #aef1c8;
+    border-radius:  10px  solid #aef1c8;
   }
 
 
 .calculo-title{
   text-align: center;
-  font-size: 40px;
+  font-size: 100px;
   font-family: "Cinzel";
 }
 
@@ -153,17 +154,17 @@ h2.number-title:before{
 
 
 .info-box{
-    background:  rgba(208, 243, 253, 0.918);
+  background:  rgb(218, 237, 245);
     color: black;
     border-radius: 20px;
     padding: 50px;
-    border: 5px solid  rgb(165, 220, 252);
+    border: 5px solid  rgb(0, 120, 175);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
     width: 80%;
-    box-shadow: 10px 10px 15px  rgb(171, 236, 241);
+    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
 }
 
 
@@ -243,17 +244,17 @@ h2.number-title:before{
 
 
 .nota-box{
-  background:  rgba(208, 243, 253, 0.918);
+  background:  rgb(218, 237, 245);
     color: black;
     border-radius: 20px;
     padding: 50px;
-    border: 5px solid  rgb(165, 220, 252);
+    border: 5px solid  rgb(0, 120, 175);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
     width: 80%;
-    box-shadow: 10px 10px 15px  rgb(171, 236, 241);
+    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
 
   /*
     background:  rgb( 255, 249, 205 );
