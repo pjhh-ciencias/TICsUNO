@@ -130,13 +130,15 @@ h1.number-title{
 
 
 h1.number-subtitle:before{
-  font-family: "Muli";
+  counter-increment: cardCounter;
+ content: counter(sectionCounter)"."counter(cardCounter)"";
+  font-family: "Roboto";
  }
  
 
 h1.number-title:before{
  counter-increment: sectionCounter;
- content:"Semana " counter(sectionCounter) " ";
+ content:"Sección" counter(sectionCounter) " ";
  font-family: "Muli";
 }
 
