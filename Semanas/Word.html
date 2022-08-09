@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 0 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+        <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+           <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+            </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+
+      <!-- This part is for title in tab-->
+      <title> Sección   </title>
+      
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox">Word</h1>
+    
+  
+
+
+
+
+
+<div class="nota-box">
+    <h2 class="number-title"> Margenes </h2>
+
+    <p>
+     En Word, todas las páginas tienen automáticamente un margen de una pulgada. Se puede personalizar la configuración
+     de márgenes o elegir una predefinida. También se pueden establecer márgenes de páginas opuestas, dejar espacio de 
+     márgenes adicional para la encuadernación de documentos y cambiar el modo en que se miden los márgenes.
+    </p>
+     
+    
+    <h3> Elegir margenes de página con una configuración predefinida </h3>
+     
+        <ol>
+            <li>En el grupo <b>Configurar página</b> de la pestaña <b>Diseño de página</b>, elija <b>Márgenes</b>
+                y aparecerá la galería Márgenes.        
+            </li>
+            <li>Elija el tipo de margen que quiera aplicar.</li>
+            <li>Establezca la nueva configuración de márgenes como predeterminada para la plantilla. Cada nuevo 
+                documento que se base en esa plantilla usará automáticamente la nueva configuración de márgenes.
+            <ul>
+              <li>Después de seleccionar un nuevo margen, elija Márgenes y luego Márgenes personalizados.</li>
+              <li>  En el cuadro de diálogo Configurar página, elija Establecer como predeterminado.</li>
+            </ul>
+            </li>
+        </ol>
+        <p> 
+            <h4>Observación:</h4> Si el documento contiene varias secciones, el nuevo tipo de margen solo se aplicará a la sección
+             actual. Para aplicar el nuevo tipo de margen a varias secciones, asegúrese de seleccionarlas todas.
+            </p>
+    
+    
+    <h3> Crear una configuración de margenes de paginas personalizadas</h3>
+    
+        <ol>
+            <li>En el grupo Configurar página de la pestaña Diseño de página, elija Márgenes y aparecerá la galería Márgenes. </li>
+            <li>En la parte inferior de la galería Márgenes, elija Márgenes personalizados.</li>
+            <li>En el cuadro de diálogo Configurar página, especifique nuevos valores para los márgenes.</li>
+              
+            
+        </ol>
+        <p> 
+            <b>Otras sugerencias sobre márgenes</b> 
+            <ul>
+                <li>Para cambiar los márgenes de una sección de un documento, seleccione el texto y establezca los nuevos 
+                    márgenes en el cuadro de diálogo Configurar página. En el cuadro Aplicar a, haga clic en Texto seleccionado. 
+                    Microsoft Word inserta automáticamente saltos de sección antes y después del texto con la nueva configuración 
+                    de márgenes. 
+                </li>
+                <li>La mayoría de las impresoras requieren un ancho mínimo para la configuración de márgenes. Si los márgenes son
+                     demasiado estrechos, Microsoft Word muestra el mensaje Uno o más márgenes están establecidos fuera del área
+                      imprimible de la página. Haga clic en Arreglar para aumentar el ancho de los márgenes automáticamente. 
+                      Si omite el mensaje, Word muestra otro mensaje que le pregunta si quiere continuar.
+                </li>
+                <li>La configuración del margen mínimo de impresión depende de la impresora, el controlador de la impresora y
+                    el tamaño del papel. Para obtener información sobre la configuración de márgenes mínimos, consulte el manual
+                    de la impresora.</li>
+            </ul>
+            </p>
+    
+    
+    
+    
+    <h3> Establecer margenes de páginas opuestas</h3>
+        <p>Utilice márgenes simétricos para configurar páginas opuestas en documentos de doble cara, como libros o revistas.
+           Cuando se eligen márgenes simétricos, los márgenes de la página izquierda son una imagen reflejada de los de la 
+           página derecha. Los márgenes interiores tienen el mismo ancho y los márgenes exteriores tienen el mismo ancho. 
+        </p>
+    
+        <ol>
+            <li>En el grupo Configurar página de la pestaña Diseño de página, haga clic en Márgenes > Reflejado.</li>
+        </ol>
+        <p><h4>Observación:</h4> Nota: Para cambiar el ancho de márgenes, haga clic en Márgenes personalizados en la parte
+             inferior de la galería Márgenes. Escriba nuevos valores en los cuadros Interior y Exterior.</p>
+        
+    
+    <h3> Agregar un margen de encuadenación  para documentos enlazados</h3>
+      <p>
+        Un margen de encuadernación agrega espacio adicional al margen lateral, al margen superior o a los márgenes
+        internos del documento que tiene pensado encuadernar. De esa manera, el texto no quedará oculto con la 
+        encuadernación.
+      </p>   
+    
+        <ul>
+        <li>Márgenes de medianil para encuadernación</li>
+        <li>Márgenes simétricos en páginas opuestas</li>
+        </ul>
+    
+    <p><h4>Para establecer el margen de medianil</h4></p>
+    
+    <ol>
+        <li>En la pestaña Diseño de página, en el grupo Configurar página, haga clic en Márgenes.</li>
+        <li>Haga clic en Márgenes personalizados.</li>
+        <li>En el cuadro Medianil, escriba un valor para el ancho del margen de medianil.</li>
+        <li>En el cuadro Posición de medianil, haga clic en Izquierda o en Superior.</li>
+    </ol>
+    <p><h4>Nota:</h4> El cuadro Posición de medianil no está disponible cuando se utiliza la opción Márgenes simétricos, 
+        Dos páginas por hoja o Formato libro. Para esas opciones, la posición del margen interno se determina automáticamente
+    </p>
+    
+    <h3> Agregar un margen de encuadenación  para documentos enlazados</h3>
+      <p>  Word puede mostrar líneas en el documento que representen los límites del texto.</p>
+    <ol>
+        <li>En la pestaña Archivo, haga clic en Opciones.</li>
+        <li>Haga clic en Avanzadas y, en Mostrar contenido de documento, active la casilla Mostrar límites de texto.</li>
+    </ol>
+    
+    <p>
+      Los márgenes de página aparecen en el documento como líneas de puntos.
+    </p>
+    
+    <p><h4>Nota:</h4> Puede ver los márgenes de página en la vista de diseño
+         de impresión o la vista de diseño web. Los límites de texto no aparecen en la página impresa.
+        </p>
+    </div>
+
+  </div>
+
+    
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Impresión </h1> 
+
+     <p>
+      Antes de imprimir es interesante echar un vistazo al aspecto general del documento para ver si está todo correcto.
+    </p> 
+
+    <p>
+      Para ello nos aseguraremos de que estamos viendo el documento en vista de impresión. En la pestaña Vista deberá
+      estar seleccionado Diseño de impresión, o bien deberemos comprobar que en la barra de estado esté marcada esta 
+      opción Barra de estado  <img src="../Imagenes/S1/Barra_estado_Vistas.JPG" alt="", width="auto" height="auto">.
+        Esta vista presenta la página tal y como se imprimirá, con gráficos, imágenes,
+      encabezados y pies de página, etc.
+    </p>
+    
+    <p>
+      En la <b>pestaña Vista</b> > <b>grupo  Zoom</b>. Se tienen opciones muy interesantes:
+    <img src="../Imagenes/S1/Pestaña_vista_grupo_zoom.JPG" alt="", width="auto" height="auto">.
+
+    <ul>
+      <li>
+        El botón Una página ajustará la página al espacio que tenga en la pantalla, para que quepa completamente. 
+        Lo mismo sucede con Dos páginas, pero con dos de ellas, una junto a la otra.
+      </li>
+    </ul>
+    </p>
+
+    <p>
+      Si contamos ocon  más páginas ¿Y si queremos ver mas alla de 10, 100 o más páginas que tiene el documento?
+    </p>
+
+    <p>
+    Para hacerlo, deberemos pulsar el botón Zoom <img src="../Imagenes/S1/Boton_zoom.JPG" alt="", width="auto" height="auto">.
+    </p>
+
+    <p>Se abrirá una ventana con la opción: <b>Varias páginas.</b></p>
+
+    <div class="flexbox">
+      <img src="../Imagenes/S1/Ventana_varias_paginas.JPG" alt="", width="auto" height="auto">
+     </div>
+
+    <p>
+      Haciendo clic en el botón con forma de monitor, se desplegará un submenú donde podremos seleccionar cuántas
+      páginas queremos ver y cómo deberán estar organizadas.
+    </p>
+    <p><h4>Ejemplo:</h4>
+    </p>
+   
+    
+    <p>
+      Desde esta vista podremos apreciar y corregir mejor los detalles. Por ejemplo, si una página contiene 
+      sólo una o dos líneas de texto, lo ideal sería intentar ajustar el texto de forma que quepa en la anterior,
+      y así ahorrar un papel. También veremos de forma más rápida y cómoda si los gráficos o imágenes del documento
+      están bien centrados, etc.
+    </p>
+
+    <h3>Opción ancho de página</h3>
+      <p>
+        La opción Ancho de página ajusta la página al ancho de la ventana de Word.
+      </p>
+    <h3>Opción 100 %  </h3>  
+      <p>
+        La opción 100% muestra el tamaño original de la página, sea cual sea el tamaño de la ventana de Word.
+      </p>
+    </ul>
+  
+  <h2 class="number-title">Imprimir</h2>  
+
+  <p>
+    Para imprimir un documento podemos pulsar las teclas <b>CTRL+P</b> o bien ir a la pestaña <b>Archivo</b> y seleccionar Imprimir.
+    En la pantalla verás las opciones de impresión, tal y como se muestra en la siguiente imagen.
+  </p>
+
+  <div class="flexbox">
+    <img src="../Imagenes/S1/Ventana_imprimir.JPG" alt="", width="auto" height="auto">
+  </div>
+  
+  <p>
+    A la derecha podrás ver una vista previa del documento tal y como se imprimirá. Si te gusta el resultado será
+    suficiente con pulsar el botón Imprimir. Así también, disponemos de una serie de opciones de configuración que nos ayudarán 
+    a lograr el resultado deseado.
+  </p>
+
+  <h3>Ventana de impresión</h3>
+ <p>
+  en la zona de la derecha vemos la vista previa de la página. En caso de tener más de una página,
+  podremos cambiar la página a visualizar:
+  </p>
+
+  <p>
+    En la zona izquierda de la ventana dispondremos de una serie de opciones de configuración de la impresión, 
+    que nos permitirán:
+  <ul>
+    <li>
+      Elegir cuántas copias imprimir del documento.
+    </li>
+    <li>
+      Escoger qué impresora queremos utilizar en la impresión del documento, en caso de que no queramos utilizar 
+      la predeterminada que viene seleccionada por defecto. También podremos modificar las Propiedades de impresora 
+      seleccionada, para por ejemplo imprimir en blanco y negro.
+    </li>
+    <li>
+      Opciones de Configuración como:
+      <ul>
+        <li>Qué hojas imprimir: Las hojas activas, todo el libro, o bien la selección realizada.</li>
+        <li>La intercalación. Cuando imprimimos varias copias sin intercalación se imprime X veces cada página, 
+         por ejemplo: 1,1,1    2,2,2    3,3,3    4,4,4 sería la impresión de tres copias de un documento que ocupa
+         cuatro páginas. En cambio, si utilizamos el intercalado, se imprime el trabajo completo, una vez tras otra. 
+         El mismo ejemplo sería: 1,2,3,4    1,2,3,4     1,2,3,4
+        </li>
+        <li>
+          La orientación y el tamaño del papel.
+        </li>
+        <li>
+          Modificar los márgenes.
+        </li>
+        <li>
+          Escoger cuántas páginas se incluirán en cada hoja impresa.
+        </li>
+        <li>
+          Acceder a la Configuración de página.
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </p>
+
+  <p>Podemos tambien acceder a todas estas opciones en haciendo clic en la esquina inferior izquierda
+    del grupo <b>Configurar página</b> en la  pestaña <b>Diseño de página</b>
+  </p>
+  <p><div class="flexbox">
+    <img src="../Imagenes/S1/Opcion_Configurar_pagina.JPG" alt="", width="auto" height="auto">
+  </div>
+  </p>
+  <p>
+    Se abrirá la siguiente ventana:
+  </p>
+  <p>
+    <div class="flexbox">
+    <img src="../Imagenes/S1/Ventana_configurar_pagina.JPG" alt="", width="auto" height="auto">
+  </div>
+  </p>
+  
+  <p>
+    Las opciones están clasificadas en las pestañas <b>Márgenes</b>, <b>Papel</b> y <b>Diseño</b>
+  </p>
+
+  <p>
+    <ul>
+      <li>
+        La opción <b>Aplicar a</b>. Esta opción nos permite mezclar configuraciones en la impresión de un único documento.
+        <p><h4>Ejemplo</h4>
+          Imagina que quieres imprimir el vertical las primeras 5 páginas y en horizontal el resto. Así también, podríamos modificar 
+          los márgenes o cualquier otra opción configurable en el cuadro de diálogo.
+        </p>
+      </li>
+      <li>
+        Si normalmente imprimimos siempre con los mismos parámetros (márgenes, orientación, tipo de papel, etc.),
+        lo ideal es pulsar el botón Establecer como predeterminado tras haber configurado la impresión. De esta forma se imprimirá 
+        siempre así por defecto.
+      </li>
+    </ul>
+  </p>
+
+  <h2 class="number-title"> Otras opciones de impresión</h2>
+  <p>
+    La configuración de Word también afecta a la impresión, aunque a veces no seamos conscientes de ello. existen algunos
+    elementos que por defecto no se imprimen, como los colores e imágenes de fondo. Normalmente está configurado así para
+    ahorrar tinta en las copias impresas, pero podemos cambiarlo.
+  </p>
+
+  <p>
+    En <b>Archivo</b> > <b>Opciones</b> abrimos la ventana de Opciones de Word. Deberemos situarnos en la opción Mostrar del menú que se
+    encuentra en el lateral izquierdo y ahí es donde encontraremos una serie de Opciones de impresión que podremos activar
+    o desactivar según nuestras necesidades.
+  </p>
+
+  <p>
+    <div class="flexbox">
+    <img src="../Imagenes/S1/Ventana_opciones_word.JPG" alt="", width="auto" height="auto">
+  </div>
+  </p>
+ 
+  <h2 class="number-title"> Impresora virtual</h2>
+  <p>
+    En la ventana de impresión, podemos seleccionar la impresora de entre las que tenemos instaladas. Frecuentemente se cuenta 
+    con una <b>impresora virtual</b>. Existen impresoras virtuales que imprimen en PDF.
+  </p>
+
+  <p>
+    <div class="flexbox">
+    <img src="../Imagenes/S1/Impresora_Virtual.JPG" alt="", width="auto" height="auto">
+  </div>
+  </p>
+
+  <p>
+    La impresora virtual es una impresora que realmente no existe físicamente. Es una especie de "engaño" al sistema. 
+    Se trata de un programa que se hace pasar por impresora, pero en vez de enviar la información que se imprime a la 
+    bandeja de impresión, lo que hace es imprimirlo como un archivo. Es decir, que aparecerá un cuadro de diálogo 
+    preguntándonos dónde guardar el archivo. Siempre disponemos de la impresora virtual que incluye Windows, llamada 
+    <b>Microsoft XPS Document Writer</b>, que imprime un archivo de formato .xps.
+  </p>
+
+
+  <p>
+  <h4>Observación:</h4>También podemos guardar un documento Word en formato PDF desde <b>Guardar como</b> ... eligiendo 
+  el tipo PDF, lo que equivale a imprimirlo en una impresora virtual.
+</p>
+
+  </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Combinaciones de correspondencia</h2>
+
+   <p>
+     La combinación de correspondencia le permite crear un lote de documentos personalizados para cada destinatario. 
+     Por ejemplo, una carta puede personalizarse para dirigirse a cada destinatario por su nombre. Los orígenes de datos, 
+     como las listas, hojas de cálculo o bases de datos, están asociados al documento. Los marcadores de posición 
+     (denominados campos de combinación) indican a Word en qué parte del documento incluir información del origen de datos.
+   </p>
+
+   <p>
+    El primer paso para configurar la combinación de correspondencia consiste en seleccionar el origen de datos que usará para 
+    la información personalizada. Las hojas de cálculo de Excel y las listas de contactos de Outlook son los orígenes de datos
+    más comunes, pero se puede usar cualquier base de datos que se pueda conectar a Word. Si aún no tiene un origen de datos, 
+    puede incluso escribirlo en Word como parte del proceso de combinación de correspondencia.
+   </p>
+
+    <p>
+    La <b>combinación de correspondencia</b>  es una de las herramientas más utilizadas en Word. Este proceso es muy utilizado
+    en muchos sectores, tanto para que una secretaria  cree invitaciones para un evento, un administrativo envíe cartas a sus
+    clientes en sus cumpleaños, o que un banco envíe diferentes recordatorios a los deudores con cuentas pendientes o los
+    famosos estados de cuentas de las diferentes tarjetas de créditos que recibimos mes a mes. De ahí que esta herramienta puede
+    resumir todo el trabajo de una jornada completa en pocos minutos.  
+    </p>
+
+    <p>
+      Word ofrece herramientas para incorporar los datos en los siguientes tipos de documentos 
+    </p>
+    <h3>Cartas</h3>
+    <p>
+      La combinación de correspondencia le permite crear un lote de cartas personalizadas en las que cada letra es idéntica 
+      en diseño, formato, texto y gráficos, excepto para partes personalizadas como el saludo.
+    </p>
+
+    <p>Primero que nada, tenemos que preparar la carta:  </p>
+    <ul>
+    <li><b>Correspondencia</b> > <b>Iniciar combinación de correspondencia</b> > <b>cartas</b></li>
+    <li>Escriba el cuerpo de la carta que desea enviar a la lista de distribución de correo.</li>
+    </ul>
+    <h3>Correo electrónico</h3>
+
+    <h3>Sobres o etiquetas</h3>
+
+    <h3>Directorio </h3>
+      </div>
+
+    
+
+
+
+
+
+
+
+    <div class="nota-box">
+        <h1 class="number-subtitle"> Tablas de contenido e indices</h2>  
+
+    </div>
+
+    
+    <div class="nota-box"> 
+      <h1 class="number-subtitle"> Marcadores, referencias cruzadas y notas al pie</h1>  
+      
+        <h2 class="number-title">Referencias cruzadas</h2>  
+
+        <h2 class="number-title"> Por posiciones</h2>
+
+        <h2 class="number-title"> A ilusatraciones</h2>
+
+        <h2 class="number-title"> Arriba y abajo</h2>
+
+    </div>
+
+    
+    
+
+    <div class="nota-box">
+        <h1 class="number-subtitle"> Citas bibliográficas</h2>  
+
+    </div>
+
+    
+
+
+
+
+    <div class="nota-box">
+        <h1 class="number-subtitle"> Control de cambios</h2>
+<p>
+    Al trabajar en un documento con otras personas o al editar un documento usted mismo, 
+    active Control de cambios para ver todos los cambios. Word marca todas las adiciones, las eliminaciones,
+    los movimientos y los cambios de formato.
+</p>
+
+<ol>
+    <li>Abra el documento que desea revisar.</li>
+    <li>Haga clic en Revisar y, en el botón Control de cambios, seleccione Control de cambios.</li>
+    <li>Al hacer clic en el botón Control de cambios, se resaltan las opciones disponibles.</li>
+</ol>
+    </div>
+
+
+
+  
+
+</body>
