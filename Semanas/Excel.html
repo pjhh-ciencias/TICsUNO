@@ -83,288 +83,505 @@
   </head>
 
   <body class="fondo-body" >
-    <h1>Excel</h1>
+    <h1 class="number-title flexbox">Excel</h1>
     
-    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> ¿Qué es Excel?</h1>    
+      <p>
+        <b>Microsoft Excel</b> <img src="../Imagenes/Excel/Logo_Excel.JPG" alt="", width="3%" height="auto"> es una aplicación del tipo hoja de cálculo que forma parte del paquete Microsoft Office y se utiliza
+        para calcular, analizar y gestionar datos. A través de ella, podemos realizar diversas operaciones, desde las
+        más sencillas, como sumar y restar, hasta otras complejas, por medio de funciones y fórmulas. También permite
+        elaborar distintos tipos de gráficos para analizar y comprender los resultado de dichas operaciones. 
+      </p>
+        <p>
+        Proporciona herramientas y funciones eficaces destinadas a analizar, compartir y administrar datos con facilidad.
+        Las funciones, los filtros y las tablas dinámicas nos brindarán la posibilidad  de resumir, analizar, explorar y 
+        presentar datos para, luego, tomar  decisiones. Con las macros es posible optimizar los procesos rutinarios
+
+      </p>
+    </div>
     
     
     <div class="nota-box">
-        <h1 class="number-subtitle"> Configuraciones de página </h2>  
-          
-    <h2 class="number-title"> Saltos de linea</h2>
+      <h1 class="number-subtitle"> Conceptos básicos de Excel </h1> 
+        <h2 class="number-title"> Libro de trabajo</h2>
+        <p>
+          Un <b>libro de trabajo</b> es el archivo que creamos con Excel, es decir, todo lo que hacemos en este programa 
+          se almacenará formando el libro de trabajo. Los libros de trabajo de Excel tienen la extensión <b>.XLSX</b> para que 
+          el ordenador los reconozca como tal. Cuando se inicia una sesión de Excel automáticamente se abre un nuevo libro 
+          de trabajo con el nombre provisional de Libro1. Esto lo puedes comprobar en la pantalla de Excel: en la barra de
+          título de la parte superior de la ventana verás como pone Libro1 - Excel.
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Barra_titulo.JPG" alt="", width="100%" height="auto">
+          </div>
+        </p>
 
-    <ul>
-    <li>
-        En Word al escribir un texto hay que teclearlo sin más preocupación. Los saltos de línea se realizan automáticamente
-        al llegar al margen derecho. Si quieres realizar un cambio de línea, se utiliza la tecla <b>INTRO</b> 
-        (también  llamada <b>ENTER</b> o <b>retorno de carro</b>). 
-    </li>
+        <p>
+          Cada vez que empezamos un nuevo trabajo con Excel el número del libro irá variando dependiendo de cuántos se hayan 
+          creado en esta sesión. Así, si empezamos otro trabajo, el nombre que se asigna será Libro2, el siguiente Libro3,
+          y así sucesivamente.
+        </p>
 
-    <li>
-        Word se encarga de que el texto que vas introduciendo se contenga dentro de unos márgenes y pasa a la línea inferior 
-        cuando alcanza el margen derecho. Pero conviene saber que, si algún momento quieres realizar un salto de línea de
-        forma voluntaria, lo puedes hacer con la combinación de teclas <b>MAYÚS</b>+<b>INTRO</b>.
-    </li>
-    </ul>
+        <p><b>Observación:</b> Nótese que el nombre asignado sólo sirve como referencia para identificar los trabajos mientras 
+          no se hayan guardado. En ningún caso significa que el archivo ya se encuentra guardado. Un libro de trabajo está 
+          formado por una o varias hojas. En principio constará sólo de <b>1 hoja</b> aunque el número de éstas puede variar entre 1
+          y un número bastante alto, limitado por la cantidad de memoria disponible. Si miras en la parte inferior de la
+          ventana de Excel encontrarás las diferentes hojas del libro de trabajo. Cada una de ellas, según se vayan agregando,
+          serán nombradas de la forma <b>Hoja1</b>, <b>Hoja2</b>...</p>
 
-    <h2 class="number-title"> Saltos de página</h2>
+          <h2 class="number-title"> Hojas de cálculo</h2>
 
-    <p>
-    Los <b>saltos de página</b> se insertan automáticamente cuando llegamos al margen inferior de una página y seguimos escribiendo.
-    </p>
+          <p>
+            La hoja de cálculo es uno de los distintos tipos de hojas que puede contener un libro de trabajo. Es una herramienta
+            muy útil permite  trabajar con gran cantidad de números y realizar cálculos u operaciones con ellos. 
+          </p>
 
-    <p>
-        También se pueden insertar de forma manual si queremos pasar a la página siguiente aunque no hayamos llegado al final, 
-        desde la pestaña <b>Insertar</b> > grupo <b>Páginas</b> > opción <b>Salto de página</b>. <img src="../Imagenes/S1/Boton_salto_pagina.JPG" alt="", width="auto" height="auto">
-    </p>
+          <p>
+            Las hojas de cálculo están formadas por columnas y filas. Es como una gran hoja cuadriculada formada por 16,384 columnas y 
+            1,048,576 filas. 
+          </p>
 
-<p><b>Observación:</b> En la pestaña  <b>Inicio</b> > grupo <b>Párrafo</b>, se cuenta tambien con la  
-herramienta <b>Mostrar todo</b> <img src="../Imagenes/S1/Simbolo_parrafo.JPG" alt="", width="auto" height="auto">, la cual  permite saber si un texto ha sido dividido en bloques
- mediante <b>saltos de línea</b> o <b>párrafos</b>.
-</p>
+          <h2 class="number-title"> Columnas</h2>
+          <p>
+            Una <b>columna</b> es el conjunto de celdas seleccionadas verticalmente. Cada columna se nombra por letras, 
+            por ejemplo A, B, C,.......AA, AB,........IV.
+          </p>
 
-<p>Si la utilizamos, el documento se llenará de marcas como las que ves en la imagen:</p>
-   <div class="flexbox">
-    <img src="../Imagenes/S1/Boton_mostrar_todo.PNG" alt="", width="100%" height="auto">
-   </div>
+          <h2 class="number-title"> Filas</h2>
+          <p>
+            Cada fila se numera desde 1 hasta 1.048.576 y es la selección horizontal de un conjunto de celdas de una hoja de datos.
+          </p>
 
-   <p>
-    Además de los <b>saltos de línea</b> y los <b>cambios de párrafos</b> también se muestran otros símbolos 
-    como un punto medio que señala que hay un <b>espacio separando las palabras</b>, o una 
-    <b>marca de salto de página</b>.
-   </p>
+          <h2 class="number-title"> Celdas</h2>
+          <p>
+            La intersección de una columna y una fila se denomina <b>Celda</b> y se nombra con el nombre de la columna a la que
+            pertenece y a continuación el número de su fila, por ejemplo la primera celda pertenece a la columna A y la fila 1;
+            por lo tanto,la celda se llama A1. 
+          </p>
 
-   <p>
-    Para ocultar de nuevo estas marcas debemos pulsar de nuevo el botón <img src="../Imagenes/S1/Simbolo_parrafo.JPG" alt="", width="auto" height="auto">.
-   </p>
+          <p>
+            Hacemos referencia a una celda por su dirección (coordenada), que se encuentra integrada por la letra de
+            la columna seguida por el número de fila a la que pertenece; por ejemplo, la celda B7 corresponde a la
+            intersección de la columna B y la fila 7 y la celda D15, a la intersección de la columna D y la fila 15. En estas 
+            celdas es posible ingresar diferentes tipos de datos (texto, números, fechas o fórmulas y funciones) que usen valores 
+            existentes en otras celdas para efectuar un cálculo determinado. 
+          </p>
 
-   <h2 class="number-title"> Encabezado y pie de pagina</h2>
+          <p>
+            Cuando el cursor está posicionado en alguna celda preparado para trabajar con ésta, dicha celda se denomina <b>Celda activa</b>
+            y se identifica porque aparece más remarcada que las demás. De igual forma tenemos la <b>fila activa</b>, fila donde se encuentra la
+            celda activa, y columna activa, columna de la celda activa.
+          </p>
 
-   <p>
-    Un <b>encabezado</b> es un texto que se insertará automáticamente al principio de cada página. Esto es 
-    útil para escribir textos como, por ejemplo, el título del trabajo que se está escribiendo,
-    el autor, la fecha, etc.
-   </p>
+          <h2 class="number-title"> Rango</h2>
+          <p>
+            En una hoja de cálculo el <b>Rango</b>, que es un bloque rectangular de una o más celdas que Excel trata como una unidad.
+             Los rangos son vitales en la Hoja de Cálculo, ya que todo tipo de operaciones se realizan a base de rangos. 
+          </p>
+        </div>
 
-   <p>
-    El <b>pie de página</b> tiene la misma funcionalidad, pero se imprime al final de la página, y suele contener los números
-     de página.
-   </p>
-
-   <p>
-    Para modificarlos vamos a la pestaña <b>Insertar</b> y entonces hacemos clic en alguno de los dos botones 
-    (Pie de página o Encabezado) y seleccionamos la opción Editar.
-   </p>
-
-   <p>
-    Se mostrará una nueva pestaña, <b>Herramientas para encabezado y pie de página</b> > <b>Diseño</b>, que contiene los
-     iconos con todas las opciones disponibles:
-   </p>
-
-   <div class="flexbox">
-    <img src="../Imagenes/S1/Herramientas_encabezado_pie_pagina.JPG" alt="", width="100%" height="auto">
-   </div>
-
-    
-   <p>
-    Observa que ha aparecido el Encabezado delimitado por una línea punteada y con los elementos que lo contienen en modo edición.
-    Ahí podremos teclear el encabezado y, si lo creemos conveniente, insertar numeración de página, fechas o cualquier otro 
-    elemento de la barra de herramientas, como vamos a ver a continuación.
-   </p>
+        
 
 
-   <div class="flexbox">
-    <img src="../Imagenes/S1/Encabezado_edicion.PNG" alt="", width="100%" height="auto">
-   </div>
+        <div class="nota-box">
+        <h1 class="number-subtitle"> Administrar las hojas del libro  </h1> 
+        <p>
+          Es fundamental para mantener la claridad en nuestros libros de Excel saber administrar de una forma correcta las hojas
+           (o páginas) que componen el libro.
+        </p>
 
-   <p>
-     Una vez hayamos acabado de editar el encabezado o pie de página finalizaremos haciendo clic en el botón <b>Cerrar encabezado
-      y pie de página</b>, a la derecha de la cinta de opciones  <img src="../Imagenes/S1/Cerrar_herramientas_encabezado.JPG" alt="", width="auto" height="15%">.
-   </p>
+        <h2 class="number-title"> Cambiar el nombre a las hojas</h2>
+        <p>
+          Esto se puede hacer de dos maneras:
+          <ul>
+            <li>Pulsando con el botón secundario (botón derecho para las personas diestras) sobre la pestaña 
+              <img src="../Imagenes/Excel/Boton_hoja1.JPG" alt="", width="auto" height="auto"> y a continuación
+              pulsando en <b>cambiar nombre</b>:</li>
+              <p>
+              <div class="flexbox">
+                <img src="../Imagenes/Excel/Clic_derecho_boton_hoja.JPG" alt="", width="auto" height="auto">
+              </div>
+            </p>
+            <li>Directamente haciendo doble click en el nombre actual de la hoja. <img src="../Imagenes/Excel/Boton_hoja1Doble_clic.JPG" alt="", width="auto" height="auto"></li>
+          </ul>
+        </p>
+
+        <p>Tras esto, en ambos casos simplemente escribimos, pulsamos <b>Enter</b> en el teclado y ya hemos cambiado el nombre de la hoja.</p>
+        
+
+        <h2 class="number-title"> Cambiar el color de la pestaña</h2>
+        <p>
+          Pulsando con el botón derecho sobre el nombre de la hoja y a continuación moviendo el ratón hasta donde pone 
+          <b>Color de etiqueta</b> se despliega una paleta de colores:
+        </p>
+        <p>
+        <div class="flexbox">
+          <img src="../Imagenes/Excel/Cambiar_color_pestana_hoja1.JPG" alt="", width="auto" height="auto">
+        </div>
+        </p>  
+        <p>
+          donde podemos elegir uno de los colores que aquí aparecen  o pulsar sobre <b>Más colores…</b> para abrir un
+          menú de colores avanzado.
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Cambiar_color_pestana_hoja1_avanazado.JPG" alt="", width="auto" height="auto">
+          </div>
+          </p>  
+
+        <h2 class="number-title"> Eliminar hojas de cálculo</h2>
+        <p>
+          Para <b>eliminar una hoja de cálculo</b> hay que pulsar con el botón derecho sobre la hoja que queremos eliminar y
+          a continuación en <b>Eliminar</b>.
+        </p>  
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Eliminar_boton_pestana.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        <p>Si la hoja contiene algún dato nos aparecerá un mensaje preguntando si estamos seguros de querer eliminar
+            la hoja, pues cuando eliminamos una hoja no hay forma de recuperarla (a menos que hubiéramos guardado el fichero con 
+            dicha hoja).
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Msj_eliminar_pestana.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        
+
+        <h2 class="number-title"> Insertar hojas de cálculo</h2>
+        <p>
+          En la parte inferior de la pantalla, a la derecha de las etiquetas de las páginas y a la izquierda de la barra 
+          de desplazamiento se encuentra el  símbolo  <img src="../Imagenes/Excel/Boton_agregar_hoja.JPG" alt="", width="auto" height="auto">.
+          Pulsando sobre este símbolo se crea una nueva hoja en blanco a la derecha
+          de la hoja que tengamos seleccionada <img src="../Imagenes/Excel/Boton_agregar_hoja_.JPG" alt="", width="auto" height="auto">.
+        </p>
+                
+
+        <h2 class="number-title">   Mover/Duplicar hojas de cálculo</h2>
+
+        <p>
+          Si pulsamos con el botón derecho sobre una hoja y a continuación sobre <b>Mover o copiar</b>:
+        </p>  
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Mover_copiar_pestana.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+         <p> Nos aparece una nueva ventana, donde podemos indicar dónde queremos mover la hoja (la hoja aparecerá a la izquierda
+          de la hoja que seleccionemos). Si hacemos esto marcando la casilla de la parte inferior de la ventana <b>Crear una copia</b>,
+          añadiremos una hoja igual a la seleccionada donde hayamos indicado. 
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Ventana_mover_copiar_pestana.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        
+        <p>
+          Para hacer esto de manera más fácil podemos simplemente pinchar con el botón
+          izquierdo sobre el nombre de la hoja y arrastrar (sin soltar el botón izquierdo) hasta donde queramos mover la hoja.
+          Si hacemos esto mismo, pero pulsando y manteniendo la tecla “Ctrl” del teclado duplicaremos la hoja.
+        </p>
+        
+        <h2 class="number-title">Insertar/Eliminar filas, columnas y celdas</h2>
+
+        <p>
+        Cuando estamos trabajando con una hoja de Excel con muchos datos a veces es necesario introducir nuevos datos en medio
+        de los datos que ya teníamos introducidos. Para ello, en vez de mover todos los datos anteriores, es más sencillo insertar
+        un rango de celdas en blanco, desplazando de lugar a las celdas anteriores, sin eliminarlas.
+        </p>
+
+        <p>
+          Esto se puede hacer desde la ficha <b>Inicio</b> <img src="../Imagenes/Excel/Ficha_inicio.JPG" alt="", width="auto" height="auto"> > grupo <b>Celdas</b> <img src="../Imagenes/Excel/Grupo_celdas.JPG" alt="", width="auto" height="auto">
+         donde podemos insertar o eliminar celdas, 
+         filas, columnas y hojas.
+         </p>
+         <p>
+         Para ello es necesario seleccionar la celda o rango de celdas donde queremos que se posicionen
+         las nuevas celdas y pulsar el botón del comando deseado. 
+        </p>
+
+        <p>
+          <b>Observación:</b> Una forma más rápida de realizar la <b>inserción de celdas o rangos</b>
+          es seleccionar donde queremos que se posicionen las nuevas celdas (igual que antes) y pulsar en el teclado 
+          <b>Ctrl</b> + <b>+</b> de manera simultánea. Para <b>eliminar</b> se hace exactamente lo mismo pero pulsando 
+          <b>Ctrl</b> + <b>-</b> de manera simultánea.
+        </p>
+        
+        <h2 class="number-title">Tamaño de las celdas</h2>
+
+        <p>
+          Por defecto todas las <b>columnas</b> en Excel vienen con un <b>ancho</b> de 10.71, y las <b>filas</b> con un <b>alto</b>
+          de 15. En algunos casos el tamaño de las celdas se modifica automáticamente al realizar acciones (al aumentar el tamaño 
+          del texto de una celda aumenta el alto de la fila para ajustarse al alto del texto), pero también se puede cambiar
+          de forma manual con el comando <b>Formato</b> del grupo <b>Celdas</b> en la ficha <b>Inicio</b>.
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Boton_formato_grupo_celdas.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        <p>
+          Al pulsar este comando podemos introducir manualmente el <b>alto</b> o <b>ancho</b> de la fila o columna de la celda
+          seleccionada, así como <b>autoajustar</b> el alto o ancho de la columna para que el contenido de mayor tamaño de
+          la fila o columna quepa justo en la fila  o columna sin dejar espacio vacío.
+        </p>
+
+        <p>
+          <b>Observaciones:</b>
+          <ol>
+          <li>
+          Otra forma de introducir <b>a mano</b> el ancho o alto es pinchar con el botón derecho en la 
+          letra de la columna o  el número de la fila y seleccionar <b>Ancho de columna…</b> <img src="../Imagenes/Excel/Clic_derecho_columna_tamano.JPG" alt="", width="auto" height="auto"> o <b>Alto de fila…</b>. <img src="../Imagenes/Excel/Clic_derecho_fila_tamano.JPG" alt="", width="auto" height="auto"> 
+          </li>
+         
+          <li>
+            Para <b>autoajustar</b> el tamaño también se puede hacer más rápidamente haciendo doble click en el borde derecho que delimita el ancho de la columna o en
+          el borde inferior que delimita el número de la fila y arrastrando (imagen de la derecha).
+          </li>
+        </ol>
+        </p>
+        </div>
 
 
-   <p>
-    Mediante estos botones podemos pasar del encabezado al pie y viceversa.
-   </p>
-
-   <div class="flexbox">
-    <img src="../Imagenes/S1/Boton_cambiar_encabezado.JPG" alt="", width="40%" height="auto">
-   </div>
-   
-<h3>Elementos rápidos</h3>
-<p>
-  Dentro de esta misma pestaña <b>Diseño del encabezado de página</b> > Grupo <b>Insertar</b> > <b>Elementos rápidos</b>
-  <img src="../Imagenes/S1/Boton_Elementos_rapidos2.JPG" alt="", width="20%" height="auto">
-</p>
-
-<p>
-  Permite, desde la opción <b>Propiedad del documento</b>, escoger distintos elementos
-  de un listado desplegable. En ocasiones esta opción ahorra tiempo ya que permite, por ejemplo,
-  insertar con un sólo clic el autor del documento o la fecha.
-</p>
-
-<div class="flexbox">
-  <img src="../Imagenes/S1/Boton_Elementos_rapidos.JPG" alt="", width="60%" height="auto">
-</div>
-
-<p>
-  La opción de <b>Elementos rápidos</b> también está disponible directamente en la pestaña Insertar, 
-  pero se incluye en la de Diseño de los encabezados y pies de página porque es una herramienta 
-  muy útil en este tipo de ocasiones. De hecho, el elemento <b>Autotexto</b> es uno de los que más se 
-  prestan a la personalización para mejorar la comodidad de la redacción en Word. Así que probablemente 
-  lo utilizarás más a menudo desde la pestaña Insertar directamente. Con él podemos insertar rápidamente 
-  párrafos completos y demás contenido que solemos repetir constantemente con un sólo clic, como 
-  cabeceras o despedidas en las cartas.
-</p>
-
-<h3>Autotexto</h3>
-<p>
-  Un <b>autotexto</b> es un texto ya preparado que insertamos en nuestro documento con un sólo 
-  clic. El texto no está a priori en el documento, sino que encontramos un botón que nos permite incluirlo desde 
-  la cinta de opciones.
-</p>
-
-<p>
-  Esta opción Autotexto la encontraremos en la pestaña <b>Insertar</b> > grupo <b>Texto</b> > <b>Elementos rápidos</b>.
-  Veremos que se despliega un submenú para escoger el que necesitamos. Al hacer clic en él se insertará allí donde tengamos
-  el punto de inserción.
-</p>
-
-<h3>Otras opciones</h3>
-
-
-<p>
-  En la pestaña Diseño también encontraremos el siguiente grupo de opciones:
-<ul>
-  <li>
-    <b>Primera página diferente</b>Si marcamos esta casilla podemos definir un encabezado y pie diferente 
-    para la primera página. Esta opción está pensada por ejemplo, para cuando la primera página es la portada
-     del documento y no conviene que aparezca el mismo encabezado o pie con el número de la página.
-  </li>
-  <li>
-    <b>Páginas pares e impares diferentes.</b>
-    Si marcamos esta casilla podemos definir un encabezado y pie diferente para las páginas pares e impares.
-     Por ejemplo para imprimir el número de página se imprime a la izquierda en las páginas impares y en las 
-     páginas pares imprimirlo a la derecha.
-  </li>
-</ul>
-</p>
 
 
 
+        <div class="nota-box">
+          <h1 class="number-subtitle"> Formatos de celda </h1> 
+        
+          <p>
+            Aplicar un formato específico a las celdas se realiza únicamente para resaltar su contenido sobre las demás, por lo cual no 
+            afecta a la funcionalidad del programa o de sus fórmulas, pero ayuda enormemente en el aspecto visual, sobre todo si el
+            fichero se termina compartiendo con más personas que no han participado en su creación
+          </p>
+
+        <h2 class="number-title"> Formatos de celda </h2>
+        
 
 
-    <h2 class="number-title"> Número de página</h2>
-    <p>
-    Cuando creamos un documento, Word numera  las páginas para poder referenciarlas, ese número es el que aparece en la parte
-    izquierda de la barra de estado, pero este número de página no aparece en el documento.
-    </p>
-
-    <div class="flexbox">
-      <img src="../Imagenes/S1/Barra_estado.JPG" alt="", width="auto" height="auto">
-    </div>
-
-
-
-     <p>
-      Si queremos que los números de página aparezcan en nuestro documento cuando lo imprimamos deberemos insertarlos
-      desde la pestaña <b>Insertar</b> > grupo <b>Encabezados y pies de página</b> > <b>Número de página</b>  y entonces 
-      eligir dónde queremos que aparezca el número.
-      </p>
-
-      <div class="flexbox">
-        <img src="../Imagenes/S1/Opcion_numero_pagina.JPG" alt="", width="auto" height="auto">
-      </div>
-
-      <p>
-        Al seleccionar una ubicación se despliega una lista de formatos prediseñados para que elijamos el que más nos guste.
-        Existe una gran cantidad de formatos prediseñados asociados a cada ubicación, estos están organizados por secciones para facilitarnos la localización del formato que buscamos.
-      </p>
-
-
-      <p>
-      <ol>
-        <li><b>Simple:</b> Tenemos números simples con diferentes alineaciones.</li>      
-        <li><b>Con formas:</b> Los números se escriben dentro de una forma, por ejemplo con cinta.</li>
-        <li><b>Número sin formato:</b> Tenemos los números de página a los cuales se les aplica algún tipo de formato.</li>
-        <li><b>Página x:</b> El número de página viene acompañado de la palabra Página o Pag.</li>
-        <li><b>Pagina x de y:</b> , Se añade además el número total de páginas del documento</li>
-
-      </ol>
-      </p>
-
-      <p>
-        Para ver los encabezados y pies de página en la pantalla de nuestro ordenador tenemos que estar en modo vista Diseño
-        de Impresión donde se ven en un tono más claro que el texto normal. Una vez insertado el número de página podemos 
-        variar su formato con la opción Formato del número de página. En el menú <b>Formato de número</b> veremos una lista
-        con posibles formatos predeterminados entre los que elegir.
-      </p>
-
-      <p>Tenemos dos alternativas para indicar en qué número empezará la numeración de las páginas:</p>
-      <p>
+        <p>
+        Las celdas de Excel son totalmente personalizables en cuanto a la forma en que muestran el contenido (colores, 
+        tamaño de texto, efectos de texto, tipo de letra…), así como la alineación del contenido de la celda (centrado,
+        a la derecha, con sangría…).
+        </p>
+        <p>
+          Para editar el formato de las celdas se utilizan los grupos <b>Fuente</b> <img src="../Imagenes/Excel/Grupo_fuente.JPG" alt="", width="auto" height="auto"> 
+          y <b>Alineación</b>  <img src="../Imagenes/Excel/Grupo_alineacion.JPG" alt="", width="auto" height="auto"> , ambos en la ficha <b>Inicio</b> <img src="../Imagenes/Excel/Ficha_inicio.JPG" alt="", width="auto" height="auto">  . 
+        </p>
+        
         <ul>
-          <li>Continuar desde la sección anterior (o empezar desde uno, si ésta es la primera sección).</li>
-          <li>Iniciar en el número que especifiquemos en la opción Iniciar en:</li>
+          <li>
+          El grupo <b>Fuente</b> agrupa los comandos para editar el <em> color de celda</em>, <em> tipo de letra</em>, 
+          <em>tamaño</em>, <em>estilo</em> (<em>negrita</em>, <em> cursiva</em>, etc)
+          etc.
+          </li>
+          <li>
+          El grupo <b>Alineación</b> se utiliza para definir la alineación y orientación del contenido de la celda, y otros comandos
+          relacionados como <b>Combinar y centrar</b> y <b>Ajustar texto</b>.
+          </li>
         </ul>
-      </p>
 
-      <p>
-        Si tenemos estructurado nuestro documento en capítulos, también podemos incluir el número del capítulo 
-        junto con el de la página, marcando la casilla Incluir número de capítulo y seleccionando un formato.
-      </p>
+        <p>
+          Todas las opciones de modificación de la fuente y de la alineación son accesibles desde la vista normal de Excel 
+          en la ficha <b>Inicio</b>. Sin embargo, si se pulsa sobre el botón en la esquina inferior derecha  de cualquiera de los grupos 
+          <img src="../Imagenes/Excel/Boton_ventana_grupos.JPG" alt="", width="auto" height="auto"> se
+          puede acceder al menú del formato de celdas, desde el cual se visualiza, por pestañas, cada uno de los grupos 
+          referentes al formato de las celdas, para una vista más clara de lo que estamos modificando gracias a la vista previa.
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Ventana_formato_celdas.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        <p>
+          Dentro del grupo <b>Alineación</b> están dos de los comandos más útiles de Excel en lo que a visualización se refiere: 
+          <b>Combinar y centrar</b> y <b>Ajustar texto</b>.
+        </p>
 
-      <div class="flexbox">
-        <img src="../Imagenes/S1/Ventana_formato_numero_pagina.JPG" alt="", width="auto" height="auto">
-      </div>
+        <h3>Combinar y centrar</h3>
 
-    <h2 class="number-title"> Secciones</h2>
+        <p>
+          Cuando se seleccionan varias celdas y se pulsa este botón todas las celdas seleccionadas se combinan y pasan a
+          formar una sola celda de mayor tamaño.
+        </p>
 
-    <p>
-      Los <b>saltos de sección</b> de Word indican cuándo acaba un determinado apartado o sección. Esto permite que los 
-      elementos que comúnmente se aplican a todo el documento por igual, como el pie de página o las tabulaciones, 
-      cesen en un determinado punto, para poder configurarlos de forma distinta mas adelante. Puede resultar muy útil
-       para aplicar un formato distinto en las páginas de un mismo documento o bien en distintas zonas de la misma página.
-    </p>
+        <p>
+          Escribir sobre esta celda es equivalente a escribir sobre la celda del extremo superior izquierdo (celda B2 en 
+          el caso de la imagen), cambiando únicamente el aspecto visual de la hoja, y por tanto cualquier referencia que
+          se quiera hacer a esta celda combinada se deberá hacer como si se referenciara la celda del extremo superior izquierdo.
+        </p>
 
-    <p><h4>Ejemplos</h4>
-      <ul>
-        <li>Tener una única columna en la primera mitad de la página y dos columnas en la mitad restante.</li>
-        <li>Aplicar una numeración de páginas que empezara de nuevo en cada uno de los temas o capítulos.</li>
-        <li>Establecer un tamaño de página y orientación distintas en un mismo documento.</li>
-        <li>Aplicar márgenes distintos a una página en concreto, independientemente de los establecidos en el documento, etc.</li>
-      </ul>
-    </p>
+        <h3>Ajustar texto</h3>
+        <p>
+          Cuando se escribe un texto en una celda y este es demasiado largo para mostrarse en la celda puede ocurrir dos cosas:
+          si las celdas de la derecha no contienen nada el texto se mostrará “invadiendo” las celdas de la derecha, mientras
+          que si las celdas de la derecha están ocupadas el texto de nuestra celda se mostrará solo hasta donde quepa en la celda.
+        </p>
 
-    <p>
-      Para <b>incluir un salto de sección en el documento</b>, nos situamos en la ficha <b>Diseño de página</b> > grupo 
-      <b>Configurar página</b>
-      <div class="flexbox">
-        <img src="../Imagenes/S1/Boton_saltos_seccion.JPG" alt="", width="auto" height="auto">
-      </div>
-    </p>
+        <p>
+          El comando <b>Ajustar texto</b> ajusta automáticamente la altura de la fila para que el texto quepa por completo en la
+          celda sin modificar el ancho de la columna.
+        </p>
 
-    <p>
-      Para <b>eliminar un salto de sección</b> tenemos que realizar lo siguiente:
-      <ul>
-        <li>
-          Cambiar a la vista Borrador desde la pestaña Vista.
-        </li>
-        <li>
-          Situar el cursor en la línea que representa el salto.
-        </li>
-        <li>
-          Pulsar la tecla SUPR.
-        </li>
-      </ul>
-    </p>
+        <h3>Saltos de línea manuales en una celda</h3>
+        <p>
+          Además del comando <b>Ajustar texto</b> hay otra forma manual de escribir en varias líneas en una celda. Esto se hace pulsando
+          “Alt” y “Enter” de forma simultánea en el teclado cuando escribimos en una celda.
+        </p>
+        <h2 class="number-title"> Formato de bordes</h2>
 
-    <p><h4>Observación</h4>
-    Al eliminar un salto de sección, Word interpreta que ahora todo forma parte del mismo apartado y por tanto se pierde el formato específico de la sección inmediatamente superior al salto para adoptar el de la sección inferior.
+        <p>
+          Continuando con la personalización del formato llegamos al formato de los bordes. Como ya sabemos, una hoja de Excel
+          está formada por multitud de celdas. Cada celda está delimitada por 4 bordes (superior, inferior, izquierdo y derecho), 
+          que se pueden marcar de distintas maneras o quitar por completo.
+        </p>
+
+        <p>
+          Cuando creamos una hoja de Excel esta aparece por defecto con todos los bordes marcados de manera suave (estos bordes 
+          aparecen en nuestra hoja de Excel, pero al imprimir no aparece ningún borde).
+        </p>
+
+        <p>
+          Si queremos quitar los bordes para dar una imagen como aparecerá al imprimir lo que haremos es seleccionar las celdas
+          objetivo y utilizar el comando <b>Color de relleno</b> del grupo <b>Fuente</b> seleccionando un color blanco.
+        </p>
 
 
-    </p>
+        <p>
+          En el grupo <b>Fuente</b> está el comando <b>Bordes</b> <img src="../Imagenes/Excel/Grupo_fuente_bordes_.JPG" alt="", width="auto" height="auto">,
+           que se utiliza para aplicar bordes a las celdas seleccionadas.
+           Pulsando en el centro del botón aplicará a las celdas seleccionadas el último tipo de borde que hayamos utilizado. 
+           Para cambiar el tipo de borde tenemos que pulsar la flecha apuntando hacia abajo junto al botón, y se nos despliegan 
+           las opciones como se muestra en la imagen:
+        </p>
 
-    
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Grupo_fuente_bordes.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+        
+        <p>
+          Si pulsamos en cualquiera de las opciones que están bajo el título <b>Bordes</b> se aplicará directamente el tipo de 
+          borde pulsado a las celdas seleccionadas.
+        </p>
 
+        <p>
+          En la parte de abajo del desplegable, bajo el título <b>Dibujar bordes</b> <img src="../Imagenes/Excel/Grupo_fuente_bordes_dibujar.JPG" alt="", width="auto" height="auto"> están estas opciones, útiles para dibujar bordes
+          de forma “irregular”:
+        <ol>
+          <li><b>Dibujar borde:</b><br> Podemos dibujar a mano los bordes donde queramos, sin ser necesario seleccionar antes las celdas. 
+            Solo se puede dibujar bordes en forma de línea recta o en cuadrícula. Es útil para dibujar bordes a varias celdas no consecutivas 
+            sin perder el tiempo seleccionando, eligiendo el tipo de borde, etc.</li>
+          <li><b>Dibujar cuadrícula de borde:</b> <br>Actúa de manera similar al anterior comando, con la diferencia de que este
+           dibuja también las líneas internas de la cuadrícula marcada.</li>
+          <li><b>Borrar borde:</b> Pulsando sobre el borde de una celda este desaparece sin afectar al resto de bordes de la misma celda.</li>
+          <li><b>Color de línea:</b><br> para cambiar el color negro que viene por defecto en el color de los bordes.</li>
+          <li><b>Estilo de línea:</b><br> Si ponemos bordes con las herramientas de “Dibujar borde” o “Dibujar cuadrícula de borde” estas 
+            aparecerán por defecto con línea fina continua. Si queremos cambiar el estilo de línea tenemos que seleccionar el estilo 
+            de línea que queremos desde esta opción.</li>
+          <li><b>Más bordes:</b><img src="../Imagenes/Excel/Boton_mas_bordes.JPG" alt="", width="auto" height="auto"><br> Desde aquí 
+             podemos ver por completo los bordes de las celdas seleccionadas, y editarlos de la manera más
+             precisa y rápida. Cuando pulsamos aparece en una nueva ventana el siguiente menú:
+             <p>
+              <div class="flexbox">
+                <img src="../Imagenes/Excel/Ventana_formato_celdas_borde.JPG" alt="", width="auto" height="auto">
+              </div>
+            </p>  
+            Siguiendo el orden de la pantalla, seleccionamos el estilo del borde (normal, discontinuo, grueso, doble…), el color
+            y vamos haciendo click en la ventana donde pone “Texto” dibujando nosotros el borde con cada click.
+          </li>
+        </ol>
+        </p>
+
+        </div>
+
+        <div class="nota-box">
+          <h1 class="number-subtitle"> Formatos de contenido </h1> 
+          <p>
+            El contenido de una celda puede ser de distintos tipos: números, texto, fechas, moneda, porcentaje… Por defecto las 
+            celdas vienen con el formato “General”, y si al introducir algún dato lo detecta como algún formato específico cambia
+            su formato automáticamente al detectado. Por ejemplo, si selecciono una celda vacía que es de formato “General” y escribo
+            en ella una fecha (25/12/2017), esta pasará automáticamente a ser tipo fecha.
+          </p>
+
+          <p>
+            El formato de las celdas se puede comprobar en el grupo <b>Número</b> dentro de la ficha <b>Inicio</b>.
+          </p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/Grupo_numero.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>  
+
+          <p>
+            Cada formato viene por defecto con un tipo de alineación, de número de decimales y representación gráfica. 
+            Por ejemplo, el formato “General” alinea el contenido a la izquierda, mientras que el de “Fecha” lo hace a la derecha.
+          </p>
+
+          <p>
+            Todos los formatos relacionados con número alinean a la derecha, el formato “Moneda” pone 2 decimales al número,
+            además del símbolo de la moneda representada, y el formato “Porcentaje” multiplica el número que hubiera antes en la 
+            celda por 100 y añade el símbolo del porcentaje (%) a continuación del número.
+          </p>
+
+          <p>
+            Con todo esto se intenta hacer entender que el formato de una celda, tanto el formato de forma, como el de borde y el
+            de contenido, no influye para nada en la utilización de su contenido, todos los cambios de formato se hacen únicamente
+            por motivos visuales sobre la hoja de cálculo. Incluso si un número se introduce como formato de texto, al realizar 
+            operaciones matemáticas sobre la celda Excel las realizará correctamente.
+          </p>
+
+          <p>
+            No hay por tanto una forma correcta de aplicar los formatos, cada usuario lo hará de una forma diferente, de acuerdo con los 
+            criterios visuales que él mismo considere.
+          </p>
+
+          <p>
+            Como en casi todos los grupos, pulsando la esquina inferior derecha se abre la ventana con información del formato, en
+             este caso con la pestaña “Número” seleccionada, donde podemos ver y administrar de manera avanzada todas las categorías
+              del contenido que nos ofrece Excel:
+          </p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/Ventana_formato_numero.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>  
+          
+          <h2 class="number-title"> Formato del contenido personalizado </h2>
+
+          <p>
+            Si abrimos la ventana con información del formato como se acaba de ver en el apartado anterior podemos ver 
+            que la última de las categorías de formato de número es la “Personalizada”.
+          </p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/Ventana_formato_numero_personalizada.JPG" alt="", width="auto" height="auto">
+            </div>
+          </p>  
+          <p>
+            Con esta categoría podemos crear el formato del contenido como nosotros queramos, cambiando el número de decimales, 
+            la forma de representación de los datos, el color…
+          </p>
+
+          <p>
+            Para la utilización del formato personalizado es fundamental comprender la utilización de estos caracteres
+            (lee la descripción y mira después la tabla para ver un ejemplo de cómo funciona):
+          <ol>
+            # (Almohadilla) - Presenta únicamente los dígitos significativos; no presenta los ceros sin valor.
+0 (Cero) - Muestra los ceros sin valor si un número tiene menos dígitos que ceros en el formato.
+? (Interrogación) - Agrega los espacios de los ceros sin valor a cada lado del separador, para alinear los decimales. También puede utilizarse este símbolo para las fracciones que tengan un número de dígitos variable.
+/ (Barra diagonal) - Se utiliza para mostrar un número en forma de fracción.
+, (Punto) - Se utiliza para mostrar el separador de miles en los números superiores a 1000. Aunque entre paréntesis pone “Punto” y en el símbolo pone una “Coma” no es ningún error. En España, cuando pulsas en Excel la tecla de punto en el teclado numérico, el formato de número está predefinido para que aparezca una coma. Por tanto, según la región configurada en Excel aparecerá un punto o una coma.
+          </ol>
+          </p>
+
+        
+        </div>
 
 </body>
