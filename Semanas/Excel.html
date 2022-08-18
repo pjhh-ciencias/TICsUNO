@@ -156,19 +156,51 @@
           <p>
             Para la utilización del formato personalizado es fundamental comprender la utilización de estos caracteres
             (lee la descripción y mira después la tabla para ver un ejemplo de cómo funciona):
-          <ol>
-           <li><b># Almohadilla</b> - Presenta únicamente los dígitos significativos; no presenta los ceros sin valor.</li>
-          <li><b>0 (Cero)</b> Muestra los ceros sin valor si un número tiene menos dígitos que ceros en el formato.</li>
-          <li><b>? (Interrogación)</b> - Agrega los espacios de los ceros sin valor a cada lado del separador, para alinear 
-           los decimales. También puede utilizarse este símbolo para las fracciones que tengan un número de dígitos variable.</li>
-          <li><b>/ (Barra diagonal)</b> - Se utiliza para mostrar un número en forma de fracción.</li>
-          <li> <b>, (Punto)</b> - Se utiliza para mostrar el separador de miles en los números superiores a 1000. Aunque entre
-          paréntesis pone “Punto” y en el símbolo pone una “Coma” no es ningún error. En España, cuando pulsas en Excel la tecla
-          de punto en el teclado numérico, el formato de número está predefinido para que aparezca una coma. Por tanto, según 
-          la región configurada en Excel aparecerá un punto o una coma.</li> 
-          <li><b>[COLOR]</b> - Para definir el color del texto desde el formato personalizado hay que escribir el nombre del color entre corchetes.</li>
-          </ol>
           </p>
+          <p>
+          <table class="info">
+              <tr>
+                  <th> Atajo</th>
+                  <th> Resultado</th>
+                </tr>
+                <tr>
+                  <td> # Almohadilla</td>
+                  <td>Presenta únicamente los dígitos significativos; no presenta los ceros sin valor.</td>
+                </tr>
+
+                <tr>
+                  <td> 0 (Cero)</td>
+                  <td>Muestra los ceros sin valor si un número tiene menos dígitos que ceros en el formato.</td>
+                </tr>
+
+                <tr>
+                  <td> ? (Interrogación)</td>
+                  <td>Agrega los espacios de los ceros sin valor a cada lado del separador, para alinear 
+                    los decimales. También puede utilizarse este símbolo para las fracciones que tengan un
+                    número de dígitos variable.</td>
+                </tr>
+
+                <tr>
+                  <td>/ (Barra diagonal) </td>
+                  <td>Se utiliza para mostrar un número en forma de fracción.</td>
+                </tr>
+
+                <tr>
+                  <td>, (Punto)</td>
+                  <td>Se utiliza para mostrar el separador de miles en los números superiores a 1000. Aunque entre
+                    paréntesis pone “Punto” y en el símbolo pone una “Coma” no es ningún error. En España, cuando pulsas en Excel la tecla
+                    de punto en el teclado numérico, el formato de número está predefinido para que aparezca una coma. Por tanto, según 
+                    la región configurada en Excel aparecerá un punto o una coma.</td>
+                </tr>
+
+                <tr>
+                  <td>[COLOR] </td>
+                  <td>Para definir el color del texto desde el formato personalizado hay que escribir el nombre del color entre corchetes.</td>
+                </tr>
+            </table>
+          </p>
+
+
 
         <h2 class="number-title"> Utilización del apostrofe (')</h2>
 
@@ -189,8 +221,14 @@
           ya que Excel lo puede detectar como una suma o resta y dar error. Para evitarlo escribimos apostrofe ('') y a continuación
           el símbolo "-" o "+".
         </p>
-      
-        <h2 class="number-title">  Grupo portapapeles y autorrelleno</h2>
+        
+      </div>
+
+        
+        <div class="nota-box">
+          <h1 class="number-subtitle"> Grupo portapapeles y autorrelleno</h1> 
+
+        
 
         <p>
           Es el primero de todos los grupos en la ficha <b>Inicio</b>. Aunque su uso es muy frecuente pues resulta una herramienta 
@@ -230,7 +268,7 @@
           origen se borran. El atajo de teclado es la combinación de teclas “Ctrl” y “x” de forma simultánea.
         </p>
 
-        <h3>Copiar formato</h3>
+        <h2 class="number-title"> Copiar formato</h2>
 
         <p>
           unciona de manera similar a copiar, pero tan solo copia el formato de las celdas seleccionadas, no su contenido. 
@@ -243,7 +281,10 @@
            sin tener que pulsar sobre el botón varias veces si queremos copiar un formato a varias celdas.
         </p>
         
-        <h3>Otras opciones de copiado   </h3>
+        <h2 class="number-title"> Otras opciones de copiado   </h3>
+
+
+
         <p>El comando <b>Copiar</b> tiene alternativamente la opción de copiar las celdas seleccionadas como una imagen.</p>
         <p>
           <div class="flexbox">
@@ -256,7 +297,10 @@
         de edición de imágenes)
         </p>
 
-        <h3>Otras opciones de pegado</h3>
+
+
+        <h2 class="number-title"> Otras opciones de pegado</h2>
+
 
         <p>
           Al pegar unas celdas podemos utilizar distintos tipos de <b>Pegar</b>. Podemos acceder a las opciones desde el comando
@@ -308,7 +352,63 @@
            </ul>
         </p>
 
-        <h3> Autorelleno</h3>
+        
+        
+        <h2 class="number-title"> Copiar celdas utilizando el Portapapeles</h2> 
+
+        <p>
+          Con el <b>Portapapeles</b> podremos pegar hasta 24 objetos almacenados en él con sucesivas copias. 
+          Esta barra tiene el aspecto de la figura de la derecha.
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Grupo_portapapeles.JPG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+        <p>
+          Puedes acceder al Portapapeles haciendo clic en la pequeña flecha que aparece en la parte superior derecha de la sección 
+          Portapapeles de la pestaña Inicio.
+        </p>
+
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Ventana_portapapeles.PNG" alt="", width="auto" height="auto">
+          </div>
+          En esta ultima ventana podremos observar a los objetos que tenemos en el portapapeles.
+        </p>
+
+        <ul>
+          <li>Para pegar uno de ellos, hacer clic sobre el objeto a pegar. 
+            <img src="../Imagenes/Excel/pegar_todo_excel.gif" alt="", width="auto" height="auto"></li>
+          <li>Para pegar todos los elementos a la vez, hacer clic sobre el botón 
+            <img src="../Imagenes/Excel/borrar_todo_excel.gif" alt="", width="auto" height="auto"></li> 
+          <li>Si no nos interesa ver la Barra del Portapapeles, hacer clic sobre su botón cerrar botón cerrar del panel
+             o volver a pulsar el botón con el que lo mostramos.</li>
+        </ul>
+
+        <p>
+          Podemos también elegir si queremos que aparezca automáticamente esta barra o no a la hora de
+           copiar algún elemento. Para ello: Hacer clic sobre el botón 
+            <img src="../Imagenes/Excel/Opciones_portapapeles.PNG" alt="", width="auto" height="auto"></li>
+        </p>
+        <p>
+          <ul>
+            <li>Seleccionar la opción <b>Mostrar automáticamente el Portapapeles de Office</b>, para activar en caso de querer
+               visualizarla automáticamente, o para desactivarla en caso contrario.</li>
+          </ul>
+          <p>Al desplegar el botón de opciones también podemos activar algunas de las siguientes opciones descritas a continuación:</p>
+          <ul>
+            <li>
+              Si activamos la opción <b>Recopilar sin mostrar el Portapapeles de Office</b> copiará el contenido del portapapeles sin mostrarlo.
+            </li>
+            <li>Si activamos la opción Mostrar el icono del Portapapeles de Office en la barra de tareas aparecerá en la barra de tareas del sistema 
+              (junto al reloj del sistema) el icono del portapapeles</li>
+            <li>Si activamos la opción Mostrar estado cerca de la barra de tareas al copiar mostrará en la parte inferior derecha de la ventana
+               un mensaje informándote del número de elementos copiados</li>
+          </ul>
+        </p>
+
+        <h2 class="number-title">  Autorelleno</h2>
 
         <p>Esta función de Excel detecta automáticamente una serie de datos y la continua a lo largo de todas las celdas que 
           se le indique. Por ejemplo, con escribir en dos celdas consecutivas 1 y 2 respectivamente, con autorrelleno podemos
@@ -372,72 +472,264 @@
           el relleno rápido escribirá en la columna C el nombre y apellido junto de todas las demás filas (casi no se utiliza).</li>
           </ul>
         </p>
-
-        
         </div>
-
 
 
         <div class="nota-box">
           <h1 class="number-subtitle"> Trucos y atajos</h1> 
-
-          <p>
-             <table class="info">
-              <tr>
-                <th> Atajo</th>
-                <th> Resultado</th>
-              </tr>
-              <tr>
-                <td> Ctrl + D</td>
-                <td>Copia sobre la celda seleccionada el contenido de la celda de la derecha. Si está seleccionado un rango copiará a 
-                  todo el rango el contenido de la celda o celdas en la columna más a la izquierda de la selección.</td>
-              </tr>
-
-              <tr>
-               <td>Ctrl + J</td>>
-               <td> Igual que lacombinación Ctrl + D , copiando el valor de las celdas superiores a las inferiores.</td>>
-              </tr>
-              
-              <tr>
-                <td>Ctrl + Enter</td>>
-                <td> Si seleccionamos un rango de celdas y escribimos algo, el contenido aparecerá en la celda superior izquierda.
-                  Si tras esto pulsamos “Ctrl” + “Enter”lo que hayamos escrito se escribirá sobre todas las celdas que tuviéramos
-                  seleccionadas.</td>>
-               </tr>
-            </table>
-          </p>
           
+          <table class="info">
+            <tr>
+              <th> Atajo</th>
+              <th> Resultado</th>
+            </tr>
+            <tr>
+              <td> Ctrl + D</td>
+              <td>Copia sobre la celda seleccionada el contenido de la celda de la derecha. Si está seleccionado un rango copiará a 
+                todo el rango el contenido de la celda o celdas en la columna más a la izquierda de la selección.</td>
+            </tr>
+
+            <tr>
+             <td>Ctrl + J</td>
+             <td> Igual que lacombinación Ctrl + D , copiando el valor de las celdas superiores a las inferiores.</td>
+            </tr>
+            
+            <tr>
+              <td>Ctrl + Enter</td>
+              <td> Si seleccionamos un rango de celdas y escribimos algo, el contenido aparecerá en la celda superior izquierda.
+                Si tras esto pulsamos “Ctrl” + “Enter”lo que hayamos escrito se escribirá sobre todas las celdas que tuviéramos
+                seleccionadas.</td>
+             </tr>
+          </table>
+        
+
+
         <h4>Si lo que escribimos es una fórmula las referencias a otras celdas se moverán como lo harían al copiar y pegar 
           normalmente.</h4>
 
 
-          <p>
-            <table class="info">
-              <tr>
-                <th> Atajo</th>
-                <th> Resultado</th>
-              </tr>
-              <tr>
-                <td> Ctrl + N</td>
-                <td>Cambia el estilo de letra de las celdas seleccionadas a negrita.</td>
-              </tr>
+          <table class="info">
+          <tr>
+              <th> Atajo</th>
+              <th> Resultado</th>
+            </tr>
+            <tr>
+              <td> Ctrl + N</td>
+              <td>Cambia el estilo de letra de las celdas seleccionadas a negrita.</td>
+            </tr>
 
-              <tr>
-               <td>Ctrl + K</td>>
-               <td>Cambia el estilo de letra de las celdas seleccionadas a cursiva.</td>>
-              </tr>
-              
-              <tr>
-                <td>Ctrl + S</td>>
-                <td>  cambia el estilo de letra de las celdas seleccionadas a subrayado</td>>
-               </tr>
-            </table>
-          </p>
-          
+            <tr>
+             <td>Ctrl + K</td>
+             <td>Cambia el estilo de letra de las celdas seleccionadas a cursiva.</td>
+            </tr>
+            
+            <tr>
+              <td>Ctrl + S</td>
+              <td>Cambia el estilo de letra de las celdas seleccionadas a subrayado</td>
+             </tr>
+
+             <tr>
+              <td>Ctrl + 5</td>
+              <td>Cambia el estilo de letra de las celdas seleccionadas a tachado.</td>
+             </tr>
+
+             <tr>
+              <td>Ctrl + +</td>
+              <td> introduce una celda, fila o columna. Si al momento de pulsar esta combinación tenemos seleccionada una celda nos
+                 preguntará si queremos desplazar las celdas hacia abajo o hacia la derecha, o si queremos introducir toda una fila
+                o columna. Si al momento de pulsar tenemos seleccionada toda una fila o columna directamente introducirá una fila o
+                columna desplazando las anteriores hacia abajo o derecha respectivamente.</td>
+             </tr>
+
+             <tr>
+              <td>Ctrl + -</td>
+              <td>elimina una celda, fila o columna. Funciona igual que el anterior comando.</td>
+             </tr>
+
+             <tr>
+              <td>“Ctrl” + “↓” “→” “↑” / “←” (flechas del teclado)</td>
+              <td>cuando nos estamos moviendo por una tabla, podemos avanzar hasta la última celda con contenido con estos comandos.
+                 Si estamos en la celda superior izquierda y pulsamos “Ctrl” + “↓”, la celda activa se moverá hasta la celda inferior 
+                 izquierda de la tabla (si no hay ningún dato en la columna de la selección nos moveremos hasta la última fila de la 
+                 hoja, la fila 048.576). Con “Ctrl” + “→” nos moveremos a la derecha del todo, “Ctrl” + “↑” nos lleva arriba y
+                 “Ctrl” + “←” a la izquierda.</td>
+             </tr>
+
+             <tr>
+              <td>“Mayús” + “↓” “→” “↑” / “←” (flechas del teclado)</td>
+              <td>la tecla “Mayús” o “Shift”, junto con las flechas del teclado, nos permite ir seleccionando un rango de celdas a 
+                la vez que desplazamos la celda activa de posición. Por ejemplo, nuestra celda activa es la A1, pulsamos y mantenemos
+                 la tecla “Shift” y pulsamos “→”, “→”, “↓”, “↓” y soltamos “Shift”, tendremos seleccionado el rango de celdas desde la A1 hasta la C3.</td>
+             </tr>
+
+             <tr>
+              <td>“Ctrl” + “Mayús” + “↓” “→” “↑” / “←”</td>
+              <td>con esto se suman los efectos de los dos atajos de teclado nombrados anteriormente, por lo que no es difícil averiguar
+                 cuál será el resultado producido: es la forma más rápida de seleccionar todo el rango de una tabla. Para empezar, 
+                 nos posicionamos en la celda superior izquierda de una tabla, pulsamos y mantenemos “Ctrl” y pulsamos y mantenemos “Shift”;
+                ahora pulsamos “↓”, con lo que nos habremos movido a la celda más inferior con datos, seleccionando también todas las celdas
+               entre medias; a continuación pulsamos “→”, moviéndonos a la celda más a la derecha con datos, y seleccionando también todas 
+               las celdas entre medias, con lo cual ya tenemos toda la tabla seleccionada (soltamos “Ctrl” y “Shift”).</td>
+             </tr>
+
+             <tr>
+              <td>“Ctrl” + “,”</td>
+              <td>introduce en la celda activa la fecha de hoy. El valor es estático, por lo que si mañana abrimos esta misma hoja seguirá
+                 apareciendo la fecha del día original.</td>
+             </tr>
+
+             <tr>
+              <td>“F4”</td>
+              <td> repite la última acción realizada. Si por ejemplo acabamos de poner un tipo de letra en una celda y queremos hacer lo
+                 mismo en otra, podemos seleccionar la celda destino y pulsar “F4”</td>
+             </tr>
+
+             <tr>
+              <td>“F9”</td>
+              <td>actualiza la hoja. Al hacer esto Excel realiza de nuevo todos los cálculos de las fórmulas que hay en la hoja. 
+                La mejor manera de comprobar su funcionamiento es escribir en una celda la función “=aleatorio()”. Esta función pone 
+                en la celda un número aleatorio entre 0 y 1 (con decimales), y el número solo cambia si se vuelve a calcular la hoja
+               (se puede forzar pulsando F9).</td>
+             </tr>
+
+             <tr>
+              <td>“F1”</td>
+              <td>el más importante de todos los comandos nombrados, abre la ayuda de Excel. Es imposible conocer todos los
+                 atajos y combinaciones que existen en Excel, ni acordarse de todas las funcionalidades, fórmulas, formatos, etc. 
+                 Por eso es importante saber como acceder al menú de ayuda.</td>
+             </tr>
+
+             <tr>
+              <td>Pegado especial</td>
+              <td>permite realizar operaciones matemáticas sobre una celda o conjunto de celdas utilizando
+                 el valor copiado, como sumar, restar, multiplicar o dividir, entre otros.</td>
+             </tr>
+
+             
+          </table>
 
         </div>
 
 
+
+
+      <div class="nota-box">
+          <h1 class="number-subtitle">Operadores </h1> 
+
+      </div>
+
+      <div class="nota-box">
+        <h1 class="number-subtitle"> Tipos de datos    </h1> 
+        <p>
+          En una Hoja de cálculo, los distintos TIPOS DE DATOS que podemos introducir son:
+        </p>
+        <p>
+          <ol>
+            <li>
+            <b>Valores constantes</b> Un dato que se introduce directamente en una celda. Puede ser un número, una fecha 
+            u hora, o un texto. Si deseas una explicación más detallada sobre los valores constantes visita nuestro básico 
+            sobre los tipos de datos
+            </li>
+            <li><b>Fórmulas</b>una secuencia formada por: valores constantes, referencias a otras celdas, nombres, funciones, 
+              u operadores. Es una técnica básica para el análisis de datos. Se pueden realizar diversas operaciones con los
+               datos de las hojas de cálculo como +, -, *, /, Sen, Cos, etc. En una fórmula se pueden mezclar constantes, nombres,
+               referencias a otras celdas, operadores y funciones. La fórmula se escribe en la barra de fórmulas y debe empezar 
+               siempre por el signo =.</li>
+          </ol>
+        </p>
+
+        <h2 class="number-title"> Errores</h2>
+
+        <p>
+          Cuando introducimos una fórmula en una celda puede ocurrir que se produzca un <b>error</b>. Dependiendo del tipo de error
+           puede que Excel nos avise o no. Podemos detectar un error sin que nos avise cuando aparece la celda con un símbolo en la esquina superior 
+           izquierda tal como esta <img src="../Imagenes/Excel/Celda_error.PNG" alt="", width="auto" height="auto">
+        </p>
+        <p>
+          Al hacer clic sobre el símbolo aparecerá un cuadro como información error que nos permitirá saber más sobre el error:
+        </p>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Celda_error_opciones.PNG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+        <p>
+          Dependiendo del tipo de error, al hacer clic sobre el cuadro anterior se mostrará un cuadro u otro, a veces 
+          el error sea simplemente que la fórmula de la celda no tiene el mismo aspecto que todas las demás fórmulas adyacente 
+          (por ejemplo, ésta sea una resta y todas las demás sumas).
+        </p>
+
+    
+        <p>
+          Si no sabemos qué hacer, disponemos de la opción <b>Ayuda sobre este error</b>. Si lo que queremos es comprobar la fórmula 
+          para saber si hay que modificarla o no, podríamos utilizar la opción <b>Modificar en la barra de fórmulas</b>. Si la
+          fórmula es correcta, se utilizará la opción <b>Omitir error</b> para que desaparezca el símbolo de la esquina de la celda.
+        </p>
+
+        <p>
+        <li>
+          Puede que al introducir la fórmula nos aparezca como contenido de la celda <b>#texto</b>, siendo texto un valor que puede
+          cambiar dependiendo del tipo de error. Por ejemplo:
+        </li>
+      </p>
+
+       <p>        
+        <table class="info">
+          <tr>
+              <th> Mensaje</th>
+              <th> Signficado</th>
+            </tr>
+            
+            <tr>
+              <td>#####</td>
+              <td>se produce cuando el ancho de una columna no es suficiente o cuando se utiliza una fecha o una hora negativa.</td>
+              </tr>
+
+             <tr>
+             <td>#¡NUM!</td>
+             <td>cuando se ha introducido un tipo de argumento o de operando incorrecto, como puede ser sumar textos.</td>
+             </tr>
+
+             <tr>
+              <td>#¡DIV/0!</td>
+              <td>cuando se divide un número por cero.</td>
+              </tr>
+             
+              
+             <tr>
+              <td>#¿NOMBRE? </td>
+              <td> cuando Excel no reconoce el texto de la fórmula.
+
+              </td>
+              </tr>
+
+              
+             <tr>
+              <td>#N/A</td>
+              <td> cuando un valor no está disponible para una función o fórmula.</td>
+              </tr>
+
+              
+             <tr>
+              <td>#¡REF!</td>
+              <td>se produce cuando una referencia de celda no es válida.</td>
+              </tr>
+
+              
+             <tr>
+              <td>#¡NUM!</td>
+              <td>cuando se escriben valores numéricos no válidos en una fórmula o función.</td>
+              </tr>
+
+              
+             <tr>
+              <td>#¡NULO!</td>
+              <td>cuando se especifica una intersección de dos áreas que no se intersectan.</td>
+              </tr>
+
+          </table>
+        </p>
+    </div>
 
         
 </body>
