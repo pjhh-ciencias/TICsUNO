@@ -1145,10 +1145,7 @@ o el formato de los datos en la hoja de cálculo.
 
         
         <div class="nota-box">
-          <h1 class="number-subtitle"> Grupo portapapeles y autorrelleno</h1> 
-
-        
-
+          <h1 class="number-subtitle"> Grupo portapapeles</h1> 
         <p>
           Es el primero de todos los grupos en la ficha <b>Inicio</b>. Aunque su uso es muy frecuente pues resulta una herramienta 
           bastante util casi nunca se accede a estos comandos a través del grupo en la barra superior de la pantalla, sino a
@@ -1163,6 +1160,8 @@ o el formato de los datos en la hoja de cálculo.
           Este es el grupo que permite <b>copiar</b> o <b>cortar celdas</b> y <b>pegarlas</b>, con varias opciones alternativas
           a cada una de estas acciones.
         </p>
+
+
 
         <h2 class="number-title"> Copiar (<b>Ctrl</b> + <b>c</b>) y Pegar (<b>Ctrl</b> + <b>v</b>)</h2>
         
@@ -1357,10 +1356,79 @@ o el formato de los datos en la hoja de cálculo.
               (junto al reloj del sistema) el icono del portapapeles</li>
             <li>Si activamos la opción Mostrar estado cerca de la barra de tareas al copiar mostrará en la parte inferior derecha de la ventana
                un mensaje informándote del número de elementos copiados</li>
-          </ul>
+          </ul>  
         </p>
+      </div>
+        <div class="nota-box">
+          <h1 class="number-subtitle">Mover/desplazar celdas</h1>
 
-        <h2 class="number-title">  Autorelleno</h2>
+          <h2 class="number-title"> Mover celdas utilizando el portapapeles</h2>
+          <p>
+            La operación de mover desplaza una celda o rango de celdas a otra posición. Cuando utilizamos
+            el portapapeles entran en juego dos operaciones Cortar y Pegar. La operación de Cortar desplazará 
+            las celdas seleccionadas al portapapeles de Windows y Pegar copia la información del portapapeles 
+            a donde nos encontramos situados.
+          </p>
+
+          <ul>
+            <li>Seleccionar las celdas a mover.</li>
+            <li>Seleccionar la pestaña Inicio y hacer clic en el botón Cortar o bien utiliza la combinación 
+              de teclado <b>CTRL</b> + <b>X</b>.
+            
+            <p>Aparece una línea de marca alrededor de las celdas cortadas indicándonos la información situada 
+              en el portapapeles.</p>
+            </li>
+
+            <li>A continuación seleccionar las celdas donde quieres que se sitúen las celdas cortadas
+               (no hace falta seleccionar el rango completo sobre el que se va a pegar, ya que si se 
+               selecciona una única celda, Excel extiende el área de pegado para ajustarlo al tamaño y 
+               la forma del área cortada. La celda seleccionada será la esquina superior izquierda del 
+               área pegada).</li>
+
+             <li> Seleccionar la pestaña Inicio y haz clic en el botón Pegar O bien, utiliza la 
+              combinación de teclado CTRL + V.</li>
+          </ul>
+
+          <p><b>Cuidado, ya que al pegar unas celdas sobre otras no vacías, se borrará el contenido de éstas 
+            últimas, no podemos utilizar el pegado especial visto en el tema anterior.</b></p>
+        <h2 class="number-title"> Mover unas celdas a otra posición</h2>
+
+
+        <h2 class="number-title"> Mover celdas utilizando el ratón</h2>
+
+        <h3>Desplazar un rango de celdas a otra posición dentro de la misma hoja</h3>
+        <ul>
+          <li>Seleccionar las celdas a mover.</li>
+          <li>Situarse sobre un borde de la selección.</li>
+          <li>El puntero del ratón se convertirá en una flecha
+             blanca apuntando hacia la izquierda y una cruz de 4 puntas, tal como esto</li>
+          <li>Pulsar el botón del ratón y manteniéndolo pulsado, arrastrarlo hasta donde
+             quieres mover el rango.</li>
+          <li>Observa como aparece un recuadro que nos indica dónde se situará el rango en caso de 
+            soltar el botón del ratón  <img src="../Imagenes/Excel/puntero_mover_excel.gif" alt="", width="auto" height="auto"></li>  
+          <li>Suelta el botón del ratón cuando hayas llegado a donde quieres dejar las celdas.</li>
+          <li>Suelta el botón del ratón cuando hayas llegado a donde quieres dejar las celdas.</li>
+        </ul>
+
+        <h3> Mover algún rango de celdas a otra hoja </h3>
+
+        <ul>
+          <li>Seleccionar las celdas a mover.</li>
+          <li>Situarse sobre un borde de la selección.</li>
+          <li>El puntero del ratón se convertirá en una flecha blanca apuntando hacia la izquierda y 
+            una cruz de 4 puntas, tal como esto  <img src="../Imagenes/Excel/puntero_mover_excel.gif" alt="", width="auto" height="auto"></li>
+          <li>Pulsar el botón del ratón y sin soltarlo pulsar la tecla ALT, después pasar el puntero del 
+            ratón sobre la pestaña de la hoja a la cual quieras mover el rango de celdas que hayas
+             seleccionado, verás que esta hoja pasa a ser la hoja activa.</li>  
+          <li>Una vez situado en la hoja deseada soltar la tecla ALT.</li>   
+          <li>Después, soltar el puntero del ratón una vez situado en el lugar donde quieres dejar las celdas.</li>
+        </ul>
+
+
+      </div>
+        
+          <div class="nota-box">
+            <h1 class="number-subtitle">Autorelleno</h1>
 
         <p>Esta función de Excel detecta automáticamente una serie de datos y la continua a lo largo de todas las celdas que 
           se le indique. Por ejemplo, con escribir en dos celdas consecutivas 1 y 2 respectivamente, con autorrelleno podemos
@@ -1425,6 +1493,18 @@ o el formato de los datos en la hoja de cálculo.
           </ul>
         </p>
         </div>
+
+        
+        
+        <div class="nota-box">
+          <h1 class="number-subtitle"> Borrar celdas</h1>
+         <p>Puede que alguna vez introduzcas información en una celda y a continuación decidas borrarla.
+            Para ello debes seleccionar la celda o rango de celdas a borrar y a continuación:
+          </p>
+        </div>
+
+        
+
 
 
         <div class="nota-box">
