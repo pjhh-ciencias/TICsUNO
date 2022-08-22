@@ -84,11 +84,213 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox">Excel</h1>
     
+    
+
+      <div class="nota-box">
+          <h1 class="number-subtitle">Edición de celdas </h1> 
+
+      <p>Si una celda contiene un dato que se desea modificar, bastará con situarse en la
+        celda correspondiente y rescribir el dato completo para sustituir al antiguo</p>
+
+      <p>
+        Sin embargo, puede resultar pesado en el caso de que sólo sea necesario variar
+        mínimamente el dato antiguo para que quede escrito correctamente. Si esta es la situación,
+        se puede situar en la celda y pulsar la tecla <b>F2</b> (o hacer doble clic en ella) lo que permitirá
+        modificar su contenido sin tener que escribirlo de nuevo completamente.
+      </p>
+
+      <p>
+        Cuando se está tecleando, el cuadro de texto de edición en la ventana de Excel
+        presenta un aspecto como este:  <img src="../Imagenes/Excel/Barra_formula_edicion.PNG" alt="", width="auto" height="auto">
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            La lista desplegable  <img src="../Imagenes/Excel/Cuadro_nombres.PNG" alt="", width="auto" height="auto">
+            (<b>Cuadro de nombres</b>) despliega una lista de nombres o funciones que se pueden añadir a la celda o emplearse
+            para acceder a su posición.<br>
+          </li>
+          <li>
+            El botón  <img src="../Imagenes/Excel/Barra_formula_cancelar.PNG" alt="", width="auto" height="auto">
+            (<b>Cancelar</b>) se emplea para anular la introducción o modificación del dato que se ha estado escribiendo 
+            en la celda.
+          </li>
+          <li>
+            El botón <img src="../Imagenes/Excel/Barra_formula_introducir.PNG" alt="", width="auto" height="auto"> 
+            (<b>Introducir</b>) aceptará el dato que se haya estado escribiendo en la celda, añadiéndolo a la hoja de 
+            cálculo activa
+          </li>
+          <li>
+            El botón <img src="../Imagenes/Excel/Barra_formula_insertar_formula.PNG" alt="", width="auto" height="auto"> 
+             (<b>Insertar función</b>) permite añadir una función de Excel
+          </li>
+        </ol>
+      </p>
+      </div>
+
+      <div class="nota-box">
+        <h1 class="number-subtitle"> Bloques de celda (Rangos)  </h1> 
+
+        <p>
+          Existe un modo de referirse a un grupo de celdas contiguas, siempre y cuando
+          formen un rectángulo de celdas. Para ello, se utiliza la referencia de dos de ellas: la
+          <b>superior izquierda</b> y la <b>inferior derecha</b> del grupo.
+        </p>
+
+        <p>
+          Para referirse al grupo (rango) de celdas basta con escribir la primera, seguida de
+          <b>dos puntos</b> (<b>:</b>) y, a continuación, escribir la segunda.
+        </p>
+        <p>
+          Por ejemplo,
+          en la siguiente imagen  puede apreciarse un rango de celdas ocupadas con datos. El rango
+          comenzaría por la celda cuya referencia es <b>A2</b> (que es una celda vacia) y terminaría en
+          <b>K12</b> (que contiene el dato 100). Para referirse a este rango se indicaría <b>A2:K12</b>.
+        </p>
+         
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/Rango_celdas.PNG" alt="", width="auto" height="auto">
+          </div>
+        </p>
+
+        <p>
+          <b>Observaciones:</b>
+          <ul>
+            <li>Los rangos pueden recibir un nombre para que no sea
+              necesario especificar sus referencias constantemente.</li>
+            <li>Los rangos se utilizan fundamentalmente en las funciones, ya que, en muchas de
+              éstas, debe indicarse un rango de celdas que será el grupo de datos que utilice la función.</li>
+          </ul>
+        </p>
+      </div>
+
+      
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Referencias</h1> 
+    <p>Las fórmulas pueden contener, aparte de datos numéricos simples, referencias a
+      datos de otras celdas</p>
+
+      <p>
+        En la imagen siguiente  obsérvemos que en la barra de fórmulas aparece el dato =B2+4^C3, que utilizará el
+ dato contenido en B2 (15) para sumárselo a 4 elevado a 2 (dato que aparece en C3). El resultado
+ de la fórmula aparece en la celda B5. Observe, por otra parte, que si teclea paréntesis en la
+ fórmula anterior el resultado variará ofreciendo un resultado diferente, ya que en ese caso
+ Excel suma primero B2 y 4 así el resultado lo eleva al cuadrado:
+       </p>
+      
+      <p>
+        En la imagen siguiente obsérvemos que en la barra de fórmulas aparece el dato <b>=10+ B2^D3</b>, que utilizará el
+        dato contenido en A1  (10) para sumarlo con el resultado de  elevar 2 (el valor que aparece en B2)
+         a la potencia 3 (dato que aparece en D3) y el resultado
+        de la fórmula aparece en la celda B6.
+       </p>
+
+       <p>
+         <div class="flexbox">
+          <img src="../Imagenes/Excel/Referencia_celdas_.PNG" alt="", width="auto" height="auto">
+        </div>
+       </p>
+
+      <p>
+        Observe, por otra parte, que si teclea paréntesis en la  fórmula anterior <img src="../Imagenes/Excel/Referencia_celdas_formula.PNG" alt="", width="auto" height="auto">
+         el resultado variará ofreciendo un
+        resultado diferente, ya que en ese caso Excel suma primero 10 y B2 y  el resultado lo eleva al 3 
+        (dato que aparece en D3): 
+       </p>
+
+       <p>
+        <div class="flexbox">
+         <img src="../Imagenes/Excel/Referencia_celdas.PNG" alt="", width="auto" height="auto">
+       </div>
+      </p>
+
+      <h2 class="number-title"> Referencias a datos de otras hojas</h2>
+      <p>
+        Cuando se desea utilizar una fórmula en la que hay un dato de otra hoja, es
+        necesario teclear el nombre de esa hoja para referirse al dato (se denomina <b>vincular datos de
+        otras hojas</b>). Se escribe dicho nombre seguido del signo de exclamación cerrado (<b>!</b>) y la
+        referencia de la celda.
+      </p>
+      <p>
+        Por ejemplo, si se ha de multiplicar por dos el dato que hay en la celda
+        C7 de la Hoja3 (suponiendo que el resultado deba aparecer en otra hoja), la forma correcta
+        de hacerlo sería:
+      </p>
+      <p>
+        <center>
+          =Hoja3!C7*2
+        </center>
+      </p>
+      </div>
 
 
       <div class="nota-box">
-          <h1 class="number-subtitle">Operadores </h1> 
+        <h1 class="number-subtitle"> Observacion</h1> 
+        <p>Si una fórmula calcula un resultado grande, es posible que la cifra que se obtenga
+          ocupe más espacio del que quepa en la columna. En ese caso, Excel suele ofrecer un
+          dato con muchas almohadillas:  
+        </p>
+        <p>
+          <center>
+          ########
+        </center>
+      </p>
+      <p>
+        Lo único que necesitará será ampliar la anchura de la columna hasta que el número
+        entre dentro sin problemas. Puede ampliar una columna haciendo clic entre sus letras
+        (por ejemplo, entre las letras de las columnas A y B) y, sin soltar el botón del ratón,
+        arrastrando a la izquierda o la derecha según necesite.
+      </p>
 
+      </div>
+
+      <div class="nota-box">
+        <h1 class="number-subtitle"> Referencias absolutas relativas y mixtas    </h1> 
+        <p>El sistema de copiado de fórmulas funciona dado que, cuando se pegan, Excel
+          comprueba en qué dirección se hace para cambiar las referencias de la fórmula
+          adecuadamente. Estas referencias que cambian cuando se copia la fórmula se denominan
+          relativas. Sin embargo, existen casos en los que sería interesante que Excel no modifique la
+          referencia de alguna parte de la fórmula o en todas las referencias de la misma</p>
+
+        <p>Cuando esto es necesario se emplean referencias absolutas que llevan como
+            distintivo el símbolo $ (dólar) en cada uno de los componentes de la referencia. Por ejemplo,
+            la referencia relativa B5 se transforma en absoluta añadiéndole dicho símbolo a la B y al 5:
+            $B$5. Cada símbolo $ representa una parte de la referencia que quedará fija cuando se
+            copie.       </p>
+
+        <p>Por lo tanto, cuando una fórmula tiene la referencia de una celda escrita de esta
+              forma y es copiada en otras celdas, no cambia. Resulta útil cuando parte de la fórmula depende
+              de un valor solitario escrito en una celda aislada, puesto que en el momento de copiar la
+              fórmula en otras celdas, dicho valor se encuentra solo y no repetido en las celdas contiguas.</p>
+
+        <p>Por último, también puede fijarse únicamente una de las coordenadas de la
+          referencia de una celda. Se lleva a cabo añadiendo el símbolo $ sólo en una sola de dichas
+          coordenadas: $B5 o B$5. La finalidad es copiar fórmulas de forma que sólo una parte de la
+          coordenada varíe y la otra quede fija al copiar la fórmula.</p>
+        
+        
+        <p><b>Truco:</b> La tecla F4 cambia las referencias añadiendo los símbolos dólar o quitándolos si ya
+          estaban escritos. Simplemente hay que situarse en una referencia de cualquier
+          fórmula (viendo que el cursor parpadea en dicha referencia) y se pulsa F4.</p>
+
+      </div>
+
+      <div class="nota-box">
+        <h1 class="number-subtitle"> Nombres para bloques de celdas    </h1> 
+
+        <p>A un grupo de celdas (incluso a una sola) se le puede asignar un nombre. Así,
+          podremos utilizarlo en lugar de las referencias a esas celdas.</p>
+
+        <p>Para realizar los trabajos relacionados con el nombre de las celdas se accede al
+          grupo Nombres definidos de la pestaña Fórmulas en la cinta de opciones:</p>
+
+          <p>
+            <div class="flexbox">
+             <img src="../Imagenes/Excel/Formulas_nombre_celdas.PNG" alt="", width="auto" height="auto">
+           </div>
+          </p>
       </div>
 
       <div class="nota-box">
@@ -205,4 +407,8 @@
     </div>
 
         
+
+
+
+
 </body>
