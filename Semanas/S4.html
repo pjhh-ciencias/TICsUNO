@@ -141,7 +141,9 @@
         <p>La opción de <b>edición</b> nos permite modificar 
           una porción del contenido de la celda 
           seleccionada sin tener que borrar o sobrescribir 
-          el dato anterior. Si hacemos <b>doble clic</b> en la celda 
+          el dato anterior.</p> 
+          
+          <p>Si hacemos <b>doble clic</b> en la celda 
           que queremos modificar, habilitamos el modo 
           Edición y entonces, podemos trasladarnos con las 
           flechas izquierda y derecha sobre el contenido 
@@ -151,12 +153,58 @@
           rescribir la porción de una fórmula, un texto o un número. Una vez 
           finalizado el proceso, validamos los cambios con ENTER. </p>
 
+         <!-- <p>Si una celda contiene un dato que se desea modificar, bastará con situarse en la
+            celda correspondiente y rescribir el dato completo para sustituir al antiguo</p>
+            -->
+            <p><b>Truco:</b> Otra manera de editar una celda es presionar la tecla <b>F2</b> sobre 
+              la celda activa. En este caso también podemos presionar <b>ESC</b> para 
+              cancelar la edición y volver al contenido original de la celda sin tener 
+              en cuenta los cambios introducidos.</p>
+    
+          <!-- <p>
+            Sin embargo, puede resultar pesado en el caso de que sólo sea necesario variar
+            mínimamente el dato antiguo para que quede escrito correctamente. Si esta es la situación,
+            se puede situar en la celda y pulsar la tecla <b>F2</b> (o hacer doble clic en ella) lo que permitirá
+            modificar su contenido sin tener que escribirlo de nuevo completamente.
+          </p>-->
+          
+          <p>
+            Tambien podemos utilizar la barra de formulas ya que cuando se está tecleando,
+             el cuadro de texto de edición en la ventana de Excel
+            presenta un aspecto como este:  
+          </p>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/Barra_formula_edicion.PNG" alt="", width="auto" height="auto">
 
-        <p>Otra manera de editar una celda es presionar la tecla <b>F2</b> sobre 
-          la celda activa. En este caso también podemos presionar <b>ESC</b> para 
-          cancelar la edición y volver al contenido original de la celda sin tener 
-          en cuenta los cambios introducidos.</p>
+            </div>
+          </p>
 
+          <p>Donde:
+            <ol>
+              <li>
+                La lista desplegable  <img src="../Imagenes/Excel/Cuadro_nombres.PNG" alt="", width="auto" height="auto">
+                (<b>Cuadro de nombres</b>) despliega una lista de nombres o funciones que se pueden añadir a la celda o emplearse
+                para acceder a su posición.<br>
+              </li>
+              <li>
+                El botón  <img src="../Imagenes/Excel/Barra_formula_cancelar.PNG" alt="", width="auto" height="auto">
+                (<b>Cancelar</b>) se emplea para anular la introducción o modificación del dato que se ha estado escribiendo 
+                en la celda.
+              </li>
+              <li>
+                El botón <img src="../Imagenes/Excel/Barra_formula_introducir.PNG" alt="", width="auto" height="auto"> 
+                (<b>Introducir</b>) aceptará el dato que se haya estado escribiendo en la celda, añadiéndolo a la hoja de 
+                cálculo activa
+              </li>
+              <li>
+                El botón <img src="../Imagenes/Excel/Barra_formula_insertar_formula.PNG" alt="", width="auto" height="auto"> 
+                 (<b>Insertar función</b>) permite añadir una función de Excel
+              </li>
+            </ol>
+          </p>
+
+       
          <p><h4>Observaciones:</h4>
           <ol> 
             <li> En <b>modo Edición</b>, las flechas del cursor no nos permiten trasladarnos 
@@ -385,7 +433,6 @@
           </table>
         </p>
       
-
     
     
     <h2 class="number-title"> Copiar celdas utilizando el Portapapeles</h2> 
@@ -442,6 +489,10 @@
       </ul>  
     </p>
   </div>
+
+
+
+
 
     <div class="nota-box">
       <h1 class="number-subtitle"> Mover/desplazar celdas</h1>
@@ -507,8 +558,6 @@
       <li>Una vez situado en la hoja deseada soltar la tecla ALT.</li>   
       <li>Después, soltar el puntero del ratón una vez situado en el lugar donde quieres dejar las celdas.</li>
     </ul>
-
-
   </div>
     
       <div class="nota-box">
@@ -780,6 +829,56 @@
 
     </div>
 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Rangos: Bloques de celda   </h1> 
+
+      <p>
+        Existe un modo de referirse a un grupo de celdas contiguas, siempre y cuando
+        formen un rectángulo de celdas. Para ello, se utiliza la referencia de dos de ellas: la
+        <b>superior izquierda</b> y la <b>inferior derecha</b> del grupo.
+      </p>
+
+      <p>
+        Para referirse al grupo (rango) de celdas basta con escribir la primera, seguida de
+        <b>dos puntos</b> (<b>:</b>) y, a continuación, escribir la segunda.
+      </p>
+      <p>
+        Por ejemplo,
+        en la siguiente imagen  puede apreciarse un rango de celdas ocupadas con datos. El rango
+        comenzaría por la celda cuya referencia es <b>A2</b> (que es una celda vacia) y terminaría en
+        <b>K12</b> (que contiene el dato 100). Para referirse a este rango se indicaría <b>A2:K12</b>.
+      </p>
+       
+      <p>
+        <div class="flexbox">
+          <img src="../Imagenes/Excel/Rango_celdas.PNG" alt="", width="auto" height="auto">
+        </div>
+      </p>
+
+      <p>
+        <b>Observaciones:</b>
+        <ul>
+          <li>Los rangos pueden recibir un nombre para que no sea
+            necesario especificar sus referencias constantemente.</li>
+          <li>Los rangos se utilizan fundamentalmente en las funciones, ya que, en muchas de
+            éstas, debe indicarse un rango de celdas que será el grupo de datos que utilice la función.</li>
+        </ul>
+      </p>
+    
+      <h2 class="number-title"> Nombres para bloques de celdas    </h2> 
+
+      <p>A un grupo de celdas (incluso a una sola) se le puede asignar un nombre. Así,
+        podremos utilizarlo en lugar de las referencias a esas celdas.</p>
+
+      <p>Para realizar los trabajos relacionados con el nombre de las celdas se accede al
+        grupo Nombres definidos de la pestaña Fórmulas en la cinta de opciones:</p>
+
+        <p>
+          <div class="flexbox">
+           <img src="../Imagenes/Excel/Formulas_nombre_celdas.PNG" alt="", width="auto" height="auto">
+         </div>
+        </p>
+    </div>
 
 
 

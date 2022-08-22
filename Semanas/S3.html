@@ -565,7 +565,7 @@
 
 
         <div class="nota-box">
-        <h1 class="number-subtitle"> Administrar las hojas del libro  </h1> 
+        <h1 class="number-subtitle"> Formato hojas del libro  </h1> 
         <p>
           Es fundamental para mantener la claridad en nuestros libros de Excel saber administrar de una forma correcta las hojas
            (o páginas) que componen el libro.
@@ -918,7 +918,7 @@
 
 
         <div class="nota-box">
-          <h1 class="number-subtitle"> Formatos de celda </h1> 
+          <h1 class="number-subtitle"> Formato de celdas </h1> 
         
           <p>
             Aplicar un formato específico a las celdas se realiza únicamente para <b>resaltar su contenido</b> sobre las demás, por lo cual no 
@@ -926,7 +926,7 @@
             fichero se termina compartiendo con más personas que no han participado en su creación
           </p>
 
-        <h2 class="number-title"> Formatos de celda </h2>
+        <h2 class="number-title"> Formato de celda </h2>
         
 
 
@@ -993,7 +993,11 @@
 
         <p>
           El comando <b>Ajustar texto</b> ajusta automáticamente la altura de la fila para que el texto quepa por completo en la
-          celda sin modificar el ancho de la columna.
+          celda sin modificar el ancho de la columna. En otras palabras, si se activa la casilla Ajustar texto, Excel, distribuirá
+          un texto que es más ancho que una celda de modo que
+          no sobresalga de la columna, para lo cual, amplía la
+          altura de la fila y coloca el exceso de texto en varias
+          líneas dentro de la misma celda.
         </p>
 
         <h3>Saltos de línea manuales en una celda</h3>
@@ -1086,7 +1090,7 @@
         </div>
 
         <div class="nota-box">
-          <h1 class="number-subtitle"> Formatos de contenido </h1> 
+          <h1 class="number-subtitle"> Formato de contenido </h1> 
           <p>
             El contenido de una celda puede ser de distintos tipos: <b>números</b>, <b>texto</b>, <b>fechas</b>, <b>moneda</b>,
             <b>porcentaje</b>,... Por defecto las 
@@ -1144,7 +1148,14 @@
           
           <h2 class="number-title"> Formato del contenido personalizado </h2>
 
-          <p>
+          <p>No obstante, si ninguno de los códigos de formato le satisface, puede crear
+            uno propio con el elemento Personalizada, gracias al cual podrá diseñar sus
+            plantillas escribiéndolas en el cuadro de texto Tipo. Las plantillas
+            personalizadas pueden borrarse de la lista seleccionándolas y pulsando el
+            botón Eliminar, que aparece al elegir Personalizada.</p>
+          
+          
+            <p>
             Si abrimos la ventana con información del formato como se acaba de ver en el apartado anterior podemos ver 
             que la última de las categorías de formato de número es la “<b>Personalizada</b>”.
           </p>
@@ -1155,12 +1166,12 @@
           </p>  
           <p>
             Con esta categoría podemos crear el formato del contenido como nosotros queramos, cambiando el número de decimales, 
-            la forma de representación de los datos, el color…
+            la forma de representación de los datos, el color, etc.  Para la utilización del formato personalizado es fundamental
+             comprender la utilización de estos caracteres:
           </p>
 
           <p>
-            Para la utilización del formato personalizado es fundamental comprender la utilización de estos caracteres
-            (lee la descripción y mira después la tabla para ver un ejemplo de cómo funciona):
+           
           </p>
           <p>
           <table class="info">
@@ -1170,12 +1181,19 @@
                 </tr>
                 <tr>
                   <td> # Almohadilla</td>
-                  <td>Presenta únicamente los dígitos significativos; no presenta los ceros sin valor.</td>
+                  <td>Cada almohadilla (#) que se añada representa un dígito que puede no
+                    mostrarse si no tiene valor (por ejemplo, ceros a la izquierda de la parte
+                    entera o ceros a la derecha en la parte decimal).
+                    <!--Presenta únicamente los dígitos significativos; no presenta los ceros sin valor.--></td>
                 </tr>
 
                 <tr>
                   <td> 0 (Cero)</td>
-                  <td>Muestra los ceros sin valor si un número tiene menos dígitos que ceros en el formato.</td>
+                  <td>Cada cero (0) que se añada representa un dígito que Excel escribirá
+                    aunque se trate de un cero a la izquierda. Ejemplo: 0,00 indica un dígito
+                    entero y dos decimales (aunque sean cero) separados por coma.
+                    
+                    <!--Muestra los ceros sin valor si un número tiene menos dígitos que ceros en el formato.--></td>
                 </tr>
 
                 <tr>
@@ -1199,12 +1217,28 @@
                 </tr>
 
                 <tr>
+                  <td>" " (Comillas)</td>
+                  <td>Escriba entre comillas los datos que desee que acompañen a la cifra,
+                    delante o detrás de ésta. Por ejemplo, si se desea que la coletilla de la
+                    cifra sea cm (de centímetros) se escribe el formato numérico (por
+                    ejemplo #,##) seguido de “cm”.</td>
+                </tr>
+
+                <tr>
                   <td>[COLOR] </td>
-                  <td>Para definir el color del texto desde el formato personalizado hay que escribir el nombre del color entre corchetes.</td>
+                  <td>Si se desea, pueden añadirse colores tecleando el nombre del color entre
+                    corchetes antes de escribir el resto de la plantilla: [Rojo], [Verde],
+                    [Azul], [Amarillo], [Negro], [Aguamarina], [Fucsia] y [Blanco].
+                    <!-- Para definir el color del texto desde el formato personalizado hay que escribir el nombre del 
+                    color entre corchetes.--></td>
                 </tr>
             </table>
           </p>
 
+          <p>Se pueden teclear en un formato varias estructuras separadas por punto y coma.
+            La primera indica el aspecto que tendrán los números positivos, la segunda indica
+            el de los negativos, la tercera el que tendrán cuando en la celda se escriba un cero
+            y, por último, la cuarta el que tendrán cuando la celda se deje vacía.</p>
 
 
         <h2 class="number-title"> Utilización del apostrofe (')</h2>
