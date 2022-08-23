@@ -103,61 +103,70 @@
           celdas, estos son detectados de manera automática, el programa no 
           siempre interpreta de modo correcto lo que deseamos, y por eso es 
           necesario saber cómo lograr que cada dato se corresponda con su tipo 
-          específico. En esta sección, centraremos nuestra atención en identificar 
-          tres tipos de datos principales: números, texto y fechas.
+          específico. <!--En esta sección, centraremos nuestra atención en identificar 
+          tres tipos de datos principales: números, texto y fechas.-->
         </p>
 
         <h2 class="number-title"> Número</h2>
         <p>El tipo de datos numérico es el que más utilizaremos en nuestras 
-          planillas de cálculo. Al ingresar un número en una celda, el programa 
+          hojas de cálculo. Al ingresar un número en una celda, el programa 
           reconocerá el formato numérico y el valor aparecerá alineado a la 
-          derecha. Los principales aspectos que debemos tener en cuenta al 
+          derecha.
+          </p>
+
+          <p>
+          Los principales aspectos que debemos tener en cuenta al 
           ingresar números son los siguientes:</p>
         <p>
           <ul>
-          <li> Se admite como número a los caracteres del 0 al 9, la coma decimal 
-          (,) y el separador de miles (.). La función de estos últimos elementos 
+          <li> Se admite como número a los <b>caracteres del 0 al 9</b>, el <b>punto decimal</b> 
+          (.) y el <b>separador de miles</b> (,). La función de estos últimos elementos 
           podrán variar según la configuración regional del sistema operativo 
           de la computadora en la que estemos trabajando. 
           </li>
           <li>Si utilizamos el punto (.) del teclado numérico, este se tomará como 
-          separador decimal, al igual que la coma (,) del teclado alfanumérico. </li>
+          separador decimal, al igual que el punto (.) del teclado alfanumérico. </li>
           <li>El punto (.) que se encuentra en el teclado alfanumérico será 
-          considerado como separador de miles.</li> 
-          <li>Podemos agregar un signo monetario, como $ o €, al asignar un 
+          considerado como separador decimal.</li> 
+          <li>Podemos agregar un <b>signo monetario</b>, como <b>$</b> o <b>€</b>, al asignar un 
           formato de celda monetario.</li>
-          <li>El uso de los símbolos + (más), - (menos),
-            * (multiplicar) y / (dividir) junto con los 
+          <li>El uso de los símbolos <b>+</b> (más), <b>-</b> (menos),
+            <b>*</b> (multiplicar) y <b>/</b> (dividir) junto con los 
             números será interpretado como un cálculo 
             válido si ingresamos el signo = (igual) o + (más) 
-            adelante. Por ejemplo: =100*3,5</li>
-          <li>Un número seguido del signo % será tomado 
+            adelante. Por ejemplo: =100*3.5</li>
+          <li>Un número seguido del signo <b>%</b> será tomado 
             como porcentaje. Al ingresarlo, Excel 
             dividirá el valor por 100, pero mostrará el 
             número ingresado seguido de del signo %. 
+
+            <p>
             Por ejemplo, si escribimos 40%, eso es lo 
-            que veremos en la celda, aunque el valor numérico será 0,40. En 
-            cambio, si escribimos 40 y le aplicamos el singo % desde la cinta 
+            que veremos en la celda, aunque el valor numérico será 0.40. En 
+            cambio, si escribimos 40 y le aplicamos el signo % desde la cinta 
             de opciones, lo que veremos es 400%. Para que se muestre 40%, 
-            debemos escribir 0,40 y luego aplicar % desde la cinta</li>
+            debemos escribir 0,40 y luego aplicar % desde la cinta
+          </p></li>
         </ul>
         </p>
 
         <p><b>Observaciones:</b>
           <ol>
           <li>Como consideración general, siempre conviene ingresar los números 
-          sin ningún carácter adicional, solo con el signo menos (-) si correspondiese y la
-          coma decimal (,) si el número tuviera decimales. Por ejemplo: 100.000,00 debe 
+          sin ningún carácter adicional, solo con el signo menos (-) si correspondiese y el punto
+           decimal (.) si el número tuviera decimales. 
+           
+          <p>Por ejemplo: 100,000.00 debe 
           escribirse así: 100000. Luego, con los 
           formatos de celda podremos verlo con más 
-          o menos decimales, formato monetario, contabilidad, etc</li>
+          o menos decimales, formato monetario, contabilidad, etc</p></li>
           <li>Si los símbolos +, -, * y / no son precedidos 
             por el signo = se mostrarán en forma literal sin efectuarse la operación</li>
           </ol></p>
 
         <h2 class="number-title"> Texto</h2>
-        <p>El tipo de datos texto abarca las cadenas de caracteres 
-          alfanuméricos, es decir, conjuntos de letras, símbolos y números. Se 
+        <p>El tipo de datos texto abarca las <b>cadenas de caracteres 
+          alfanuméricos</b>, es decir, conjuntos de letras, símbolos y números. Se 
           utiliza, principalmente, para escribir nombres, rotular información y 
           describir características, entre otras posibilidades. </p>
 
@@ -173,9 +182,9 @@
         
         <h2 class="number-title"> Fecha y hora</h2>
 
-        <p>Excel utiliza como elementos separadores de fecha la barra (/) y 
+        <p>Excel utiliza como <b>elementos separadores de fecha</b> la barra (/) y 
           el guion (-). Al ingresar dos o tres números separados con alguno de 
-          estos caracteres, el programa los interpreta como fechas. Por ejempli, 
+          estos caracteres, el programa los interpreta como fechas. Por ejemplo, 
           si ingresamos 3/5, aparecerá 03-may del año en curso. En el caso de que 
           sea 25-2-13, veremos 25/02/2013</p>
 
@@ -210,46 +219,13 @@
           de fecha y hora, entre otras opciones. En los países de habla hispana, 
           las principales opciones predeterminadas suelen ser: fecha corta: 
           dd/mm/aaaa, símbolo decimal: , (coma), separador de miles: . (punto).
-        </p>
-        <h2 class="number-title"> Número</h2>
-
-
-
-
-        <p>
-          En una Hoja de cálculo, los distintos TIPOS DE DATOS que podemos introducir son:
-        </p>
-        <p>
-          <ol>
-            <li>
-            <b>Valores constantes</b> Un dato que se introduce directamente en una celda. Puede ser un número, una fecha 
-            u hora, o un texto. Si deseas una explicación más detallada sobre los valores constantes visita nuestro básico 
-            sobre los tipos de datos
-            </li>
-            <li><b>Fórmulas</b>una secuencia formada por: valores constantes, referencias a otras celdas, nombres, funciones, 
-              u operadores. Es una técnica básica para el análisis de datos. Se pueden realizar diversas operaciones con los
-               datos de las hojas de cálculo como +, -, *, /, Sen, Cos, etc. En una fórmula se pueden mezclar constantes, nombres,
-               referencias a otras celdas, operadores y funciones. La fórmula se escribe en la barra de fórmulas y debe empezar 
-               siempre por el signo =.</li>
-          </ol>
-        </p>
+        </p>        
       </div>
 
-      
-      <div class="nota-box">
-        <h1 class="number-subtitle"> </h1>
-
-        
-
-
-
-
-      </div>  
-      
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Barra de fórmulas</h1>
+      <h1 class="number-subtitle"> Barra de fórmulas</h1>
       <p>
         Cuando trabajamos con hojas de cálculo, introduciremos en ellas 
         datos de diferentes tipos, como números, fechas y textos; y para 
@@ -602,8 +578,168 @@
 
           <p><b>=Nombre de la función(argumento1;argumento2)</b></p>
 
+
+          <p>Podemos utilizar las funciones para realizar de manera rápida
+            distintos tipos de operaciones, tanto simples como complejas. Por
+            ejemplo, si queremos sumar los valores de las celdas C3 hasta C8,
+            podemos escribir la siguiente fórmula usando el operador suma (+):</p>
+
+          <p><b>=C3 + C4 + C5 + C6 + C7 + C8</b></p>
+
+          <p>También es posible usar la función SUMA y, como único argumento,
+              ingresar el rango que queremos sumar:</p>
+
+          <p><b>=SUMA(C3:C8)</b></p>
+
+          <p>Con ambas fórmulas llegamos al mismo resultado, pero resulta
+                mucho más sencillo y rápido utilizar la última.</p>
+
+
+          <p>Si una función requiere dos o más argumentos, los ingresamos
+            separándolos con punto y coma (;) o coma (,). Por ejemplo:</p>
+
+          <p><b>=CONSULTAV(A2; C2:D10; 2; FALSO)</b></p>
+
+          <p>Esta función contiene cuatro argumentos. La función MAX solo
+            necesita un argumento:</p>
+
+          <p><b>=MAX(A2:B4)</b></p>
+
+
+          <p><b>El número de argumentos varía para cada función. Incluso, hay
+            algunas que no requieren ningún argumento, sin que deje de ser
+            obligatorio para estas el uso de paréntesis. Por ejemplo: =HOY(), que
+            devuelve la fecha actual.</b></p>
+
+
+            <h2 class="number-title">Ventana Insertar función</h2>
+
+
+            <p>Sabemos que las diferentes funciones que presenta Excel se
+              encuentran agrupadas por categorías en la Biblioteca de funciones. Ahora
+              veremos cómo podemos utilizar una función.</p>
+
+              <p>Primero debemos ubicarnos en la celda donde queremos obtener el
+                resultado y, luego, pulsar el botón Insertar función, ya sea desde la Barra 
+                de fórmulas o desde la Biblioteca de funciones. A continuación, se abrirá
+                la ventana Insertar función, el asistente que nos guiará en el proceso de
+                creación de la sintaxis de la función.</p>
+
+                <p>
+                  <div class="flexbox">
+                    <img src="../Imagenes/Excel/" alt="Luego de elegir la función deseada, pulsamos Aceptar 
+                    e indicamos los valores", width="auto" height="auto">
+                  </div>
+                </p>
+
+                <p>Veamos las opciones que ofrece esta ventana:</p>
+
+                <ul>
+                  <li><b>Buscar una función:</b> en este cuadro podemos escribir el nombre
+                    de la función o una breve descripción del cálculo que queremos
+                    hacer, y luego, pulsamos el botón Ir. En el cuadro Seleccionar una
+                    función aparecerán listadas todas las funciones relacionas con la
+                    descripción que hemos ingresado.</li>
+                    <li><b>Seleccionar una categoría:</b> si conocemos la categoría a la que
+                    pertenece la función que buscamos, podemos desplegar el menú de
+                    esta sección y seleccionarla. A continuación, en el cuadro Seleccionar
+                    una función aparecerá el listado de las funciones que pertenecen a la
+                    categoría elegida. Si seleccionamos la categoría Todo, en el listado
+                    figurarán todas las funciones que posee Excel. Si elegimos Usadas
+                    recientemente, accederemos a las últimas funciones utilizadas.</li> 
+                    <li><b>Seleccionar una función:</b> en este sector podemos desplazarnos mediante
+                    la barra derecha para buscar la función. Si seleccionamos cualquiera
+                    de las funciones, debajo aparecerá su descripción y sintaxis.</li>
+                </ul>
+
+          <p>Una vez que elegimos la función, pulsamos Aceptar y se abrirá la
+            ventana Argumentos de función, que nos indicará la cantidad y el tipo
+            de argumentos requeridos. Aquí podremos ingresar un valor, una
+            referencia de celda o minimizar la ventana y directamente seleccionar
+            la celda o el rango en la hoja de cálculo.</p>
+
+            <p>
+              <div class="flexbox">
+                <img src="../Imagenes/Excel/" alt="Luego de elegir la función deseada, pulsamos Aceptar 
+                e indicamos los valores", width="auto" height="auto">
+              </div>
+            </p>
+
+           <p>En la celda donde comenzamos el proceso para insertar la función
+            aparecerá el resultado, y si nos colocamos en ella, podremos ver la
+            sintaxis de la función en la Barra de fórmulas.</p>
+
+            <h2 class="number-title">Distintas formas de insertar funciones</h2>
+
+            <p>En Excel podemos insertar funciones de diferentes maneras.
+              Veremos cuáles son las posibilidades y analizaremos las características
+              y las ventajas de cada una.</p>
+
+
+            <h3>• Desde la celda:</h3>
+            <p>esta es la opción más rápida para crear una
+              función, pero también la que requiere un poco más de experiencia
+              de nuestra parte. Para escribir directamente la función, debemos
+              hacer un clic en la celda donde queremos insertarla, ingresar el
+              signo igual (=) desde el teclado y, a continuación, el nombre de 
+              la función. Al ingresar la primera letra del nombre de la función,
+              aparecerá un asistente con el listado de las funciones que
+              comienzan con esa letra. Si hacemos un clic sobre el nombre de
+              alguna de estas funciones, veremos un pequeño cuadro que nos
+              indicará qué operación realiza. Para elegir una función, debemos
+              hacer doble clic sobre ella.
+              Una vez que la seleccionamos, en la celda, a continuación del
+              nombre, aparecerá un paréntesis de apertura y una indicación de
+              los argumentos que necesita la función. Seleccionamos el rango de
+              celdas para completar los argumentos y pulsamos ENTER.
+            </p>
+            <h3>Barra de fórmulas:</h3>  
+            <p>primero debemos seleccionar la celda donde
+              queremos ingresar la función, luego hacemos un clic en el símbolo
+              de Insertar función de la Barra de fórmulas. Se abrirá la ventana Insertar
+              función, que nos guía en el armado de la función.</p>
+            <h3>Biblioteca de funciones: </h3>
+            <p>desde la ficha Fórmulas de la cinta de opciones,
+              accedemos al grupo Biblioteca de funciones. Aquí podemos utilizar el
+              botón Insertar función, que abrirá la ventana del mismo nombre, o
+              bien desplegar los botones de cada categoría, seleccionar la función
+              que buscamos y luego, completar los argumentos requeridos dentro
+              de la ventana Argumentos de función.</p>
+
+            <h3>Botón Autosuma:</h3>
+            <p>se encuentra en el grupo Modificar de la ficha
+              Inicio. Si lo pulsamos directamente, inserta la función SUMA, pero
+              si hacemos un clic en la flecha de la derecha para desplegar el
+              menú, podemos elegir otras funciones, como PROMEDIO, CONTAR,
+              MÁXIMO y MÍNIMO, o también acceder a la ventana Insertar función, si
+              seleccionamos la opción Más funciones....</p>
+
     </div>
 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Suma, Máximo, Mínimo y Promedio</h1> 
+
+      <p>Luego de hacer una introducción en el concepto de función, veremos
+        cómo trabajar con algunas funciones sencillas para entender de
+        manera más clara su lógica y aplicación. Antes de ponerlas en práctica,
+        repasaremos algunos conceptos.</p>
+
+      <p>La función SUMA adiciona el valor de todos los argumentos
+        ingresados. Estos argumentos pueden ser:</p>
+
+      <ul>
+        <li><b> Valores numéricos:</b> =SUMA(13;26)</li>
+        <li><b>Referencias de celda:</b> =SUMA(A2;B2;C2)</li>
+        <li><b>Rangos: =SUMA(A1:C3;B2:B4)</b></li>
+        <li><b>Otras funciones:</b> =SUMA(MAX(A2:A4), MIN(A2:A4)</li>
+        <li><b>Una combinación de todo lo anterior</b></li>
+      </ul>
+
+      <p>Desde luego, las referencias deben ser a celdas que contengan valores
+        numéricos. De manera análoga, la función PROMEDIO calcula el promedio
+        aritmético de todos los argumentos. La función MAX devuelve el valor
+        más alto de todos los argumentos y MIN devuelve el menor valor.</p>
+    </div>
 
 
 
