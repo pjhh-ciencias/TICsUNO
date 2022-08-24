@@ -85,229 +85,647 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox">Excel</h1>
     
-      <div class="nota-box">
-      <h1 class="number-subtitle"> Funciones básicas</h1>
 
-      <p>Excel posee una gran cantidad de funciones
-        para diferentes usos. Conocer algunas de ellas
-        con profundidad nos permitirá <b>resolver tareas
-        complejas con sencillez</b>.</p>
 
-        <p>Una de las características que hacen de Excel
-          una herramienta tan potente (y fascinante) es la
-          interminable variedad de formas en que podemos
-          <b>combinar las funciones en fórmulas</b>,
-          creando soluciones eficaces que nos permitirán
-          resolver problemas complejos con rapidez. 
-          Las funciones son muy versátiles, ya que pueden 
-          emplearse en diversos lugares, aunque suelen 
-          acoplarse siempre a las celdas de la hoja de
-          cálculo. </p>
 
-      <p>Cuando se desea comenzar
-        a escribir una función en una celda debemos teclear el símbolo = (igual a). A continuación,
-        se escribe (sin espacios intermedios) el nombre de la función y, por último, si la función lo
-        necesita, escribiremos (también sin espacios) datos entre paréntesis:</p>
-        
-        <center><b>=Nombre_funcion(datos).</b></center>
+    
+  <div class="nota-box">
+    <h1 class="number-subtitle"> Operadores de cálculo y prioridad en Excel</h1>
+ <p>Los operadores especifican el tipo de cálculo que desea realizar en los 
+  elementos de una fórmula, como suma, resta, multiplicación o división</p>
 
-        <h2 class="number-title"> Qué es una función</h2>
-        
-        <p>Las <b>funciones son fórmulas predefinidas</b> que utilizan valores en una
-          estructura u orden específico para realizar cálculos, y devuelven un
-          resultado. Los valores reciben el nombre de <b>argumentos</b>, y el orden o
-          estructura es la <b>sintaxis de la función</b>.</p>
+  <p>Existen cuatro tipos de operadores de cálculo: <b>aritmético</b>, <b>comparación</b>, 
+    <b>concatenación de texto</b> y <b>referencia</b>.</p>
 
-        <ul>
-          <li>
-        <p>
-          Los argumentos pueden ser números, texto, referencias a celdas,
-          valores constantes, fórmulas u otras funciones.
-        </p>
-          </li>
 
-          <li>
-          <p>La sintaxis de una función debe contener los siguientes elementos y
-          en el orden que detallamos:
-          </p>
-          </li>
-        
+    <h2 class="number-title"> Operadores aritméticos</h2>
+
+  <p>Para realizar operaciones matemáticas básicas como <b>suma</b>, <b>resta</b> o <b>multiplicación</b> 
+    (o para combinar números) y <b>generar resultados numéricos</b>, use los operadores aritméticos de esta tabla.  
+  </p>
+
+<p>
+  <table class="info">
+    <thead>
+      <tr>
+        <th>
           <p>
-            <ol>
-              <li>El signo igual (=)</li>
-              <li>El nombre de la función.</li>
-              <li>Paréntesis de apertura.</li>
-              <li>Los argumentos separados por punto y coma (;) o coma (,). Esto
-              dependerá de la configuración regional del sistema operativo.</li>
-              <li>Paréntesis de cierre.</li>
-            </ol>
+            <b class="ocpLegacyBold">Operador aritmético</b>
           </p>
-        </ul>
-
-          <p>Cualquiera sea la función que utilicemos, esta siempre deberá
-            respetar la siguiente estructura:
+        </th>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Significado</b>
           </p>
+        </th>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Ejemplo</b>
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>+ (signo más)</p>
+        </td>
+        <td>
+          <p>Suma</p>
+        </td>
+        <td>
+          <p>=3+3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>– (signo menos)</p>
+        </td>
+        <td>
+          <p>Resta<br>
+Negación</p>
+        </td>
+        <td>
+          <p>=3–1<br>
+=–1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>* (asterisco)</p>
+        </td>
+        <td>
+          <p>Multiplicación</p>
+        </td>
+        <td>
+          <p>=3*3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>/ (barra oblicua)</p>
+        </td>
+        <td>
+          <p>División</p>
+        </td>
+        <td>
+          <p>=3/3</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>% (signo de porcentaje)</p>
+        </td>
+        <td>
+          <p>Porcentaje</p>
+        </td>
+        <td>
+          <p>=20 %</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>^ (acento circunflejo)</p>
+        </td>
+        <td>
+          <p>Exponenciación</p>
+        </td>
+        <td>
+          <p>=2^3</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-          <center><b>=Nombre_funcion(argumento1;argumento2)</b></center>
+</p>
+
+<h2 class="number-title"> Operadores de comparación</h2>
+
+<p>Con los operadores de la tabla siguiente, puede comparar dos valores. Cuando se comparan dos valores mediante
+   estos operadores, el <b>resultado es un valor lógico</b>, ya sea <b>VERDADERO o FALSO</b>.
+</p>
+
+<p>
+  <table class="info">
+    <thead>
+      <tr>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Operador de comparación</b>
+          </p>
+        </th>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Significado</b>
+          </p>
+        </th>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Ejemplo</b>
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>= (signo igual)</p>
+        </td>
+        <td>
+          <p>Igual a</p>
+        </td>
+        <td>
+          <p>=A1=B1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&gt; (signo mayor que)</p>
+        </td>
+        <td>
+          <p>Mayor que</p>
+        </td>
+        <td>
+          <p>=A1&gt;B1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&lt; (signo menor que)</p>
+        </td>
+        <td>
+          <p>Menor que</p>
+        </td>
+        <td>
+          <p>=A1&lt;B1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&gt;= (signo mayor o igual que)</p>
+        </td>
+        <td>
+          <p>Mayor o igual que</p>
+        </td>
+        <td>
+          <p>=A1&gt;=B1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&lt;= (signo menor o igual que)</p>
+        </td>
+        <td>
+          <p>Menor o igual que</p>
+        </td>
+        <td>
+          <p>=A1&lt;=B1</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&lt;&gt; (signo distinto de)</p>
+        </td>
+        <td>
+          <p>No es igual a</p>
+        </td>
+        <td>
+          <p>=A1&lt;&gt;B1</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</p>
 
 
-          <p>Podemos utilizar las funciones para realizar de manera rápida
-            distintos tipos de operaciones, tanto simples como complejas.</p>
+<h2 class="number-title"> Operadores de concatenación de texto</h2>
+Use la y comercial (&) para unir o concatenar una o más cadenas de texto para generar un único fragmento de texto.
+<p>
+<table class="info">
+  <thead>
+    <tr>
+      <th>
+        <p>
+          <b class="ocpLegacyBold">Operador de texto</b>
+        </p>
+      </th>
+      <th>
+        <p>
+          <b class="ocpLegacyBold">Significado</b>
+        </p>
+      </th>
+      <th>
+        <p>
+          <b class="ocpLegacyBold">Ejemplo</b>
+        </p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>&amp; ("y" comercial)</p>
+      </td>
+      <td>
+        <p>Conecta o concatena dos valores para generar un valor de texto continuo.</p>
+      </td>
+      <td>
+        <p>="North"&amp;"wind"</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+
+<h2 class="number-title"> Operadores de referencia</h2></button></h2>
             
-            <p><b>Ejemplo:</b> Si queremos sumar los valores de las celdas C3 hasta C8,
-            podemos escribir la siguiente fórmula usando el operador suma (+):</p>
+      <p>Combine rangos de celdas para los cálculos con estos operadores.</p>
 
-          <center><b>=C3 + C4 + C5 + C6 + C7 + C8</b></center>
-
-          <p>También es posible usar la función SUMA y, como único argumento,
-              ingresar el rango que queremos sumar:</p>
-
-          <center><b>=SUMA(C3:C8)</b></center>
-
-          <p>Con ambas fórmulas llegamos al mismo resultado, pero resulta
-                mucho más sencillo y rápido utilizar la última.</p>
-
-
-          <p>Si una función requiere dos o más argumentos, los ingresamos
-            separándolos con punto y coma (;) o coma (,). 
-            <b>El número de argumentos varía para cada función</b>. Incluso, hay
-            algunas que no requieren ningún argumento, sin que deje de ser
-            obligatorio para estas el uso de paréntesis. Por ejemplo: <b>=HOY()</b>, que
-            devuelve la fecha actual.</p>
-
-
-            <h2 class="number-title"> Ventana Insertar función</h2>
-
-
-            <p>Sabemos que las diferentes funciones que presenta Excel se
-              encuentran agrupadas por categorías en la <b>Biblioteca de funciones</b>. Ahora
-              veremos cómo podemos utilizar una función.</p>
-
-              <p>Primero debemos ubicarnos en la celda donde queremos obtener el
-                resultado y, luego, pulsar el botón Insertar función, ya sea desde la Barra 
-                de fórmulas o desde la Biblioteca de funciones. A continuación, se abrirá
-                la ventana Insertar función, el asistente que nos guiará en el proceso de
-                creación de la sintaxis de la función.</p>
-
-                <p>
-                  <div class="flexbox">
-                    <img src="../Imagenes/Excel/" alt="Luego de elegir la función deseada, pulsamos Aceptar 
-                    e indicamos los valores", width="auto" height="auto">
-                  </div>
-                </p>
-
-                <p>Veamos las opciones que ofrece esta ventana:</p>
-
-                <ul>
-                  <li><b>Buscar una función:</b> en este cuadro podemos escribir el nombre
-                    de la función o una breve descripción del cálculo que queremos
-                    hacer, y luego, pulsamos el botón Ir. En el cuadro Seleccionar una
-                    función aparecerán listadas todas las funciones relacionas con la
-                    descripción que hemos ingresado.</li>
-                    <li><b>Seleccionar una categoría:</b> si conocemos la categoría a la que
-                    pertenece la función que buscamos, podemos desplegar el menú de
-                    esta sección y seleccionarla. A continuación, en el cuadro Seleccionar
-                    una función aparecerá el listado de las funciones que pertenecen a la
-                    categoría elegida. Si seleccionamos la categoría Todo, en el listado
-                    figurarán todas las funciones que posee Excel. Si elegimos Usadas
-                    recientemente, accederemos a las últimas funciones utilizadas.</li> 
-                    <li><b>Seleccionar una función:</b> en este sector podemos desplazarnos mediante
-                    la barra derecha para buscar la función. Si seleccionamos cualquiera
-                    de las funciones, debajo aparecerá su descripción y sintaxis.</li>
+              <table class="banded">
+                <thead>
+                  <tr>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">Operador de referencia</b>
+                      </p>
+                    </th>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">Significado</b>
+                      </p>
+                    </th>
+                    <th>
+                      <p>
+                        <b class="ocpLegacyBold">Ejemplo</b>
+                      </p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>: (dos puntos)</p>
+                    </td>
+                    <td>
+                      <p>Operador de rango, que genera una referencia a todas las celdas entre dos referencias, estas incluidas</p>
+                    </td>
+                    <td>
+                      <p>=SUMA(B5:B15)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>. (punto)</p>
+                    </td>
+                    <td>
+                      <p>Operador de unión, que combina varias referencias en una sola.</p>
+                    </td>
+                    <td>
+                      <p>=SUMA(B5:B15;D5:D15)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>(espacio)</p>
+                    </td>
+                    <td>
+                      <p>Operador de intersección, que genera una referencia a las celdas comunes a las dos referencias.</p>
+                    </td>
+                    <td>
+                      <p>=SUMA(B7:D7 C6:C8)</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p># (libra)</p>
+                    </td>
+                    <td>
+                      <p>El símbolo # se usa en varios contextos:</p>
+                      <ul>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>Se usa como parte de un nombre de error.</p>
+                        <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>Se usa para indicar que no hay suficiente espacio para representar. En la mayoría de los casos, puede ampliar la columna hasta que el contenido se muestre correctamente.</p>
+                        <meta itemprop="position" content="2">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>Operador de rango desbordado, que se usa para hacer referencia a un rango completo en una <a href="/es-es/office/f%C3%B3rmulas-de-matriz-din%C3%A1micas-y-comportamiento-de-matriz-desbordada-205c6b06-03ba-4151-89a1-87a7eb36e531" class="ocpArticleLink">fórmula de matriz dinámica</a>.</p>
+                        <meta itemprop="position" content="3">
+                  </li>
                 </ul>
+                    </td>
+                    <td>
+                      <p></p>
+                      <ul>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>#¡VALOR!</p>
+                        <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>#####</p>
+                          <p></p>
+                        <meta itemprop="position" content="2">
+                  </li>
+                  <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <p>=SUMA(A2#)</p>
+                        <meta itemprop="position" content="3">
+                  </li>
+                </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>@ (a las)</p>
+                    </td>
+                    <td>
+                      <p>Operador de referencia, que se usa para indicar una intersección implícita en una fórmula. </p>
+                    </td>
+                    <td>
+                      <p>=@A1:A10</p>
+                      <p>=SUMA(Tabla1[@[Enero]:[Diciembre]])</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-          <p>Una vez que elegimos la función, pulsamos Aceptar y se abrirá la
-            ventana Argumentos de función, que nos indicará la cantidad y el tipo
-            de argumentos requeridos. Aquí podremos ingresar un valor, una
-            referencia de celda o minimizar la ventana y directamente seleccionar
-            la celda o el rango en la hoja de cálculo.</p>
+             
+   
+   <h2 class="number-title"> Prioridad de operadores</h2>
 
-            <p>
-              <div class="flexbox">
-                <img src="../Imagenes/Excel/" alt="Luego de elegir la función deseada, pulsamos Aceptar 
-                e indicamos los valores", width="auto" height="auto">
-              </div>
-            </p>
-
-           <p>En la celda donde comenzamos el proceso para insertar la función
-            aparecerá el resultado, y si nos colocamos en ella, podremos ver la
-            sintaxis de la función en la Barra de fórmulas.</p>
-
-            <h2 class="number-title">Distintas formas de insertar funciones</h2>
-
-            <p>En Excel podemos insertar funciones de diferentes maneras.
-              Veremos cuáles son las posibilidades y analizaremos las características
-              y las ventajas de cada una.</p>
+<p>Si se combinan varios operadores en una única fórmula, Excel ejecutará las operaciones en el orden que se indica en la 
+  siguiente tabla. Si una fórmula contiene operadores con la misma prioridad (por ejemplo, si una fórmula contiene un
+   operador de multiplicación y otro de división), Excel evaluará los operadores de izquierda a derecha.</p>
 
 
-            <h3>• Desde la celda:</h3>
-            <p>esta es la opción más rápida para crear una
-              función, pero también la que requiere un poco más de experiencia
-              de nuestra parte. Para escribir directamente la función, debemos
-              hacer un clic en la celda donde queremos insertarla, ingresar el
-              signo igual (=) desde el teclado y, a continuación, el nombre de 
-              la función. Al ingresar la primera letra del nombre de la función,
-              aparecerá un asistente con el listado de las funciones que
-              comienzan con esa letra. Si hacemos un clic sobre el nombre de
-              alguna de estas funciones, veremos un pequeño cuadro que nos
-              indicará qué operación realiza. Para elegir una función, debemos
-              hacer doble clic sobre ella.
-              Una vez que la seleccionamos, en la celda, a continuación del
-              nombre, aparecerá un paréntesis de apertura y una indicación de
-              los argumentos que necesita la función. Seleccionamos el rango de
-              celdas para completar los argumentos y pulsamos ENTER.
-            </p>
-            <h3>Barra de fórmulas:</h3>  
-            <p>primero debemos seleccionar la celda donde
-              queremos ingresar la función, luego hacemos un clic en el símbolo
-              de Insertar función de la Barra de fórmulas. Se abrirá la ventana Insertar
-              función, que nos guía en el armado de la función.</p>
-            <h3>Biblioteca de funciones: </h3>
-            <p>desde la ficha Fórmulas de la cinta de opciones,
-              accedemos al grupo Biblioteca de funciones. Aquí podemos utilizar el
-              botón Insertar función, que abrirá la ventana del mismo nombre, o
-              bien desplegar los botones de cada categoría, seleccionar la función
-              que buscamos y luego, completar los argumentos requeridos dentro
-              de la ventana Argumentos de función.</p>
+</div>
 
-            <h3>Botón Autosuma:</h3>
-            <p>se encuentra en el grupo Modificar de la ficha
-              Inicio. Si lo pulsamos directamente, inserta la función SUMA, pero
-              si hacemos un clic en la flecha de la derecha para desplegar el
-              menú, podemos elegir otras funciones, como PROMEDIO, CONTAR,
-              MÁXIMO y MÍNIMO, o también acceder a la ventana Insertar función, si
-              seleccionamos la opción Más funciones....</p>
 
-    </div>
+<div class="nota-box">
+  <h1 class="number-subtitle">Orden en que Excel ejecuta las operaciones en las fórmulas </h1>
 
-    <div class="nota-box">
-      <h1 class="number-subtitle"> Suma, Máximo, Mínimo y Promedio</h1> 
 
-      <p>Luego de hacer una introducción en el concepto de función, veremos
-        cómo trabajar con algunas funciones sencillas para entender de
-        manera más clara su lógica y aplicación. Antes de ponerlas en práctica,
-        repasaremos algunos conceptos.</p>
+<p>En algunos casos, el orden en el que se realiza el cálculo puede afectar al valor devuelto de la fórmula,
+   por lo que es importante comprender el orden y cómo puede cambiar el orden para obtener los resultados que espera ver.</p>
 
-      <p>La función SUMA adiciona el valor de todos los argumentos
-        ingresados. Estos argumentos pueden ser:</p>
 
-      <ul>
-        <li><b> Valores numéricos:</b> =SUMA(13;26)</li>
-        <li><b>Referencias de celda:</b> =SUMA(A2;B2;C2)</li>
-        <li><b>Rangos: =SUMA(A1:C3;B2:B4)</b></li>
-        <li><b>Otras funciones:</b> =SUMA(MAX(A2:A4), MIN(A2:A4)</li>
-        <li><b>Una combinación de todo lo anterior</b></li>
-      </ul>
+<h2 class="number-title">Orden de calculo</h2>
 
-      <p>Desde luego, las referencias deben ser a celdas que contengan valores
-        numéricos. De manera análoga, la función PROMEDIO calcula el promedio
-        aritmético de todos los argumentos. La función MAX devuelve el valor
-        más alto de todos los argumentos y MIN devuelve el menor valor.</p>
-    </div>
+<p>Las fórmulas calculan los valores en un orden específico. Las fórmulas de Excel siempre comienzan por un signo igual (=). 
+  El signo igual indica a Excel que los caracteres siguientes constituyen una fórmula. Después de este signo igual, 
+  puede haber una serie de elementos que se van a calcular (los operandos), que están separados por operadores de cálculo.
+   Excel calcula la fórmula de izquierda a derecha, según el orden específico de cada operador de la fórmula.</p>
 
 
 
-        
+
+
+
+   <table class="banded">
+    <thead>
+      <tr>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Operador</b>
+          </p>
+        </th>
+        <th>
+          <p>
+            <b class="ocpLegacyBold">Descripción</b>
+          </p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <p>: (dos puntos)</p>
+          <p>(un solo espacio)</p>
+          <p>. (punto)</p>
+        </td>
+        <td>
+          <p>Operadores de referencia</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>–</p>
+        </td>
+        <td>
+          <p>Negación (como en –1)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>%</p>
+        </td>
+        <td>
+          <p>Porcentaje</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>^</p>
+        </td>
+        <td>
+          <p>Exponenciación</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>* y /</p>
+        </td>
+        <td>
+          <p>Multiplicación y división</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>+ y -</p>
+        </td>
+        <td>
+          <p>Suma y resta</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>&amp;</p>
+        </td>
+        <td>
+          <p>Conecta dos cadenas de texto (concatenación)</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>=<br>
+&lt; &gt;<br>
+&lt;=<br>
+&gt;=<br>
+&lt;&gt;</p>
+        </td>
+        <td>
+          <p>Comparación</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<h2>Uso de paréntesis</h2>
+
+<p>
+Para cambiar el orden de evaluación, escriba entre paréntesis la parte de la fórmula que se calculará en primer lugar. 
+Por ejemplo, la siguiente fórmula da como resultado el valor de 11, porque Excel calcula la multiplicación antes que
+la suma. La fórmula multiplica primero 2 por 3 y después suma 5 al resultado.
+</p>
+<center>
+<b>=5+2*3</b>
+</center>
+
+<p>
+Por el contrario, si usa paréntesis para cambiar la sintaxis, Excel suma 5 y 2 y, a continuación, multiplica el resultado
+por 3 para producir 21.
+</p>
+<center>
+<b>=(5+2)*3</b>
+</center>
+
+<p>
+En el ejemplo siguiente, los paréntesis que encierran la primera parte de la fórmula obligarán a Excel a calcular
+ B4+25 en primer lugar y, a continuación, dividirá el resultado por la suma de los valores de las celdas D5, E5 y F5.
+</p>
+
+<center><b>=(B4+25)/SUMA(D5:F5)</b></center>
+  </div>
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle"> Cómo Excel convierte los valores de las fórmulas</h1>
+
+
+   <p>
+    Al escribir una fórmula, Excel espera tipos específicos de valores para cada operador. Si escribe un tipo de valor
+    diferente del esperado, Excel puede convertir el valor
+   </p>
+
+   <table class="banded">
+    <tbody>
+      <tr>
+        <td>
+          <p>
+            <b class="ocpLegacyBold">La fórmula </b>
+          </p>
+        </td>
+        <td>
+          <p>
+            <b class="ocpLegacyBold">Produce</b>
+          </p>
+        </td>
+        <td>
+          <p>
+            <b class="ocpLegacyBold">Explicación </b>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>= "1"+"2"</p>
+        </td>
+        <td>
+          <p>3</p>
+        </td>
+        <td>
+          <p>Al usar un signo más (+), Excel espera números en la fórmula. Aunque las comillas significan que "1" y "2" son valores de texto, Excel convierte automáticamente los valores de texto en números.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>= 1+"$4,00"</p>
+        </td>
+        <td>
+          <p>5</p>
+        </td>
+        <td>
+          <p>Cuando una fórmula espera un número, Excel convierte texto si está en un formato que normalmente se aceptaría para un número.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>= "1/6/2001"-"1/5/2001"</p>
+        </td>
+        <td>
+          <p>31</p>
+        </td>
+        <td>
+          <p>Excel interpreta el texto como una fecha en formato mm/dd/aaaa, convierte las fechas en números de serie y luego calcula la diferencia entre ellas.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>=RAIZ ("8+1")</p>
+        </td>
+        <td>
+          <p>#¡VALOR!</p>
+        </td>
+        <td>
+          <p>Excel no se puede convertir el texto en un número porque el texto "8+1" no se puede convertir en número. Puede usar "9" o "8"+"1" en lugar de "8+1" para convertir el texto en un número y devolver el resultado de 3.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>= "A"&amp;VERDADERO</p>
+        </td>
+        <td>
+          <p>ATRUE</p>
+        </td>
+        <td>
+          <p>Cuando se espera texto, Excel convierte números y valores lógicos como VERDADERO y FALSO en texto.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle">Validación de datos</h1>
+
+
+</div>
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle">Creación de gráficos</h1>
+
+
+</div>
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle">Numeración de páginas en las hojas</h1>
+
+
+</div>
+
+
+
+  
+<div class="nota-box">
+  <h1 class="number-subtitle">Impresión</h1>
+
+<h2 class="number-title"> Configuración de páginas </h2>
+
+
+<h2 class="number-title">Numeración de páginas</h2>
+</div>
+
 
 
 
