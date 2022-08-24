@@ -15,6 +15,8 @@
 
 
     <!-- Next part is for new coomands -->
+
+    <!--
     <script>
       window.MathJax = {
         tex: {
@@ -27,7 +29,7 @@
         }
       };
     </script>
-
+-->
     <!-- This part is for using single $ for latex input, instead of \(\) -->
     <!--<script>
         MathJax = {
@@ -84,17 +86,14 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox"></h1>
 
-
-    
-
     <div class="nota-box">
       <h1 class="number-subtitle"> Ingresar, editar y borrar datos</h1>
 
       <p>Al comenzar un documento  nuevo en Excel, la celda activa es la <b>A1</b>. Si 
         escribimos un número o un texto, estamos ingresando datos en ella. 
         Así de sencillo resulta registrar datos. Vamos a familiarizarnos con 
-        esta tarea y a aprender, además, a modificar el contenido presente o a 
-        eliminarlo, según nuestras necesidades</p>
+        esta tarea y a aprender, además, a <b>modificar</b> el contenido presente o a 
+        <b>eliminarlo</b>, según nuestras necesidades.</p>
 
       <h2 class="number-title"> Ingreso</h2>
 
@@ -243,6 +242,7 @@
 
     <div class="nota-box">
       <h1 class="number-subtitle"> Grupo portapapeles</h1> 
+
     <p>
       Es el primero de todos los grupos en la ficha <b>Inicio</b>. Aunque su uso es muy frecuente pues resulta una herramienta 
       bastante util casi nunca se accede a estos comandos a través del grupo en la barra superior de la pantalla, sino a
@@ -449,6 +449,11 @@
       
   
     <h2 class="number-title"> Copiar celdas utilizando el Portapapeles</h2> 
+
+    
+    <p>El <b>Portapapeles</b> es una carpeta temporal donde se almacena la 
+      información que cortamos y copiamos en las diferentes aplicaciones 
+      de Windows.</p>
 
     <p>
       Con el <b>Portapapeles</b> podremos pegar hasta <b>24 objetos almacenados</b> en él con sucesivas copias. 
@@ -896,9 +901,69 @@
       
     <div class="nota-box">
       <h1 class="number-subtitle"> Referencias</h1> 
-    <p>Las fórmulas pueden contener, aparte de datos numéricos simples, referencias a
-      datos de otras celdas</p>
 
+    <p>Las <b>referencias</b> son indispensables para trabajar 
+      con las fórmulas y las funciones. Las fórmulas pueden contener,
+      aparte de datos numéricos simples, referencias a
+      datos de otras celdas
+    </p>
+
+
+    <h2 class="number-title"> Referencia a una celda</h2>
+
+    <p>Sabemos que una celda puede contener datos de tipo <em>texto</em>, 
+      <em>números</em>, <em>fechas</em>, <em>horas</em> y, también, 
+      <em>fórmulas</em> y <em>funciones</em>. Estos datos 
+      pueden ser ingresados por nosotros o generarse como resultado de 
+      aplicar una fórmula o función. En este último caso, los datos harán 
+      referencia al contenido de otra celda y serán <b>dependientes</b>. Entonces, 
+      tendremos una <b>celda de origen</b> y una <b>celda dependiente</b>. 
+      Al cambiar el contenido de la celda de origen, las celdas que dependan
+      de esta se actualizarán automáticamente. Para hacer referencia a una celda, nos 
+      ubicamos en la celda dependiente, ingresamos el signo igual (=)  y,
+      a continuación, seleccionamos la celda o escribimos el 
+      nombre de la celda de origen. Por ejemplo: <b>=A2</b>.</p>
+
+      
+
+      <p>En Excel existen tres tipos de referencias: relativas, absolutas y 
+        mixtas. A continuación las veremos en detalle</p>
+
+
+      <h2 class="number-title"> Referencias relativas</h2>
+
+      <p>Una <b>referencia relativa</b> es aquella que se modifica al cambiar la 
+        posición de la celda dependiente (que contiene la fórmula). En este 
+        caso, como la ubicación de la celda de origen es relativa a la celda 
+        de destino, cuando cambia una, también cambia la otra. Es decir, si 
+        copiamos y pegamos una fórmula a otra celda, cambiará la celda de 
+        origen a la que se hace referencia
+      </p>
+
+      <p>
+        <div class="flexbox">
+         <img src="../Imagenes/Excel/" alt="Al copiar el contenido de la celda B3 (que hace referencia 
+         a A1) y pegarlo en B7 automáticamente cambia la referencia a la celda A5.",
+         width="auto" height="auto">
+       </div>
+      </p>
+
+      <p>
+        <b>Observaciones:</b>
+        <ul><li> Cuando copiamos y pegamos una fórmula en otra celda de la misma 
+          columna, se modificará el número de la fila de la referencia, según la 
+          posición relativa entre la celda de destino y la celda de origen. </li>
+        <li>Cuando copiamos y pegamos una fórmula en una celda de la 
+          misma fila, cambiará de manera automática la letra de la columna 
+          de la referencia, de acuerdo con la posición relativa entre la celda 
+          de destino y la celda de origen.</li></ul>
+      </p>
+      
+      
+      <p>De manera predeterminada, cuando copiamos y pegamos una 
+        fórmula, Excel utiliza referencias relativas</p>
+    
+      <!--
       <p>
         En la imagen siguiente  obsérvemos que en la barra de fórmulas aparece el dato =B2+4^C3, que utilizará el
  dato contenido en B2 (15) para sumárselo a 4 elevado a 2 (dato que aparece en C3). El resultado
@@ -932,6 +997,66 @@
          <img src="../Imagenes/Excel/Referencia_celdas.PNG" alt="", width="auto" height="auto">
        </div>
       </p>
+      -->
+
+      <h2 class="number-title"> Referencias absolutas </h2>
+
+      <p>Una <b>referencia absoluta</b> siempre refiere a una celda de origen 
+        determinada. Por eso, la utilizamos cuando queremos copiar y pegar 
+        una fórmula a otra celda y mantener la referencia a la celda de origen.</p>
+
+        <p>Para esto, debemos fijar la referencia anteponiendo el signo de pesos 
+          ($) a la letra de la columna y al número de la fila. Por ejemplo: <b>=$A$2</b>.</p>
+
+        <p>
+          <div class="flexbox">
+           <img src="../Imagenes/Excel/" alt="Copiamos el contenido de la celda B3 
+           y lo pegamos en B7. En este caso, la celda de referencia A1 
+           se mantiene, porque es una referencia absoluta.",
+           width="auto" height="auto">
+         </div>
+        </p>
+
+        <p>Esta tarea se puede realizar de dos maneras distintas:</p>
+
+        <ol><li><b>Manual:</b> hacemos doble clic sobre la celda que contiene la fórmula 
+          y, desde el teclado, ingresamos el signo $ antes de la letra y del 
+          número de la referencia. También podemos ubicarnos sobre la 
+          celda que contiene la fórmula y agregar el signo $ desde la Barra de 
+          fórmulas. En ambos casos, luego pulsamos ENTER. 
+        </li>
+        <li><b>Tecla F4:</b> hacemos doble clic sobre la celda que contiene la fórmula 
+          o hacemos un clic sobre la Barra de fórmulas, pulsamos F4 en el 
+          teclado y luego, ENTER o el botón Introducir.</li>
+        </ol> 
+
+
+        <h2 class="number-title"> Referencias mixtas</h2>
+        <p>Una <b>referencia mixta</b> tiene una parte relativa y otra absoluta: la 
+          columna relativa y la fila absoluta o la columna fija y la fila relativa. Por 
+          ejemplo:<b> =A$2</b>  o <b>=$A2</b>.</p>
+
+
+          <p>Si copiamos y pegamos en otra celda una fórmula que contiene una 
+            referencia mixta, la parte relativa se actualizará de manera automática 
+            y la parte absoluta permanecerá fija.<br><br>
+            Para hacer una referencia mixta, debemos anteponer el signo peso 
+            ($) a la letra de la columna o al número de la fila, de forma manual 
+            o mediante la tecla F4. Si la pulsamos dos veces, fijará la fila, y si la 
+            presionamos tres veces, fijará la columna.</p>
+
+
+      <h2 class="number-title"> Uso de referencias relativas y absolutas</h2>
+
+      <p>Las referencias relativas y absolutas nos facilitarán el trabajo y nos 
+        permitirán ahorrar tiempo cuando utilicemos fórmulas y funciones.</p>
+        
+      <p>
+        Entender qué son las referencias relativas y las referencias absolutas que 
+        utilizamos en las fórmulas y funciones suele ser difícil al principio. En 
+        la práctica son herramientas muy útiles, y su uso es mucho más sencillo 
+        de lo que parece. </p>
+                 
 
       <h2 class="number-title"> Referencias a datos de otras hojas</h2>
       <p>
@@ -972,7 +1097,7 @@
       </p>
 
       </div>
-
+<!--
       <div class="nota-box">
         <h1 class="number-subtitle"> Referencias absolutas relativas y mixtas    </h1> 
         <p>El sistema de copiado de fórmulas funciona dado que, cuando se pegan, Excel
@@ -1008,6 +1133,7 @@
           fórmula (viendo que el cursor parpadea en dicha referencia) y se pulsa F4.</p>
 
       </div>
+      -->
 
      
 
@@ -1884,26 +2010,25 @@
     
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Tipos de datos    </h1> 
+      <h1 class="number-subtitle"> Errores   </h1> 
       <p>
-        En una Hoja de cálculo, los distintos TIPOS DE DATOS que podemos introducir son:
+        En general en una hoja de cálculo, los distintos tipos de valores que podemos introducir son:
       </p>
       <p>
         <ol>
           <li>
-          <b>Valores constantes</b> Un dato que se introduce directamente en una celda. Puede ser un número, una fecha 
-          u hora, o un texto. Si deseas una explicación más detallada sobre los valores constantes visita nuestro básico 
-          sobre los tipos de datos
+          <b>Valores constantes:</b> Un dato que se introduce directamente en una celda. Puede ser un número, una fecha 
+          u hora, o un texto. 
           </li>
-          <li><b>Fórmulas</b>una secuencia formada por: valores constantes, referencias a otras celdas, nombres, funciones, 
+          <li><b>Fórmulas:</b> Una secuencia formada por valores constantes, referencias a otras celdas, nombres, funciones, 
             u operadores. Es una técnica básica para el análisis de datos. Se pueden realizar diversas operaciones con los
-             datos de las hojas de cálculo como +, -, *, /, Sen, Cos, etc. En una fórmula se pueden mezclar constantes, nombres,
-             referencias a otras celdas, operadores y funciones. La fórmula se escribe en la barra de fórmulas y debe empezar 
-             siempre por el signo =.</li>
+             datos de las hojas de cálculo como \( +, -, *, /, Sen(x), Cos(x)\), etc. Recordemos que en una fórmula se pueden mezclar 
+             constantes, nombres,
+             referencias a otras celdas, operadores y funciones. </li>
         </ol>
       </p>
 
-      <h2 class="number-title"> Errores</h2>
+    
 
       <p>
         Cuando introducimos una fórmula en una celda puede ocurrir que se produzca un <b>error</b>. Dependiendo del tipo de error
@@ -1943,7 +2068,7 @@
   <p>En ocasiones, podemos equivocarnos al ingresar manualmente el nombre de una función. En estos casos, 
     al intentar aceptar la función para ver el resultado veremos que Excel nos muestra el error <b>#¿Nombre?</b>. De 
     esta manera, podemos situarnos en la barra de fórmulas o presionar la tecla F2 para editarlo</p>
-  <p>Si cometemos un error al ingresar una fórmula, Excel nos devuelve un texto que informa su tipo</p>
+  <p>Si cometemos un error al ingresar una fórmula, Excel nos devuelve un texto que informa su tipo, entre los que se encuentran:</p>
 
 
 
@@ -1955,77 +2080,46 @@
           </tr>
           
           <tr>
-            <td>#####</td>
-            <td>se produce cuando el ancho de una columna no es suficiente o cuando se utiliza una fecha o una hora negativa.</td>
+            <td><b>#####</b></td>
+            <td>Se produce cuando el ancho de una columna no es suficiente o cuando se utiliza una fecha o una hora negativa.</td>
             </tr>
-
-           <tr>
-           <td>#¡NUM!</td>
-           <td>cuando se ha introducido un tipo de argumento o de operando incorrecto, como puede ser sumar textos.</td>
-           </tr>
-
-           <tr>
-            <td>#¡DIV/0!</td>
-            <td>cuando se divide un número por cero.</td>
-            </tr>
-           
             
            <tr>
-            <td>#¿NOMBRE? </td>
-            <td> cuando Excel no reconoce el texto de la fórmula.
-
-            </td>
+            <td><b>#¡NUM!</b></td>
+            <td>Cuando se escriben valores numéricos no válidos en una fórmula o función.</td>
             </tr>
 
             
            <tr>
-            <td>#N/A</td>
-            <td> cuando un valor no está disponible para una función o fórmula.</td>
-            </tr>
-
-            
-           <tr>
-            <td>#¡REF!</td>
-            <td>se produce cuando una referencia de celda no es válida.</td>
-            </tr>
-
-            
-           <tr>
-            <td>#¡NUM!</td>
-            <td>cuando se escriben valores numéricos no válidos en una fórmula o función.</td>
-            </tr>
-
-            
-           <tr>
-            <td>#¡NULO!</td>
-            <td>cuando se especifica una intersección de dos áreas que no se intersectan.</td>
+            <td><b>#¡NULO!</b></td>
+            <td>Cuando se especifica una intersección de dos áreas que no se intersectan.</td>
             </tr>
             <tr>
               <td><b>#¡N/A!</b></td>
-              <td>indica que no es posible encontrar una coincidencia exacta 
+              <td>Indica que no es posible encontrar una coincidencia exacta 
                 con el valor que se está buscando. </td>
             </tr>
 
 
             <tr>
               <td><b>#¡REF!</b></td>
-              <td>referencia a una celda inválida o inexistente.</td>
+              <td>Referencia a una celda inválida o inexistente.</td>
             </tr>
 
             <tr>
               <td><b>#¡NÚMERO!</b></td>
-              <td>expresa la existencia de un valor no numérico en una 
+              <td>Expresa la existencia de un valor no numérico en una 
                 fórmula de parámetros numéricos.</td>
             </tr>
 
             <tr>
               <td><b>#¡NOMBRE¡</b></td>
-              <td>nombre de la función incorrecto.</td>
+              <td>Nombre de la función incorrecto.</td>
             </tr>
 
             <tr>
               <td><b>#¡DIV/0!</b></td>
-              <td>cuando intentamos dividir por cero.</td>
+              <td>Cuando se  intenta dividir entre cero.</td>
             </tr>
 <!--
             <tr>
