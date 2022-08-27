@@ -84,4 +84,163 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox"></h1>
 
+    
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">Funciòn  SUMARSI</h1>
+      
+      <p>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</p>
+
+
+      <p>
+        <ul>
+          <li>Rango Evaluacion1: Rango de celdas que contienen uno de los parámetros a sumar</li>
+          <li>Criterio 1: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
+             hasta 128 rango/criterios de evaluación, si sólo tienes uno, pasar el siguiente parámetro</li>
+          <li>Rango Suma: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
+        </ul>
+      </p>
+
+      <p> OJO. Los rangos indicados en la función, deben ser del mismo tamaño de celdas, es decir,
+         en el rango evaluación se seleccionaron 10 celdas, el rango de suma también debe ser de 10 celdas.</p>
+
+      <p>Es una función que nos ayudará a realizar SUMAS, con la característica de que la suma será 
+        condicionada a uno o varios criterios.</p>
+
+      <p>La función SUMARSI CONJUNTO te será muy útil para realizar análisis de datos y encontrar 
+        indicadores de acuerdo a diferentes criterios cómo pueden ser países, productos, vendedores 
+        o también, ventas mayores a, clientes sin factura, entre otros.</p>
+        
+      <p>Así que gracias a la fórmula condicional podremos, por ejemplo, encontrar la suma de 
+        ventas de un producto de manzana (columna A) en EUA (columna B).</p>
+
+
+      <p>=SUMAR.SI.CONJUNTO(A1:A100,"Manzana",B1:B100,"EUA",E1:E100)</p>  
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función  SIFECHA</h1>
+
+      <p>=SIFECHA(fecha_inicio,fecha_fin,periodo)</p>
+
+
+      <p>
+        <ul>
+          <li>Fecha Inicio: Indica la fecha a partir de donde se inicia la cuenta.
+          <li>Fecha Fin: Marca el día final de la cuenta</li>
+          <li>Periodo: Sirve para indicar el periodo de medición, usar "y" para años,
+             "m" para meses y "d" para días.</li>
+        </ul>
+      </p>
+
+
+      <p>Está fórmula en muy útil cuando necesitamos encontrar el periodo de tiempo 
+        que ha pasado entre dos fecha, es decir, años, fechas o días.</p>
+
+
+
+      <p>No se encuentra visible en el catálogo de fórmulas en Excel, así que ten fe y verás cómo funciona.</p>
+        
+      
+      <p>Así que gracias a la fórmula SIFECHA podremos, por ejemplo, encontrar la edad de 
+        una persona a partir de su fecha de nacimiento o la antigüedad de un empleado en el empresa.</p>
+
+      <p>=SIFECHA("05/12/1995","01/06/2020","y")</p>
+
+      <p>Para establecer el periodo de tiempo a medir, debemos indicar "y" para años, "m" para meses 
+        y "d" para días en el último parámetro.</p>
+    
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función DIAS LAB</h1>
+
+      <p>Está fórmula nos ayudará cuando sea necesario contar días de una forma muy particular, que es sólo considerar días laborales, por defecto, sin fines de semana.
+
+        Y para esta operación es que está la función DIAS.LAB, ya que sirve para saber cuantos días laborales existen entre dos fechas, el resultado final será un número entero que indican los días transcurridos.
+        
+        Así que gracias a la fórmula DÍAS LAB podremos, por ejemplo, los días laborales que hay en el mes actual.</p>
+
+       <p>=DIAS.LAB("01/01/2020","31/01/2020")</p> 
+
+
+       <p>
+        ATENCIÓN. Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la función para indicar un rango de celdas que incluya las fechas.
+      </p>
+      <p>
+      =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
+       </p>
+
+    </div>
+
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función DERECHA  </h1>
+
+      <p>Está función de Excel, nos ayudará a obtener textos de una celda, a partir de la derecha de esta, 
+        es muy sencilla de utilizar, ya que sólo necesita dos parámetros para funcionar.</p>
+
+      <p>Por ejemplo si lo que necesitas es obtener los últimos 4 dígitos de una cuenta bancaria 
+        "9999-1111-4444-5678", puedes hacer algo así con la fórmula DERECHA.</p>
+
+
+      <p>=DERECHA("9999-1111-4444-5678",4) ó  =DERECHA(A1,4)</p>
+
+
+      <p> OJO. No usar esta función para extraer periodos de una fecha, como lo son MESES, AÑOS o  DÍAS, 
+        para ello están las funciones de tiempo.</p>
+    </div>
+
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función CONTAR SI </h1>
+
+      <p>Está fórmula en muy útil cuando necesitamos establecer un valor en una celda, según uno 
+        o varios criterios.
+
+        Personalmente me gusta llamarla como función que da inteligencia a Excel ya que nos permite 
+        tomar decisiones  en una celda bajo nuestras consideraciones.</p>
+
+
+      <p>Así que gracias a la fórmula SI podremos, por ejemplo, si un cliente es categorizado 
+        como nuevo si su fecha de registro pertenece al mes actual.</p>
+
+
+      <p>=CONTAR.SI(A1:A100,"Pagada")</p>
+
+    </div>
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función CONTAR SI CONJUNTO </h1>
+
+      <p>La función CONTAR SI CONJUNTO pertenece a un grupo de funciones lógicas que nos 
+        ayudan a realizar operaciones aritméticas a partir de una o varias condiciones.</p>
+
+      <p>Está fórmula en muy útil cuando necesitamos, cómo su nombre lo indica, 
+          CONTAR celdas que cumplan con uno o varios criterios, es decir, podemos 
+          encontrar la cantidad de veces que aparece un registro en una lista de valores.</p>
+
+      <p>Debido a la versatilidad de esta función es que podremos realizar está 
+        búsqueda de repetitividad, según varios criterios de una lista, por ejemplo, 
+        cantidad de facturas sin pago, las veces que ocurre un defecto en la linea de
+         producción, o también de las veces que han contactado a un cliente.</p>
+     
+      <p>A diferencia de la función CONTAR SI con la fórmula CONTAR SI CONJUNTO
+         podremos ampliar la búsqueda de argumentos o no estaremos limitados a 
+         sólo UNO, cómo ocurre con la función contar si de Excel.
+      </p>
+
+      <p>Ejemplo. Para encontrar la cantidad de facturas PAGADAS de cliente ABC 
+        (en la columna D deberemos tener el estado de la factura, y en la B el
+         código de cliente) quedaría la función así:</p>
+
+      <p>=CONTAR.SI.CONJUNTO(D1:D100,"Pagada",B1:B100,"ABC")</p>
+    
   </body>
