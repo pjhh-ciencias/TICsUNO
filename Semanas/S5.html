@@ -119,6 +119,70 @@
     </div>
 
     <div class="nota-box">
+      <h1 class="number-subtitle">Fechas en Excel</h1>
+      <p>Excel almacena una fecha como si fuera un número entero. Al utilizar un sistema como éste,
+         Excel puede sumar, restar y comparar fácilmente las fechas sin necesidad de hacer alguna 
+         conversión ni cálculo especial.
+      <p>
+
+      <p>Por ejemplo, la fecha 1/1/2000 está representada por el número de serie 36526 y la fecha
+         05/10/2000 tiene asignado el valor 36804. Como puedes imaginar, al realizar una operación 
+         con fechas se utiliza su número de serie para facilitar las operaciones</p>
+
+      <h2> EL PRIMERO Y ÚLTIMO DÍA DE EXCEL</h2>   
+
+      <p>Excel reconoce todas las fechas posteriores a 1/1/1900. Es por eso que el primer día del año 
+        1900 tiene asignado el número 1. Por el contrario, el último día que Excel reconoce es el 31/12/9999
+        el cual tiene asignado el número 2958465.</p>
+
+
+      <h2>VALOR NUMÉRICO DE UNA FECHA</h2>
+      <p>Es realmente sencillo conocer el valor numérico de una fecha, solamente cambia el formato de la 
+        celda que contiene una fecha a un formato General y Excel desplegará su valor numérico.</p> 
+
+
+        <div class="flexbox">  
+          <img src="../Imagenes/Excel/fechas-en-excel-01.png" alt="",height="auto",width="auto"> 
+        </div>  
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">FUNCIÓN FECHA</h1>
+
+      <h2 class="number-title"></h2>
+      <p>Obtiene el número de serie que representa a la fecha especificada.</p>
+
+      <h2 class="number-title">SINTAXIS</h2>
+      <p><b>FECHA(año, mes, día)</b></p>
+
+      <p>
+        <ul>
+        <li>año (Obligatorio): Número que representa el año de la fecha.</li>
+        <li>mes (Obligatorio): Número que representa el mes de la fecha.</li>
+        <li>día (Obligatorio): Número que representa el día de la fecha.</li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">LA FUNCIÓN FIN.MES</h1>
+
+      <h2 class="number-title"></h2>
+      <p>Obtiene el número de serie del último día de mes.</p>
+
+      <h2 class="number-title">SINTAXIS</h2>
+      <p><b>FIN.MES(fecha_inicial, meses)</b></p>
+
+      <p>
+        <ul>
+        <li>fecha_inicial (obligatorio): Fecha inicial de la cual se obtendrá el fin de mes.</li>
+        <li>meses (obligatorio): Meses a sumar o restar de la fecha inicial antes de obtener el fin de mes.</li>
+        </ul>
+      </p>
+
+    </div>
+    
+    <div class="nota-box">
       <h1 class="number-subtitle">Función  SIFECHA</h1>
 
       <p>=SIFECHA(fecha_inicio,fecha_fin,periodo)</p>
@@ -149,33 +213,241 @@
 
       <p>Para establecer el periodo de tiempo a medir, debemos indicar "y" para años, "m" para meses 
         y "d" para días en el último parámetro.</p>
+
+
+        <table class="info">
+          <tbody>
+          <tr class="Titulo">
+          <td valign="top" width="54"><strong>Valor</strong></td>
+          <td valign="top" width="208"><strong>Significado</strong></td>
+          <td valign="top" width="336"><strong>Descripción</strong></td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“d”</td>
+          <td valign="top" width="208">Días</td>
+          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2</td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“m”</td>
+          <td valign="top" width="208">Meses</td>
+          <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2</td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“y”</td>
+          <td valign="top" width="208">Años</td>
+          <td valign="top" width="336">Número de años entre la fecha1 y la fecha2</td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“yd”</td>
+          <td valign="top" width="208">Días excluyendo años</td>
+          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“ym”</td>
+          <td valign="top" width="208">Meses excluyendo años</td>
+          <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+          </tr>
+          <tr>
+          <td valign="top" width="54">“md”</td>
+          <td valign="top" width="208">Días excluyendo meses y años</td>
+          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo mes y el mismo año.</td>
+          </tr>
+          </tbody>
+          </table>  
     
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función DIAS LAB</h1>
+      <h1 class="number-subtitle">Función DIA.LAB</h1>
 
-      <p>Está fórmula nos ayudará cuando sea necesario contar días de una forma muy particular, que es sólo considerar días laborales, por defecto, sin fines de semana.
 
-        Y para esta operación es que está la función DIAS.LAB, ya que sirve para saber cuantos días laborales existen entre dos fechas, el resultado final será un número entero que indican los días transcurridos.
-        
-        Así que gracias a la fórmula DÍAS LAB podremos, por ejemplo, los días laborales que hay en el mes actual.</p>
+      <p>Las hojas de cálculo de Microsoft pueden facilitar el trabajo en muchas ocasiones.
+         Así, a la hora de planificar fechas y citas,</p>
+      
+      
+      <h2 class="number-title">Descripción</h2>
 
-       <p>=DIAS.LAB("01/01/2020","31/01/2020")</p> 
+      <p> Con esta función del programa de hojas de cálculo podrás determinar una fecha laborable
+         tras un plazo determinado y fijar, de esta forma tan sencilla, fechas de entrega en el futuro.</p>
 
+      <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
+        es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
+        que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
+        Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
+        que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
+        la fórmula los días festivos, la función puede calcular la fecha real.</p>
+
+      
+
+
+       <h2 class="number-title">SINTAXIS</h2>
+       <center>
+      <b>=DIA.LAB(fecha_inicial;días;[vacaciones])</b>
+       </center>
+
+       <ul>
+        <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
+        <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
+        <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
+          del conteo.</li>
+       </ul>
 
        <p>
-        ATENCIÓN. Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la función para indicar un rango de celdas que incluya las fechas.
+        El primer argumento se debe insertar como fecha. Para ello, utiliza la función FECHA o 
+        remite a una celda que tenga formato de fecha. A continuación, introduce un número
+        de días laborables. También aquí se puede utilizar una referencia de celdas para 
+        transferir los días laborables a la función. Es importante tener en cuenta que 
+        Excel no contabiliza la fecha de inicio como día laborable. Es decir: si estableces 
+        el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, esto implicaría solo 
+        un día de trabajo y no dos.
+       </p>
+
+      <p>
+       Asimismo, tienes la posibilidad de definir los días libres. De esta forma, excluyes 
+       los días festivos, por ejemplo, en los que no se trabaja. Los días festivos los incluyes
+      en una lista y después remites simplemente a esa lista la función DIA.LAB.
       </p>
+
+   
+
+      <p><b>Observación:</b>
+       Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
+       Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
+       esto implicaría solo un día de trabajo y no dos.</p> 
+      
+      <p><b>Ejemplo</b>Imaginemos que quieres calcular la fecha de entrega de un proyecto. 
+      Se ha acordado con el cliente que el equipo tendrá 10 días laborables para la finalización 
+      del proyecto. Se establece el 6 de abril del 2020 como fecha de inicio.</p>
+
+
       <p>
       =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
-       </p>
+      </p>
 
     </div>
 
 
 
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">   DIA.LAB.INTL: cálculos internacionales </h1>
+
+      <h2 class="number-title">Descripción</h2>
+      <p>DIA.LAB funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
+        el fin de semana corresponde al sábado y al domingo. Sin embargo, en algunos sectores esto no es así.
+        Para todos los que necesiten más flexibilidad en la creación de sus días laborables, Excel ofrece la 
+        función ampliada DIA.LAB.INTL. Con ella, tendrás otro parámetro disponible.</p>
+
+        <h2 class="number-title">Sintaxis</h2>
+
+        <center><b>=DIA.LAB.INTL(fecha_inicial;días;[fin_de_semana];[vacaciones])</b></center>
+
+        <p>El parámetro adicional y opcional “fin_de_semana” diferencia a esta función de DIA.LAB. 
+          En la versión internacional se puede ajustar la duración del fin de semana y también determinar 
+          qué días de la semana deben considerarse como días laborables. Para ello, Excel pone a tu
+          disposición dos opciones distintas. Puedes utilizar bien un número de fin de semana bien una 
+          cadena determinada.</p>
+
+          <p>Los números de fin de semana los determina Excel. Cada número corresponde a un día de la semana 
+            o a una combinación de días de la semana:
+
+            <ol>
+            <li>Sábado, domingo</li>
+            <li>Domingo, lunes</li>
+            <li>Lunes, martes</li>
+            <li>Martes, miércoles</li> 
+            <li>Miércoles, jueves</li>
+            <li>Jueves, viernes</li>
+            <li>Viernes, sábado</li>
+            <li>Domingo</li>
+            <li>Lunes</li>
+            <li>Martes</li> 
+            <li>Miércoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sábado</li>
+
+          </p>
+
+          <p>Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</p>
+      
+      
+          <p>Si, por lo contrario, utilizas la secuencia, debes seguir un esquema relativamente sencillo: 
+            la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
+            Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
+            será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
+            La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
+            habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. La secuencia ha de 
+            entrecomillarse.</p>
+
+            <p><b>Observación:</b> Si quieres calcular un plazo de entrega y la semana laboral va de martes 
+              a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
+
+              <ol>
+                <li>=DIA.LAB.INTL(FECHA(2020;04;06);10;2)</li>
+                <li>=DIA.LAB.INTL(FECHA(2020;4;6);10;"1000001")</li>
+              </ol>
+
+          <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
+        </div>
+
+
+        <div class="nota-box">
+          <h1 class="number-subtitle">Función DIAS LAB</h1>
+    
+    
+          <h2 class="number-title">Descripción</h2>
+    
+          <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
+            es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
+            que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
+            Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
+            que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
+            la fórmula los días festivos, la función puede calcular la fecha real.</p>
+    
+          <p>Está fórmula nos ayudará cuando sea necesario contar días de una forma muy particular, que es sólo considerar días laborales, por defecto, sin fines de semana.
+    
+            Y para esta operación es que está la función DIAS.LAB, ya que sirve para saber cuantos días laborales existen entre dos fechas, el resultado final será un número entero que indican los días transcurridos.
+            
+            Así que gracias a la fórmula DÍAS LAB podremos, por ejemplo, los días laborales que hay en el mes actual.</p>
+    
+           <p>=DIAS.LAB("01/01/2020","31/01/2020")</p> 
+    
+    
+    
+           <h2 class="number-title">SINTAXIS</h2>
+           <p>
+            DIAS.LAB(fecha_inicial, fecha_final, [festivos])
+           </p>
+    
+           <ul>
+            <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
+            <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
+            <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
+              del conteo.</li>
+           </ul>
+    
+           <p>
+            ATENCIÓN. Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la 
+            función para indicar un rango de celdas que incluya las fechas.
+          </p>
+          <p>
+          =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
+           </p>
+    
+    
+          <p><b>Observación:</b>
+           Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
+           Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
+           esto implicaría solo un día de trabajo y no dos.</p> 
+    
+        </div>
+    
+    
+
+
+    
     
     <div class="nota-box">
       <h1 class="number-subtitle">  Función DERECHA  </h1>
@@ -242,5 +514,11 @@
          código de cliente) quedaría la función así:</p>
 
       <p>=CONTAR.SI.CONJUNTO(D1:D100,"Pagada",B1:B100,"ABC")</p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Sumar y restar fechas </h1>
+
     
   </body>
