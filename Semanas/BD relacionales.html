@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 10 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 10 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> Diseño de los modelos entidad-relación y relacional de base de datos </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox">Diseño de los modelos entidad-relación y relacional de base de datos </h1>
+
+
+    
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> ¿Qué es una base de datos relacional (sistema de gestión de bases de datos relacionales)? </h1> 
+   
+      <p> En 1970, Codd publicó en ACM el trabajo “Un modelo de datos relacional
+        para grandes bancos de datos compartidos” donde propuso un nuevo
+        Modelo de Datos. Fue propuesto por Edgar F. Codd en 1969.</p>
+
+
+      <p>Desde entonces se ha convertido en el modelo de base de datos dominante para las aplicaciones comerciales, 
+        si se compara con otros modelos de bases de datos, como el jerárquico, de red y de objetos.</p>
+
+        <p>Un modelo de datos se puede definir como un conjunto de
+          herramientas conceptuales para describir la representación de la
+          información en términos de datos. Esto es un conjunto de conceptos,
+          reglas y convenciones que permiten especificar datos, las relaciones entre
+          ellos, su semántica asociada y las restricciones de integridad.</p>
+
+      <p>
+        Una base de datos relacional es una recopilación de elementos de datos con relaciones predefinidas entre ellos. 
+        Estos elementos se organizan como un conjunto de tablas con columnas y filas. Las tablas se utilizan para guardar 
+        información sobre los objetos que se van a representar en la base de datos. Cada columna de una tabla guarda un
+        determinado tipo de datos y un campo almacena el valor real de un atributo. Las filas de la tabla representan 
+        una recopilación de valores relacionados de un objeto o una entidad. Cada fila de una tabla podría marcarse 
+        con un identificador único denominado clave principal, mientras que filas de varias tablas pueden relacionarse 
+        con claves extranjeras. Se puede obtener acceso a estos datos de muchas formas distintas sin reorganizar las 
+        propias tablas de la base de datos.
+      </p>
+   
+   
+   
+   
+   
+   
+      <p>Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a 
+      puntos de datos relacionados entre sí. Las bases de datos relacionales se basan en el modelo
+      relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos
+      relacional, cada fila en una tabla es un registro con una ID única, llamada clave. Las columnas
+      de la tabla contienen los atributos de los datos y cada registro suele tener un valor para 
+      cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.</p>   
+
+
+
+
+
+      <p>Tras ser postuladas sus bases en 1970 por Edgar Frank Codd, de los laboratorios IBM en San José (California), 
+        no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.
+      </p>
+
+      <p>Su idea fundamental es el uso de relaciones. Estas relaciones podrían considerarse en forma lógica como 
+        conjuntos de datos llamados tuplas. Pese a que esta es la teoría de las bases de datos relacionales creadas 
+        por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando en cada }
+        relación como si fuese una tabla que está compuesta por registros (cada fila de la tabla sería un registro 
+        o "tupla") y columnas (también llamadas "campos").
+      </p>
+        
+      <p>Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente.</p>
+
+
+
+      <h2 class="number-title">Ventajas</h2>
+      <ol>
+        <li>Provee herramientas que garantizan evitar la duplicidad de registros.</li>
+        <li>Garantiza la integridad referencial, así, al eliminar un registro elimina todos
+           los registros relacionados dependientes.</li>
+        <li> Favorece la normalización por ser más comprensible y aplicable.</li>
+        </ol>
+
+        <h2 class="number-title">Desventajas</h2>
+        <ol>
+          <li>Presentan deficiencias con datos gráficos, multimedia, CAD y sistemas de información geográfica.</li>
+          <li>No se manipulan de forma eficiente los bloques de texto como tipo de datos.</li>
+        </ol>
+
+
+
+        <p>Una base de datos relacional es un conjunto de una o más tablas estructuradas en registros (líneas)
+           y campos (columnas), que se vinculan entre sí por un campo en común, en ambos casos posee las mismas 
+           características como por ejemplo el nombre de campo, tipo y longitud; a este campo generalmente se le
+            denomina ID, identificador o clave. A esta manera de construir bases de datos se le denomina modelo relacional.
+        </p>
+
+        <p>
+          Estrictamente hablando el término se refiere a una colección específica de datos pero a menudo se le usa, 
+          en forma errónea como sinónimo del software usado para gestionar esa colección de datos. Ese software se
+          conoce como sistema gestor de base de datos relacional (SGBD) o en inglés relational database management
+          system (RDBMS).</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Ejemplo de una base de datos relacional</h1> 
+
+      
+      <p>Este es un ejemplo simple de dos tablas que una pequeña empresa puede usar para procesar 
+        pedidos de sus productos. La primera tabla es una tabla de información del cliente, 
+        por lo que cada registro incluye el nombre, la dirección, información de envío y facturación, 
+        el número de teléfono y otra información de contacto del cliente. Cada fragmento de información
+        (cada atributo) está en su propia columna y la base de datos asigna una ID única (una clave) 
+        a cada fila. En la segunda tabla, una tabla de pedidos del cliente, cada registro incluye
+        el ID del cliente que realizó el pedido, el producto solicitado, la cantidad, el tamaño y 
+        el color seleccionados, etc., pero no el nombre del cliente ni su información de contacto.</p>
+
+      <p>Estas dos tablas tienen una sola cosa en común: la columna de ID (la clave). Gracias a esa 
+        columna en común, la base de datos relacional puede establecer una relación entre las dos 
+        tablas. Entonces, cuando la aplicación de procesamiento de pedidos de la empresa envíe un 
+        pedido a la base de datos, la base de datos podrá examinar la tabla de pedidos del cliente,
+        extraer la información correcta sobre el pedido de productos y usar el ID del cliente de
+        esa tabla para buscar la información de facturación y envío del cliente en la tabla de 
+        información del cliente. A continuación, el almacén puede extraer el producto correcto, 
+        el cliente puede recibir la entrega del pedido a tiempo y la empresa puede obtener el pago.</p> 
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Estructura de las bases de datos relacionales</h1> 
+
+      <p>El modelo relacional significa que las estructuras de datos lógicas (las tablas de datos, 
+        las vistas y los índices) están separadas de las estructuras de almacenamiento físicas. 
+        Gracias a esta separación, los administradores de bases de datos pueden gestionar el 
+        almacenamiento físico de datos sin que eso influya en el acceso a esos datos como 
+        estructura lógica. Por ejemplo, si se cambia el nombre del archivo de una base de 
+        datos, eso no significa que vayan a cambiar también los nombres de sus tablas.
+      </p>
+
+      <p>
+        La distinción entre lógico y físico se aplica también a las operaciones de base de
+        datos, que son acciones claramente definidas que permiten a las aplicaciones manipular
+         los datos y las estructuras de la base de datos. Con las operaciones lógicas, las aplicaciones
+          pueden especificar el contenido que necesitan, mientras que las operaciones físicas determinan
+           cómo se debe acceder a esos datos y llevan a cabo la tarea.
+      </p>
+
+      <p>       
+        Para garantizar la precisión y accesibilidad continua de los datos, las bases de datos 
+        relacionales siguen ciertas reglas de integridad. Por ejemplo, una regla de integridad 
+        podría especificar que no se permite duplicar filas en una tabla, a fin de evitar que
+         se introduzca información errónea en la base de datos.</p>
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> El modelo relacional</h1> 
+
+      <p>El modelo relacional (MR) se caracteriza por:</p>
+      <p>
+        <ol>
+          <li>Ser sencillo y uniforme (colección de tablas y lenguajes declarativos)</li>
+          <li>Tener una sólida fundamentación teórica: el modelo está definido con rigor
+        matemático.</li>
+         <li>Ser independiente del almacenamiento físico y de las aplicaciones.</li>
+        </ol></p>
+
+
+      <p>
+        El modelo relacional se define como la base de datos que permite agrupar sus 
+        elementos de datos en una o más tablas independientes, que pueden relacionarse
+         entre sí mediante el uso de campos comunes a cada tabla relacionada.
+      </p>
+
+      <p>
+        Una tabla de base de datos es similar a una hoja de cálculo. Sin embargo, 
+        las relaciones que se pueden crear entre las tablas permiten que una base 
+        de datos relacional almacene de manera eficiente una gran cantidad de datos, 
+        que se pueden recuperar con efectividad.
+      </p>
+      
+      <p>El propósito del modelo relacional es brindar un método declarativo para
+         especificar los datos y las consultas: los usuarios declaran directamente 
+         qué información contiene la base de datos y qué información quieren de ella.
+      <p>
+
+      <p>Por otro lado, dejan que el software del sistema de gestión de bases de datos 
+        se encargue de describir las estructuras de datos para su almacenamiento y el 
+        procedimiento de recuperación para responder las consultas.
+      </p>
+        
+      <p>La mayoría de las bases de datos relacionales usan el lenguaje SQL para la
+         consulta y definición de los datos. Actualmente existen muchos sistemas de manejo
+        de bases de datos relacionales o RDBMS (Relational Data Base Management System), 
+        como Oracle, IBM DB2 y Microsoft SQL Server.</p>
+
+      <p>En los primeros años de las bases de datos, cada aplicación almacenaba datos en su propia
+       estructura única. Cuando los desarrolladores querían crear aplicaciones para usar esos datos, 
+       tenían que conocer muy bien esa estructura de datos concreta a fin de encontrar los datos 
+       que necesitaban. Esas estructuras de datos eran poco eficaces, el mantenimiento era
+       complicado y era difícil optimizarlas para ofrecer un buen rendimiento en las aplicaciones.
+      </p>
+
+      <p>
+       El modelo de base de datos relacional se diseñó para resolver el problema causado por 
+       estructuras de datos múltiples y arbitrarias.
+     </p>
+
+     <p>El modelo de datos relacional proporcionó una forma estándar de representar y consultar
+       datos que podría utilizar cualquier aplicación. Desde el principio, los desarrolladores 
+       se dieron cuenta de que la virtud principal del modelo de base de datos relacional era
+        el uso de tablas, ya que era una forma intuitiva, eficiente y flexible de almacenar y 
+        acceder a información estructurada.
+     </p>
+       
+     <p>
+       Con el tiempo, los desarrolladores comenzaron a usar el lenguaje de consulta estructurado 
+       (SQL) para escribir y hacer consultas en una base de datos: esto sería otra de las grandes 
+       virtudes de este modelo. Durante muchos años, el SQL se ha utilizado como el lenguaje para 
+       realizar consultas en bases de datos. Se basa en el álgebra relacional y proporciona un 
+       lenguaje matemático de uniformidad interna que facilita la mejora del rendimiento de todas
+        las consultas en bases de datos. Otros métodos empleados necesitan definir consultas individuales.</p>
+
+
+       <h2 class="number-title">Características y elementos</h2> 
+
+       <p>Todos los datos se representan conceptualmente como una disposición ordenada de datos en filas
+         y columnas, llamada relación o tabla.</p>
+
+         <p>Cada tabla debe tener un encabezado y un cuerpo. El encabezado es simplemente la lista de columnas. 
+          El cuerpo es el conjunto de datos que llena la tabla, organizado en filas.
+         </p>
+
+         <p>
+          Todos los valores son escalares. Es decir, en cualquier posición dada de fila/columna en la tabla,
+           hay solo un valor único.</p>
+
+
+        <h2 class="number-title">Elementos</h2>   
+
+        <p>La siguiente figura muestra una tabla con los nombres de sus elementos básicos, 
+          que conforman una estructura completa.</p>
+
+        <h3>Tupla</h3>
+
+        <p>Cada fila de datos es una tupla, conocida también como registro. Cada fila es una n-tupla,
+           pero la “n-” generalmente se descarta.</p>
+
+        <h3>Columna</h3>
+
+        <p>Cada columna de una tupla se llama atributo o campo. La columna representa el conjunto 
+          de valores que puede tener un atributo específico.</p>
+
+          <h3>Clave</h3>
+
+          <p>Cada fila tiene una o más columnas que se denomina clave de la tabla. Este valor 
+            combinado es único para todas las filas de una tabla. Mediante esta clave se identificará 
+            cada tupla de forma unívoca. Es decir, la clave no puede estar duplicada. Se le llama clave primaria.
+          </p>
+
+          <p>Por otro lado, una clave externa o secundaria es el campo de una tabla que se refiere a 
+            la clave primaria de alguna otra tabla. Se utiliza para referenciar a la tabla primaria.</p>
+
+
+          <h3>Reglas de integridad</h3>  
+
+          <p>Al diseñar el modelo relacional, se definen algunas condiciones que deben cumplirse en 
+            la base de datos, denominadas reglas de integridad.</p>
+
+          <h3>Integridad de la clave
+
+          <p>La clave primaria debe ser única para todas las tuplas y no puede tener el valor nulo (NULL).
+             De lo contrario, no podrá identificar la fila de forma exclusiva.
+          </p> 
+
+          <p>Para una clave compuesta por varias columnas, ninguna de esas columnas puede contener NULL.</p>
+
+          <h3>Integridad referencial</h3>
+
+          <p>Cada valor de una clave externa debe coincidir con un valor de la clave primaria de la tabla referenciada o primaria.</p>
+
+          <p>En la tabla secundaria solo se podrá insertar una fila con una clave externa si ese valor existe en una tabla primaria.</p>
+            
+          <p>Si el valor de la clave cambia en la tabla primaria, por actualizarse o eliminarse la fila, entonces todas las filas
+             en las tablas secundarias con esta clave externa deben actualizarse o eliminarse en consecuencia.</p>
+
+          </h3>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">     Beneficios del sistema de gestión de bases de datos relacionales
+      </h1> 
+      <p>El modelo relacional es sencillo pero muy potente, y lo utilizan organizaciones de todos los tipos 
+        y tamaños para una gran variedad de aplicaciones con datos. Las bases de datos relacionales se usan
+        para rastrear inventarios, procesar transacciones de comercio electrónico, administrar cantidades 
+        enormes y esenciales de información de clientes y mucho más. Las bases de datos relacionales se
+        pueden emplear para cualquier aplicación de datos en la que los puntos de datos se relacionen 
+        entre sí y deban gestionarse de forma segura, conforme a normas y de un modo uniforme.
+      </p>
+
+      <p>Las bases de datos relacionales han existido desde la década de los setenta. En la actualidad, 
+        el modelo relacional sigue siendo el más aceptado para las bases de datos, gracias a todas sus virtudes.</p>
+
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Modelo relacional y uniformidad de datos</h1> 
+
+      <p>El modelo relacional es el ideal para mantener la uniformidad de los datos en todas las aplicaciones
+        y copias de la base de datos (llamadas instancias). Por ejemplo, cuando un cliente deposita dinero en
+        un cajero automático y, a continuación, mira el saldo en un teléfono móvil, el cliente espera ver
+        ese depósito reflejado inmediatamente. Las bases de datos relacionales son perfectas para este tipo
+        de uniformidad, y garantizan que todas las instancias de una base de datos tengan los mismos datos 
+        en todo momento.
+      </p>
+
+      <p>Mantener este nivel de uniformidad en todo momento con grandes cantidades de datos es difícil
+        para otros tipos de bases de datos. Algunas bases de datos recientes, como NoSQL, solo pueden
+        proporcionar uniformidad eventual. De acuerdo con este principio, cuando la base de datos se 
+        escala o cuando varios usuarios acceden a los mismos datos al mismo tiempo, toma algo de tiempo 
+        que los datos se actualicen. La uniformidad final es aceptable en algunos casos (por ejemplo, 
+        para mantener listas en un catálogo de productos), pero para operaciones comerciales críticas,
+        como transacciones de carritos de compra, la base de datos relacional sigue siendo la referencia.</p>
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Compromiso y atomicidad</h1> 
+    <p>Las bases de datos relacionales gestionan las reglas y políticas comerciales a un nivel muy detallado,
+      y tienen políticas estrictas sobre el compromiso (es decir, el establecimiento de un cambio en la base
+      de datos como algo permanente). Por ejemplo, imaginemos una base de datos de inventario para rastrear 
+      tres piezas que siempre se usan juntas. Cuando se saca una pieza del inventario, las otras dos también 
+      deben salir. Si una de las tres piezas no está disponible, ninguna debe extraerse: las tres piezas deben
+      estar disponibles para que la base de datos realice una confirmación. Una base de datos relacional no 
+      confirmará ninguna pieza hasta que sepa que puede confirmar las tres. Esta capacidad de compromiso 
+      multifacético se llama atomicidad. La atomicidad es la clave para mantener los datos precisos y garantizar
+       el cumplimiento de las reglas, normas y políticas de la empresa.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Propiedades de ACID y sistema de gestión de bases de datos relacionales </h1> 
+    <p>Son cuatro las propiedades cruciales que definen las transacciones de las bases de datos relacionales: atomicidad, 
+      uniformidad, aislamiento y durabilidad. Estas suelen conocerse como ACID, su acrónimo en inglés.<p>
+
+    <p>
+      <ol>
+      <li>La atomicidad define todos los elementos que conforman una transacción completa de base de datos.</li>
+      <li> La uniformidad define las reglas para mantener los puntos de datos en un estado correcto después de
+       una transacción.</li>
+      <li>El aislamiento impide que el efecto de una transacción sea visible a otros hasta que se establezca el 
+        compromiso, a fin de evitar confusiones.</li>
+      <li>La durabilidad garantiza que los cambios en los datos se vuelvan permanentes cuando la transacción
+         se haya fijado y hayamos llegado a un compromiso.
+      </li>
+      </ol>  
+        </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Procedimientos almacenados y bases de datos relacionales </h1> 
+      <p>
+        El acceso a los datos implica muchas acciones repetitivas. Por ejemplo, una consulta simple para
+        obtener información de una tabla de datos puede necesitar repetirse cientos o miles de veces
+        para producir el resultado deseado. Estas funciones de acceso a datos requieren algún tipo 
+        de código para acceder a la base de datos. Los desarrolladores de aplicaciones no desean escribir
+        código nuevo para estas funciones en cada nueva aplicación. Sin embargo, las bases de datos
+        relacionales permiten procedimientos almacenados: bloques de código a los que se puede acceder
+        con una simple llamada a la aplicación. Por ejemplo, un solo procedimiento almacenado puede 
+        proporcionar un etiquetado de registro uniforme para usuarios de múltiples aplicaciones. Los
+        procedimientos almacenados también pueden ayudar a los desarrolladores a garantizar que ciertas
+        funciones de datos en aplicación se implementen de una manera específica.
+      </p>
+      
+    </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Qué se debe buscar al elegir una base de datos relacional </h1> 
+      <p>
+        El software utilizado para almacenar, administrar, consultar y recuperar datos almacenados en una 
+        base de datos relacional se denomina sistema de gestión de bases de datos relacionales (relational
+        database management system, RDBMS). El RDBMS proporciona una interfaz entre los usuarios/aplicaciones
+        y la base de datos, además de funciones administrativas para gestionar el acceso a los datos, así como
+        su almacenamiento y rendimiento.
+      </p>
+
+      <p>Hay varios factores a tener en cuenta al elegir entre diferentes tipos de bases de datos y productos 
+        de bases de datos relacionales. El RDBMS que escoja dependerá de las necesidades de su empresa. Piense 
+        en las siguientes preguntas:
+      </p>
+
+      <p>¿Necesitamos un gran nivel de precisión en los datos? ¿El almacenamiento y la precisión de los datos 
+        se basarán en la lógica empresarial? ¿Tenemos datos con requisitos estrictos de precisión (por ejemplo,
+        datos financieros e informes gubernamentales)? Necesitamos escalabilidad? ¿Cuál es la escala de los datos
+        a gestionar y cuál es el crecimiento previsto? ¿Necesitaremos un modelo de base de datos compatible con copias
+        de bases de datos reflejadas (como instancias separadas) para permitir la escalabilidad? Si es así, ¿podrá 
+        mantener ese modelo la uniformidad de los datos en todas las instancias? ¿Es muy importante la concurrencia?
+        ¿Vamos a necesitar que muchos usuarios y aplicaciones accedan de forma simultánea a los datos?
+        ¿El software de la base de datos permite ofrecer concurrencia sin comprometer la seguridad de los datos?
+       ¿Qué necesitamos en términos de rendimiento y fiabilidad? ¿Necesitamos un producto de gran rendimiento y 
+       fiabilidad? ¿Qué tipo de rendimiento necesitamos en la respuesta a las consultas? ¿Cuáles son los compromisos 
+       del proveedor con respecto a los acuerdos de nivel de servicio o el tiempo de inactividad imprevisto?
+      </p>
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> </h1> 
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> </h1> 
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> </h1> 
+      
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> </h1> 
+      
+    </div>
+
+
+
+  </body>
