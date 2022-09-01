@@ -84,79 +84,77 @@
   <body class="fondo-body" >
     <h1 class="number-title flexbox">Diseño de los modelos entidad-relación y relacional de base de datos </h1>
 
-
     
-
-
-
     <div class="nota-box">
-      <h1 class="number-subtitle"> ¿Qué es una base de datos relacional (sistema de gestión de bases de datos relacionales)? </h1> 
+      <h1 class="number-subtitle"> </h1>
+
+    <p>Un modelo de datos se puede definir como un conjunto de
+      herramientas conceptuales para describir la representación de la
+      información en términos de datos. Esto es un conjunto de conceptos,
+      reglas y convenciones que permiten especificar datos, las relaciones entre
+      ellos, su semántica asociada y las restricciones de integridad.</p>
+
+    </div>
+
+      <div class="nota-box">
+        <h1 class="number-subtitle"> Base de datos relacional </h1><!-- (sistema de gestión de bases de datos relacionales)? </h1> -->
    
-      <p> En 1970, Codd publicó en ACM el trabajo “Un modelo de datos relacional
-        para grandes bancos de datos compartidos” donde propuso un nuevo
-        Modelo de Datos. Fue propuesto por Edgar F. Codd en 1969.</p>
+      <p>En 1970, <b>por Edgar Frank Codd</b>  de los laboratorios IBM en San José (California),  
+        publicó en ACM el trabajo "<em>Un modelo de datos relacional
+        para grandes bancos de datos compartidos</em>" donde propuso un nuevo
+        Modelo de Datos. Tras ser postuladas sus bases, no tardó en consolidarse 
+        como un nuevo paradigma en los modelos de base de datos.</p>
 
 
       <p>Desde entonces se ha convertido en el modelo de base de datos dominante para las aplicaciones comerciales, 
-        si se compara con otros modelos de bases de datos, como el jerárquico, de red y de objetos.</p>
-
-        <p>Un modelo de datos se puede definir como un conjunto de
-          herramientas conceptuales para describir la representación de la
-          información en términos de datos. Esto es un conjunto de conceptos,
-          reglas y convenciones que permiten especificar datos, las relaciones entre
-          ellos, su semántica asociada y las restricciones de integridad.</p>
+        si se compara con otros modelos de bases de datos, como el <b>jerárquico</b>, de <b>red</b> y de <b>objetos</b>.</p>
 
       <p>
-        Una base de datos relacional es una recopilación de elementos de datos con relaciones predefinidas entre ellos. 
-        Estos elementos se organizan como un conjunto de tablas con columnas y filas. Las tablas se utilizan para guardar 
-        información sobre los objetos que se van a representar en la base de datos. Cada columna de una tabla guarda un
-        determinado tipo de datos y un campo almacena el valor real de un atributo. Las filas de la tabla representan 
-        una recopilación de valores relacionados de un objeto o una entidad. Cada fila de una tabla podría marcarse 
-        con un identificador único denominado clave principal, mientras que filas de varias tablas pueden relacionarse 
-        con claves extranjeras. Se puede obtener acceso a estos datos de muchas formas distintas sin reorganizar las 
-        propias tablas de la base de datos.
-      </p>
-   
-   
-   
-   
-   
-   
-      <p>Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a 
-      puntos de datos relacionados entre sí. Las bases de datos relacionales se basan en el modelo
-      relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos
-      relacional, cada fila en una tabla es un registro con una ID única, llamada clave. Las columnas
-      de la tabla contienen los atributos de los datos y cada registro suele tener un valor para 
-      cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.</p>   
-
-
-
-
-
-      <p>Tras ser postuladas sus bases en 1970 por Edgar Frank Codd, de los laboratorios IBM en San José (California), 
-        no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.
-      </p>
-
-      <p>Su idea fundamental es el uso de relaciones. Estas relaciones podrían considerarse en forma lógica como 
-        conjuntos de datos llamados tuplas. Pese a que esta es la teoría de las bases de datos relacionales creadas 
-        por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando en cada }
+        Su idea fundamental es el uso de <b>relaciones</b>. Estas relaciones podrían considerarse en forma lógica como 
+        conjuntos de datos llamados <b>tuplas</b>. Pese a que esta es la teoría de las bases de datos relacionales creadas 
+        por Codd, la mayoría de las veces se conceptualiza de una manera más fácil de imaginar, pensando en cada 
         relación como si fuese una tabla que está compuesta por registros (cada fila de la tabla sería un registro 
         o "tupla") y columnas (también llamadas "campos").
+      </p>  
+
+      <p>
+        Una <b>base de datos relacional</b> es un conjunto de una o más tablas estructuradas en registros (filas)
+        y campos (columnas), que se vinculan entre sí por un campo en común, en ambos casos posee las mismas 
+        características como por ejemplo el nombre de campo, tipo y longitud; a este campo generalmente se le
+         denomina ID, identificador o clave. A esta manera de construir bases de datos se le denomina <b>modelo relacional</b>,
+         una forma intuitiva y directa de representar  datos en tablas.
       </p>
-        
-      <p>Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente.</p>
+
+      <p>
+        Estos elementos se organizan como un conjunto de <b>tablas</b> con <b>columnas</b> y <b>filas</b>. Las tablas
+        se utilizan para guardar información sobre los objetos que se van a representar en la base de datos:
+        <ul>
+          <li>
+            Las columnas de la tabla guardan un determinado tipo de datos,  y  contienen los atributos de los datos
+             y cada registro suele tener un valor para cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.
+            
+          </li>
+          <li>
+            Cada fila en una tabla es un registro con una ID única denominado clave principal, mientras que filas
+            de varias tablas pueden relacionarse con claves extranjeras. 
+          </li>
+        </ul>
+      </p>
+
+   
+    <p>Es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente.</p>
 
 
 
-      <h2 class="number-title">Ventajas</h2>
+      <h2 class="number-title"> Ventajas</h2>
       <ol>
-        <li>Provee herramientas que garantizan evitar la duplicidad de registros.</li>
-        <li>Garantiza la integridad referencial, así, al eliminar un registro elimina todos
+        <li>Provee herramientas que garantizan evitar la <b>duplicidad de registros</b>.</li>
+        <li>Garantiza la <b>integridad referencial</b>, así, al eliminar un registro elimina todos
            los registros relacionados dependientes.</li>
         <li> Favorece la normalización por ser más comprensible y aplicable.</li>
         </ol>
 
-        <h2 class="number-title">Desventajas</h2>
+        <h2 class="number-title"> Desventajas</h2>
         <ol>
           <li>Presentan deficiencias con datos gráficos, multimedia, CAD y sistemas de información geográfica.</li>
           <li>No se manipulan de forma eficiente los bloques de texto como tipo de datos.</li>
@@ -164,12 +162,7 @@
 
 
 
-        <p>Una base de datos relacional es un conjunto de una o más tablas estructuradas en registros (líneas)
-           y campos (columnas), que se vinculan entre sí por un campo en común, en ambos casos posee las mismas 
-           características como por ejemplo el nombre de campo, tipo y longitud; a este campo generalmente se le
-            denomina ID, identificador o clave. A esta manera de construir bases de datos se le denomina modelo relacional.
-        </p>
-
+        
         <p>
           Estrictamente hablando el término se refiere a una colección específica de datos pero a menudo se le usa, 
           en forma errónea como sinónimo del software usado para gestionar esa colección de datos. Ese software se
