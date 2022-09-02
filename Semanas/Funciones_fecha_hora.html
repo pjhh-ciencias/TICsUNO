@@ -129,49 +129,139 @@
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función </h1>
+      <h1 class="number-subtitle">Función DIAS.LAB</h1>
     
-    <p>La función  <b>   </p>
+    <p>La función  <b>DIAS.LAB(fecha_incial;fecha_final;días_festivos)</b> devuelve el número total de días
+      laborables entre dos fechas dadas. Hemos de especificar el número de días festivos que
+      existen en ese periodo de tiempo. La función DIAS.LAB necesita la macro automática
+      Herramientas para análisis.   </p>
 
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función </h1>
+      <h1 class="number-subtitle">Observación </h1>
     
-    <p>La función  <b>   </p>
+    <p><ol>Las dos funciones anteriores pueden funcionar de forma incorrecta si en las fechas
+      que se indiquen hay fiestas entre lunes y viernes.</ol>   </p>
 
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función </h1>
+      <h1 class="number-subtitle">Función DIASEM</h1>
     
-    <p>La función  <b>   </p>
+    <p>La función  <b>DIASEM(número;tipo)</b> convierte un número de serie de una fecha en un día de la semana
+      (su número). El segundo parámetro establece el tipo de semana (1 = semana inglesa; 2 =
+      semana española; 3 = el primer día de la semana es el cero). Por ejemplo, la función
+      =DIASEM(“24/12/89”;2) devuelve el valor 7, que corresponde a Domingo según el tipo de
+      semana española.   </p>
 
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función </h1>
+      <h1 class="number-subtitle">Observación</h1>
     
-    <p>La función  <b>   </p>
+    <p>En algunos países como el Reino Unido o Estados Unidos, el primer día de la semana
+      es el domingo en lugar del lunes, de ahí que sea necesario especificar el tipo de día de
+      la semana en la función anterior.   </p>
 
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función </h1>
+      <h1 class="number-subtitle">Función FECHA </h1>
     
-    <p>La función  <b>   </p>
+    <p>La función  <b>FECHA(año;mes;día)<b></b> devuelve el número de serie que pertenece a una fecha especificada.
+      Es similar a la anterior, pero se diferencian en el formato que se utiliza para escribir la
+      fecha. En esta sólo hemos de escribir los elementos de la fecha separados por punto y coma
+      (;).   </p>
 
     </div>
 
 
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función FIN.MES</h1>
     
+    <p>La función  <b>FIN.MES(fecha;número_meses)</b> devuelve el número de serie del último día del mes, pasado
+      o futuro, relativo a la fecha inicial de referencia según sea positivo o negativo el número
+      meses. Esta función necesita la macro automática Herramientas para análisis. Por ejemplo,
+      si se desea saber cuál es el último día del mes en el que se encuentre (28, 29, 30 ó 31), se
+      escribe la fórmula =FIN.MES(fecha_de_hoy;0), donde fecha de hoy es la fecha actual escrita
+      entrecomillada (en formato numérico, ejemplo: “14/02/95”). Si desea conocer el último día
+      del mes siguiente, sustituya el 0 (cero) por un 1 (uno) en la anterior función de ejemplo, y si
+      desea conocer el último día del mes anterior escriba -1 en lugar de 0. Puede utilizar para este
+      dato números superiores a 1, tanto positivos como negativos (por ejemplo -2 sería dos meses
+      antes).   </p>
+
+    </div>
 
 
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función HORA</h1>
+         
+    <p>La función  <b>HORA(número)</b> dado un número de serie, se devuelve la hora correspondiente.   </p>
 
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función HOY</h1>
+    
+    <p>La función  <b>HOY()</b> devuelve el número de serie de la fecha actual.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función MES</h1>
+    
+    <p>La función  <b>MES(número)</b> dado un número de serie, se devuelve el número de día del mes correspondiente.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función MINUTO </h1>
+    
+    <p>La función  <b>MINUTO(número)</b> dado un número de serie, se devuelve el minuto de la hora correspondiente.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función SEGUNDO </h1>
+    
+    <p>La función  <b>SEGUNDO(número)</b> dado un número de serie, se devuelve el segundo de la hora correspondiente.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función TIEMPO</h1>
+    
+    <p>La función  <b>TIEMPO(hora;minuto;segundo)</b> devuelve el número de serie que pertenece a la hora especificada   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función VALFECHA </h1>
+    
+    <p>La función  <b>VALFECHA(fecha)</b> convierte una fecha escrita entrecomillada (en formato numérico,
+      ejemplo: “5/2/70”) en número de serie.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función VALHORA </h1>
+    
+    <p>La función  <b>VALHORA(fecha)</b> convierte una hora escrita entrecomillada (con formato numérico,
+      ejemplo: “15:00”) en número de serie.   </p>
+
+    </div>
 
     
     <div class="nota-box">
