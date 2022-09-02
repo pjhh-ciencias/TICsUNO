@@ -82,42 +82,14 @@
   </head>
 
   <body class="fondo-body" >
-    <h1 class="number-title flexbox"></h1>
+    <h1 class="number-title flexbox"> Funciones Matemáticas</h1>
 
     
-  
-    <div class="nota-box">
-      <h1 class="number-subtitle">Funciòn  SUMARSI</h1>
-      
-      <p>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</p>
 
 
-      <p>
-        <ul>
-          <li>Rango Evaluacion1: Rango de celdas que contienen uno de los parámetros a sumar</li>
-          <li>Criterio 1: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
-             hasta 128 rango/criterios de evaluación, si sólo tienes uno, pasar el siguiente parámetro</li>
-          <li>Rango Suma: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
-        </ul>
-      </p>
-
-      <p> OJO. Los rangos indicados en la función, deben ser del mismo tamaño de celdas, es decir,
-         en el rango evaluación se seleccionaron 10 celdas, el rango de suma también debe ser de 10 celdas.</p>
-
-      <p>Es una función que nos ayudará a realizar SUMAS, con la característica de que la suma será 
-        condicionada a uno o varios criterios.</p>
-
-      <p>La función SUMARSI CONJUNTO te será muy útil para realizar análisis de datos y encontrar 
-        indicadores de acuerdo a diferentes criterios cómo pueden ser países, productos, vendedores 
-        o también, ventas mayores a, clientes sin factura, entre otros.</p>
-        
-      <p>Así que gracias a la fórmula condicional podremos, por ejemplo, encontrar la suma de 
-        ventas de un producto de manzana (columna A) en EUA (columna B).</p>
 
 
-      <p>=SUMAR.SI.CONJUNTO(A1:A100,"Manzana",B1:B100,"EUA",E1:E100)</p>  
-    </div>
-
+    
     <div class="nota-box">
       <h1 class="number-subtitle">Fechas en Excel</h1>
       <p>Excel almacena una fecha como si fuera un número entero. Al utilizar un sistema como éste,
