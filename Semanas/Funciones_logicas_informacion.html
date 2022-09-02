@@ -88,18 +88,104 @@
     
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  </h1>
+      <h1 class="number-subtitle">  </h1>
     
-    <p>La función <b> </p>
+    <p>Existen varios tipos más de funciones con Excel. Por ejemplo, puede trabajarse
+      con funciones lógicas, de ingeniería o funciones financieras (y otras). Veamos un ejemplo
+      más: la función SI es una función lógica que mostrará un dato u otro en la celda
+      dependiendo de una condición:</p>
+
+      <center><b>SI (Condición;Verdadero;Falso)</b></center>
+
+      <p>En esta función se empieza tecleando una condición consistente en comparar dos
+        datos. Ejemplos:</p>
+
+      <p>
+        <ol>
+          <li>SI (B5< 0;... (si B5 es menor que cero).</li>
+          <li>SI (C7<>B8;... (si C7 es distinto de B8).</li>
+        </ol>
+      </p>
+
+    <p>Para realizar estas condiciones se pueden emplear los siguientes operadores de
+      comparación:</p>
+
+    <p>
+      <ol>
+        <li><b>=</b>  es igual a</li>
+        <li><b>< </b> es menor que</li>
+        <li><b>> </b> es mayor que</li>
+        <li><b> < =</b>es menor o igual que </li>
+        <li><b> >= </b> es mayor o igual que</li>
+        <li><b> < > </b>es distinto de</li>
+      </ol>
+    </p>
+
+    <p>Después de teclear la condición en la función SI, debemos indicar lo que debe aparecer
+      en la celda si esa condición se cumple y, por último, separándolo con otro punto y coma,
+      indicar lo que debe aparecer si la condición no se cumple. Veamos un ejemplo completo:</p>
+
+    
+    <center><b>=SI(B5<0;”El valor es negativo”;”El valor es positivo”)</b></center>
+
+    <p>Esta función implica que si B5 es menor que cero deberá aparecer el mensaje "El
+      valor es negativo" y, de lo contrario, aparecerá "El valor es positivo".</p>
+
+    <p>Aún se puede completar más el caso: ¿y si el valor de B5 es cero? Para tenerlo en
+      cuenta podemos incluir una función SI dentro de otra:</p>
+
+    <center><b>=SI(B5<0;”El valor es negativo”;SI(B5>0;”El valor es positivo”;”El valor es cero”))</b></center>
+
+    <p>Esta función se complementa con otras que igualmente juegan con los valores
+      lógicos verdadero y falso:</p>
+
+
+    <p><b>O(condición 1;condición 2;...;condición n)</b> devuelve verdadero cuando al menos una de las
+      condiciones entre los paréntesis lo es.</p>
+
+    <p><b>Y(condición 1;condición 2;...;condición n)</b> devuelve verdadero cuando todas las condiciones
+      entre los paréntesis lo son.</p>
+
+    <p><b>ESBLANCO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre
+      los paréntesis está vacía.</p>
+
+    <p><b>ESERROR(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre los
+      paréntesis genera un error.</p>
+
+    <p><b>ESNUMERO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre
+      los paréntesis contiene un dato numérico.</p>
+
+    <p><b>ESTEXTO(celda o expresión)</b> devuelve verdadero cuando la celda o la expresión entre los
+      paréntesis contiene un dato de texto.</p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  </h1>
+      <h1 class="number-subtitle">Observación  </h1>
     
-    <p>La función <b> </p>
-    
+    <p>Puede colocarse una función dentro de otra si esto resulta provechoso. Por
+      ejemplo, una media aritmética puede devolver un resultado con decimales, y
+      dichos decimales pueden eliminarse mediante otra función. Ejemplo:
+    <p>
+    <center>
+    <b>
+      =ENTERO(PROMEDIO (B1:B10))
+    </b>
+    </center>
+    </p>
+      La función entero quita los decimales de lo que tiene entre sus paréntesis, que es
+      la media aritmética de los datos contenidos entre B1 y B10.
+      También puede incluir una función (o varias) dentro de una fórmula. Por ejemplo, si
+      necesita hallar la mitad del resultado de una suma, podría hacerlo de la siguiente
+      forma:
+      <p>
+      <center>
+        <b>
+        =SUMA(B1:B10)/2 </p>
+        </b>
+      </center>
+      </p>
     </div>
 
    
