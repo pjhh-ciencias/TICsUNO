@@ -82,7 +82,91 @@
   </head>
 
   <body class="fondo-body" >
-    <h1 class="number-title flexbox"> Funciones Matemáticas</h1>
+    <h1 class="number-title flexbox"> Funciones de fecha y hora</h1>
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función AHORA() </h1>
+    
+    <p>La función <b>AHORA()</b> devuelve el número de serie de la fecha y hora actuales. </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función AÑO </h1>
+    
+    <p>La función  <b>AÑO(número)</b> convierte un número de serie en un año. El número puede ser una fecha
+      entrecomillada (por ejemplo, “29/05/68” devolvería 1968).   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función DIA </h1>
+    
+    <p>La función  <b>DIA(número)</b>, dado un número de serie, devuelve el correspondiente día del mes.   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función DIAS.LAB</h1>
+    
+    <p>La función  <b>DIA.LAB(fecha_de_partida; días_laborables;días_festivos)</b> devuelve el número de serie
+      del primer día laborable, pasado o futuro, a la fecha inicial, según sea el número de días
+      laborables y festivos. Esta función necesita la macro automática Herramientas para análisis.
+      Por ejemplo, si se desea saber cuál será el cuarto día laborable a partir del 24 de diciembre del
+      año 1989, deberemos escribir la función siguiente   </p>
+
+      <center><b> =DIA.LAB(FECHANÚMERO (“24/12/89”);4;2)</b> </center>
+
+    <p>Como podemos observar, hay que indicar que existen dos días festivos (el fin de semana).
+        La función FECHANÚMERO la veremos más adelante en este mismo apartado
+    </p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función </h1>
+    
+    <p>La función  <b>   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función </h1>
+    
+    <p>La función  <b>   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función </h1>
+    
+    <p>La función  <b>   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función </h1>
+    
+    <p>La función  <b>   </p>
+
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función </h1>
+    
+    <p>La función  <b>   </p>
+
+    </div>
+
 
     
 
