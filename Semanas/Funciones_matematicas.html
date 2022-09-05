@@ -142,7 +142,7 @@
 
     
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función  </h1>
+      <h1 class="number-subtitle"> Función CONTAR.BLANCO </h1>
       <p>La funcion <b>CONTAR.BLANCO(rango)</b> ofrece el número de celdas vacías que haya en el rango.</p>
     </div>
 
@@ -151,6 +151,49 @@
       <h1 class="number-subtitle">Función CONTAR.SI</h1>
       <p>La función <b>CONTAR.SI(rango;criterio)</b> ofrece el número de celdas del rango que contengan un determinado
         valor (el criterio).</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función CONTAR.SI.CONJUNTO</h1>
+
+      <p>La función <b>CONTAR.SI.CONJUNTO(rango;criterio)</b> La función CONTAR.SI.CONJUNTO aplica criterios 
+        a las celdas de varios rangos y cuenta el número de veces que se cumplen todos los criterios.</p>
+
+
+      <h2 class="number-title"> Sintaxis</h2>
+
+      <p> <center> <b>CONTAR.SI.CONJUNTO(rango_criterios1; criterios1; [rango_criterios2; criterios2];…)</b></center></p>
+      
+      <p>
+        La sintaxis de la función CONTAR.SI.CONJUNTO tiene los siguientes argumentos:
+
+
+        <ul>
+          <li><b>Criterios_rango1</b>    Obligatorio. El primer rango en el que se evalúan los criterios asociados</li>
+          <li><b>criterios1</b>    Obligatorio. Los criterios en forma de número, expresión, referencia de celda o texto 
+            que determinan las celdas que se van a contar. Por ejemplo, los criterios se pueden expresar como 
+            32, ">32", B4, "manzanas" o "32".</li>
+            <li><b>criterios_rango2, criterios2...</b>    Opcional. Rangos adicionales y sus criterios asociados. 
+              Se permiten hasta 127 pares de rangos/criterios.</li>
+        </ul>
+      </p>
+
+      <p><b>Importante</b>  Cada rango adicional debe tener la misma cantidad de filas y columnas que el 
+        argumento criterios_rango1. No es necesario que los rangos sean adyacentes.</p>
+
+        <p><b>Observaciones:</b>
+        <ul>
+          <li>Los criterios de cada rango se aplican a una celda cada vez. Si todas las primeras celdas cumplen 
+            los criterios asociados, el número aumenta en 1. Si todas las segundas celdas cumplen los criterios
+             asociados, el número aumenta en 1 nuevamente y así sucesivamente hasta evaluar todas las celdas.
+          </li>
+          <li>Si el argumento de los criterios hace referencia a una celda vacía, la función CONTAR.SI.CONJUNTO 
+            trata dicha celda como un valor 0.</li>
+          <li>En los criterios se pueden usar caracteres comodín, el signo de interrogación (?) y el asterisco (*) .
+             El signo de interrogación se corresponde con un solo carácter y el asterisco se corresponde con cualquier 
+             secuencia de caracteres. Si desea buscar un signo de interrogación o un asterisco reales, escriba una tilde 
+             (~) delante del carácter que desea buscar.</li>
+        </ul></p>
     </div>
 
 
