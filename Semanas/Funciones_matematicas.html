@@ -71,7 +71,7 @@
        </nav>
        <!-- 
         <nav class="small-nav" align=right>
-          <button onclick="myFunction()">Claro/Obscuro 
+          <button onclick="myFunction( )">Claro/Obscuro 
         </nav> 
       -->
 
@@ -100,7 +100,7 @@
     <div class="nota-box">
       <h1 class="number-subtitle"> Función ALEATORIO</h1>
 
-      <p>La funci+on <b>ALEATORIO()</b> devuelve un número decimal al azar entre 0 y 1.</p>
+      <p>La funci+on <b>ALEATORIO( )</b> devuelve un número decimal al azar entre 0 y 1.</p>
     </div>
 
     <div class="nota-box">
@@ -119,9 +119,15 @@
 
 
     <div class="nota-box">
+      <h1 class="number-subtitle"> Función RESTO </h1>
+
+      <p>La función <b>RESTO(x;y)</b> proporciona el resto de dividir x entre y.</p>
+    </div>
+
+    <div class="nota-box">
       <h1 class="number-subtitle"> Función  CONTAR</h1>
     
-      <p>la función <b>CONTAR(rango)</b> ofrece el número de celdas ocupadas con datos numéricos que
+      <p>La función <b>CONTAR(rango)</b> ofrece el número de celdas ocupadas con datos numéricos que
         haya en un rango.</p>
 
     </div>
@@ -147,11 +153,6 @@
         valor (el criterio).</p>
     </div>
 
-    <div class="nota-box">
-      <h1 class="number-subtitle"> Función ENTERO</h1>
-      <p>La función <b>ENTERO(número)</b> extrae la parte entera de un número (aunque no redondea la cifra, sino
-        que se limita a eliminar los decimales del número).</p>
-    </div>
 
     <div class="nota-box">
       <h1 class="number-subtitle">Función EXP </h1>
@@ -229,14 +230,14 @@
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función PI() </h1>
+      <h1 class="number-subtitle"> Función PI( ) </h1>
 
-      <p>La función  <b>PI()</b> devuelve el valor del número Pi redondeado a nueve decimales.</p>
+      <p>La función  <b>PI( )</b> devuelve el valor del número Pi redondeado a nueve decimales.</p>
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función  </h1>
+      <h1 class="number-subtitle"> Función POTENCIA  </h1>
       <p>La función <b>POTENCIA(x;y)</b> devuelve x elevado a y.</p>
     </div>
 
@@ -257,7 +258,7 @@
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función   </h1>
+      <h1 class="number-subtitle"> Función RADIANES  </h1>
 
       <p>La función <b>RADIANES(número)</b> convierte el número especificado (que esté en grados) en radianes.</p>
     </div>
@@ -271,25 +272,374 @@
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función  </h1>
+      <h1 class="number-subtitle"> Función REDONDEAR  </h1>
 
       <p>La función <b>REDONDEAR(número;decimales)</b> redondea el número especificado a la cantidad de
         decimales indicada como segundo dato.</p>
+
     </div>
 
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función REDONDEAR.MAS  </h1>
+
+      <p>La función <b>REDONDEAR.MAS(número;decimales)</b> redondea un número hacia arriba, en dirección contraria a cero.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MAS(número; núm_decimales)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MAS tiene los siguientes argumentos:<br>
+      <ul>
+      <li>Número    Obligatorio. Cualquier número real que se desea redondear hacia arriba.</li>      
+      <li>Núm_decimales    Obligatorio. El número de dígitos al que se desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDONDEAR.MAS es similar a la función REDONDEAR, excepto que siempre redondea al número
+        superior más próximo, alejándolo de cero.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es mayor que 0 (cero), el número se redondea al valor superior 
+        (inferior para los números negativos) más próximo que contenga el número de lugares decimales especificado.
+      </li>
+
+      <li>
+        Si núm_decimales es 0, número se redondeará hacia arriba al entero más próximo.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es menor que 0, el número se redondea al valor superior (inferior si es negativo) 
+        más próximo a partir de la izquierda de la punto decimal.
+      </li>
+    </ul>
+    </p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción (resultado)</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(3.2;0)</p>
+            </td>
+            <td>
+              <p>Redondea 3.2 hacia arriba a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>4</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(76.9;0)</p>
+            </td>
+            <td>
+              <p>Redondea 76.9 hacia arriba a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>77</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(3.14159; 3)</p>
+            </td>
+            <td>
+              <p>Redondea 3.14159 hacia arriba a tres posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3.142</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(-3.14159; 1)</p>
+            </td>
+            <td>
+              <p>Redondea -3.14159 hacia arriba a una posición decimal.</p>
+            </td>
+            <td>
+              <p>-3.2</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MAS(31415.92654; -2)</p>
+            </td>
+            <td>
+              <p>Redondea 31415.92654 hacia arriba a 2 posiciones decimales a la izquierda de la punto decimal.</p>
+            </td>
+            <td>
+              <p>31500</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+  
+    </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función REDONDEAR.MENOS  </h1>
+
+      <p>La función <b>REDONDEAR.MENOS(número;decimales)</b> redondea un número hacia abajo, en dirección hacia cero.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MENOS(número; núm_decimales)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MENOS tiene los siguientes argumentos:<br>
+      <ul>
+      <li><b>Número</b>    Obligatorio. Cualquier número real que se desea redondear hacia abajo.</li>      
+      <li><b>Núm_decimales</b>    Obligatorio. El número de dígitos al que se desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDONDEAR.MENOS es similar a la función REDONDEAR, excepto que siempre redondea un número acercándolo a cero.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es mayor que 0 (cero), el número se redondea al valor inferior 
+        (superior para los números negativos) más próximo que contenga el número de lugares decimales especificado.
+      </li>
+
+      <li>
+        Si núm_decimales es 0, número se redondeará al entero inferior más próximo.
+      </li>
+
+      <li>
+        Si el argumento núm_decimales es menor que 0, el número se redondea al valor inferior 
+        (superior si es negativo) más próximo a partir de la izquierda de la punto decimal.
+      </li>
+    </ul>
+    </p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+                
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(3.2; 0)</p>
+            </td>
+            <td>
+              <p>Redondea 3.2 hacia abajo a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(76.9; 0)</p>
+            </td>
+            <td>
+              <p>Redondea 76.9 hacia abajo a cero posiciones decimales.</p>
+            </td>
+            <td>
+              <p>76</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(3.14159; 3)</p>
+            </td>
+            <td>
+              <p>Redondea 3,14159 hacia abajo a tres posiciones decimales.</p>
+            </td>
+            <td>
+              <p>3.141</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(-3.14159; 1)</p>
+            </td>
+            <td>
+              <p>Redondea -3.14159 hacia abajo a una posición decimal.</p>
+            </td>
+            <td>
+              <p>-3,1</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDONDEAR.MENOS(31415.92654; -2)</p>
+            </td>
+            <td>
+              <p>Redondea 31415.92654 hacia abajo a 2 posiciones decimales a la izquierda de la punto decimal.</p>
+            </td>
+            <td>
+              <p>31400</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    </div>
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función RESTO </h1>
+      <h1 class="number-subtitle"> Función REDONDEAR.MULT  </h1>
 
-      <p>La función <b>RESTO(x;y)</b> proporciona el resto de dividir x entre y.</p>
+      <p>La función <b>REDONDEAR.MULT(número;decimales)</b>  devuelve un número redondeado al múltiplo deseado.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>   
+     <p><center><b>REDONDEAR.MENOS(número; multiplo)</b></center></p>
+     <p>La sintaxis de la función REDONDEAR.MULT tiene los siguientes argumentos:<br>
+      <ul>
+      <li><b>Número</b>    Obligatorio. Es el valor que va a redondear.</li>      
+      <li><b>Multiplo</b>   Obligatorio. Es el múltiplo al que desea redondear el número.</li>
+    </ul>
+
+    <h2 class="number-title"> Observaciones</h2>
+    <ul>
+      <li>
+        La función REDOND.MULT redondea hacia valores positivos, hacia arriba, si el resto de dividir número entre 
+        múltiplo es mayor o igual que la mitad del valor de múltiplo.
+      </li>
+
+      <li>
+        Los argumentos Número y Múltiplo deben tener el mismo signo. Si no, se devuelve un error #NUM
+      </li>
+    </ul>
+    </p>
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </th>
+            <th>
+              <p>
+                <b class="ocpLegacyBold">Resultado</b>
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(10;3)</p>
+            </td>
+            <td>
+              <p>Redondea 10 al múltiplo de 3 más próximo.</p>
+            </td>
+            <td>
+              <p>9</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(-10;-3)</p>
+            </td>
+            <td>
+              <p>Redondea -10 al múltiplo de -3 más próximo.</p>
+            </td>
+            <td>
+              <p>-9</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(1,3;0,2)</p>
+            </td>
+            <td>
+              <p>Redondea 1,3 al múltiplo de 0,2 más próximo.</p>
+            </td>
+            <td>
+              <p>1,4</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=REDOND.MULT(5;-2)</p>
+            </td>
+            <td>
+              <p>Devuelve el mensaje de error #¡NUM! porque -2 y 5 tienen signos diferentes.</p>
+            </td>
+            <td>
+              <p>#¡NUM!</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
     </div>
-
 
     <div class="nota-box">
-      <h1 class="number-subtitle"> Función  SENO</h1>
+      <h1 class="number-subtitle"> Función  TRUNCAR </h1>
 
-      <p>La función <b>SENO(ángulo)</b> devuelve el seno del ángulo especificado.</p>
+      <p>La función <b>TRUNCAR(número)</b> elimina los decimales del número especificado devolviendo la parte
+        entera exclusivamente. </p>
     </div>
+
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función ENTERO</h1>
+      <p>La función <b>ENTERO(número)</b> Redondea un número hasta el entero inferior más próximo.</p>
+    </div>
+
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Observación ENTERO VS TRUNCAR</h1>
+      <p>Las funciones TRUNCAR y ENTERO son parecidos porque ambos devuelven enteros. TRUNCAR quita la 
+        parte fraccionaria del número. ENTERO redondea los números al entero más cercano basado en el valor
+        de la parte fraccionaria del número. Estas dos funciones solo son diferentes cuando se utilizan números 
+        negativos: TRUNCAR(-4.3) devuelve -4, pero ENTERO(-4.3) devuelve -5 porque -5 es el valor más bajo.</p>
+    </div>
+
 
 
     <div class="nota-box">
@@ -314,6 +664,15 @@
         cuadrado y suma el resultado). </p>
     </div>
 
+    
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  SENO</h1>
+
+      <p>La función <b>SENO(ángulo)</b> devuelve el seno del ángulo especificado.</p>
+    </div>
+
 
     <div class="nota-box">
       <h1 class="number-subtitle"> Función  TAN </h1>
@@ -322,30 +681,23 @@
     </div>
 
 
-
-    <div class="nota-box">
-      <h1 class="number-subtitle"> Función  TRUNCAR </h1>
-
-      <p>La función <b>TRUNCAR(número)</b> elimina los decimales del número especificado devolviendo la parte
-        entera exclusivamente. </p>
-    </div>
-
-
-    
-    
+<!--
+  
   
     <div class="nota-box">
-      <h1 class="number-subtitle">Funciòn  SUMARSI</h1>
-      
-      <p>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</p>
+      <h1 class="number-subtitle"> Función  SUMARSI</h1>
+
+      <h2 class="number-title"> Sintaxis </h2>
+        
+      <p> <center><b>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</b></center></p>
 
 
       <p>
         <ul>
-          <li>Rango Evaluacion1: Rango de celdas que contienen uno de los parámetros a sumar</li>
-          <li>Criterio 1: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
+          <li><b>Rango Evaluacion1</b>: Rango de celdas que contienen uno de los parámetros a sumar</li>
+          <li><b>Criterio 1</b>: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
              hasta 128 rango/criterios de evaluación, si sólo tienes uno, pasar el siguiente parámetro</li>
-          <li>Rango Suma: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
+          <li><b>Rango Suma</b>: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
         </ul>
       </p>
 
@@ -366,7 +718,7 @@
       <p>=SUMAR.SI.CONJUNTO(A1:A100,"Manzana",B1:B100,"EUA",E1:E100)</p>  
     </div>
 
-
+-->
 
  
     
