@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  6 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Funciones de texto</h1>
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función  CAR</h1>
+    
+    <p>La función <b>CAR (número)</b> devuelve el carácter ASCII especificado por el número especificado. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función CODIGO </h1>
+    
+    <p>La función <b>CODIGO(letra)</b> devuelve el número de código ASCII del primer carácter del texto. Sólo
+      devuelve el código del primer carácter y éste debe ir entrecomillado. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función  CONCATENAR</h1>
+    
+    <p>La función <b>CONCATENAR(texto1;texto2;...)</b> añade un texto a otro. Los datos que se van a
+      concatenar deben ser de tipo texto (por ejemplo, un texto entre comillas o una celda que
+      contenga un texto). </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función DERECHA  </h1>
+    
+    <p>La función <b>DERECHA(texto;cantidad)</b> extrae un grupo de caracteres por la derecha de un texto. El
+      número de caracteres que se extrae debe establecerse como segundo parámetro de la
+      función (cantidad). Por ejemplo, si tecleamos =DERECHA(“Hola”;2), el resultado será
+      “la” (las 2 últimas letras de Hola). </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función RECORTAR </h1>
+    
+    <p>La función <b>RECORTAR(texto)</b> elimina espacios del texto dejando un solo espacio entre cada palabra
+      y eliminando completamente los de los extremos del texto. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función MED </h1>
+    
+    <p>La función <b>MED(texto;posición_inicial;cantidad)</b> devuelve una parte del texto especificado, desde la
+      posición inicial, y tantos caracteres como se indiquen en el tercer parámetro (cantidad).
+      Así, =EXTRAE(“Pepito”;2;3) da como resultado “epi” (tres letras a partir de la segunda de
+      la cadena Pepito). </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función IGUAL  </h1>
+    
+    <p>La función <b>IGUAL(texto1;texto2)</b> examina dos datos de texto de la hoja verificando si son iguales. La
+      comprobación incluye incluso diferencias de mayúsculas y minúsculas en ambos datos.
+      Excel devuelve el valor VERDADERO si ambos datos son iguales, y FALSO si no lo son. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función IZQUIERDA  </h1>
+    
+    <p>La función <b>IZQUIERDA(texto;cantidad)</b> extrae un grupo de caracteres por la izquierda de un texto. El
+      número de caracteres que se extrae debe establecerse como segundo parámetro (cantidad).
+      Así, =IZQUIERDA(“Excel”;2) da como resultado “Ex” (las 2 primeras letras de Excel). </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función LARGO </h1>
+    
+    <p>La función <b>LARGO(texto)</b> devuelve el número total de caracteres que posee un dato de texto. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función MAYUS </h1>
+    
+    <p>La función <b>MAYUSC(texto)</b> convierte el dato de texto en mayúsculas. Los caracteres que ya estaban
+      en mayúsculas no son modificados. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función MINUS  </h1>
+    
+    <p>La función <b>MINUSC(texto)</b> convierte el dato de texto en minúsculas. Los caracteres que ya estaban en
+      minúsculas no son modificados. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función NOMPROPIO </h1>
+    
+    <p>La función <b>NOMPROPIO(texto)</b> pasa a mayúsculas la primera letra de cada palabra del dato de texto
+      especificado. Los caracteres que ya estaban en mayúsculas no son modificados. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función  </h1>
+    
+    <p>La función <b>REPETIR(texto;cantidad)</b> repite el dato de texto la cantidad de veces que establezcamos. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función SUSTITUIR </h1>
+    
+    <p>La función <b>SUSTITUIR(texto;texto_a_sustituir;texto_sustituto)</b> reemplaza varios caracteres contiguos
+      dentro de un dato de texto por otros. Hay que especificar el texto en el que se va a hacer el
+      cambio (texto), la parte del texto que se va a cambiar (texto_ a_sustituir) y el texto que sustituirá
+      al antiguo (texto_ sustituto). </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función TEXTO  </h1>
+    
+    <p>La función <b>TEXTO(número;formato)</b> transforma un dato de tipo numérico en texto utilizando el
+      formato establecido. Por ejemplo, =TEXTO(1247;”0.000 Pta”) da como resultado 1.247
+      Pta. </p>
+    
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función  TEXTO</h1>
+    
+    <p>La función <b>VALOR(texto)</b> transforma un dato de tipo texto en numérico, siempre y cuando el dato de
+      texto contenga sólo datos numéricos. Por ejemplo, =VALOR(“1.247”) da como resultado
+      1.247 (con este dato se pueden realizar operaciones matemáticas, ya que es de tipo
+      numérico y no de texto). </p>
+    
+    </div>
+
+   
+  </body>

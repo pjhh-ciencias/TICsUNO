@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="../main.js"></script>
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams", /* this part is for numbered equations */
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <!--<script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>-->
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="../style.css" />
+
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+        body.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+        h1.number-title{
+          counter-reset: sectionCounter 5 cardCounter ;
+        }
+      </style>
+  
+    <!-- Top Menu  -->
+
+    <header class="main-header">
+        <h1> Tecnolologías de la información y comunicación II  </h1>
+       <nav class="top-nav">
+         <ul>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Home.html"> Inicio  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Informacion_General.html"> Información general </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Notas.html"> Notas  </a> </li>
+          <li> <a href="https://pjhh-ciencias.github.io/TIyCUNO/Enlaces_externos.html"> Links </a> </li>
+          <!--  <li> <a href="./ExternalLinks.html"> Links </a> </li> -->
+        
+            
+          </ul>
+       </nav>
+       <!-- 
+        <nav class="small-nav" align=right>
+          <button onclick="myFunction()">Claro/Obscuro 
+        </nav> 
+      -->
+
+      </header>
+      <!-- This part is for title in tab-->
+      <title> § Semana  6 </title>
+    
+  </head>
+
+  <body class="fondo-body" >
+    <h1 class="number-title flexbox"> Funciones Matemáticas</h1>
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  ABS</h1>
+    
+    La función <b>ABS(número)</b> proporciona el valor absoluto de un número.
+
+    </div>
+
+
+
+    
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función ALEATORIO</h1>
+
+      <p>La funci+on <b>ALEATORIO()</b> devuelve un número decimal al azar entre 0 y 1.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Funcion ALEATORIO.ENTRE</h1>
+      <P>la función  ALEATORIO.ENTRE(x;y) devuelve un número al azar entre X e Y. El primer número
+        debe ser menor que el segundo.</P>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función COCIENTE</h1>
+      <P>La funcion <b>COCIENTE(x;y)</b> realiza la división entera entre X e Y. El resultado es el cociente de la
+        división sin decimales (si los tuviera).
+      </P>
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  CONTAR</h1>
+    
+      <p>la función <b>CONTAR(rango)</b> ofrece el número de celdas ocupadas con datos numéricos que
+        haya en un rango.</p>
+
+    </div>
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  CONTARA</h1>
+    
+      <p>La función <b>CONTARA(rango)</b> ofrece el número de celdas ocupadas con datos de cualquier
+        tipo que haya en un rango.</p>
+
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  </h1>
+      <p>La funcion <b>CONTAR.BLANCO(rango)</b> ofrece el número de celdas vacías que haya en el rango.</p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función CONTAR.SI</h1>
+      <p>La función <b>CONTAR.SI(rango;criterio)</b> ofrece el número de celdas del rango que contengan un determinado
+        valor (el criterio).</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función ENTERO</h1>
+      <p>La función <b>ENTERO(número)</b> extrae la parte entera de un número (aunque no redondea la cifra, sino
+        que se limita a eliminar los decimales del número).</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función EXP </h1>
+      <p>La función <b>EXP(número)</b> devuelve el número e elevado al número especificado.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función FACT </h1>
+      <p>La función <b>FACT(número)</b> devuelve el factorial del número especificado.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">Función GRADOS</h1>
+      <p>La funcón <b>GRADOS(número)</b> convierte el número especificado (de radianes) en grados.</p>
+    </div>
+
+   
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función LOG</h1>
+
+      <p>La función <b>LOG(número;base)</b> devuelve el logaritmo del número especificado en la base indicada</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función LOG10</h1>
+
+      <p>La función <b>LOG10(número)</b> devuelve el logaritmo en base 10 del número especificado. </p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función MAX</h1>
+
+      <p>La función <b>MAX(rango)</b> muestra el valor más alto contenido en las celdas del rango especificado. </p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función M.C.D</h1>
+      <p>La función <b>M.C.D(rango o x;y;z;...)</b> devuelve el Máximo Común Divisor de la lista de los números
+        especificada. Se pueden establecer tantos números como se desee separándolos por punto y
+        coma (;).</p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función M.C.M</h1>
+
+      <p>La función <b>M.C.M(rango o x;y;z;...)</b> devuelve el Mínimo Común Múltiplo de la lista de los números
+        especificada. Se pueden establecer tantos números como se desee separándolos por punto y
+        coma (;).</p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función MDETERM </h1>
+
+      <p>La función <b>MDETERM(rango)</b> devuelve la matriz determinante de una matriz especificada mediante
+        un rango. La matriz debe ser cuadrada, es decir, debe tener el mismo número de filas que de
+        columnas. Ninguna de las celdas debe tener datos de tipo texto.</p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función MIN </h1>
+      
+      <p>La función <b>MIN(rango o x;y;z;...)</b> muestra el valor más pequeño contenido en las celdas del rango
+        especificado</p>
+    </div>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función MINVERSA </h1>
+
+      <p>La función <b>MINVERSA(rango)</b> devuelve la matriz inversa de una matriz especificada mediante un
+        rango. La matriz debe ser cuadrada, es decir, debe tener el mismo número de filas que de
+        columnas. Ninguna de las celdas debe tener datos de tipo texto.</p>
+    </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función NUMERO.ROMANO  </h1>
+      <p>La función <b>NUMERO.ROMANO(número)</b> devuelve el número especificado en números romanos (en
+        formato de texto). Tenga en cuenta que los números romanos no son infinitos debido a que
+        están formados por letras: si utiliza un número superior a 3999, esta función dará error.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función PI() </h1>
+
+      <p>La función  <b>PI()</b> devuelve el valor del número Pi redondeado a nueve decimales.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  </h1>
+      <p>La función <b>POTENCIA(x;y)</b> devuelve x elevado a y.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  PRODUCTO</h1>
+     <p>La función <b>PRODUCTO(rango o x;y;z…)</b> multiplica el contenido de las celdas del rango
+      especificado. </p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  PROMEDIO</h1>
+
+      <p>La función <b>PROMEDIO(rango o x;y;z...)</b> genera la media aritmética de los valores contenidos en el
+        rango especificado.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función   </h1>
+
+      <p>La función <b>RADIANES(número)</b> convierte el número especificado (que esté en grados) en radianes.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función RCUAD  </h1>
+
+      <p>La función <b>RCUAD(número)</b> devuelve la raíz cuadrada del número especificado</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  </h1>
+
+      <p>La función <b>REDONDEAR(número;decimales)</b> redondea el número especificado a la cantidad de
+        decimales indicada como segundo dato.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función RESTO </h1>
+
+      <p>La función <b>RESTO(x;y)</b> proporciona el resto de dividir x entre y.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  SENO</h1>
+
+      <p>La función <b>SENO(ángulo)</b> devuelve el seno del ángulo especificado.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  SIGNO</h1>
+
+      <p>La función <b>SIGNO(número)</b> devuelve el signo del número especificado. Si el número es negativo,
+        devuelve -1; si es cero, devuelve 0; y si es positivo, devuelve 1.</p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función SUMA  </h1>
+
+      <p>La función <b>SUMA(rango o x;y;z;...)</b> suma el contenido de las celdas del rango especificado. </p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función SUMA.CUADRADOS </h1>
+
+      <p>La función <b>SUMA.CUADRADOS(x;y)</b> devuelve la suma de los cuadrados de x e y (eleva ambos al
+        cuadrado y suma el resultado). </p>
+    </div>
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  TAN </h1>
+
+      <p>La función <b>TAN(ángulo)</b> devuelve la tangente del ángulo especificado. </p>
+    </div>
+
+
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función  TRUNCAR </h1>
+
+      <p>La función <b>TRUNCAR(número)</b> elimina los decimales del número especificado devolviendo la parte
+        entera exclusivamente. </p>
+    </div>
+
+
+    
+    
+  
+    <div class="nota-box">
+      <h1 class="number-subtitle">Funciòn  SUMARSI</h1>
+      
+      <p>=SUMAR.SI.CONJUNTO(rango_evaluacion1,criterio1...,rango_suma)</p>
+
+
+      <p>
+        <ul>
+          <li>Rango Evaluacion1: Rango de celdas que contienen uno de los parámetros a sumar</li>
+          <li>Criterio 1: Indica el criterio a considerar del rango_evaluación 1...: Puedes indicar
+             hasta 128 rango/criterios de evaluación, si sólo tienes uno, pasar el siguiente parámetro</li>
+          <li>Rango Suma: Establece las celdas que se deben sumar de acuerdo a las condiciones</li>
+        </ul>
+      </p>
+
+      <p> OJO. Los rangos indicados en la función, deben ser del mismo tamaño de celdas, es decir,
+         en el rango evaluación se seleccionaron 10 celdas, el rango de suma también debe ser de 10 celdas.</p>
+
+      <p>Es una función que nos ayudará a realizar SUMAS, con la característica de que la suma será 
+        condicionada a uno o varios criterios.</p>
+
+      <p>La función SUMARSI CONJUNTO te será muy útil para realizar análisis de datos y encontrar 
+        indicadores de acuerdo a diferentes criterios cómo pueden ser países, productos, vendedores 
+        o también, ventas mayores a, clientes sin factura, entre otros.</p>
+        
+      <p>Así que gracias a la fórmula condicional podremos, por ejemplo, encontrar la suma de 
+        ventas de un producto de manzana (columna A) en EUA (columna B).</p>
+
+
+      <p>=SUMAR.SI.CONJUNTO(A1:A100,"Manzana",B1:B100,"EUA",E1:E100)</p>  
+    </div>
+
+
+
+ 
+    
+  </body>
