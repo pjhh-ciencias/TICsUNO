@@ -87,151 +87,138 @@
     
     
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  CAR</h1>
+      <h1 class="number-subtitle"> Función  CARACTER</h1>
     
-    <p>La función <b>CAR (número)</b> devuelve el carácter ASCII especificado por el número especificado. </p>
+    <p>La función <b>CARACTER(número)</b> devuelve el carácter ASCII correspondiente a el número especificado. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función CODIGO </h1>
+      <h1 class="number-subtitle"> Función CODIGO </h1>
     
     <p>La función <b>CODIGO(letra)</b> devuelve el número de código ASCII del primer carácter del texto. Sólo
-      devuelve el código del primer carácter y éste debe ir entrecomillado. </p>
+      devuelve el código del primer carácter y éste debe ir entre comillas. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  CONCATENAR</h1>
+      <h1 class="number-subtitle"> Función  CONCATENAR</h1>
     
-    <p>La función <b>CONCATENAR(texto1;texto2;...)</b> añade un texto a otro. Los datos que se van a
+    <p>La función <b>CONCATENAR("texto1";"texto2";...)</b> añade un texto a otro. Los datos que se van a
       concatenar deben ser de tipo texto (por ejemplo, un texto entre comillas o una celda que
       contenga un texto). </p>
     
     </div>
 
-   
     <div class="nota-box">
-      <h1 class="number-subtitle">Función DERECHA  </h1>
+      <h1 class="number-subtitle"> Función ESPACIOS </h1>
+      
+      <p>La función <b>ESPACIOS("texto")</b> elimina espacios del texto dejando un solo espacio entre cada palabra
+        y eliminando completamente los de los extremos del texto. }
+      </p>
+      
+      </div>
+
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DERECHA  </h1>
     
-    <p>La función <b>DERECHA(texto;cantidad)</b> extrae un grupo de caracteres por la derecha de un texto. El
+    <p>La función <b>DERECHA("texto";cantidad)</b> extrae un grupo de caracteres por la derecha de un texto. El
       número de caracteres que se extrae debe establecerse como segundo parámetro de la
       función (cantidad). Por ejemplo, si tecleamos =DERECHA(“Hola”;2), el resultado será
       “la” (las 2 últimas letras de Hola). </p>
     
-    </div>
-
-
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">   Función DERECHA  </h1>
-
-      <p>Está función de Excel, nos ayudará a obtener textos de una celda, a partir de la derecha de esta, 
-        es muy sencilla de utilizar, ya que sólo necesita dos parámetros para funcionar.</p>
-
-      <p>Por ejemplo si lo que necesitas es obtener los últimos 4 dígitos de una cuenta bancaria 
-        "9999-1111-4444-5678", puedes hacer algo así con la fórmula DERECHA.</p>
-
-
-      <p>=DERECHA("9999-1111-4444-5678",4) ó  =DERECHA(A1,4)</p>
-
-
       <p> OJO. No usar esta función para extraer periodos de una fecha, como lo son MESES, AÑOS o  DÍAS, 
         para ello están las funciones de tiempo.</p>
     </div>
 
-
-
-   
     <div class="nota-box">
-      <h1 class="number-subtitle">Función RECORTAR </h1>
+    <h1 class="number-subtitle"> Función IZQUIERDA  </h1>
     
-    <p>La función <b>RECORTAR(texto)</b> elimina espacios del texto dejando un solo espacio entre cada palabra
-      y eliminando completamente los de los extremos del texto. </p>
-    
+    <p>La función <b>IZQUIERDA("texto";cantidad)</b> extrae un grupo de caracteres por la izquierda de un texto. El
+      número de caracteres que se extrae debe establecerse como segundo parámetro (cantidad).
+      Así, =IZQUIERDA(“Excel”;2) da como resultado “Ex” (las 2 primeras letras de Excel). 
+    </p>
+  
     </div>
+      
+   
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función MED </h1>
+    <h1 class="number-subtitle"> Función EXTRAE </h1>
     
-    <p>La función <b>MED(texto;posición_inicial;cantidad)</b> devuelve una parte del texto especificado, desde la
+    <p>La función <b>EXTRAE("texto";posición_inicial;cantidad)</b> devuelve una parte del texto especificado, desde la
       posición inicial, y tantos caracteres como se indiquen en el tercer parámetro (cantidad).
-      Así, =EXTRAE(“Pepito”;2;3) da como resultado “epi” (tres letras a partir de la segunda de
-      la cadena Pepito). </p>
+
+      <p><b>Ejemplo:</b><br>
+      <center><b> =EXTRAE("Hernandez";4;3)</b> </center>
+      Se obtiene  como resultado “nan” (tres letras a partir de la cuarta de la cadena Hernandez).
+
+    </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función IGUAL  </h1>
+      <h1 class="number-subtitle"> Función IGUAL  </h1>
     
-    <p>La función <b>IGUAL(texto1;texto2)</b> examina dos datos de texto de la hoja verificando si son iguales. La
+    <p>La función <b>IGUAL( "texto1" ; "texto2")</b> examina dos datos de texto de la hoja verificando si son iguales. La
       comprobación incluye incluso diferencias de mayúsculas y minúsculas en ambos datos.
       Excel devuelve el valor VERDADERO si ambos datos son iguales, y FALSO si no lo son. </p>
     
     </div>
 
+
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función IZQUIERDA  </h1>
+      <h1 class="number-subtitle"> Función LARGO </h1>
     
-    <p>La función <b>IZQUIERDA(texto;cantidad)</b> extrae un grupo de caracteres por la izquierda de un texto. El
-      número de caracteres que se extrae debe establecerse como segundo parámetro (cantidad).
-      Así, =IZQUIERDA(“Excel”;2) da como resultado “Ex” (las 2 primeras letras de Excel). </p>
+    <p>La función <b>LARGO( "texto" )</b> devuelve el número total de caracteres que posee un dato de texto. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función LARGO </h1>
+      <h1 class="number-subtitle"> Función MAYUS </h1>
     
-    <p>La función <b>LARGO(texto)</b> devuelve el número total de caracteres que posee un dato de texto. </p>
-    
-    </div>
-
-   
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función MAYUS </h1>
-    
-    <p>La función <b>MAYUSC(texto)</b> convierte el dato de texto en mayúsculas. Los caracteres que ya estaban
+    <p>La función <b>MAYUSC( "texto" )</b> convierte el dato de texto en mayúsculas. Los caracteres que ya estaban
       en mayúsculas no son modificados. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función MINUS  </h1>
+      <h1 class="number-subtitle"> Función MINUS  </h1>
     
-    <p>La función <b>MINUSC(texto)</b> convierte el dato de texto en minúsculas. Los caracteres que ya estaban en
+    <p>La función <b>MINUSC( "texto" )</b> convierte el dato de texto en minúsculas. Los caracteres que ya estaban en
       minúsculas no son modificados. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función NOMPROPIO </h1>
+      <h1 class="number-subtitle"> Función NOMPROPIO </h1>
     
-    <p>La función <b>NOMPROPIO(texto)</b> pasa a mayúsculas la primera letra de cada palabra del dato de texto
+    <p>La función <b>NOMPROPIO( "texto" )</b> pasa a mayúsculas la primera letra de cada palabra del dato de texto
       especificado. Los caracteres que ya estaban en mayúsculas no son modificados. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función REPETIR </h1>
+      <h1 class="number-subtitle"> Función REPETIR </h1>
     
-    <p>La función <b>REPETIR(texto;cantidad)</b> repite el dato de texto la cantidad de veces que establezcamos. </p>
+    <p>La función <b>REPETIR( "texto" ; cantidad)</b> repite el dato de texto la cantidad de veces que establezcamos. </p>
     
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función SUSTITUIR </h1>
+      <h1 class="number-subtitle"> Función SUSTITUIR </h1>
     
-    <p>La función <b>SUSTITUIR(texto;texto_a_sustituir;texto_sustituto)</b> reemplaza varios caracteres contiguos
+    <p>La función <b>SUSTITUIR( "texto" ; "texto_a_sustituir" ; "texto_sustituto" )</b> reemplaza varios caracteres contiguos
       dentro de un dato de texto por otros. Hay que especificar el texto en el que se va a hacer el
       cambio (texto), la parte del texto que se va a cambiar (texto_ a_sustituir) y el texto que sustituirá
       al antiguo (texto_ sustituto). </p>
@@ -240,17 +227,239 @@
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función TEXTO  </h1>
+      <h1 class="number-subtitle"> Función TEXTO  </h1>
+      
     
-    <p>La función <b>TEXTO(número;formato)</b> transforma un dato de tipo numérico en texto utilizando el
-      formato establecido. Por ejemplo, =TEXTO(1247;”0.000 Pta”) da como resultado 1.247
-      Pta. </p>
+    <p>La función <b>TEXTO(número;formato)</b> transforma un dato de tipo numérico en texto utilizando  códigos de formato.
+       Es útil para mostrar números en un formato más legible o para combinarlos con texto o símbolos.
+    </p>
+      
+
+    <h2 class="number-title"> Sintaxis</h2>
+
+    <p><center><b>=TEXTO(Valor al que quiere dar formato, “Código de formato que quiere aplicar")</b></center></p>
+
+    <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Fórmula</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Descripción</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>=TEXTO(1234.567,<b class="ocpLegacyBold">"$#,##0.00"</b>)</p>
+            </td>
+            <td>
+              <p>Moneda con separador de millares y 2 decimales, como 1.234,57 $. Tenga en cuenta que Excel redondea el valor a 2 posiciones decimales.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(HOY(),<b class="ocpLegacyBold">"DD/MM/AA"</b>)</p>
+            </td>
+            <td>
+              <p>Fecha de hoy en formato DD/MM/AA, por ejemplo, 14/03/12</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>= TEXTO(HOY(),<b class="ocpLegacyBold">"DDDD"</b>)</p>
+            </td>
+            <td>
+              <p>Día de la semana de hoy, por ejemplo, lunes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(AHORA(),<b class="ocpLegacyBold">"H:MM AM/PM"</b>)</p>
+            </td>
+            <td>
+              <p>Hora actual, por ejemplo, 13:29</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(0.285,<b class="ocpLegacyBold">"0.0%"</b>)</p>
+            </td>
+            <td>
+              <p>Porcentaje, por ejemplo, 28,5 %</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXT(4.34 ,<b class="ocpLegacyBold">"# ?/?"</b>)</p>
+            </td>
+            <td>
+              <p>Fracción, por ejemplo, 4 1/3</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=ESPACIOS (TEXTO(0.34,<b class="ocpLegacyBold">"#? /?"</b>))</p>
+            </td>
+            <td>
+              <p>Fracción, por ejemplo, 1/3. Tenga en cuenta que esto usa la función ESPACIOS para quitar los espacios iniciales de un valor decimal.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(12200000,<b class="ocpLegacyBold">"0.00E+00"</b>)</p>
+            </td>
+            <td>
+              <p>Notación científica, por ejemplo, 1.22E+07</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(1234567898,<b class="ocpLegacyBold">"[&lt;=9999999]###-####;(###) ###-####"</b>)</p>
+            </td>
+            <td>
+              <p>Especiales (números de teléfono), por ejemplo, (123) 456-7898</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(1234,<b class="ocpLegacyBold">"0000000"</b>)</p>
+            </td>
+            <td>
+              <p>Agrega ceros a la izquierda (0), por ejemplo, 0001234</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>=TEXTO(123456,<b class="ocpLegacyBold">"##0° 00' 00''"</b>)</p>
+            </td>
+            <td>
+              <p>Personalizada: latitud y longitud</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+
+    <p>Los formatos indicados en la función TEXTO utilizan una serie de códigos especiales que nos permiten obtener el 
+      resultado deseado. Estos códigos son los mismos que se utilizan en el formato personalizado de una celda en Excel.</p>
+
+      <p>
+        <p><table class="info">
+          <tbody>
+            <tr style="background-color: #cadffe;">
+            <td><strong>Caracter</strong></td>
+            <td><strong>Descripción</strong></td>
+            </tr>
+            <tr>
+              <td><b> # </b></td>
+              <td>Indica que ese espacio estará ocupado por un número.</td>
+            </tr>
+            <tr>
+              <td>  <b> ?  </b></td>
+              <td>Indica que ese espacio estará ocupado por un número y si no está presente lo rellena con un espacio en blanco.</td>
+            </tr>
+            <tr>
+              <td><b>0</b></td>
+              <td>Indica que ese espacio estará ocupado por un número y si no está presente lo rellena con el número cero.</td>
+            </tr>
+     </tbody>
+     </table>
+   
+      </p>
+  
+
+    <p>Ya que las fechas en Excel son valores numéricos, es posible dar formato a una fecha con la función TEXTO.</p>
+
+
+
     
+    <p>Enseguida se proporcionan los caracteres de formato de fecha personalizados que Excel reconoce como se muestra en la siguiente tabla.</p>
+
+    <p><table class="info">
+      <tbody>
+      <tr style="background-color: #cadffe;">
+      <td><strong>Caracter</strong></td>
+      <td><strong>Descripción</strong></td>
+      <td><strong>Ejemplos</strong></td>
+      </tr>
+      <tr>
+      <td>d</td>
+      <td>Día del mes o día de la semana.<br>Muestra el día como un número sin un cero inicial.</td>
+      <td>1/09/2019 se convierte en 1</td>
+      </tr>
+      <tr>
+      <td>dd</td>
+      <td>Día del mes o día de la semana.<br>Muestra el día como un número con un cero a la izquierda.</td>
+      <td>1/09/2019 se convierte en 01</td>
+      </tr>
+      <tr>
+      <td>Anuncios clasificados entre particulares en las Islas Baleres</td>
+      <td>Día del mes o día de la semana.<br>Muestra el día como abreviatura de tres letras (de lunes a domingo).</td>
+      <td>1/09/2019 convierte a Sun</td>
+      </tr>
+      <tr>
+      <td>dddd</td>
+      <td>Día del mes o día de la semana.<br>Muestra el día como nombre completo (de lunes a domingo).</td>
+      <td>1/09/2019 convierte a domingo</td>
+      </tr>
+      <tr>
+      <td>m</td>
+      <td>Mes<br>Muestra el mes como un número sin un cero inicial.</td>
+      <td>1/09/2019 se convierte en 9</td>
+      </tr>
+      <tr>
+      <td>mm</td>
+      <td>Mes<br>Muestra el mes como un número de dos dígitos con un cero a la izquierda.</td>
+      <td>1/09/2019 se convierte en 09</td>
+      </tr>
+      <tr>
+      <td>mmm</td>
+      <td>Mes<br>Muestra el mes como abreviatura (de enero a diciembre).</td>
+      <td>1/09/2019 se convierte a septiembre</td>
+      </tr>
+      <tr>
+      <td>mmmm</td>
+      <td>Mes<br>Muestra el mes como nombre completo (de enero a diciembre).</td>
+      <td>1/09/2019 se convierte en septiembre</td>
+      </tr>
+      <tr>
+      <td>mmmmm</td>
+      <td>Mes<br>Muestra el mes como una sola letra (J a D).</td>
+      <td>1/09/2019 convierte a S</td>
+      </tr>
+      <tr>
+      <td>yy</td>
+      <td>Año <br>Muestra el año como un número de dos dígitos.</td>
+      <td>1/09/2019 se convierte en 19</td>
+      </tr>
+      <tr>
+      <td>aaaa</td>
+      <td>Año <br>Muestra el año como un número de cuatro dígitos.</td>
+      <td>1/09/2019 se convierte en 2019</td>
+      </tr>
+      </tbody>
+      </table></p>
+
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> </h1>
+
+
     </div>
 
    
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  TEXTO</h1>
+      <h1 class="number-subtitle"> Función  VALOR</h1>
     
     <p>La función <b>VALOR(texto)</b> transforma un dato de tipo texto en numérico, siempre y cuando el dato de
       texto contenga sólo datos numéricos. Por ejemplo, =VALOR(“1.247”) da como resultado
