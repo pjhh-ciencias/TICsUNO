@@ -71,7 +71,7 @@
        </nav>
        <!-- 
         <nav class="small-nav" align=right>
-          <button onclick="myFunction()">Claro/Obscuro 
+          <button onclick="myFunction( )">Claro/Obscuro 
         </nav> 
       -->
 
@@ -86,34 +86,275 @@
 
     
     
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función AHORA() </h1>
     
-    <p>La función <b>AHORA()</b> devuelve el número de serie de la fecha y hora actuales. </p>
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Fechas en Excel</h1>
+      <p>Excel almacena una fecha como si fuera un número entero. Al utilizar un sistema como éste,
+         Excel puede sumar, restar y comparar fácilmente las fechas sin necesidad de hacer alguna 
+         conversión ni cálculo especial.
+      <p>
 
+      <p>Por ejemplo, la fecha 1/1/2000 está representada por el número de serie 36526 y la fecha
+         05/10/2000 tiene asignado el valor 36804. Como puedes imaginar, al realizar una operación 
+         con fechas se utiliza su número de serie para facilitar las operaciones</p>
+
+      <h2 class="number-title"> El primer y último dia de Excel</h2>   
+
+      <p>Excel reconoce todas las fechas posteriores a 1/1/1900. Es por eso que el primer día del año 
+        1900 tiene asignado el número 1. Por el contrario, el último día que Excel reconoce es el 31/12/9999
+        el cual tiene asignado el número 2958465.</p>
+
+
+      <h2 class="number-title"> Valor númerico de una fecha</h2>
+      <p>Es realmente sencillo conocer el valor numérico de una fecha, solamente cambia el formato de la 
+        celda que contiene una fecha a un formato General y Excel desplegará su valor numérico.</p> 
+
+
+        <div class="flexbox">  
+          <img src="../Imagenes/Excel/fechas-en-excel-01.png" alt="",height="auto",width="auto"> 
+        </div>  
     </div>
 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función FECHA </h1>
+    
+     
+    <p>La función  <b>FECHA(año;mes;día)</b> devuelve el número de serie que pertenece a una fecha especificada.</p>
+
+    <h2 class="number-title"> Sintaxis</h2>
+
+    <p><center><b>FECHA(año;mes;día)</center></b></p>
+
+      <p>
+        <ul>
+        <li><b>año</b> (Obligatorio): Número que representa el año de la fecha.</li>
+        <li><b>mes</b> (Obligatorio): Número que representa el mes de la fecha.</li>
+        <li><b>día</b> (Obligatorio): Número que representa el día de la fecha.</li>
+        </ul>
+      </p>
+    </div>
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función VALFECHA </h1>
+         <p>La función  <b>VALFECHA("dd/mm/aa")</b> convierte una fecha escrita entre comillas (en formato numérico,
+          ejemplo: “5/2/70”) en número de serie.</p>
+       </div>
+  
+        
+        <div class="nota-box">
+        <h1 class="number-subtitle">  Función VALHORA </h1>
+          <p>La función  <b>VALHORA("hh:mm")</b> convierte una hora escrita entre comillas (con formato numérico,
+              ejemplo: “15:00”) en número de serie.</p>
+        </div>
+  
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función AÑO </h1>
+      <h1 class="number-subtitle"> Función HOY</h1>
+       <p>La función  <b>HOY( )</b> devuelve el número de serie de la fecha actual.</p>
+      </div>
+  
+      
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función AHORA </h1>
+      <p>La función <b>AHORA( )</b> devuelve el número de serie de la fecha y hora actuales. </p>
+      </div>
+  
+
+  
+
+   
+    
+    <div class="nota-box">
+    <h1 class="number-subtitle">  Función AÑO </h1>
     
     <p>La función  <b>AÑO(número)</b> convierte un número de serie en un año. El número puede ser una fecha
-      entrecomillada (por ejemplo, “29/05/68” devolvería 1968).   </p>
+      entre comillas (por ejemplo, “29/05/68” devolvería 1968).   
+    </p>
+    </div>
+
+  
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función MES</h1>
+      <p>La función  <b>MES(número)</b> dado un número de serie, se devuelve el número de día del mes correspondiente. 
+        El número puede ser una fecha entre comillas   </p>
+    </div>
+
+    
+
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función DIA </h1>
+    
+    <p>La función  <b>DIA(número)</b>, dado un número de serie, devuelve el correspondiente día del mes.
+      El número puede ser una fecha entre comillas.   </p>
+
+    </div>
+    
+    
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función TIEMPO</h1>
+      <p>La función  <b>TIEMPO(hora;minuto;segundo)</b> devuelve el número de serie que pertenece a la hora especificada   </p>
+    </div>
+
+
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función HORA</h1>
+    
+    <p>La función  <b>HORA(número)</b> Devuelve la hora de un valor de hora. 
+    La hora se expresa como número entero, comprendido entre 0 (12:00 a.m.) y 23 (11:00 p.m.).</p>
+
+    <h2 class="number-title"> Sintaxis</h2>
+
+     <p><center> <b>HORA(Num_serie)</b></center></p>
+
+     <p>
+      La sintaxis de la función HORA tiene los siguientes argumentos:<br>
+    <ul>
+      <li><b>Num_serie</b> Obligatorio. Es el valor de hora que contiene la hora que desea obtener. 
+        Puede escribir las horas como cadenas de texto entre comillas (por ejemplo, "6:45 p.m.", 
+        como números decimales (por ejemplo, 0,78125, que representa las 6:45 p.m.), o bien como 
+        resultado de otras fórmulas o funciones, por ejemplo HORANUMERO("6:45 p.m.")).</li>
+    </ul>
+     </p>
+
+     <p><b>Obsevación:</b>Los valores de hora son parte de un valor de fecha y se representan mediante un número decimal
+       (por ejemplo, 0,5 representa las 12:00 p.m. porque es la mitad de un día).</p>
+    </div>
+
+
+
+    <div class="nota-box">
+    <h1 class="number-subtitle"> Función MINUTO </h1>
+    <p>La función  <b>MINUTO(número)</b> dado un número de serie, Devuelve los minutos de un valor de hora. 
+    Los minutos se expresan como números enteros comprendidos entre 0 y 59.
+     El número  puede ser una hora entre comillas.</p>
+
+     <h2 class="number-title"> Sintaxis</h2>
+
+     <p><center> <b>MINUTO(Num_serie)</b></center></p>
+
+     <p>
+      La sintaxis de la función MINUTO tiene los siguientes argumentos:<br>
+    
+    <ul>
+      <li><b>Num_serie</b> es el valor de hora que contiene el minuto que se desea obtener.
+       Los valores de hora se pueden especificar como cadenas de texto entre comillas (por ejemplo, "6:45 p.m."), 
+       como números decimales (por ejemplo, 0,78125, que representa 6:45 p.m.), o bien, como el resultado de otras fórmulas 
+       o funciones (por ejemplo, VALHORA("6:45 p.m.")).</li>
+    </ul>
+    </p>
+
+    <p><b>Observación:</b> Los valores de hora forman parte de un valor de fecha y se representan mediante un 
+      número decimal (por ejemplo, 12:00 p.m. se representa como 0,5 porque es la mitad de un día).</p>
+
+    <p>  <table class="banded">
+      <thead>
+        <tr>
+          <td>
+            <p>
+              <b class="ocpLegacyBold">Fórmula</b>
+            </p>
+          </td>
+          <td>
+            <p>
+              <b class="ocpLegacyBold">Descripción (Resultado)</b>
+            </p>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <p>=MINUTO("4:48:00 p.m.")</p>
+          </td>
+          <td>
+            <p>Minutos del valor de hora (48)</p>
+          </td>
+        </tr>
+      </tbody>
+    </table></p>
 
     </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función DIA </h1>
+    <h1 class="number-subtitle"> Función SEGUNDO </h1>
     
-    <p>La función  <b>DIA(número)</b>, dado un número de serie, devuelve el correspondiente día del mes.   </p>
+    <p>La función  <b>SEGUNDO(NUM_serie)</b>Devuelve los segundos de un valor de hora. 
+      El segundo se expresa como número entero comprendido entre 0 (cero) y 59. </p>
 
+    <h2 class="number-title"> Sintaxis</h2>
+
+    <p><center> <b>SEGUNDO(Num_serie)</b></center></p>
+
+    <p>
+     La sintaxis de la función SEGUNDO tiene los siguientes argumentos:<br>
+   <ul>
+     <li><b>Num_serie</b> es el valor de hora que contiene los segundos que se desea obtener.
+       Los valores de hora se pueden especificar como cadenas de texto entre comillas (por ejemplo, "6:45 p.m."),
+      como números decimales (por ejemplo, 0,78125, que representa 6:45 p.m.), o bien, como el resultado de otras fórmulas
+       o funciones (por ejemplo, HORAVAL("6:45 p.m.")). </li>
+   </ul>
+    </p>
+
+    <p><b>Observación:</b> Los valores de hora forman parte de un valor de fecha y se representan mediante un número decimal 
+      (por ejemplo, 12:00 p.m. se representa como 0,5 porque es la mitad de un día).</p>
+
+      <p>
+        <table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fórmula</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Descripción (Resultado)</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>=SEGUNDO("4:48:18 p.m.")</p>
+              </td>
+              <td>
+                <p>Segundos del valor de hora (18)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>=SEGUNDO("4:48 p.m.")</p>
+              </td>
+              <td>
+                <p>Segundos del valor de hora (0)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      
+      </p>
     </div>
 
 
+<!--   <h2 class="number-title"> Sintaxis</h2>
+
+    <p><center> <b></b></center></p>
+
+    <p>
+     La sintaxis de la función tiene los siguientes argumentos:<br>
+   <ul>
+     <li><b></b> </li>
+   </ul>
+    </p>
+
+    <p><b>Observación:</b></p>-->
+
     <div class="nota-box">
-      <h1 class="number-subtitle">Función DIAS.LAB</h1>
-    
+    <h1 class="number-subtitle"> Función DIAS.LAB</h1>
     <p>La función  <b>DIA.LAB(fecha_de_partida; días_laborables;días_festivos)</b> devuelve el número de serie
       del primer día laborable, pasado o futuro, a la fecha inicial, según sea el número de días
       laborables y festivos. Esta función necesita la macro automática Herramientas para análisis.
@@ -128,28 +369,207 @@
     </div>
 
 
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función DIAS.LAB</h1>
     
-    <p>La función  <b>DIAS.LAB(fecha_incial;fecha_final;días_festivos)</b> devuelve el número total de días
-      laborables entre dos fechas dadas. Hemos de especificar el número de días festivos que
-      existen en ese periodo de tiempo. La función DIAS.LAB necesita la macro automática
-      Herramientas para análisis.   </p>
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DIA.LAB</h1>
+
+
+      <p>Las hojas de cálculo de Microsoft pueden facilitar el trabajo en muchas ocasiones.
+         Así, a la hora de planificar fechas y citas,</p>
+      
+      
+      <h2 class="number-title">Descripción</h2>
+
+      <p> Con esta función del programa de hojas de cálculo podrás determinar una fecha laborable
+         tras un plazo determinado y fijar, de esta forma tan sencilla, fechas de entrega en el futuro.</p>
+
+      <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
+        es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
+        que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
+        Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
+        que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
+        la fórmula los días festivos, la función puede calcular la fecha real.</p>
+
+      
+
+
+       <h2 class="number-title">SINTAXIS</h2>
+       <center>
+      <b>=DIA.LAB(fecha_inicial;días;[vacaciones])</b>
+       </center>
+
+       <ul>
+        <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
+        <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
+        <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
+          del conteo.</li>
+       </ul>
+
+       <p>
+        El primer argumento se debe insertar como fecha. Para ello, utiliza la función FECHA o 
+        remite a una celda que tenga formato de fecha. A continuación, introduce un número
+        de días laborables. También aquí se puede utilizar una referencia de celdas para 
+        transferir los días laborables a la función. Es importante tener en cuenta que 
+        Excel no contabiliza la fecha de inicio como día laborable. Es decir: si estableces 
+        el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, esto implicaría solo 
+        un día de trabajo y no dos.
+       </p>
+
+      <p>
+       Asimismo, tienes la posibilidad de definir los días libres. De esta forma, excluyes 
+       los días festivos, por ejemplo, en los que no se trabaja. Los días festivos los incluyes
+      en una lista y después remites simplemente a esa lista la función DIA.LAB.
+      </p>
+
+   
+
+      <p><b>Observación:</b>
+       Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
+       Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
+       esto implicaría solo un día de trabajo y no dos.</p> 
+      
+      <p><b>Ejemplo</b>Imaginemos que quieres calcular la fecha de entrega de un proyecto. 
+      Se ha acordado con el cliente que el equipo tendrá 10 días laborables para la finalización 
+      del proyecto. Se establece el 6 de abril del 2020 como fecha de inicio.</p>
+
+
+      <p>
+      =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
+      </p>
 
     </div>
 
 
+
+    
     <div class="nota-box">
-      <h1 class="number-subtitle">Observación </h1>
+      <h1 class="number-subtitle">    DIA.LAB.INTL: cálculos internacionales </h1>
+
+      <h2 class="number-title">Descripción</h2>
+      <p>DIA.LAB funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
+        el fin de semana corresponde al sábado y al domingo. Sin embargo, en algunos sectores esto no es así.
+        Para todos los que necesiten más flexibilidad en la creación de sus días laborables, Excel ofrece la 
+        función ampliada DIA.LAB.INTL. Con ella, tendrás otro parámetro disponible.</p>
+
+        <h2 class="number-title">Sintaxis</h2>
+
+        <center><b>=DIA.LAB.INTL(fecha_inicial;días;[fin_de_semana];[vacaciones])</b></center>
+
+        <p>El parámetro adicional y opcional “fin_de_semana” diferencia a esta función de DIA.LAB. 
+          En la versión internacional se puede ajustar la duración del fin de semana y también determinar 
+          qué días de la semana deben considerarse como días laborables. Para ello, Excel pone a tu
+          disposición dos opciones distintas. Puedes utilizar bien un número de fin de semana bien una 
+          cadena determinada.</p>
+
+          <p>Los números de fin de semana los determina Excel. Cada número corresponde a un día de la semana 
+            o a una combinación de días de la semana:
+
+            <ol>
+            <li>Sábado, domingo</li>
+            <li>Domingo, lunes</li>
+            <li>Lunes, martes</li>
+            <li>Martes, miércoles</li> 
+            <li>Miércoles, jueves</li>
+            <li>Jueves, viernes</li>
+            <li>Viernes, sábado</li>
+            <li>Domingo</li>
+            <li>Lunes</li>
+            <li>Martes</li> 
+            <li>Miércoles</li>
+            <li>Jueves</li>
+            <li>Viernes</li>
+            <li>Sábado</li>
+
+          </p>
+
+          <p>Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</p>
+      
+      
+          <p>Si, por lo contrario, utilizas la secuencia, debes seguir un esquema relativamente sencillo: 
+            la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
+            Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
+            será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
+            La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
+            habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. La secuencia ha de 
+            entrecomillarse.</p>
+
+            <p><b>Observación:</b> Si quieres calcular un plazo de entrega y la semana laboral va de martes 
+              a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
+
+              <ol>
+                <li>=DIA.LAB.INTL(FECHA(2020;04;06);10;2)</li>
+                <li>=DIA.LAB.INTL(FECHA(2020;4;6);10;"1000001")</li>
+              </ol>
+
+          <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
+        </div>
+
+
+        <div class="nota-box">
+          <h1 class="number-subtitle"> Función DIAS LAB</h1>
+    
+    
+          <h2 class="number-title">Descripción</h2>
+    
+          <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
+            es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
+            que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
+            Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
+            que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
+            la fórmula los días festivos, la función puede calcular la fecha real.</p>
+    
+          <p>Está fórmula nos ayudará cuando sea necesario contar días de una forma muy particular, que es sólo considerar días laborales, por defecto, sin fines de semana.
+    
+            Y para esta operación es que está la función DIAS.LAB, ya que sirve para saber cuantos días laborales existen entre dos fechas, el resultado final será un número entero que indican los días transcurridos.
+            
+            Así que gracias a la fórmula DÍAS LAB podremos, por ejemplo, los días laborales que hay en el mes actual.</p>
+    
+           <p>=DIAS.LAB("01/01/2020","31/01/2020")</p> 
+    
+    
+    
+           <h2 class="number-title">SINTAXIS</h2>
+           <p>
+            DIAS.LAB(fecha_inicial, fecha_final, [festivos])
+           </p>
+    
+           <ul>
+            <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
+            <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
+            <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
+              del conteo.</li>
+           </ul>
+    
+           <p>
+            ATENCIÓN. Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la 
+            función para indicar un rango de celdas que incluya las fechas.
+          </p>
+          <p>
+          =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
+           </p>
+    
+    
+          <p><b>Observación:</b>
+           Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
+           Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
+           esto implicaría solo un día de trabajo y no dos.</p> 
+    
+        </div>
+    
+    
+
+<!-- 
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Observación </h1>
     
     <p><ol>Las dos funciones anteriores pueden funcionar de forma incorrecta si en las fechas
       que se indiquen hay fiestas entre lunes y viernes.</ol>   </p>
 
     </div>
-
+-->
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función DIASEM</h1>
+      <h1 class="number-subtitle"> Función DIASEM</h1>
     
     <p>La función  <b>DIASEM(número;tipo)</b> convierte un número de serie de una fecha en un día de la semana
       (su número). El segundo parámetro establece el tipo de semana (1 = semana inglesa; 2 =
@@ -161,7 +581,7 @@
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Observación</h1>
+      <h1 class="number-subtitle"> Observación</h1>
     
     <p>En algunos países como el Reino Unido o Estados Unidos, el primer día de la semana
       es el domingo en lugar del lunes, de ahí que sea necesario especificar el tipo de día de
@@ -170,20 +590,15 @@
     </div>
 
 
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función FECHA </h1>
     
-    <p>La función  <b>FECHA(año;mes;día)<b></b> devuelve el número de serie que pertenece a una fecha especificada.
-      Es similar a la anterior, pero se diferencian en el formato que se utiliza para escribir la
-      fecha. En esta sólo hemos de escribir los elementos de la fecha separados por punto y coma
-      (;).   </p>
 
-    </div>
 
 
     <div class="nota-box">
-      <h1 class="number-subtitle">Función FIN.MES</h1>
-    
+      <h1 class="number-subtitle"> La función  FIN.MES</h1>
+
+      <h2 class="number-title"></h2>
+      
     <p>La función  <b>FIN.MES(fecha;número_meses)</b> devuelve el número de serie del último día del mes, pasado
       o futuro, relativo a la fecha inicial de referencia según sea positivo o negativo el número
       meses. Esta función necesita la macro automática Herramientas para análisis. Por ejemplo,
@@ -194,126 +609,6 @@
       desea conocer el último día del mes anterior escriba -1 en lugar de 0. Puede utilizar para este
       dato números superiores a 1, tanto positivos como negativos (por ejemplo -2 sería dos meses
       antes).   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función HORA</h1>
-         
-    <p>La función  <b>HORA(número)</b> dado un número de serie, se devuelve la hora correspondiente.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función HOY</h1>
-    
-    <p>La función  <b>HOY()</b> devuelve el número de serie de la fecha actual.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función MES</h1>
-    
-    <p>La función  <b>MES(número)</b> dado un número de serie, se devuelve el número de día del mes correspondiente.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función MINUTO </h1>
-    
-    <p>La función  <b>MINUTO(número)</b> dado un número de serie, se devuelve el minuto de la hora correspondiente.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función SEGUNDO </h1>
-    
-    <p>La función  <b>SEGUNDO(número)</b> dado un número de serie, se devuelve el segundo de la hora correspondiente.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función TIEMPO</h1>
-    
-    <p>La función  <b>TIEMPO(hora;minuto;segundo)</b> devuelve el número de serie que pertenece a la hora especificada   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función VALFECHA </h1>
-    
-    <p>La función  <b>VALFECHA(fecha)</b> convierte una fecha escrita entrecomillada (en formato numérico,
-      ejemplo: “5/2/70”) en número de serie.   </p>
-
-    </div>
-
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función VALHORA </h1>
-    
-    <p>La función  <b>VALHORA(fecha)</b> convierte una hora escrita entrecomillada (con formato numérico,
-      ejemplo: “15:00”) en número de serie.   </p>
-
-    </div>
-
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">Fechas en Excel</h1>
-      <p>Excel almacena una fecha como si fuera un número entero. Al utilizar un sistema como éste,
-         Excel puede sumar, restar y comparar fácilmente las fechas sin necesidad de hacer alguna 
-         conversión ni cálculo especial.
-      <p>
-
-      <p>Por ejemplo, la fecha 1/1/2000 está representada por el número de serie 36526 y la fecha
-         05/10/2000 tiene asignado el valor 36804. Como puedes imaginar, al realizar una operación 
-         con fechas se utiliza su número de serie para facilitar las operaciones</p>
-
-      <h2> EL PRIMERO Y ÚLTIMO DÍA DE EXCEL</h2>   
-
-      <p>Excel reconoce todas las fechas posteriores a 1/1/1900. Es por eso que el primer día del año 
-        1900 tiene asignado el número 1. Por el contrario, el último día que Excel reconoce es el 31/12/9999
-        el cual tiene asignado el número 2958465.</p>
-
-
-      <h2>VALOR NUMÉRICO DE UNA FECHA</h2>
-      <p>Es realmente sencillo conocer el valor numérico de una fecha, solamente cambia el formato de la 
-        celda que contiene una fecha a un formato General y Excel desplegará su valor numérico.</p> 
-
-
-        <div class="flexbox">  
-          <img src="../Imagenes/Excel/fechas-en-excel-01.png" alt="",height="auto",width="auto"> 
-        </div>  
-    </div>
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">FUNCIÓN FECHA</h1>
-
-      <h2 class="number-title"></h2>
-      <p>Obtiene el número de serie que representa a la fecha especificada.</p>
-
-      <h2 class="number-title">SINTAXIS</h2>
-      <p><b>FECHA(año, mes, día)</b></p>
-
-      <p>
-        <ul>
-        <li>año (Obligatorio): Número que representa el año de la fecha.</li>
-        <li>mes (Obligatorio): Número que representa el mes de la fecha.</li>
-        <li>día (Obligatorio): Número que representa el día de la fecha.</li>
-        </ul>
-      </p>
-    </div>
-
-    <div class="nota-box">
-      <h1 class="number-subtitle">LA FUNCIÓN FIN.MES</h1>
-
-      <h2 class="number-title"></h2>
       <p>Obtiene el número de serie del último día de mes.</p>
 
       <h2 class="number-title">SINTAXIS</h2>
@@ -329,7 +624,7 @@
     </div>
     
     <div class="nota-box">
-      <h1 class="number-subtitle">Función  SIFECHA</h1>
+      <h1 class="number-subtitle"> Función  SIFECHA</h1>
 
       <p>=SIFECHA(fecha_inicio,fecha_fin,periodo)</p>
 
@@ -404,267 +699,10 @@
     </div>
 
 
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función DIA.LAB</h1>
-
-
-      <p>Las hojas de cálculo de Microsoft pueden facilitar el trabajo en muchas ocasiones.
-         Así, a la hora de planificar fechas y citas,</p>
-      
-      
-      <h2 class="number-title">Descripción</h2>
-
-      <p> Con esta función del programa de hojas de cálculo podrás determinar una fecha laborable
-         tras un plazo determinado y fijar, de esta forma tan sencilla, fechas de entrega en el futuro.</p>
-
-      <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
-        es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
-        que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
-        Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
-        que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
-        la fórmula los días festivos, la función puede calcular la fecha real.</p>
-
-      
-
-
-       <h2 class="number-title">SINTAXIS</h2>
-       <center>
-      <b>=DIA.LAB(fecha_inicial;días;[vacaciones])</b>
-       </center>
-
-       <ul>
-        <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
-        <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
-        <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
-          del conteo.</li>
-       </ul>
-
-       <p>
-        El primer argumento se debe insertar como fecha. Para ello, utiliza la función FECHA o 
-        remite a una celda que tenga formato de fecha. A continuación, introduce un número
-        de días laborables. También aquí se puede utilizar una referencia de celdas para 
-        transferir los días laborables a la función. Es importante tener en cuenta que 
-        Excel no contabiliza la fecha de inicio como día laborable. Es decir: si estableces 
-        el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, esto implicaría solo 
-        un día de trabajo y no dos.
-       </p>
-
-      <p>
-       Asimismo, tienes la posibilidad de definir los días libres. De esta forma, excluyes 
-       los días festivos, por ejemplo, en los que no se trabaja. Los días festivos los incluyes
-      en una lista y después remites simplemente a esa lista la función DIA.LAB.
-      </p>
-
-   
-
-      <p><b>Observación:</b>
-       Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
-       Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
-       esto implicaría solo un día de trabajo y no dos.</p> 
-      
-      <p><b>Ejemplo</b>Imaginemos que quieres calcular la fecha de entrega de un proyecto. 
-      Se ha acordado con el cliente que el equipo tendrá 10 días laborables para la finalización 
-      del proyecto. Se establece el 6 de abril del 2020 como fecha de inicio.</p>
-
-
-      <p>
-      =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
-      </p>
-
-    </div>
-
-
-
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">   DIA.LAB.INTL: cálculos internacionales </h1>
-
-      <h2 class="number-title">Descripción</h2>
-      <p>DIA.LAB funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
-        el fin de semana corresponde al sábado y al domingo. Sin embargo, en algunos sectores esto no es así.
-        Para todos los que necesiten más flexibilidad en la creación de sus días laborables, Excel ofrece la 
-        función ampliada DIA.LAB.INTL. Con ella, tendrás otro parámetro disponible.</p>
-
-        <h2 class="number-title">Sintaxis</h2>
-
-        <center><b>=DIA.LAB.INTL(fecha_inicial;días;[fin_de_semana];[vacaciones])</b></center>
-
-        <p>El parámetro adicional y opcional “fin_de_semana” diferencia a esta función de DIA.LAB. 
-          En la versión internacional se puede ajustar la duración del fin de semana y también determinar 
-          qué días de la semana deben considerarse como días laborables. Para ello, Excel pone a tu
-          disposición dos opciones distintas. Puedes utilizar bien un número de fin de semana bien una 
-          cadena determinada.</p>
-
-          <p>Los números de fin de semana los determina Excel. Cada número corresponde a un día de la semana 
-            o a una combinación de días de la semana:
-
-            <ol>
-            <li>Sábado, domingo</li>
-            <li>Domingo, lunes</li>
-            <li>Lunes, martes</li>
-            <li>Martes, miércoles</li> 
-            <li>Miércoles, jueves</li>
-            <li>Jueves, viernes</li>
-            <li>Viernes, sábado</li>
-            <li>Domingo</li>
-            <li>Lunes</li>
-            <li>Martes</li> 
-            <li>Miércoles</li>
-            <li>Jueves</li>
-            <li>Viernes</li>
-            <li>Sábado</li>
-
-          </p>
-
-          <p>Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</p>
-      
-      
-          <p>Si, por lo contrario, utilizas la secuencia, debes seguir un esquema relativamente sencillo: 
-            la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
-            Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
-            será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
-            La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
-            habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. La secuencia ha de 
-            entrecomillarse.</p>
-
-            <p><b>Observación:</b> Si quieres calcular un plazo de entrega y la semana laboral va de martes 
-              a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
-
-              <ol>
-                <li>=DIA.LAB.INTL(FECHA(2020;04;06);10;2)</li>
-                <li>=DIA.LAB.INTL(FECHA(2020;4;6);10;"1000001")</li>
-              </ol>
-
-          <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
-        </div>
-
-
-        <div class="nota-box">
-          <h1 class="number-subtitle">Función DIAS LAB</h1>
-    
-    
-          <h2 class="number-title">Descripción</h2>
-    
-          <p>La función DIA.LAB, que excluye los fines de semana y cuenta solo los días laborables,
-            es de gran ayuda para saber exactamente los días hábiles disponibles o la fecha en la 
-            que habrás consumido dichos días. Para Excel, cada semana tiene cinco días laborables.
-            Esto es muy útil para determinar plazos de entrega, por ejemplo. Para ello, solo tienes
-            que definir una fecha de inicio y después el número de días de trabajo. Si incluyes en 
-            la fórmula los días festivos, la función puede calcular la fecha real.</p>
-    
-          <p>Está fórmula nos ayudará cuando sea necesario contar días de una forma muy particular, que es sólo considerar días laborales, por defecto, sin fines de semana.
-    
-            Y para esta operación es que está la función DIAS.LAB, ya que sirve para saber cuantos días laborales existen entre dos fechas, el resultado final será un número entero que indican los días transcurridos.
-            
-            Así que gracias a la fórmula DÍAS LAB podremos, por ejemplo, los días laborales que hay en el mes actual.</p>
-    
-           <p>=DIAS.LAB("01/01/2020","31/01/2020")</p> 
-    
-    
-    
-           <h2 class="number-title">SINTAXIS</h2>
-           <p>
-            DIAS.LAB(fecha_inicial, fecha_final, [festivos])
-           </p>
-    
-           <ul>
-            <li>fecha_inicial (obligatorio): La fecha en la que se inicia el conteo.  </li>
-            <li>fecha_final (obligatorio): La fecha donde termina el conteo.</li>
-            <li>festivos (opcional): Un rango donde están especificados días festivos que serán excluidos
-              del conteo.</li>
-           </ul>
-    
-           <p>
-            ATENCIÓN. Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la 
-            función para indicar un rango de celdas que incluya las fechas.
-          </p>
-          <p>
-          =DIAS.LAB("01/01/2020","31/01/2020",A1:A20)
-           </p>
-    
-    
-          <p><b>Observación:</b>
-           Es importante tener en cuenta que Excel no contabiliza la fecha de inicio como día laborable.
-           Es decir: si estableces el 1 de marzo como día de inicio y quieres acabar el 2 de marzo, 
-           esto implicaría solo un día de trabajo y no dos.</p> 
-    
-        </div>
-    
-    
 
 
     
     
-    <div class="nota-box">
-      <h1 class="number-subtitle">  Función DERECHA  </h1>
-
-      <p>Está función de Excel, nos ayudará a obtener textos de una celda, a partir de la derecha de esta, 
-        es muy sencilla de utilizar, ya que sólo necesita dos parámetros para funcionar.</p>
-
-      <p>Por ejemplo si lo que necesitas es obtener los últimos 4 dígitos de una cuenta bancaria 
-        "9999-1111-4444-5678", puedes hacer algo así con la fórmula DERECHA.</p>
-
-
-      <p>=DERECHA("9999-1111-4444-5678",4) ó  =DERECHA(A1,4)</p>
-
-
-      <p> OJO. No usar esta función para extraer periodos de una fecha, como lo son MESES, AÑOS o  DÍAS, 
-        para ello están las funciones de tiempo.</p>
-    </div>
-
-
     
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">  Función CONTAR SI </h1>
-
-      <p>Está fórmula en muy útil cuando necesitamos establecer un valor en una celda, según uno 
-        o varios criterios.
-
-        Personalmente me gusta llamarla como función que da inteligencia a Excel ya que nos permite 
-        tomar decisiones  en una celda bajo nuestras consideraciones.</p>
-
-
-      <p>Así que gracias a la fórmula SI podremos, por ejemplo, si un cliente es categorizado 
-        como nuevo si su fecha de registro pertenece al mes actual.</p>
-
-
-      <p>=CONTAR.SI(A1:A100,"Pagada")</p>
-
-    </div>
-
-    
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">Función CONTAR SI CONJUNTO </h1>
-
-      <p>La función CONTAR SI CONJUNTO pertenece a un grupo de funciones lógicas que nos 
-        ayudan a realizar operaciones aritméticas a partir de una o varias condiciones.</p>
-
-      <p>Está fórmula en muy útil cuando necesitamos, cómo su nombre lo indica, 
-          CONTAR celdas que cumplan con uno o varios criterios, es decir, podemos 
-          encontrar la cantidad de veces que aparece un registro en una lista de valores.</p>
-
-      <p>Debido a la versatilidad de esta función es que podremos realizar está 
-        búsqueda de repetitividad, según varios criterios de una lista, por ejemplo, 
-        cantidad de facturas sin pago, las veces que ocurre un defecto en la linea de
-         producción, o también de las veces que han contactado a un cliente.</p>
-     
-      <p>A diferencia de la función CONTAR SI con la fórmula CONTAR SI CONJUNTO
-         podremos ampliar la búsqueda de argumentos o no estaremos limitados a 
-         sólo UNO, cómo ocurre con la función contar si de Excel.
-      </p>
-
-      <p>Ejemplo. Para encontrar la cantidad de facturas PAGADAS de cliente ABC 
-        (en la columna D deberemos tener el estado de la factura, y en la B el
-         código de cliente) quedaría la función así:</p>
-
-      <p>=CONTAR.SI.CONJUNTO(D1:D100,"Pagada",B1:B100,"ABC")</p>
-    </div>
-
-    
-    <div class="nota-box">
-      <h1 class="number-subtitle">Sumar y restar fechas </h1>
-
     
   </body>
