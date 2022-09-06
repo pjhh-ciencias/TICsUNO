@@ -89,7 +89,184 @@
   
   
 <div class="nota-box">
-  <h1 class="number-subtitle">Validación de datos</h1>
+  <h1 class="number-subtitle"> Validación de datos</h1>
+
+   <p>La validación de datos nos permite asegurarnos de que los valores que se introducen en las celdas son los adecuados; 
+    pudiendo incluso mostrar un mensaje de error o aviso si nos equivocamos. La validación de datos también es sumamente
+    útil cuando quiere compartir un libro con otros usuarios y quiere que los datos que se escriban en él sean exactos
+    y coherentes.
+  </p>
+
+  <h2 class="number-title"> ¿Cuándo es útil la validación de datos?</h2>
+
+
+  <p> Puede usar la validación 
+    de datos para lo siguiente, entre otras aplicaciones:</p>
+  
+    <ul>
+      <li><b>Limitar las entradas a elementos predefinidos en una lista:</b><br>
+         Por ejemplo, puede limitar las elecciones 
+        de departamento de un usuario a Contabilidad, Nóminas o RR. HH., por nombrar algunos.</li>
+      <li><b>Limitar los números a un rango específico:</b><br> 
+        Por ejemplo, puede especificar una entrada de porcentaje máxima
+         para el aumento anual de un empleado, un 3 %, por ejemplo, o permitir que sea solo un número entero entre 1 y 100.</li>
+      <li><b>Limitar las fechas a un período de tiempo específico:</b><br> 
+        Por ejemplo, en una solicitud de vacaciones de un empleado, 
+        puede evitar que alguien seleccione una fecha antes de la del día actual.</li>
+      <li><b>Limitar las horas a un período de tiempo específico:</b><br> 
+        Por ejemplo, puede especificar la programación de 
+        una reunión entre las 8:00 y las 17:00.</li>
+      <li><b>Limitar el número de caracteres de texto:</b><br> 
+        Por ejemplo, puede imponer un límite al texto permitido en 
+        una celda a 10 o menos caracteres.</li>
+      <li><b>Validar datos según fórmulas o valores de otras celdas:</b> <br>
+        Por ejemplo, puede usar la validación 
+        de datos para establecer un límite máximo para comisiones y bonificaciones, en función del valor de nómina
+         general proyectado. Si los usuarios escriben un valor superior al límite, aparecerá un mensaje de error.</li>
+    </ul>
+  
+    <h2 class="number-title"> Mensajes de error y de entrada de validación de datos</h2>
+
+    <p>
+     Puede decidir mostrar un <b>mensaje de entrada</b> cuando el usuario seleccione la celda. Los mensajes
+     de entrada se usan normalmente para ofrecer instrucciones a los usuarios sobre el tipo de datos que quiere
+     que escriban en la celda. Este tipo de mensaje aparece cerca de la celda. Puede mover este mensaje, si quiere,
+     y permanece visible hasta que lo mueve a otra celda o presiona Esc.
+    </p>
+
+    <p>
+      Puede configurar el mensaje de entrada en la segunda pestaña de validación de datos.
+    </p>
+
+    <p>
+      Cuando los usuarios se familiaricen con el mensaje de entrada, puede desmarcar la opción 
+      Mostrar mensaje de entrada al seleccionar la celda.
+    </p>
+
+
+    <p>
+      Puede elegir entre tres tipos de mensajes de error:
+    </p>
+
+    <p>
+      <table class="banded">
+        <tbody>
+          <tr>
+            <td>
+              <p>Icono</p>
+            </td>
+            <td>
+              <p>Tipo</p>
+            </td>
+            <td>
+              <p>Uso</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://support.content.office.net/es-es/media/1b187a7c-9224-43da-8911-6efcd17af9dc.png" alt="Icono Detener" loading="lazy">
+            </td>
+            <td>
+              <p><b>Detención</b></p>
+            </td>
+            <td>
+              <p>Impide que los usuarios escriban datos no válidos en una celda.</p>
+              <p>Un mensaje de alerta de <b class="ocpLegacyBold">Detención</b> tiene dos opciones: <b class="ocpLegacyBold">Volver a intentar</b> o <b class="ocpLegacyBold">Cancelar</b>. </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://support.content.office.net/es-es/media/1ada4b26-de40-4935-bde5-da2b2ef954dc.png" alt="Icono de advertencia" loading="lazy">
+            </td>
+            <td>
+              <p><b>Advertencia</b></p>
+            </td>
+            <td>
+              <p>Advierte a los usuarios de que los datos indicados no son válidos, pero sin evitar que los escriban. </p>
+              <p>Cuando aparece un mensaje de alerta de <b class="ocpLegacyBold">Advertencia</b>, los usuarios pueden hacer clic en <b class="ocpUI">Sí</b> para aceptar la entrada no válida, <b class="ocpUI">No</b> para editarla o <b class="ocpUI">Cancelar</b> para quitar la entrada no válida.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://support.content.office.net/es-es/media/6c43ddfc-4246-46ec-825d-f91d39c281dd.png" alt="Icono de información" loading="lazy">
+            </td>
+            <td>
+              <p><b>Información</b></p>
+            </td>
+            <td>
+              <p>Informa a los usuarios de que los datos indicados no son válidos, pero sin evitar que los escriban. Este tipo de alerta de error es el más flexible.</p>
+              <p>Cuando aparece un mensaje de alerta de <b class="ocpLegacyBold">Información</b>, los usuarios pueden hacer clic en <b class="ocpUI">Aceptar</b> para aceptar el valor no válido o <b class="ocpUI">Cancelar</b> para rechazarlo. </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+
+    <h2 class="number-title"> Aplicar una validación a una celda.</h2>
+
+    <p>
+    <ol>
+      <li>Seleccionamos la celda que queremos validar.</li>
+      <li>Accedemos a la pestaña <b>Datos</b> y pulsamos <b>Validación de datos</b>. En él podremos escoger 
+        <em>remarcar los errores</em> con círculos o borrar estos círculos de validación. Pero nos vamos a centrar
+        en la opción <b>Validación de datos</b></li>
+        <p>
+          <div class="flexbox">
+            <img src="../Imagenes/Excel/btn_validar_datos_.gif" alt="", width="auto" height="auto">
+          </div>
+        </p>  
+      <li>Nos aparece un cuadro de diálogo Validación de datos como el que vemos en la imagen donde
+          podemos elegir entre varios tipos de validaciones.</li>
+          <p>
+            <div class="flexbox">
+              <img src="../Imagenes/Excel/validar_datos (1).gif" alt="", width="auto" height="auto">
+            </div>
+         </p>  
+      <li>En la sección Criterio de validación indicamos la condición para que el datos sea correcto.</li>
+      <li>Dentro de Permitir podemos encontrar Cualquier valor, Número entero, Decimal, Lista, Fecha, Hora, 
+        Longitud de texto y personalizada. Por ejemplo si elegimos Número entero, Excel sólo permitirá números enteros en esa celda, 
+        si el usuario intenta escribir un número decimal, se producirá un error.</li>
+      <li>Podemos restringir más los valores permitidos en la celda con la opción Datos, donde, por ejemplo, 
+        podemos indicar que los valores estén entre 2 y 8.</li>
+      <li>Si en la opción Permitir: elegimos Lista, podremos escribir una lista de valores para que el usuario pueda
+         escoger un valor de los disponibles en la lista. En el recuadro que aparecerá, Origen: podremos escribir los distintos
+         valores separados por ; (punto y coma) para que aparezcan en forma de lista.</li>
+      <li>En la pestaña Mensaje de entrada podemos introducir un mensaje que se muestre al acceder a la celda. Este mensaje
+         sirve para informar de qué tipos de datos son considerados válidos para esa celda.</li>
+      <li>En la pestaña Mensaje de error podemos escribir el mensaje de error que queremos se le muestre al usuario 
+        cuando introduzca en la celda un valor incorrecto.</li>
+      
+
+    </ol>
+    </p>
+
+    <h2 class="number-title"> Crear una lista desplegable</h2>
+
+  <p>Use la validación de datos para restringir el tipo de datos o los valores que los usuarios escriben en una celda.
+     Uno de los usos más comunes de la validación de datos es Crear una <b>lista desplegable</b>.</p>
+
+  <ol>
+    <li>Seleccione las celdas para las que quiere crear una regla.</li>
+    <li>Seleccione <b>Datos</b> > <b>Validación de datos</b>.</li>
+    <li>En Permitir de la pestaña Configuración, seleccione una opción</li>
+    <ul>
+     <li><b>Número entero:</b> se restringe la celda para aceptar solo números enteros.</li>
+     <li><b>Decimal:</b> se restringe la celda para aceptar solo números decimales. </li>
+     <li><b>Lista:</b> permite elegir datos de una lista desplegable.</li>
+     <li><b>Fecha:</b> se restringe la celda para aceptar solo fechas.</li>
+     <li><b>Hora:</b> se restringe la celda para aceptar solo valores de hora.</li>
+     <li><b>Longitud del texto:</b></li> se restringe la longitud del texto.
+     <li><b>Personalizado:</b> permite crear fórmulas personalizadas.</li>  
+    </ul>
+    <li> En Datos, seleccione una condición.</li>  
+    <li> Defina el resto de valores obligatorios de Permitir y Datos según su elección.</li>
+    <li> Seleccione la pestaña Mensaje de entrada y personalice el mensaje que verán los usuarios al escribir datos.</li>
+    <li> Seleccione la casilla Mostrar mensaje de entrada al seleccionar la celda para mostrar el mensaje cuando el usuario
+       seleccione las celdas seleccionadas o mantenga el mouse sobre estas.</li>
+    <li>Seleccione Aceptar.</li>   
+  </ol>
+
+  <p>A partir de ese momento, cuando el usuario intente escribir un valor que no sea válido, aparecerá una Alerta de error con el mensaje personalizado.</p>
 
 
 </div>
@@ -97,30 +274,262 @@
 
   
 <div class="nota-box">
-  <h1 class="number-subtitle">Creación de gráficos</h1>
+  <h1 class="number-subtitle"> Gráficos</h1>
 
+<p>Un gráfico es la representación gráfica de los datos de una hoja de cálculo y facilita su interpretación.
+   La utilización de gráficos hace más sencilla e inmediata la interpretación de los datos. 
+   A menudo un gráfico nos dice mucho más que una serie de datos clasificados por filas y columnas.</p>
+
+
+<h2 class="number-title"> Crear gráficos </h2>
+
+<p>Para insertar un gráfico tenemos varias opciones, pero siempre utilizaremos la sección Gráficos
+   que se encuentra en la pestaña Insertar.</p>
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/b_grafico_excel.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+ <p><b>Importante:</b>  Es recomendable que tengas seleccionado el rango de celdas que quieres que participen 
+  en el gráfico, de esta forma, Excel podrá generarlo automáticamente. En caso contrario, el gráfico se mostrará 
+  en blanco o no se creará debido a un tipo de error en los datos que solicita.</p>
+
+
+  <p>
+    Como puedes ver existen diversos tipos de gráficos a nuestra disposición. Podemos seleccionar un gráfico a 
+    insertar haciendo clic en el tipo que nos interese para que se despliegue el listado de los que se encuentran disponibles.
+  </p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/grafico_desple.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+  <p>En cada uno de los tipos generales de gráficos podrás encontrar un enlace en la parte inferior del
+     listado que muestra <b>Todos los tipos de gráfico...</b></p>
+
+
+  <p>Hacer clic en esa opción equivaldría a desplegar el cuadro de diálogo de Insertar gráfico que se muestra al hacer clic en la flecha de la parte inferior derecha de la sección Gráficos.</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/dialogo_insertar_grafico.gif" alt="", width="auto" height="auto">
+    </div>
+ </p> 
+
+
+ <p>Aquí puedes ver listados todos los gráficos disponibles, selecciona uno y pulsa Aceptar para empezar a crearlo.</p>
+
+ <p>Aparecerá un cuadro que contendrá el gráfico ya creado (si seleccionaste los datos previamente) o un cuadro en blanco (si no lo hiciste).</p>
+
+ <p>Además, verás que aparece en la barra de menús una sección nueva, Herramientas de gráficos, con tres pestañas: Diseño, Presentación y Formato.</p>
+
+ <p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/herramientas_graficos.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
 
 </div>
 
 
   
 <div class="nota-box">
-  <h1 class="number-subtitle">Numeración de páginas en las hojas</h1>
+  <h1 class="number-subtitle"> Numeración de páginas en las hojas</h1>
+<p>Si desea que los números aparezcan en las páginas cuando imprime una hoja de cálculo de Microsoft Excel,
+   puede insertar números de página en los encabezados o pies de página de las páginas de hojas de cálculo.
+   En la vista Normal, no se muestran los números de página que inserta en la hoja de cálculo, solo se muestran en 
+   la vista Diseño de página y en las páginas impresas.</p>
+
+   <h2 class="number-title"> Agregar números de página en una única hoja de cálculo</h2>
+
+   <ol>
+    <li>Haga clic en la hoja de cálculo en la que desea insertar números de página.</li>
+    <li>En la pestaña <b>Insertar</b>, en el grupo <b>Texto</b>, haga clic en <b>Encabezado y pie de página</b>.<br>
+
+      <p>Microsoft Excel mostrará la hoja de cálculo en la vista Diseño de página. También puede hacer 
+        clic en Diseño de página Imagen del botón en la barra de estado para mostrar esta vist</p>
+    </li>
+    <li>En la hoja de cálculo, haga clic en <b>Haga clic para agregar encabezado</b> o en 
+      <b>Haga clic para agregar pie de página</b> <br>
+    <p>Se mostrarán las Herramientas para encabezado y pie de página con la pestaña Diseño.</p></li>
+    <li>Para especificar el lugar donde desea que aparezca el número en el encabezado o pie de página, 
+      haga clic en los cuadros <b>Sección izquierda</b>, <b>Sección central</b> o <b>Sección derecha</b> del encabezado o pie de página.</li>
+    <li>En la pestaña <b>Diseño</b>, en el grupo <b>Elementos del encabezado y pie de página</b>,
+       haga clic en <b>Número de página</b>.<br>
+      <p>
+       <ul> 
+        <li>El marcador de posición <b>&[Página]</b> aparece en la sección seleccionada.</li>
+        <li>Para agregar el número total de páginas, escriba un espacio después de <b>&[Página]</b>,
+           escriba la palabra de seguida de un espacio y, después, en el grupo <b>Elementos del encabezado y pie de página</b>, 
+           haga clic en <b>Número de páginas</b>.</li>
+        <li>El marcador de posición <b>&[Página]</b> de <b>&[Páginas]</b> aparece en la sección seleccionada.</li>
+       </ul>
+      </p>
+      </li>
+      <li>Haga clic en cualquier lugar fuera del área de encabezado o pie de página para mostrar los números de página 
+        reales en la vista Diseño de página.</li>
+      <li>Una vez que haya finalizado el trabajo en la vista Diseño de página, en la pestaña Vista,
+         en el grupo Vistas de libro, haga clic en Normal.<br>
+        <p>
+          También puede hacer clic en Imagen del botón normal en la barra de estado.
+        </p>
+        <p>Puede insertar números de página en una hoja de cálculo en la vista Diseño de página, donde puede verlos,
+           o puede usar el cuadro de diálogo Configurar página si desea insertar números de página en más de una hoja de 
+           cálculo al mismo tiempo. Para otros tipos de hoja, como hojas de gráfico, únicamente puede insertar números 
+           de página usando el cuadro de diálogo Configurar página.</p>
+        </li>  
+   </ol>
+
+   <h2 class="number-title">Insertar números de página en varias hojas de cálculo</h2>
+   <ol>
+    <li>Haga clic en las hojas de cálculo o las hojas de gráficos a las que desea agregar los números de página.
+      s
 
 
+    </li>
+   </ol>
 </div>
 
 
 
   
-<div class="nota-box">
-  <h1 class="number-subtitle">Impresión</h1>
+<En class="nota-box">
+  <h1 class="number-subtitle"> Impresión</h1>
 
-<h2 class="number-title"> Configuración de páginas </h2>
+<h2 class="number-title"> Vista de Diseño de página</h2>
+
+<p>En Excel 2010, se utiliza el <b>Diseño de página</b> como herramienta para visualizar nuestra
+   hoja antes de imprimirla y modificar ciertos aspectos estéticos para la impresión </p>
+
+   <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/menu_vistapreliminar.gif" alt="", width="auto" height="auto">
+    </div>
+  </p> 
+
+<p>La forma de visualizar la hoja cambiará de aspecto:</p>
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/b_grafico_excel.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+<p>Desde esta vista podemos seguir trabajando con la hoja de cálculo como hasta ahora, 
+  la única diferencia es que sabremos cómo quedará la hoja al imprimirla. 
+  Veremos los saltos de página, márgenes, encabezados y pies de página y sabermos cuántas hojas ocuparán
+   y cómo se ajustan los datos a la página.</p>
+
+<p>Si los datos ocupan más de una página, deberemos utilizar las barras de desplazamiento para ir viéndolas:</p>
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/paginas.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+<p>Al mover las barras de desplazamiento, un pequeño cuadro informativo nos indicará en qué columna o fila estamos situados.</p>
+
+<p>También aparecen las reglas superior e izquierda. En ellas podremos ajustar los márgenes de forma sencilla, 
+  arrastrándo sus límites.</p>
 
 
-<h2 class="number-title">Numeración de páginas</h2>
+<p>La pestaña Vista permite personalizar qué elementos mostrar:</p>
+
+
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/vista_mostrar.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+<p>Otra opción muy utilizada es la de Zoom. Con la opción Zoom, se abre una ventana que te permite escoger entre varios valores.
+  La opción central devuelve la vista al 100%, es decir, al tamaño real.
+  Y Ampliar selección aumenta el zoom a 400%, centrándolo en la celda u objeto seleccionado.</p>
+
+  
+<p>
+  <div class="flexbox">
+    <img src="../Imagenes/Excel/boton_prel_zoom_excel.gif" alt="", width="auto" height="auto">
+  </div>
+</p> 
+
+<p>Cuando volvemos a la vista Normal, aparecerán unas líneas discontinuas que nos indicarán donde hará Excel los saltos de página. Estas líneas no se imprimirán.
+
+</p>
+
+
+
+
+<h2 class="number-title">  Configuración de páginas </h2>
+
+<p>Antes de imprimir una hoja de cálculo, es conveniente que configuremos la página, 
+  para modificar factores que afectan a la presentación de las páginas impresas,
+  como la orientación, encabezados y pies de página, tamaño del papel, ...</p>
+
+<p>Para ello, nos situaremos en la pestaña Diseño de página.</p>
+
+
+
+<p>En la sección Configurar página encontraremos botones rápidos a muchas de las opciones: para configurar márgenes, 
+  la orientación del papel, el tamaño, etc. Pero si lo que queremos es acceder a todas las opciones de configuración, 
+  deberemos pulsar el pequeño botón de la esquina inferior derecha. Como siempre, se abrirá una nueva ventana.</p>
+
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/boton_config_pagina.gif" alt="", width="auto" height="auto">
+    </div>
+  </p> 
+
+  <p>
+    El cuadro de diálogo Configurar página está organizado en varias pestañas: La primera de las fichas
+    se denomina Página y permite indicar características como la orientación del papel, el tamaño del
+    papel que utilizamos y otros parámetros.
+  </p>
+  
+  <p>
+    <div class="flexbox">
+      <img src="../Imagenes/Excel/config_pag1_excel.gif" alt="", width="auto" height="auto">
+    </div>
+  </p> 
+
+<p>Selecciona la orientación del papel, vertical u horizontal. (En la impresora se colocará el papel
+   siempre de la misma forma).</p>
+
+<p>En el recuadro Escala nos permitirá indicarle si deseamos que la salida a impresora venga determinada 
+  por un factor de escala (100%, 50%, 200%,...) o bien ajustando automáticamente la hoja en un número de 
+  páginas específico (una página de ancho por 1 de alto, así se imprimirá en una sola hoja,...).</p>
+  
+  <p>Para modificar los márgenes superior, inferior, derecho e izquierdo de las hojas a imprimir,
+     utilizar la ficha Márgenes.</p>
+
+     <p>
+      <div class="flexbox">
+        <img src="../Imagenes/Excel/config_pag2_excel.gif" alt="", width="auto" height="auto">
+      </div>
+    </p> 
+
+    <p>Si la hoja tiene encabezado: o pie de página:, también nos permite indicar a cuántos centímetros del borde
+       del papel queremos que se sitúen.</p>
+
+    <p>Si deseas que tu salida tenga centradas las hojas tanto horizontal como verticalmente, Excel nos lo realizará
+       automáticamente activando las casillas Horizontalmente y/o Verticalmente respectivamente.</p>
+      
+    <p>En la ficha Encabezado y pie de página podrás personalizarlos y ajustar diferentes parámetros.</p>
+  
+    <p>
+      <div class="flexbox">
+        <img src="../Imagenes/Excel/config_pag3_excel.gif" alt="", width="auto" height="auto">
+      </div>
+    </p> 
 </div>
+
+<h2 class="number-title">La última ficha es Hoja, que nos permite definir cómo queremos que se impriman los datos contenidos en la hoja.</h2>
+
+
 
 
   </body>
