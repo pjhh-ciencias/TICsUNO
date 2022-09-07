@@ -324,6 +324,51 @@
         rango especificado.</p>
     </div>
 
+
+    
+    <div class="nota-box">
+      <h1 class="number-subtitle">  Función  PROMEDIO.SI</h1>
+
+      <p>La función <b>PROMEDIO.SI</b> Devuelve el promedio (media aritmética) 
+        de todas las celdas de un rango que cumplen unos criterios determinados.</p>
+
+      <h2 class="number-title">Sintaxis</h2>
+      
+     <p><center> <b>PROMEDIO.SI(rango; criterios; [rango_promedio])</b></center></p>
+        
+     <p>
+      La sintaxis de la función PROMEDIO.SI tiene los siguientes argumentos:<br> 
+     <ul>
+      <li><b>Rango:</b>  Obligatorio. Una o más celdas cuyo promedio se desea 
+        obtener que incluyan números, o nombres, matrices o referencias que contengan números.</li>
+     <li><b>Criterio</b>    Obligatorio. Criterio en forma de número, expresión, referencia de 
+        celda o texto que determina las celdas cuyo promedio se va a obtener. Por ejemplo, 
+        los criterios pueden expresarse como 32, "32", ">32", "manzanas" o B4.</li>
+      <li><b>Rango_promedio</b> Opcional. Conjunto real de celdas cuyo promedio se va a calcular. Si se omite, se utiliza un rango.</li>
+      </ul>
+     </p>
+
+     <p><b>Observaciones:</b>
+      <ul>
+        <li>No se tienen en cuenta las celdas de rango que contienen VERDADERO o FALSO.</li>
+        <li>Si una celda de rango_promedio es una celda vacía, PROMEDIO.SI la omite.</li>
+        <li>Si rango es un valor en blanco o de texto, PROMEDIO.SI devuelve el valor de error #¡DIV0!. #¡VALOR!</li>
+        <li>Si una celda de criterio está vacía, PROMEDIO.SI la trata como un valor 0.</li>
+        <li>Si no hay celdas en el rango que cumplan los criterios, PROMEDIO.SI devuelve #¡DIV/0!. #¡VALOR!</li>
+        <li>En los criterios se puede utilizar los caracteres comodín de signo de interrogación (?) y asterisco (*).
+           El signo de interrogación corresponde a un solo carácter cualquiera y el asterisco equivale a cualquier
+           secuencia de caracteres. Si desea buscar un signo de interrogación o un asterisco reales, escriba una tilde (~)
+           delante del carácter que desea buscar.
+        </li>
+        <li>No es necesario que rango_promedio tenga el mismo tamaño y forma que rango. Las celdas reales de
+           las que se debe obtener el promedio se determinan utilizando la celda superior izquierda de rango_promedio como 
+           la celda inicial e incluyendo las celdas que corresponden con el tamaño y la forma del rango. Por ejemplo:</li>
+        <li></li>
+        <li></li>
+      </ul>
+     </p>
+
+    </div>
     
     <div class="nota-box">
       <h1 class="number-subtitle">  Función  PROMEDIO.SI.CONJUNTO </h1>
