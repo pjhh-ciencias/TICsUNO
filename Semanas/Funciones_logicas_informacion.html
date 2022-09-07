@@ -82,9 +82,81 @@
   </head>
 
   <body class="fondo-body" >
-    <h1 class="number-title flexbox"> Funciones Logicas y de Información</h1>
+    <h1 class="number-title flexbox"> Funciones Logicas y de Información </h1>
 
     
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Caracteres Comodín </h1>
+      <p>Los comodines en Excel son caracteres o símbolos en Excel que remplazan uno o varios caracteres
+         con el fin de aplicar búsqueda o filtros es más potentes en combinación de otras funciones de Excel.
+         Los comodines en Excel se pueden implementar en los argumentos de las funciones con el fin de 
+         buscar coincidencias a partir del dato ingresado.</p>
+      <p> Hay tres caracteres comodín en Excel. </p>
+
+
+      <table class="info">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b>Caracter</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b>Resultado</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p> Signo de interrogación (<b>?</b>) </p>
+            </td>
+            <td>
+              <p>Este comodín se utiliza para buscar cualquier carácter.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p> Asterisco (<b>*</b>) </p>
+            </td>
+            <td>
+              <p>Este comodín se utiliza para buscar cualquier número de caracteres que precedan o sigan a cualquier carácter.</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>  Tilde (<b>~</b>) </p>
+            </td>
+            <td>
+              <p> Este comodín es un carácter de escape que se utiliza antes del signo de interrogación (?) O del asterisco (*). 
+                Por ejemplo si quisiéramos buscar textos que contengan un signo de interrogación o un asterisco, entonces
+                esta indicación se confundiría con el uso que ya tienen estos dos caracteres por ello es que este tercer
+                carácter es útil, es decir permite identificar un signo de interrogación , asterisco o tilde como parte 
+                del patrón de identificación de los textos.  Así, para buscar:<br>
+              <ul>
+                <li>Un asterisco *, deberás escribir ~*,</li>
+                <li>Un signo de interrogación ?, escribe ~?,</li>
+                <li>el signo de tilde ~, escribe ~~.</li>
+              </ul>
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    <p><b>Observación:</b>No todas las funciones pueden ejecutar comodines con funciones de Excel.
+      Aquí hay una lista de funciones que aceptan comodines.<br>
+    <ol>
+      <li>SUMAR.SI.CONJUNTO</li>
+      <li>CONTAR.SI.CONJUNTO</li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol></p>
+    </div>
     
    
     <div class="nota-box">
