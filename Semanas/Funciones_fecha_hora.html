@@ -190,6 +190,19 @@
 
     </div>
     
+    <div class="nota-box">
+      <h1 class="number-subtitle"> Función DIASEM</h1>
+    
+    <p>La función  <b>DIASEM( num_serie ; tipo )</b> convierte un número de serie de una fecha en un día de la semana
+      (su número). Devuelve el día como un número entero entre 1 (domingo) y 7 (sábado). El segundo parámetro establece el tipo de semana (1 = semana inglesa; 2 =
+      semana española; 3 = el primer día de la semana es el cero).</p>
+      
+      
+      <p><b>Ejemplo:</b> La función <b>=DIASEM( " 24 / 12 / 89 " ; 2 )"</b> devuelve el valor 7,
+      que corresponde a Domingo según el tipo de semana española.   </p>
+
+    </div>
+
     
     <div class="nota-box">
     <h1 class="number-subtitle"> Función TIEMPO</h1>
@@ -544,16 +557,10 @@
     <div class="nota-box">
       <h1 class="number-subtitle"> Función  DIA.LAB.INTL  </h1>
 
-      <p>La función DIA.LAB funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
+      <p>La función <b>DIA.LAB</b> funciona correctamente siempre y cuando se parta de que la semana tiene 5 días laborables y
         el fin de semana corresponde al sábado y al domingo. Sin embargo, en algunos sectores esto no es así.
         Para todos los que necesiten más flexibilidad en la creación de sus días laborables, Excel ofrece la 
         función ampliada <b>DIA.LAB.INTL</b>, con esta función se  tendrá otro parámetro disponible.</p>
-
-        <h2 class="number-title"> Sintaxis</h2>
-
-        <center><b>=DIA.LAB.INTL( fecha_inicial ; días ; [fin_de_semana] ; [vacaciones] )</b></center>
-
-        <p>El parámetro adicional y opcional "fin_de_semana" <b>diferencia a esta función de DIA.LAB</b>.</p>
 
         <p>
           En la versión internacional se puede ajustar la duración del fin de semana y también determinar 
@@ -561,9 +568,16 @@
           disposición dos opciones distintas. Puedes utilizar bien un número de fin de semana bien una 
           cadena determinada.</p>
 
-          <p>Los números de fin de semana los determina Excel. Cada número corresponde a un día de la semana 
-            o a una combinación de días de la semana:
+        <h2 class="number-title"> Sintaxis</h2>
 
+        <center><b>=DIA.LAB.INTL( fecha_inicial ; días ; [fin_de_semana] ; [vacaciones] )</b></center>
+
+        <p>El parámetro adicional y opcional "<b>fin_de_semana</b>"  diferencia a esta función de DIA.LAB.</p>
+
+       
+
+          <p><b>Los números de fin de semana los determina Excel</b>. Cada número corresponde a un día de la semana 
+            o a una combinación de días de la semana:<br>
             <ol>
             <li>Sábado, domingo</li>
             <li>Domingo, lunes</li>
@@ -579,30 +593,34 @@
             <li>Jueves</li>
             <li>Viernes</li>
             <li>Sábado</li>
-
+            </ol>
           </p>
 
-          <p>Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</p>
-      
-      
-          <p>Si, por lo contrario, utilizas la secuencia, debes seguir un esquema relativamente sencillo: 
-            la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
-            Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
-            será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
-            La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
-            habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. La secuencia ha de 
-            entrecomillarse.</p>
+          <p><b>Observaciones:</b><br>
+            <ul>
+              <li> Si el argumento se deja vacío, Excel utiliza automáticamente la combinación de sábado y domingo.</li>
+              <li>Si, por lo contrario, <b>decides utilizar una secuencia</b>, debes seguir un esquema relativamente sencillo: 
+                la cadena consta de 7 cifras, una por cada día de la semana, comenzando por el lunes. 
+                Si se coloca un 0 en una cifra, se considerará ese día como día laborable. Si se coloca un 1,
+                será un día libre. Por lo tanto, 1000001 se correspondería a un fin de semana de domingo y lunes. 
+                La ventaja de esta función es que puedes establecer más de dos días libres que no sean los 
+                habituales. Sin embargo, no es posible colocar un 1 en todas las cifras. Es importante tener presente que 
+                la secuencia ha de poner  entre comillas.</li>
+            </ul>
+            </p>
+    
+        <p><b>Ejemplo:</b>
+           Si quieres calcular un plazo de entrega y la semana laboral va de martes 
+           a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
 
-            <p><b>Observación:</b> Si quieres calcular un plazo de entrega y la semana laboral va de martes 
-              a sábado, existen dos posibilidades para determinarlo con la función DIA.LAB.INTL:</p>
-
-              <ol>
-                <li>=DIA.LAB.INTL(FECHA(2020;04;06);10;2)</li>
-                <li>=DIA.LAB.INTL(FECHA(2020;4;6);10;"1000001")</li>
-              </ol>
+              <ul>
+                <li><b>=DIA.LAB.INTL( FECHA( 2020 ; 04 ; 06 ) ; 10 ; 2 )</b></li>
+                <li><b>=DIA.LAB.INTL(FECHA( 2020 ; 4 ; 6 ) ; 10 ; " 1000001")</b></li>
+              </ul>
 
           <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
         </div>
+      </body>
 
 
 <!--
@@ -620,17 +638,7 @@
     </div>
 -->
 
-    <div class="nota-box">
-      <h1 class="number-subtitle"> Función DIASEM</h1>
-    
-    <p>La función  <b>DIASEM(número;tipo)</b> convierte un número de serie de una fecha en un día de la semana
-      (su número). El segundo parámetro establece el tipo de semana (1 = semana inglesa; 2 =
-      semana española; 3 = el primer día de la semana es el cero). Por ejemplo, la función
-      =DIASEM(“24/12/89”;2) devuelve el valor 7, que corresponde a Domingo según el tipo de
-      semana española.   </p>
-
-    </div>
-
+ 
 
     <!-- 
     <div class="nota-box">
@@ -642,7 +650,7 @@
 
     </div>
 
-      -->
+
     
 
 
@@ -675,6 +683,8 @@
       </p>
 
     </div>
+
+          -->
     
     <div class="nota-box">
       <h1 class="number-subtitle"> Función  SIFECHA</h1>
