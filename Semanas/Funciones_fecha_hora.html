@@ -201,6 +201,186 @@
       <p><b>Ejemplo:</b> La función <b>=DIASEM( " 24 / 12 / 89 " ; 2 )"</b> devuelve el valor 7,
       que corresponde a Domingo según el tipo de semana española.   </p>
 
+      <p><b>Tipo:</b><br>
+        <p><table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Tipo</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Número devuelto</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>1 u omitido</p>
+              </td>
+              <td>
+                <p>Números del 1 (domingo) al 7 (sábado). Igual que en versiones anteriores de Microsoft Excel.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>2</p>
+              </td>
+              <td>
+                <p>Números del 1 (lunes) al 7 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>3</p>
+              </td>
+              <td>
+                <p>Números del 0 (lunes) al 6 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>11</p>
+              </td>
+              <td>
+                <p>Números del 1 (lunes) al 7 (domingo).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>1,2</p>
+              </td>
+              <td>
+                <p>Números del 1 (martes) al 7 (lunes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>1,3</p>
+              </td>
+              <td>
+                <p>Números del 1 (miércoles) al 7 (martes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>14</p>
+              </td>
+              <td>
+                <p>Números del 1 (jueves) al 7 (miércoles).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>15</p>
+              </td>
+              <td>
+                <p>Números del 1 (viernes) al 7 (jueves).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>16</p>
+              </td>
+              <td>
+                <p>Números del 1 (sábado) al 7 (viernes).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>17</p>
+              </td>
+              <td>
+                <p>Números del 1 (domingo) al 7 (sábado).</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+      </p>
+
+      <p><b>Ejemplo:</b><br>
+        <p>
+          <table class="banded">
+            <thead>
+              <tr>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Datos</b>
+                  </p>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>14/2/2008</p>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Fórmula</b>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <b class="ocpLegacyBold">Descripción (resultado)</b>
+                  </p>
+                </td>
+                <td>
+                  <p id="__goback">
+                    <b class="ocpLegacyBold">Resultado</b>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 1 (domingo) a 7 (sábado) (5)</p>
+                </td>
+                <td>
+                  <p>5</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2; 2)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 1 (lunes) a 7 (domingo) (4)</p>
+                </td>
+                <td>
+                  <p>4</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>=DIASEM(A2; 3)</p>
+                </td>
+                <td>
+                  <p>Día de la semana, con los números 0 (lunes) a 6 (domingo) (3)</p>
+                </td>
+                <td>
+                  <p>3</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+        </p>
+
+
     </div>
 
     
@@ -689,76 +869,155 @@
     <div class="nota-box">
       <h1 class="number-subtitle"> Función  SIFECHA</h1>
 
-      <p>=SIFECHA(fecha_inicio,fecha_fin,periodo)</p>
+
+      <p>La función <b>SIFECHA( fecha_inicio , fecha_fin , periodo )</b> calcula el número de días, meses o años entre dos 
+        fechas.</p>
+
+      <h2 class="number-title"> Sintaxis</h2> 
+
+      <p><center><b>=SIFECHA( fecha_inicio , fecha_fin , periodo )</b></center></p>
 
 
       <p>
         <ul>
-          <li>Fecha Inicio: Indica la fecha a partir de donde se inicia la cuenta.
-          <li>Fecha Fin: Marca el día final de la cuenta</li>
-          <li>Periodo: Sirve para indicar el periodo de medición, usar "y" para años,
-             "m" para meses y "d" para días.</li>
+          <li><b>fecha Inicio</b> Obligatorio. Indica la fecha a partir de donde se inicia la cuenta.
+          <li><b>fecha Fin</b> Obligatorio. Marca el día final de la cuenta</li>
+          <li><b>periodo</b> Sirve para indicar el periodo de medición. Para establecer el periodo de tiempo a medir,
+             debemos indicar "y" para años, "m" para meses 
+            y "d" para días en este último parámetro.</li>
         </ul>
       </p>
 
+<p>
+  
+  <table class="info">
+    <tbody>
+    <tr class="Titulo">
+    <td valign="top" width="54"><strong>Valor</strong></td>
+    <td valign="top" width="208"><strong>Significado</strong></td>
+    <td valign="top" width="336"><strong>Descripción</strong></td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“d”</td>
+    <td valign="top" width="208">Días</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“m”</td>
+    <td valign="top" width="208">Meses</td>
+    <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“y”</td>
+    <td valign="top" width="208">Años</td>
+    <td valign="top" width="336">Número de años entre la fecha1 y la fecha2</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“yd”</td>
+    <td valign="top" width="208">Días excluyendo años</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“ym”</td>
+    <td valign="top" width="208">Meses excluyendo años</td>
+    <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
+    </tr>
+    <tr>
+    <td valign="top" width="54">“md”</td>
+    <td valign="top" width="208">Días excluyendo meses y años</td>
+    <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo mes y el mismo año.</td>
+    </tr>
+    </tbody>
+    </table>  
+</p>
 
-      <p>Está fórmula en muy útil cuando necesitamos encontrar el periodo de tiempo 
-        que ha pasado entre dos fecha, es decir, años, fechas o días.</p>
+<p><b>Observaciones:</b> <br>
+  <ol>
+      <li>Está fórmula en muy útil cuando necesitamos encontrar el periodo de tiempo 
+        que ha pasado entre dos fecha, es decir, años, fechas o días.</li>
+     <li>No se encuentra visible en el catálogo de fórmulas en Excel, así que ten fe y verás cómo funciona.</li>
+      <li>Así que gracias a la fórmula SIFECHA podremos, por ejemplo, encontrar la edad de 
+        una persona a partir de su fecha de nacimiento o la antigüedad de un empleado en el empresa.</li>
 
+      <!-- <p>=SIFECHA("05/12/1995","01/06/2020","y")</p>-->
 
+      </ol>
 
-      <p>No se encuentra visible en el catálogo de fórmulas en Excel, así que ten fe y verás cómo funciona.</p>
-        
-      
-      <p>Así que gracias a la fórmula SIFECHA podremos, por ejemplo, encontrar la edad de 
-        una persona a partir de su fecha de nacimiento o la antigüedad de un empleado en el empresa.</p>
-
-      <p>=SIFECHA("05/12/1995","01/06/2020","y")</p>
-
-      <p>Para establecer el periodo de tiempo a medir, debemos indicar "y" para años, "m" para meses 
-        y "d" para días en el último parámetro.</p>
-
-
-        <table class="info">
-          <tbody>
-          <tr class="Titulo">
-          <td valign="top" width="54"><strong>Valor</strong></td>
-          <td valign="top" width="208"><strong>Significado</strong></td>
-          <td valign="top" width="336"><strong>Descripción</strong></td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“d”</td>
-          <td valign="top" width="208">Días</td>
-          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2</td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“m”</td>
-          <td valign="top" width="208">Meses</td>
-          <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2</td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“y”</td>
-          <td valign="top" width="208">Años</td>
-          <td valign="top" width="336">Número de años entre la fecha1 y la fecha2</td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“yd”</td>
-          <td valign="top" width="208">Días excluyendo años</td>
-          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“ym”</td>
-          <td valign="top" width="208">Meses excluyendo años</td>
-          <td valign="top" width="336">Número de meses entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo año.</td>
-          </tr>
-          <tr>
-          <td valign="top" width="54">“md”</td>
-          <td valign="top" width="208">Días excluyendo meses y años</td>
-          <td valign="top" width="336">Número de días entre la fecha1 y la fecha2 donde ambas fechas tienen el mismo mes y el mismo año.</td>
-          </tr>
-          </tbody>
-          </table>  
     
+    <p><b>Ejemplos:</b><br>
+      <p>
+        <table class="banded">
+          <thead>
+            <tr>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fecha_inicial</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fecha_final</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Fórmula</b>
+                </p>
+              </td>
+              <td>
+                <p>
+                  <b class="ocpLegacyBold">Descripción (resultado)</b>
+                </p>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>01/01/2001</p>
+              </td>
+              <td>
+                <p>01/01/2003</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"Y")</p>
+              </td>
+              <td>
+                <p>Dos años completos en el periodo (2)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>01/06/2001</p>
+              </td>
+              <td>
+                <p>15/08/2002</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"D")</p>
+              </td>
+              <td>
+                <p>440 días entre el 1 de junio de 2001 y el 15 de agosto de 2002 (440)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>01/06/2001</p>
+              </td>
+              <td>
+                <p>15/08/2002</p>
+              </td>
+              <td>
+                <p>=SIFECHA(fecha_inicial;fecha_final;"YD")</p>
+              </td>
+              <td>
+                <p>75 días entre el 1 de junio y el 15 de agosto, pasando por alto los años de las fechas (75)</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </p>
     </div>
 
   </body>
