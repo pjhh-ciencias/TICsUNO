@@ -559,23 +559,173 @@
 
        <h2 class="number-title"> Sintaxis</h2>
        <p>
-        DIA.LAB( fecha_inicial , dias_lab, [festivos] )
+        <p><center><b>DIA.LAB( fecha_inicial , dias , [fin_de_semana], [días_no_laborables] )</b> </center></p>
        </p>
 
        <ul>
         <li><b>fecha_inicial</b> Obligatorio. La fecha en la que se inicia el conteo.  </li>
-        <li><b>dias_lab</b> Obligatorio. La fecha donde termina el conteo.</li>
-        <li><b>festivos</b> Opcional. Un rango donde están especificados días festivos que serán excluidos
-          del conteo.</li>
+        <li><b>dias </b> Obligatorio. Es el número de días laborables antes o después de la fecha_inicial. Un valor positivo da como resultado una fecha futura; un valor negativo proporciona una fecha pasada; un valor de cero proporciona la fecha_inicial. El desplazamiento de días se trunca a entero.</li>
+        <li><b>fin_de_semana</b> Indica los días de la semana que corresponden a días de la semana y no se consideran días laborables. Fin_de_semana es un número de fin de semana o cadena que especifica cuándo ocurren los fines de semana.</li>
+        <li><b>Días_no_laborables</b>    Opcional. Un conjunto opcional de una o más fechas que se deben excluir del calendario de días laborables. Los días festivos deben estar en el rango de celdas que contienen las fechas o una constante de matriz de los valores seriales que representan esas fechas. El orden de las fechas o los valores seriales de los días festivos puede ser arbitrario.</li>
        </ul>
 
        <p><b>Atencion:</b> Si también deseas excluir los días de vacaciones, podrás usar el 3er parámetro de la 
         función para indicar un rango de celdas que incluya las fechas.
       </p>
 
-      <p><b>Ejemplo:</b> =DIA.LAB( " 01 / 01 / 2011 " , 20 ) = 40571, que representa la fecha  28/01/2011 
+      <p><b>Ejemplo:</b><br>
+        <p><center><b> =DIA.LAB( " 01 / 01 / 2011 " , 20 ) = 40571, </b> </center></p>
+        que representa la fecha  28/01/2011
       </p>
-    </div>
+
+
+      <p>Los valores numéricos de fin de semana indican los siguientes días de fin de semana:</p>
+      <p>
+      <table class="banded">
+        <thead>
+          <tr>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">número de fin de semana</b>
+              </p>
+            </td>
+            <td>
+              <p>
+                <b class="ocpLegacyBold">Días de fin de semana</b>
+              </p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>1 u omitido</p>
+            </td>
+            <td>
+              <p>Sábado, domingo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>2</p>
+            </td>
+            <td>
+              <p>Domingo, lunes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>3</p>
+            </td>
+            <td>
+              <p>Lunes, martes </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>4</p>
+            </td>
+            <td>
+              <p>Martes, miércoles </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>5</p>
+            </td>
+            <td>
+              <p>Miércoles, jueves</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>6</p>
+            </td>
+            <td>
+              <p>Jueves, viernes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>7</p>
+            </td>
+            <td>
+              <p>Viernes, sábado </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>11</p>
+            </td>
+            <td>
+              <p>Solo domingo</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>1,2</p>
+            </td>
+            <td>
+              <p>Solo lunes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>1,3</p>
+            </td>
+            <td>
+              <p>Solo martes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>14</p>
+            </td>
+            <td>
+              <p>Solo miércoles</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>15</p>
+            </td>
+            <td>
+              <p>Solo jueves</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>16</p>
+            </td>
+            <td>
+              <p>Solo viernes</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>17</p>
+            </td>
+            <td>
+              <p>Solo sábado</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <p><b>Observación:</b><br>
+      <p>
+      <ol>
+        <li>Los valores de cadena de fin de semana tienen siete caracteres de largo y cada carácter de la cadena 
+        representa un día de la semana, comenzando por el lunes. <b class="ocpLiteral">1</b> representa un día no laborable 
+        y <b class="ocpLiteral">0</b> representa un día laborable. Solo los caracteres <b class="ocpLiteral"><b class="ocpLiteral">1</b></b>
+        y 0 están permitidos en la cadena. 1111111 no es una cadena válida.</li>
+      <li>Por ejemplo, <b class="ocpLiteral">0000011</b> daría como resultado un fin de semana que es sábado y domingo.</li>
+      </ol>
+      </p>
+
+
+      
+  </div>
     
 
     
@@ -733,6 +883,7 @@
     </div>
 
  
+    <!--
     
     <div class="nota-box">
       <h1 class="number-subtitle"> Función  DIA.LAB.INTL  </h1>
@@ -801,7 +952,7 @@
           <p>Las dos fórmulas dan el mismo resultado. Aquí también se pueden tener en cuenta días festivos mediante referencias.</p>
         </div>
       </body>
-
+-->
 
 <!--
 
