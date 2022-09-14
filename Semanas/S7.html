@@ -79,7 +79,7 @@
 
       </header>
       <!-- This part is for title in tab-->
-      <title> § Semana  5 </title>
+      <title> § Semana  7 </title>
     
   </head>
 
@@ -897,7 +897,7 @@
           usar las bases de datos de forma distribuida geográficamente</li>
         <li><b>Universidades:</b><br> Para información de los estudiantes, matrículas en las asignaturas y cursos.</li>
         <li><b>Transacciones de tarjetas de crédito:</b><br> Para compras con tarjeta de crédito y 
-           la generación de los extractos mensuales</li>
+           la generación de los estados de cuenta </li>
         <li><b>Telecomunicaciones:</b><br> Para guardar un registro de las llamadas realizadas, generar
            las facturas mensuales, mantener el saldo de las tarjetas telefónicas de prepago y 
            para almacenar información sobre las redes de comunicaciones.</li>
@@ -906,7 +906,7 @@
           datos del mercado en tiempo real para permitir a los clientes la compraventa en línea
           y a la compañía la compraventa automática.</li>
         <li><b>Ventas:</b><br> Para información de clientes, productos y compras</li>
-        <li><b>Comercio en línea:</b><br> para los datos de ventas ya mencionados y para el seguimiento de los pedidos
+        <li><b>Comercio en línea:</b><br> Para los datos de ventas ya mencionados y para el seguimiento de los pedidos
           Web, generación de listas de recomendaciones y mantenimiento de evaluaciones de productos
           en línea</li>
         <li><b>Producción:</b><br> Para la gestión de la cadena de proveedores y para el seguimiento de la producción
@@ -937,7 +937,7 @@
         de datos de manera que sea tanto práctica como eficiente.
       </p>
 
-      <p>Los sistemas de bases de datos se diseñan para gestionar grandes cantidades de información 
+      <p>Los sistemas gestores de bases de datos se diseñan para gestionar grandes cantidades de información 
         de tal manera que  se garantiza la fiabilidad de la información almacenada, a pesar de las caídas del sistema o
         de los intentos de acceso no autorizados. Si los datos van a ser compartidos entre diferentes usuarios, el
         sistema debe evitar posibles resultados anómalos.</p>
@@ -956,16 +956,16 @@
 
       -->
 
-      <p>Entre los sistemas gestores de bases de datos (SGBD) más conocidos se encuentran: Microsoft Access y MySQL.</p>
+      <p>Entre los sistemas gestores de bases de datos (SGBD) más conocidos se encuentran: <b>Microsoft Access</b> y <b>MySQL</b>.</p>
      
     </div>  
 
      
     <div class="nota-box">
-      <h2 class="number-title"> Bases de datos VS hojas de calculo</h2>
+      <h1 class="number-subtitle"> Bases de datos vs Hojas de cálculo</h1>
 <p>
   Las bases de datos y las hojas de cálculo son herramientas útiles para almacenar
-información. Las principales diferencias entre ambas son:
+información. Las <b>principales diferencias</b> entre ambas son:
 </p>
 
 <ol>
@@ -985,47 +985,47 @@ gran volumen de datos.
 de información organizada, permite acceder y consultar los datos de forma rápida
 y segura a muchos usuarios al mismo tiempo.
 </p>
+
+<h3 class="number-title"> Cuando  diseñamos una base de datos, debemos
+  tomar en cuenta las siguientes aspectos: </h3>
+  <ol>
+      <li>Trate de planificar para el futuro e incluya todos los datos que probablemente necesite.</li>
+      <!--
+      En Access, es posible cambiar los tipos de datos de los atributos o agregar atributos más tarde,
+      pero si la base de datos ya es grande o muchas personas la están usando simultáneamente, 
+      agregar atributos o modificar los tipos de datos podría ser lento o interrumpir 
+      el uso de su sistema.
+      -->
+      <li>Tenga un campo separado para cada división de los datos que anticipe necesitar.</li>
+          <!-- Como regla general, es mucho más fácil juntar datos que separarlos. Por ejemplo, 
+          si almacenamos los nombres de los estudiantes como tres campos diferentes (nombre, segundo nombre y apellido),
+          entonces podemos formar fácilmente el nombre completo de un estudiante concatenando (colocando de extremo a extremo)
+          el contenido de estos campos. Si solo almacenamos el nombre como un campo grande, entonces ciertas tareas, 
+          como ordenar a los estudiantes por su nombre o apellido, pueden volverse innecesariamente difíciles y propensas a errores.
+          -->
+      <li>  Evite almacenar campos calculados</li>
+      <!-- 
+      Si ya ha almacenado el total de créditos y puntos de calificación acumulados,
+      puede calcular fácilmente el GPA. No hay necesidad de almacenar de forma redundante 
+      los GPA de los estudiantes. Eso ocupará espacio innecesario y creará una oportunidad 
+      para que los campos de la base de datos se vuelvan inconsistentes entre sí. 
+      En bases de datos relacionales como Access, generalmente debe usar objetos de tabla 
+      solo para sus datos "base". Los cálculos basados en esos datos residen en otros objetos, 
+      como consultas, formularios e informes. Esta separación de datos base y calculados es otra
+       forma en la que las bases de datos relacionales son diferentes de las hojas de cálculo,
+        en las que todos los datos "base" coexisten con los cálculos dentro de la misma cuadrícula bidimensional 
+        de celdas.
+      -->
+  </ol>
+
+  <p>
+  <b>Recuerda:</b> Una base de datos bien diseñada no solo ayuda a garantizar la integridad de los datos,
+   sino que es más fácil de mantener y actualizar.
+  </p>
   </div>
 
   
-<div class="nota-box">
-  <h4 class="number-title"> Cuando  diseñamos una base de datos, debemos
-      tomar en cuenta las siguientes aspectos: </h4>
-      <ol>
-          <li>Trate de planificar para el futuro e incluya todos los datos que probablemente necesite.</li>
-          <!--
-          En Access, es posible cambiar los tipos de datos de los atributos o agregar atributos más tarde,
-          pero si la base de datos ya es grande o muchas personas la están usando simultáneamente, 
-          agregar atributos o modificar los tipos de datos podría ser lento o interrumpir 
-          el uso de su sistema.
-          -->
-          <li>Tenga un campo separado para cada división de los datos que anticipe necesitar.</li>
-              <!-- Como regla general, es mucho más fácil juntar datos que separarlos. Por ejemplo, 
-              si almacenamos los nombres de los estudiantes como tres campos diferentes (nombre, segundo nombre y apellido),
-              entonces podemos formar fácilmente el nombre completo de un estudiante concatenando (colocando de extremo a extremo)
-              el contenido de estos campos. Si solo almacenamos el nombre como un campo grande, entonces ciertas tareas, 
-              como ordenar a los estudiantes por su nombre o apellido, pueden volverse innecesariamente difíciles y propensas a errores.
-              -->
-          <li>  Evite almacenar campos calculados</li>
-          <!-- 
-          Si ya ha almacenado el total de créditos y puntos de calificación acumulados,
-          puede calcular fácilmente el GPA. No hay necesidad de almacenar de forma redundante 
-          los GPA de los estudiantes. Eso ocupará espacio innecesario y creará una oportunidad 
-          para que los campos de la base de datos se vuelvan inconsistentes entre sí. 
-          En bases de datos relacionales como Access, generalmente debe usar objetos de tabla 
-          solo para sus datos "base". Los cálculos basados en esos datos residen en otros objetos, 
-          como consultas, formularios e informes. Esta separación de datos base y calculados es otra
-           forma en la que las bases de datos relacionales son diferentes de las hojas de cálculo,
-            en las que todos los datos "base" coexisten con los cálculos dentro de la misma cuadrícula bidimensional 
-            de celdas.
-          -->
-      </ol>
 
-      <p>
-      <b>Recuerda:</b> Una base de datos bien diseñada no solo ayuda a garantizar la integridad de los datos,
-       sino que es más fácil de mantener y actualizar.
-      </p>
-</div>
 
 
     <div class="nota-box">
@@ -1036,6 +1036,9 @@ y segura a muchos usuarios al mismo tiempo.
         almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
         las necesidades de la tecnología existente, ni otras restricciones.</p>
         
+        <p>Definimos <b>sistema de información</b> como el conjunto de procedimientos y funciones dirigidos
+          a la recolección, elaboración, evaluación, almacenamiento, recuperación, condensación y distribución
+          de informaciones dentro de una organización</p>
         <!-- Merece la pena recalcar ese factor de independencia con respecto a la implementación final. -->
       <p>
         El Diagrama E-R dará solución al problema planteado sin importar cuál sea el SGBD comercial que se
@@ -1284,7 +1287,7 @@ y segura a muchos usuarios al mismo tiempo.
 
      
       <p>
-        La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.
+        <b>La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.</b>
       </p>
 
       <p>
