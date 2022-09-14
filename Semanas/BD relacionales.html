@@ -447,18 +447,25 @@ y segura a muchos usuarios al mismo tiempo.
     <h2 class="number-title"> Cardinalidad y modalidad</h2>
 
     <p>Para dotar de contenido semántico a una relación hay que especificar <b>de qué modo se relacionan
-      entre sí las ocurrencias de las distintas entidades, estableciendo ámbitos, límites y restricciones.</p>
+      entre sí las ocurrencias de las distintas entidades</b>, estableciendo ámbitos, límites y restricciones.</p>
 
       <h3>Cardinalidad</h3>
 
-     <p>La <b>cardinalidad</b> (llamada tipo de correspondencia por algunos autores) indica el número máximo
-      de ocurrencias de una entidad con las que se puede relacionar una ocurrencia de otra entidad.
-      Es posible que en nuestro sistema de información toda factura deba emitirse a nombre de un
-      solo cliente, pero que cada cliente pueda emitir muchas facturas; puede que cada proveedor suministre
-      varios artículos y que cada artículo sea suministrado por varios proveedores; y quizás
-      cada empleado se siente en una ubicación concreta de la oficina y a cada ubicación corresponda
-      solamente un empleado. La cardinalidad refleja esta casuística del siguiente modo:</p>
+     <p>La <b>cardinalidad</b> (también llamada <b>tipo de correspondencia</b> por algunos autores) indica el número máximo
+      de ocurrencias de una entidad con las que se puede relacionar una ocurrencia de otra entidad.</p>
 
+      <p><b>Ejemplos:</b><br> 
+      <ol>
+        <li>Toda factura deba emitirse a nombre de un
+      solo cliente, pero que cada cliente pueda emitir muchas facturas,</li>
+      <li> Cada proveedor suministre varios artículos y que cada artículo sea suministrado por varios 
+      proveedores, </li>
+      <li>Cada empleado se siente en una ubicación concreta de la oficina y a cada ubicación corresponda
+      solamente un empleado.</li>
+      </ol>
+      </p>
+
+      <p> La cardinalidad refleja estos casos del siguiente modo:</p>
       <p>
         <ul>
           <li><b>1:N (uno a ene/uno a muchos)</b>. Una ocurrencia de una entidad puede relacionarse con
@@ -499,32 +506,42 @@ y segura a muchos usuarios al mismo tiempo.
         </p> 
         </li>
         </ul>
+      </p><br>
+
+      <h2 class="number-title"> Modalidad</h2>
+
+     
+      <p>
+        La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.
       </p>
 
-      <p><b>Observación:</b>
-        La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.
+      <p>
         ¿Todo instrumento debe ser tocado por algún músico? ¿Podría haber alguna ocurrencia
         en la entidad “Instrumento” que no tuviera relación con otra ocurrencia en la entidad “Músico”?
         Puede que, como requisito del sistema de información, la entidad “Instrumento” deba contener
         una lista de instrumentos independientemente de que haya algún músico que los toque (quizás
         una de las ocurrencias de “Instrumento” corresponda al acordeón y, en cambio, en “Músico” 
         no haya ninguna ocurrencia correspondiente a un músico que toque el acordeón). Pero también
-          puede que el sistema de información exija que las ocurrencias de “Instrumento” se carguen a
-          medida que se introduzcan en “Músico” ocurrencias de músicos, de modo que todos los instrumentos
-          tendrían su correspondencia con, al menos, un músico. Obviamente, las dos situaciones
-          son incompatibles en un buen diseño de datos, y la cardinalidad no nos aporta la
-          información necesaria para solventar esta disyuntiva.</p>
+        puede que el sistema de información exija que las ocurrencias de “Instrumento” se carguen a
+        medida que se introduzcan en “Músico” ocurrencias de músicos, de modo que todos los instrumentos
+        tendrían su correspondencia con, al menos, un músico. Obviamente, las dos situaciones
+        son incompatibles en un buen diseño de datos, y la cardinalidad no nos aporta la
+        información necesaria para solventar esta disyuntiva.
       </p>
 
-      
 
-      <h2 class="number-title"> Modalidad</h2>
-      <p>La modalidad (llamada por algunos autores cardinalidad, con la consiguiente confusión) define
+
+      <p>La <b>modalidad</b> (llamada por algunos autores cardinalidad, con la consiguiente confusión) define
         el número mínimo y máximo de ocurrencias de una entidad que pueden estar relacionadas con
-        una ocurrencia de otra u otras entidades, identificando relaciones optativas (en las que no tiene
-        por qué haber correspondencia). La modalidad se indica a ambos lados de la relación, y su valor
+        una ocurrencia de otra u otras entidades, identificando <b>relaciones optativas</b> (en las que no tiene
+        por qué haber correspondencia).</p>
+        
+      <p><b>La modalidad se indica a ambos lados de la relación, y su valor
         máximo coincide con el valor de la cardinalidad correspondiente al lado de la relación en el
-        que nos encontremos. Puede ser de los siguientes tipos:</p>
+        que nos encontremos.</b></p>
+
+
+      <p> Puede ser de los siguientes tipos:</p>
 
         <p>
           <ul>
@@ -540,22 +557,21 @@ y segura a muchos usuarios al mismo tiempo.
               o ninguna.</li>
           </ul>
 
-          <p><b>Ejemplo:</b>Veamos el siguiente ejemplo, correspondiente a un concesionario de automóviles:</p>
+          <p><b>Ejemplo:</b> Veamos el siguiente ejemplo, correspondiente a un concesionario de automóviles:</p>
           <p>
             <div class="flexbox">
               <img src="../Imagenes/BD/Ejemplo_modalidad.JPG" alt="", width="auto" height="auto">
             </div>
           </p>
 
-          <p>Para cada entidad de la relación debemos leer su modalidad en el lado opuesto. En este caso,
-            la modalidad de “Cliente” con respecto a “Automóvil” es de 0..N, y la de “Automóvil” con respecto
-            a “Cliente” es de 0..1. Esta relación “compra” se leería del siguiente modo:</p>
+          <p><b>Para cada entidad de la relación debemos leer su modalidad en el lado opuesto.</b> En este caso, la modalidad de “Cliente” con respecto a “Automóvil” es de 0..N, 
+            y la de “Automóvil” con respecto a “Cliente” es de 0..1. Esta relación “compra” se leería del siguiente modo:</p>
 
           <p>
           <ul>
             <li>Toda ocurrencia de “Cliente” puede relacionarse con varias ocurrencias de “Automóvil”,
               con una o con ninguna (en lenguaje natural: un cliente puede no comprar, comprar un
-              automóvil o comprar varios automóviles).</li>
+              automóvil o comprar varios automóviles).</li><br>
               <li> Toda ocurrencia de “Automóvil” puede relacionarse con una sola ocurrencia de
               “Cliente” o no (un automóvil puede ser vendido a un solo cliente, o bien no ser vendido;
               en cualquier caso, el mismo automóvil no puede ser vendido a varios clientes).</li>
@@ -565,19 +581,19 @@ y segura a muchos usuarios al mismo tiempo.
 
 
 
-      <h2 class="number-title">Atributos de relación</h2>
+      <h2 class="number-title"> Atributos de relación</h2>
 
       <p>En algunas ocasiones, ciertas propiedades o características susceptibles de constituir un atributo
         afectan a más de una entidad</p>
 
-      <p>Retomando uno de los  ejemplos previos, es fácil identificar posibles
+      <p>Retomando uno de los  ejemplos previos: Es fácil identificar posibles
         atributos de la entidad “Socio” (“NIF”, “Nombre”, “Apellidos”, “Dirección”, “Teléfono”, “Fecha
         de nacimiento”, “Fecha de alta”) y de la entidad “Libro” (“Signatura”, “Título”, “Autor”, “Editorial”,
         “Año de publicación”). No obstante, un dato importante que el sistema debe registrar
         es la fecha del préstamo. No puede figurar como atributo de “Socio”, porque impediría que un
         socio pudiera tomar más de un libro en préstamo, y no puede figurar como atributo de “Libro”
-        porque impediría que un libro fuera prestado más de una vez. Afecta a ocurrencias de ambas
-        entidades, por lo que debe figurar en la relación:
+        porque impediría que un libro fuera prestado más de una vez. <b> Afecta a ocurrencias de ambas
+        entidades, por lo que debe figurar en la relación</b>:
       </p>
 
       <p>
@@ -586,10 +602,10 @@ y segura a muchos usuarios al mismo tiempo.
         </div>
       </p>
 
-      <h2 class="number-title">Clave primaria y claves candidatas</h2>
+      <h2 class="number-title"> Clave primaria y claves candidatas</h2>
 
-      <p>En toda entidad hay al menos un atributo o conjunto de atributos cuyos valores identifican de
-        forma unívoca a cada una de las ocurrencias. Observemos el siguiente ejemplo:</p>
+      <p>En toda entidad hay al menos un atributo o conjunto de atributos cuyos valores <b>identifican de
+        forma unívoca a cada una de las ocurrencias</b>. Observemos el siguiente ejemplo:</p>
 
         <p>
           <div class="flexbox">
@@ -599,23 +615,30 @@ y segura a muchos usuarios al mismo tiempo.
       
       <p>Si queremos elegir un conjunto de atributos que identifiquen de forma única a cada empleado,
         podemos pensar en la combinación de “Nombre” y “Apellidos”, pero presenta un gran problema:
-        no garantiza la unicidad (puede haber dos empleados llamados “Juan Pérez García”). Si seguimos
-        buscando entre la lista de atributos, veremos tres posibles opciones: “Código de empleado”, “NIF” y
+        no garantiza la unicidad (puede haber dos empleados llamados “Juan Pérez García”).</p>
+        
+        
+        <p>Si seguimos buscando entre la lista de atributos, veremos tres posibles opciones: “Código de empleado”, “NIF” y
         “Número de la Seguridad Social”. Cada uno de los tres sirve para identificar a cada ocurrencia de
         forma única e inconfundible (no puede haber dos empleados con el mismo NIF, ni con el mismo
         número de la Seguridad Social, ni con el mismo código de empleado, suponiendo que dicho código
-        haya sido definido de forma única). Esos tres atributos son llamados claves candidatas, y el que elijamos
-        para identificar a las ocurrencias de la entidad será la clave primaria (primary key). Por motivos de rendimiento
-        de la base de datos resultante, se recomienda elegir la clave primaria más pequeña posible.</p>
+        haya sido definido de forma única).</p>
+        
+        <p>Esos tres atributos son llamados <b>claves candidatas</b>, y el que elijamos
+        para identificar a las ocurrencias de la entidad será la <b>clave primaria</b> (<b>primary key</b>).
+        </p>
+        
+        <p>Por motivos de rendimiento de la base de datos resultante, se recomienda <b>elegir la clave primaria
+           más pequeña posible</b>.</p>
 
-      <p>En un diagrama entidad/relación las claves primarias se representan subrayando el nombre
+      <p><b>En un diagrama entidad/relación</b> las claves primarias se representan subrayando el nombre
         del atributo si se ha optado por dibujar los atributos en el interior de un óvalo, u oscureciendo
         el círculo si se ha decidido utilizar el otro tipo de representación gráfica. Supongamos que hemos
         elegido “NIF” como clave primaria:</p>
 
         <p>
           <div class="flexbox">
-            <img src="../Imagenes/BD/Representacion_grafica_entidad_atributos.JPG" alt="", width="auto" height="auto">
+            <img src="../Imagenes/BD/Representaciones_gráficas_de_clave_primaria.JPG" alt="", width="auto" height="auto">
           </div>
         </p>
 
