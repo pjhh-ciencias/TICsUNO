@@ -1032,7 +1032,7 @@ y segura a muchos usuarios al mismo tiempo.
       <h1 class="number-subtitle"> Modelo entidad-relación</h1> 
 
       <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
-        es una técnica cuyo objetivo es la <b>representación y definición</b> de todos los datos que se introducen,
+        es una técnica cuyo objetivo es la <b>representación</b> y <b>definición</b> de todos los datos que se introducen,
         almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
         las necesidades de la tecnología existente, ni otras restricciones.</p>
         
@@ -1050,10 +1050,10 @@ y segura a muchos usuarios al mismo tiempo.
       <b>Es el elemento fundamental que hay que caracterizar</b>.
      </p>
      
-     <p>Se <b>representa con sustantivos en singular</b>
+     <p>Una entidad se <b>representa con sustantivos en singular</b>
       que encierran un concepto, y es labor del analista identificar dichos sustantivos.</p>
 
-      <p><b>Ejemplos</b> Los siguientes son ejemplos de entidad:<br>       
+      <p><b>Ejemplos:</b> Los siguientes son ejemplos de entidad<br>       
         
           <p>
         <ul>
@@ -1084,9 +1084,9 @@ y segura a muchos usuarios al mismo tiempo.
 
       <p>
         <ol>
-          <li>Presencia del mismo conjunto de atributos para todas las ocurrencias, independientemente
+          <li>Presencia del <b>mismo conjunto de atributos para todas las ocurrencias</b>, independientemente
             de que alguna ocurrencia carezca de valor para algún atributo.</li><br>
-          <li>Diferenciación unívoca de ocurrencias. No puede haber dos ocurrencias con los mismos
+          <li><b>Diferenciación unívoca de ocurrencias</b>. No puede haber dos ocurrencias con los mismos
             valores para todos sus atributos.</li>
         </ol>
       </p>
@@ -1097,8 +1097,8 @@ y segura a muchos usuarios al mismo tiempo.
         en su interior, generalmente en mayúsculas. Los <b>atributos asociados</b> a una entidad se pueden
         representar de dos formas:
         <ul>
-          <li>Mediante óvalos que incluyen el nombre del atributo, </li>
-          <li>Mediante círculos con el nombre del atributo en el exterior.</li>
+          <li>Mediante <b>óvalos</b> que incluyen el nombre del atributo, </li>
+          <li>Mediante <b>círculos</b> con el nombre del atributo en el exterior.</li>
         </ul>
       </p>
 
@@ -1110,6 +1110,8 @@ y segura a muchos usuarios al mismo tiempo.
 
 
 
+     <h3>Clasificación de entidades</h3>
+
      <p>Hay dos tipos de entidades:</p>
      <ol>
       <li> <b>Fuerte o regular</b>. No depende de otra. Corresponde a la inmensa mayoría de las entidades.</li><br>
@@ -1118,14 +1120,17 @@ y segura a muchos usuarios al mismo tiempo.
      </ol>
 
     <p><b>Ejemplo:</b> Consideremos un sistema de información de una <b>biblioteca</b>. Si queremos llevar un control sobre
-      las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad "Multa".
-      Toda multa se impone a un socio; por tanto, no podrá haber ocurrencias en la entidad "Multa" si
-      no existe una ocurrencia correspondiente a un socio en la entidad "Socio".
-       Para que una entidad sea débil tiene que serlo respecto a todas las entidades con las que se relaciona.
-      Las entidades débiles se representan mediante un doble rectángulo:<br>
-      
-    </p>
+      las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad "Multa".</p> Debemos tener en consideración 
+      los siguientes aspectos: 
 
+      <ul>
+      <li>Toda multa se impone a un socio; por tanto, no podrá haber ocurrencias en la entidad "Multa" si
+      no existe una ocurrencia correspondiente a un socio en la entidad "Socio".</li><br>
+
+      <li>Para que una entidad sea débil tiene que serlo respecto a todas las entidades con las que se relaciona.
+       <b>Las entidades débiles se representan mediante un doble rectángulo</b>:<br>
+     </li><br>
+  </ul>
     <p>
       <div class="flexbox">
         <img src="../Imagenes/BD/Entidad_debil.JPG" alt="", width="auto" height="auto">
@@ -1134,10 +1139,11 @@ y segura a muchos usuarios al mismo tiempo.
 
     <h2 class="number-title"> Relación</h2>
 
-    <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se nombran
+    <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se denotan 
       con <b>expresiones verbales</b>.</p>
       
-    <p>Ejemplos de relaciones serían la existente entre las ocurrencias de la
+    
+    <p><b>Ejemplos:</b> Se tienen relaciones entre las ocurrencias de la
       entidad "Cliente" y las de la entidad "Factura" (ya que toda factura corresponde a un cliente),
       y a la que podríamos llamar "genera" (se leería "cliente genera factura").
     </p>
@@ -1162,14 +1168,14 @@ y segura a muchos usuarios al mismo tiempo.
           <p>
           <b>Ejemplo:</b>
           En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
-          gráficamente se representa  como:
-          
+          gráficamente se representa  como:<br>
+         </p>
     <p>
       <div class="flexbox">
         <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
       </div>
     </p>
-  </p>
+  
         </li>
         <li><b>Ternarias.</b> Relacionan entre sí ocurrencias de tres entidades.<br>
         <p>
@@ -1189,12 +1195,13 @@ y segura a muchos usuarios al mismo tiempo.
         <p><b>Ejemplo:</b>
           Supongamos que en la relación del ejemplo anterior
           sea necesario, además, indicar en qué aula se imparte cada asignatura a cada grupo:
+        </p>
           <p>
             <div class="flexbox">
               <img src="../Imagenes/BD/Relacion_cuaternaria.JPG" alt="", width="auto" height="auto">
             </div>
           </p>
-          Como criterio de diseño se identifican relaciones ternarias o n-arias cuando la acción
+        <p><b>Observación:</b>>  Como criterio de diseño se identifican relaciones ternarias o n-arias cuando la acción
           identificada por la relación afecta de forma simultánea a las ocurrencias de todas las entidades
           relacionadas (un profesor imparte una asignatura a un grupo en un aula en un
           momento concreto, por lo que existe simultaneidad temporal). 
@@ -1204,12 +1211,8 @@ y segura a muchos usuarios al mismo tiempo.
       <li><b>Reflexivas.</b> Relacionan entre sí ocurrencias de la misma entidad. Para comprenderlas correctamente
         hay que tener en cuenta que las ocurrencias que relacionan, aun perteneciendo
         a la misma entidad, están jugando papeles distintos. <br>
-<<<<<<< HEAD
 
       <p><b>Ejemplo:</b> Consideremos  una entidad “Empleado” que almacena 
-=======
-      <p><b>Ejemplo</b> Consideremos  una entidad "Empleado" que almacena 
->>>>>>> 5764eb7aade9243538fb7664b73bb6866106bb62
         ocurrencias de empleados de una empresa. Hay empleados que son jefes de otros, y todos
         los empleados figuran como ocurrencias de la entidad "Empleado". En este caso, debemos
         relacionar ocurrencias de "Empleado" correspondientes a empleados que tienen jefe con
