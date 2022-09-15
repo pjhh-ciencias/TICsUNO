@@ -1204,7 +1204,8 @@ y segura a muchos usuarios al mismo tiempo.
       <li><b>Reflexivas.</b> Relacionan entre sí ocurrencias de la misma entidad. Para comprenderlas correctamente
         hay que tener en cuenta que las ocurrencias que relacionan, aun perteneciendo
         a la misma entidad, están jugando papeles distintos. <br>
-      <p><b>Ejemplo</b> Consideremos  una entidad “Empleado” que almacena 
+
+      <p><b>Ejemplo:</b> Consideremos  una entidad “Empleado” que almacena 
         ocurrencias de empleados de una empresa. Hay empleados que son jefes de otros, y todos
         los empleados figuran como ocurrencias de la entidad “Empleado”. En este caso, debemos
         relacionar ocurrencias de “Empleado” correspondientes a empleados que tienen jefe con
@@ -1436,7 +1437,7 @@ y segura a muchos usuarios al mismo tiempo.
           </div>
         </p>
 
-
+<!-- 
       <h2 class="number-title"> Ejemplo de diagrama entidad/relación</h2>
 
       <p>Se ha de definir el modelo de datos de una biblioteca con las siguientes restricciones básicas:</p>
@@ -1452,31 +1453,34 @@ y segura a muchos usuarios al mismo tiempo.
       </ul></p>
 
       <p>A pesar de que falta mucha información sobre los requisitos de la aplicación, el siguiente
-        diagrama cumple con las restricciones expuestas:s</p>
-    </div>
+        diagrama cumple con las restricciones expuestas:</p>
+    
 
-
+  -->
+</div>
 
     <div class="nota-box">
       <h1 class="number-subtitle"> Modelo relacional </h1><!-- (sistema de gestión de bases de datos relacionales)? </h1> -->
  
 
-    <p>Definido por Edgar F. Codd en el IBM Research Center de San José (California) en 1970, el
+    <p>Propuesto  por <b>Edgar F. Codd</b> en el IBM Research Center de San José (California) en 1970, el
       modelo relacional buscaba una solución a los problemas derivados de la rigidez estructural de
-      las bases de datos jerárquicas y en red imperantes en la época. Presentado en sólidos términos
+      las bases de datos <b>jerárquicas</b> y en <b>red</b> imperantes en la época. Presentado en sólidos términos
       matemáticos, independiza los datos de su tratamiento.</p>
 
     
     <h2 class="number-title"> Relación</h2>
 
 
-    <p>El elemento básico del modelo relacional es la relación, una estructura bidimensional que representa
+    <p>El elemento básico del modelo relacional es la <b>relación</b>, una estructura bidimensional que representa
       las entidades y algunas relaciones del diagrama entidad-relación. Las filas de una relación,
-      llamadas tuplas, corresponden a las ocurrencias; cada tupla cuenta con una serie de atributos,
-      cada uno de ellos con un valor. Vemos como ejemplo la relación “Socio”:
+      llamadas <b>tuplas</b>, corresponden a las ocurrencias; cada tupla cuenta con una <b>serie de atributos</b>,
+      cada uno de ellos con un valor.
     </p>
 
-    <p>
+
+
+    <p><b>Ejemplo:</b><br>
       <div class="flexbox">
         <img src="../Imagenes/BD/Relacion_MR.JPG" alt="", width="auto" height="auto">
       </div>
@@ -1487,13 +1491,13 @@ y segura a muchos usuarios al mismo tiempo.
     <p>Se le llama <b>dominio</b> de un atributo al conjunto de valores que puede tomar para una ocurrencia
       concreta. Aunque de acuerdo a la definición teórica del modelo relacional cada dominio
       corresponde exclusivamente a los valores posibles (es decir, el dominio del atributo “Apellidos”
-      es el conjunto de apellidos de los socios), la idea de dominio típicamente se asocia con la de tipo
-      de datos (es decir, el conjunto de combinaciones de datos que podría constituir un dominio, de
+      es el conjunto de apellidos de los socios), la idea de dominio típicamente <b>se asocia con la de tipo
+      de datos</b> (es decir, el conjunto de combinaciones de datos que podría constituir un dominio, de
       modo que desde un punto de vista técnico cualquier combinación de caracteres alfanuméricos,
-      aunque no tenga sentido, podría representar los apellidos de un socio). Se identifican los siguientes
-      tipos de datos base:
+      aunque no tenga sentido, podría representar los apellidos de un socio). 
     </p>
-    <p>
+
+    <p>Se identifican los siguientes <b>tipos de datos</b>:<br>
       <ul>
         <li>Números enteros.</li>
         <li>Números decimales.</li>
@@ -1504,20 +1508,26 @@ y segura a muchos usuarios al mismo tiempo.
       </ul>
     </p>
 
-    <p>También se pueden definir conjuntos de valores a medida. Un ejemplo sería un atributo
-      “día de la semana”, cuyos posibles valores fueran los contenidos en el conjunto {“lunes”, “martes”,
-      “miércoles”, “jueves”, “viernes”, “sábado”, “domingo”}.
-      Hay un valor especial que constituye un tipo por sí mismo: el valor nulo o NULL, que representa
-      ausencia de valor. No se debe confundir con el valor vacío (“” en un campo de tipo
+    <p>También se pueden definir <b>conjuntos de valores a medida</b>. </p>
+
+    <p><b>Ejemplo:</b> Un atributo
+      “día de la semana”, los  posibles valores pueden ser  los contenidos en el conjunto {“lunes”, “martes”,
+      “miércoles”, “jueves”, “viernes”, “sábado”, “domingo”}.</p>
+
+     <p>
+      Hay un valor especial que constituye un tipo por sí mismo: <b>el valor nulo</b> o <b>NULL</b>, que representa
+      ausencia de valor. No se debe confundir con el <b>valor vacío</b> ( <b>" "</b> en un campo de tipo
       cadena de caracteres, o 0 en un campo numérico).
     </p>
 
-    <h2 class="number-title">Normalización</h2>
+    <h2 class="number-title"> Normalización</h2>
 
     <p>También a Codd se debe la definición de una serie de normas cuya aplicación elimina las redundancias
-      de información en una solución relacional. La técnica es conocida como normalización,
-      y consiste en llevar todas las relaciones a determinados estados llamados formas normales.
-      A continuación se describen dichas formas normales y cómo se llega hasta ellas.</p>
+      de información en una solución relacional. La técnica es conocida como <b>normalización</b>,
+      y consiste en llevar todas las relaciones a determinados estados llamados <b>formas normales</b>.
+    </p>
+    
+    <p>A continuación se describen dichas formas normales y cómo se llega hasta ellas.</p>
 
     <h2 class="number-title">Primera forma normal (1FN)</h2>
 
