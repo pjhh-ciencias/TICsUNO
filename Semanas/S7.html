@@ -1032,7 +1032,7 @@ y segura a muchos usuarios al mismo tiempo.
       <h1 class="number-subtitle"> Modelo entidad-relación</h1> 
 
       <p>También conocido como <b>diagrama o modelo E-R</b> o <b>E/R</b>. El diagrama entidad/relación
-        es una técnica cuyo objetivo es la <b>representación y definición</b> de todos los datos que se introducen,
+        es una técnica cuyo objetivo es la <b>representación</b> y <b>definición</b> de todos los datos que se introducen,
         almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta
         las necesidades de la tecnología existente, ni otras restricciones.</p>
         
@@ -1042,7 +1042,7 @@ y segura a muchos usuarios al mismo tiempo.
         <!-- Merece la pena recalcar ese factor de independencia con respecto a la implementación final. -->
       <p>
         El Diagrama E-R dará solución al problema planteado sin importar cuál sea el SGBD comercial que se
-        vaya a utilizar. Para ello parte de una serie de conceptos que se describen a continuación:</p>
+        vaya a utilizar. Para ello parte de una serie de conceptos que se describen a continuación:<br></p>
       
      <h2 class="number-title"> Entidad</h2>
      <p>Una <b>entidad</b> es cualquier objeto real o abstracto que tiene existencia por sí mismo y se puede
@@ -1050,10 +1050,10 @@ y segura a muchos usuarios al mismo tiempo.
       <b>Es el elemento fundamental que hay que caracterizar</b>.
      </p>
      
-     <p>Se <b>representa con sustantivos en singular</b>
+     <p>Una entidad se <b>representa con sustantivos en singular</b>
       que encierran un concepto, y es labor del analista identificar dichos sustantivos.</p>
 
-      <p><b>Ejemplos</b> Los siguientes son ejemplos de entidad:<br>       
+      <p><b>Ejemplos:</b> Los siguientes son ejemplos de entidad<br>       
         
           <p>
         <ul>
@@ -1084,9 +1084,9 @@ y segura a muchos usuarios al mismo tiempo.
 
       <p>
         <ol>
-          <li>Presencia del mismo conjunto de atributos para todas las ocurrencias, independientemente
+          <li>Presencia del <b>mismo conjunto de atributos para todas las ocurrencias</b>, independientemente
             de que alguna ocurrencia carezca de valor para algún atributo.</li><br>
-          <li>Diferenciación unívoca de ocurrencias. No puede haber dos ocurrencias con los mismos
+          <li><b>Diferenciación unívoca de ocurrencias</b>. No puede haber dos ocurrencias con los mismos
             valores para todos sus atributos.</li>
         </ol>
       </p>
@@ -1097,8 +1097,8 @@ y segura a muchos usuarios al mismo tiempo.
         en su interior, generalmente en mayúsculas. Los <b>atributos asociados</b> a una entidad se pueden
         representar de dos formas:
         <ul>
-          <li>Mediante óvalos que incluyen el nombre del atributo, </li>
-          <li>Mediante círculos con el nombre del atributo en el exterior.</li>
+          <li>Mediante <b>óvalos</b> que incluyen el nombre del atributo, </li>
+          <li>Mediante <b>círculos</b> con el nombre del atributo en el exterior.</li>
         </ul>
       </p>
 
@@ -1106,9 +1106,12 @@ y segura a muchos usuarios al mismo tiempo.
         <div class="flexbox">
           <img src="../Imagenes/BD/Representacion_grafica_entidad_atributos.JPG" alt="", width="auto" height="auto">
         </div>
+        <br>
       </p>
 
 
+
+     <h3>Clasificación de entidades</h3>
 
      <p>Hay dos tipos de entidades:</p>
      <ol>
@@ -1118,26 +1121,31 @@ y segura a muchos usuarios al mismo tiempo.
      </ol>
 
     <p><b>Ejemplo:</b> Consideremos un sistema de información de una <b>biblioteca</b>. Si queremos llevar un control sobre
-      las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad "Multa".
-      Toda multa se impone a un socio; por tanto, no podrá haber ocurrencias en la entidad "Multa" si
-      no existe una ocurrencia correspondiente a un socio en la entidad "Socio".
-       Para que una entidad sea débil tiene que serlo respecto a todas las entidades con las que se relaciona.
-      Las entidades débiles se representan mediante un doble rectángulo:<br>
-      
-    </p>
+      las multas impuestas a los socios por devolución tardía de libros, crearemos una entidad "Multa".</p> Debemos tener en consideración 
+      los siguientes aspectos: 
 
+      <ul>
+      <li>Toda multa se impone a un socio; por tanto, no podrá haber ocurrencias en la entidad "Multa" si
+      no existe una ocurrencia correspondiente a un socio en la entidad "Socio".</li><br>
+
+      <li>Para que una entidad sea débil tiene que serlo respecto a todas las entidades con las que se relaciona.
+       <b>Las entidades débiles se representan mediante un doble rectángulo</b>:<br>
+     </li><br>
+  </ul>
     <p>
       <div class="flexbox">
         <img src="../Imagenes/BD/Entidad_debil.JPG" alt="", width="auto" height="auto">
       </div>
+      <br>
     </p>
 
     <h2 class="number-title"> Relación</h2>
 
-    <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se nombran
+    <p>Una <b>relación</b> es una asociación o vínculo entre ocurrencias de varias entidades. Se denotan 
       con <b>expresiones verbales</b>.</p>
       
-    <p>Ejemplos de relaciones serían la existente entre las ocurrencias de la
+    
+    <p><b>Ejemplos:</b> Se tienen relaciones entre las ocurrencias de la
       entidad "Cliente" y las de la entidad "Factura" (ya que toda factura corresponde a un cliente),
       y a la que podríamos llamar "genera" (se leería "cliente genera factura").
     </p>
@@ -1150,6 +1158,7 @@ y segura a muchos usuarios al mismo tiempo.
       <div class="flexbox">
         <img src="../Imagenes/BD/Relacion.JPG" alt="", width="auto" height="auto">
       </div>
+      <br>
     </p>
 
     <h3> Clasificación de relaciones</h3>
@@ -1162,14 +1171,15 @@ y segura a muchos usuarios al mismo tiempo.
           <p>
           <b>Ejemplo:</b>
           En el ejemplo anterior, la relación "genera" entre "Cliente" y "Factura" representa una relacion binaria y 
-          gráficamente se representa  como:
-          
-    <p>
+          gráficamente se representa  como:<br>
+         </p>
+    <p><br>
       <div class="flexbox">
         <img src="../Imagenes/BD/Relacion_binaria.JPG" alt="", width="auto" height="auto">
       </div>
+      <br>
     </p>
-  </p>
+  
         </li>
         <li><b>Ternarias.</b> Relacionan entre sí ocurrencias de tres entidades.<br>
         <p>
@@ -1177,10 +1187,11 @@ y segura a muchos usuarios al mismo tiempo.
           Cada profesor imparte una serie de asignaturas a distintos grupos de alumnos. Si
           disponemos de las entidades "Profesor", "Grupo" y "Asignatura", tendríamos que relacionar
           sus ocurrencias mediante la siguiente relación ternaria:
-          <p>
+          <p><br>
             <div class="flexbox">
               <img src="../Imagenes/BD/Relacion_ternaria.JPG" alt="", width="auto" height="auto">
             </div>
+            <br>
           </p>
         </p>
         </li>
@@ -1189,14 +1200,17 @@ y segura a muchos usuarios al mismo tiempo.
         <p><b>Ejemplo:</b>
           Supongamos que en la relación del ejemplo anterior
           sea necesario, además, indicar en qué aula se imparte cada asignatura a cada grupo:
-          <p>
+        </p>
+          <p><br>
             <div class="flexbox">
               <img src="../Imagenes/BD/Relacion_cuaternaria.JPG" alt="", width="auto" height="auto">
             </div>
-          </p>
-          Como criterio de diseño se identifican relaciones ternarias o n-arias cuando la acción
-          identificada por la relación afecta de forma simultánea a las ocurrencias de todas las entidades
-          relacionadas (un profesor imparte una asignatura a un grupo en un aula en un
+            <br>
+        </p>
+
+        <p><b>Observación:</b>  Como criterio de diseño se identifican <b>relaciones ternarias</b> o <b>n-arias</b> 
+          cuando la acción identificada por la relación <b>afecta de forma simultánea a las ocurrencias de todas las entidades
+          relacionadas</b> (un profesor imparte una asignatura a un grupo en un aula en un
           momento concreto, por lo que existe simultaneidad temporal). 
         </p>     
        
@@ -1204,19 +1218,23 @@ y segura a muchos usuarios al mismo tiempo.
       <li><b>Reflexivas.</b> Relacionan entre sí ocurrencias de la misma entidad. Para comprenderlas correctamente
         hay que tener en cuenta que las ocurrencias que relacionan, aun perteneciendo
         a la misma entidad, están jugando papeles distintos. <br>
-      <p><b>Ejemplo</b> Consideremos  una entidad "Empleado" que almacena 
+
+      <p><b>Ejemplo:</b> Consideremos  una entidad “Empleado” que almacena 
         ocurrencias de empleados de una empresa. Hay empleados que son jefes de otros, y todos
-        los empleados figuran como ocurrencias de la entidad "Empleado". En este caso, debemos
+        los empleados figuran como ocurrencias de la entidad "Empleado".</p>
+        
+        <p>En este caso, debemos
         relacionar ocurrencias de "Empleado" correspondientes a empleados que tienen jefe con
-        ocurrencias de "Empleado" correspondientes a empleados que son jefes de otros:
+        ocurrencias de "Empleado" correspondientes a empleados que son jefes de otros:<br>
       </p>
-      <p>
+      <p><br>
         <div class="flexbox">
           <img src="../Imagenes/BD/Relacion_reflexiva.JPG" alt="", width="auto" height="auto">
         </div>
       </p>
       </li>
     </ol>
+    <br>
     </p>
 
     <h2 class="number-title"> Cardinalidad y modalidad</h2>
@@ -1240,7 +1258,7 @@ y segura a muchos usuarios al mismo tiempo.
       </ol>
       </p>
 
-      <p> La cardinalidad refleja estos casos del siguiente modo:</p>
+      <h3> Clasificación de la cardinalidad de una relación</h3>
       <p>
         <ul>
           <li><b>1:N (uno a ene/uno a muchos)</b>. Una ocurrencia de una entidad puede relacionarse con
@@ -1249,10 +1267,11 @@ y segura a muchos usuarios al mismo tiempo.
             <p>
             <b>Ejemplo:</b> Supongamos una empresa donde cada empleado pertenece a un departamento y en
             cada departamento puede haber varios empleados. Esta sería la representación gráfica:
-            <p>
+            <p><br>
               <div class="flexbox">
                 <img src="../Imagenes/BD/Relacion_1an.JPG" alt="", width="auto" height="auto">
               </div>
+              <br>
             </p>
             </p>
           </li>
@@ -1260,12 +1279,14 @@ y segura a muchos usuarios al mismo tiempo.
             con varias de otra entidad, y cada ocurrencia de la segunda entidad también puede relacionarse
             con varias de la primera.<br>
           <p>
-            <b>Ejemplo: </b> Si en nuestro sistema de información un músico puede tocar varios instrumentos y
+            <b>Ejemplo: </b> Un músico puede tocar varios instrumentos y
             un instrumento puede ser tocado por varios músicos:
             <p>
+              <br>
               <div class="flexbox">
                 <img src="../Imagenes/BD/Relacion_MaN.JPG" alt="", width="auto" height="auto">
               </div>
+              <br>
             </p>
           </p>
           </li>
@@ -1274,9 +1295,11 @@ y segura a muchos usuarios al mismo tiempo.
          <p><b>Ejemplo:</b>  Una consultora financiera podría asignar a cada cliente una única cartera de inversión
           propia:
           <p>
+            <br>
             <div class="flexbox">
               <img src="../Imagenes/BD/Relacion_1a1.JPG" alt="", width="auto" height="auto">
             </div>
+            <br>
           </p>
         </p> 
         </li>
@@ -1290,21 +1313,27 @@ y segura a muchos usuarios al mismo tiempo.
         <b>La cardinalidad delimita los límites superiores de una relación, pero no define su obligatoriedad.</b>
       </p>
 
+      <ul>
+        <li>¿Todo instrumento debe ser tocado por algún músico?</li><br>
+        <li>¿Podría haber alguna ocurrencia en la entidad "Instrumento" que no tuviera relación con
+           otra ocurrencia en la entidad "Músico"?</li>
+      </ul>
       <p>
-        ¿Todo instrumento debe ser tocado por algún músico? ¿Podría haber alguna ocurrencia
-        en la entidad "Instrumento" que no tuviera relación con otra ocurrencia en la entidad "Músico"?
         Puede que, como requisito del sistema de información, la entidad "Instrumento" deba contener
         una lista de instrumentos independientemente de que haya algún músico que los toque (quizás
         una de las ocurrencias de "Instrumento" corresponda al acordeón y, en cambio, en "Músico" 
-        no haya ninguna ocurrencia correspondiente a un músico que toque el acordeón). Pero también
-        puede que el sistema de información exija que las ocurrencias de "Instrumento" se carguen a
+        no haya ninguna ocurrencia correspondiente a un músico que toque el acordeón).</p>
+        
+      <p>Pero también puede que el sistema de información exija que las ocurrencias de "Instrumento" se carguen a
         medida que se introduzcan en "Músico" ocurrencias de músicos, de modo que todos los instrumentos
-        tendrían su correspondencia con, al menos, un músico. Obviamente, las dos situaciones
+        tendrían su correspondencia con, al menos, un músico.</p>
+        
+        <p>Las dos situaciones previas
         son incompatibles en un buen diseño de datos, y la cardinalidad no nos aporta la
         información necesaria para solventar esta disyuntiva.
       </p>
 
-
+    <h3>Modalidad</h3>
 
       <p>La <b>modalidad</b> (llamada por algunos autores cardinalidad, con la consiguiente confusión) define
         el número mínimo y máximo de ocurrencias de una entidad que pueden estar relacionadas con
@@ -1316,6 +1345,7 @@ y segura a muchos usuarios al mismo tiempo.
         que nos encontremos.</b></p>
 
 
+      <h3>Clasificación de la modalidad de una entidad</h3>
       <p> Puede ser de los siguientes tipos:</p>
 
         <p>
@@ -1410,7 +1440,7 @@ y segura a muchos usuarios al mismo tiempo.
         del atributo si se ha optado por dibujar los atributos en el interior de un óvalo, u oscureciendo
         el círculo si se ha decidido utilizar el otro tipo de representación gráfica.</p>
         
-        <p>Supongamos que hemos elegido "NIF" como clave primaria:</p>
+        <p><b>Ejemplo: </b>Supongamos que hemos elegido "NIF" como clave primaria:</p>
 
         <p>
           <div class="flexbox">
@@ -1418,7 +1448,7 @@ y segura a muchos usuarios al mismo tiempo.
           </div>
         </p>
 
-      <h3> Clave primaria compuesta</h3>
+      <h2 class="number-title"> Clave primaria compuesta</h2>
        
        
       <p>A veces un solo atributo no es suficiente para identificar de forma unívoca todas las ocurrencias
@@ -1436,7 +1466,7 @@ y segura a muchos usuarios al mismo tiempo.
           </div>
         </p>
 
-
+<!-- 
       <h2 class="number-title"> Ejemplo de diagrama entidad/relación</h2>
 
       <p>Se ha de definir el modelo de datos de una biblioteca con las siguientes restricciones básicas:</p>
@@ -1452,31 +1482,34 @@ y segura a muchos usuarios al mismo tiempo.
       </ul></p>
 
       <p>A pesar de que falta mucha información sobre los requisitos de la aplicación, el siguiente
-        diagrama cumple con las restricciones expuestas:s</p>
-    </div>
+        diagrama cumple con las restricciones expuestas:</p>
+    
 
-
+  -->
+</div>
 
     <div class="nota-box">
       <h1 class="number-subtitle"> Modelo relacional </h1><!-- (sistema de gestión de bases de datos relacionales)? </h1> -->
  
 
-    <p>Definido por Edgar F. Codd en el IBM Research Center de San José (California) en 1970, el
+    <p>Propuesto  por <b>Edgar F. Codd</b> en el IBM Research Center de San José (California) en 1970, el
       modelo relacional buscaba una solución a los problemas derivados de la rigidez estructural de
-      las bases de datos jerárquicas y en red imperantes en la época. Presentado en sólidos términos
+      las bases de datos <b>jerárquicas</b> y en <b>red</b> imperantes en la época. Presentado en sólidos términos
       matemáticos, independiza los datos de su tratamiento.</p>
 
     
     <h2 class="number-title"> Relación</h2>
 
 
-    <p>El elemento básico del modelo relacional es la relación, una estructura bidimensional que representa
+    <p>El elemento básico del modelo relacional es la <b>relación</b>, una estructura bidimensional que representa
       las entidades y algunas relaciones del diagrama entidad-relación. Las filas de una relación,
-      llamadas tuplas, corresponden a las ocurrencias; cada tupla cuenta con una serie de atributos,
-      cada uno de ellos con un valor. Vemos como ejemplo la relación "Socio":
+      llamadas <b>tuplas</b>, corresponden a las ocurrencias; cada tupla cuenta con una <b>serie de atributos</b>,
+      cada uno de ellos con un valor.
     </p>
 
-    <p>
+
+
+    <p><b>Ejemplo:</b><br>
       <div class="flexbox">
         <img src="../Imagenes/BD/Relacion_MR.JPG" alt="", width="auto" height="auto">
       </div>
@@ -1486,38 +1519,44 @@ y segura a muchos usuarios al mismo tiempo.
 
     <p>Se le llama <b>dominio</b> de un atributo al conjunto de valores que puede tomar para una ocurrencia
       concreta. Aunque de acuerdo a la definición teórica del modelo relacional cada dominio
-      corresponde exclusivamente a los valores posibles (es decir, el dominio del atributo "Apellidos"
-      es el conjunto de apellidos de los socios), la idea de dominio típicamente se asocia con la de tipo
-      de datos (es decir, el conjunto de combinaciones de datos que podría constituir un dominio, de
+      corresponde exclusivamente a los valores posibles (es decir, el dominio del atributo “Apellidos”
+      es el conjunto de apellidos de los socios), la idea de dominio típicamente <b>se asocia con la de tipo
+      de datos</b> (es decir, el conjunto de combinaciones de datos que podría constituir un dominio, de
       modo que desde un punto de vista técnico cualquier combinación de caracteres alfanuméricos,
-      aunque no tenga sentido, podría representar los apellidos de un socio). Se identifican los siguientes
-      tipos de datos base:
+      aunque no tenga sentido, podría representar los apellidos de un socio). 
     </p>
-    <p>
+
+    <p>Se identifican los siguientes <b>tipos de datos</b>:<br>
       <ul>
-        <li>Números enteros.</li>
-        <li>Números decimales.</li>
-        <li>Cadenas de caracteres.</li>
-        <li>Fechas y horas.</li>
-        <li>Valores lógicos (verdadero o falso).</li>
-        <li>Objetos (ficheros binarios).</li>
+        <li>Números enteros.</li><br>
+        <li>Números decimales.</li><br>
+        <li>Cadenas de caracteres.</li><br>
+        <li>Fechas y horas.</li><br>
+        <li>Valores lógicos (verdadero o falso).</li><br>
+        <li>Objetos (ficheros binarios).</li><br>
       </ul>
     </p>
 
-    <p>También se pueden definir conjuntos de valores a medida. Un ejemplo sería un atributo
-      "día de la semana", cuyos posibles valores fueran los contenidos en el conjunto {"lunes", "martes",
-      "miércoles", "jueves", "viernes", "sábado", "domingo"}.
-      Hay un valor especial que constituye un tipo por sí mismo: el valor nulo o NULL, que representa
-      ausencia de valor. No se debe confundir con el valor vacío ("" en un campo de tipo
+    <p>También se pueden definir <b>conjuntos de valores a medida</b>. </p>
+
+    <p><b>Ejemplo:</b> Un atributo
+      “día de la semana”, los  posibles valores pueden ser  los contenidos en el conjunto {“lunes”, “martes”,
+      “miércoles”, “jueves”, “viernes”, “sábado”, “domingo”}.</p>
+
+     <p>
+      Hay un valor especial que constituye un tipo por sí mismo: <b>el valor nulo</b> o <b>NULL</b>, que representa
+      ausencia de valor. No se debe confundir con el <b>valor vacío</b> ( <b>" "</b> en un campo de tipo
       cadena de caracteres, o 0 en un campo numérico).
     </p>
 
     <h2 class="number-title"> Normalización</h2>
 
     <p>También a Codd se debe la definición de una serie de normas cuya aplicación elimina las redundancias
-      de información en una solución relacional. La técnica es conocida como normalización,
-      y consiste en llevar todas las relaciones a determinados estados llamados formas normales.
-      A continuación se describen dichas formas normales y cómo se llega hasta ellas.</p>
+      de información en una solución relacional. La técnica es conocida como <b>normalización</b>,
+      y consiste en llevar todas las relaciones a determinados estados llamados <b>formas normales</b>.
+    </p>
+    
+    <p>A continuación se describen dichas formas normales y cómo se llega hasta ellas.</p>
 
     <h2 class="number-title"> Primera forma normal ( 1FN )</h2>
 
@@ -1574,7 +1613,7 @@ y segura a muchos usuarios al mismo tiempo.
     <p>
       <ul>
         <li>Está en 1FN.</li><br>
-        <li>Todos los atributos que no forman parte de la clave primaria dependen de ella por completo.</li>
+        <li>Todos <b>los atributos que no forman parte de la clave primaria dependen  por completo de ella</b>.</li>
       </ul>
     </p>
 
@@ -1608,9 +1647,9 @@ y segura a muchos usuarios al mismo tiempo.
           </div>
         </p>
 
-      <p>Nótese que la 2FN solo se puede violar si la clave primaria está compuesta por más de un
-        atributo, por lo que toda relación en 1FN cuya clave primaria esté formada por un solo atributo
-        también está en 2FN.
+      <p><b>Observación:</b> Nótese que la 2FN solo se puede violar si la clave primaria está compuesta por más de un
+        atributo, por lo que <b>toda relación en 1FN cuya clave primaria esté formada por un solo atributo
+        también está en 2FN.</b>
       </p>
 
       <h2 class="number-title"> Tercera forma normal ( 3FN )</h2>
@@ -1620,8 +1659,8 @@ y segura a muchos usuarios al mismo tiempo.
       <p>
         <ul>
           <li>Está en 2FN.</li><br>
-          <li>Todos los atributos que no forman parte de la clave primaria son independientes entre
-            sí, es decir, no dan información sobre otros atributos de la relación.</li>
+          <li>Todos <b>los atributos que no forman parte de la clave primaria son independientes entre
+            sí</b>, es decir, no dan información sobre otros atributos de la relación.</li>
         </ul>
       </p>
 
@@ -1702,7 +1741,7 @@ y segura a muchos usuarios al mismo tiempo.
                     <li><b>Objetos:</b> "o" (oFoto, oDocumentoXML), de object.</li><br>
                   </ul>
                 </li>
-                <li><b>Nombres (genérico).</b> Se evitará el uso de caracteres de alfabetos locales, como la eñe, la ç,
+                <li><b>Nombres (genérico).</b> <b>El primer carácter de un nombre siempre será una letra.</b> Se evitará el uso de caracteres de alfabetos locales, como la eñe, la ç,
                   las vocales acentuadas o con diéresis, etc. Únicamente se aceptarán como válidos los siguientes
                   caracteres:<br>
                 <ul><br>
@@ -1710,19 +1749,21 @@ y segura a muchos usuarios al mismo tiempo.
                   <li>Números.</li><br>
                   <li>Signo de subrayado o guion bajo ("_").</li><br>
                 </ul>
-               <p>El primer carácter de un nombre siempre será una letra.<br></p> 
+               
                </li> 
               <li><b>Identificadores.</b> Todo campo creado para identificar de forma unívoca los registros de una
                 tabla (código de cliente, código de libro, código de país) llevará como sufijo las letras
-                "ID" (identificador) en mayúscula (nClienteID, nLibroID, nPaisID).</li>
+                "<b>ID</b>" (<b>identificador</b>) en mayúscula (nClienteID, nLibroID, nPaisID).</li>
               </ul>
             </p>
 
-        <p>A pesar de que esta nomenclatura puede resultar insuficiente en el entorno de trabajo de
-          un SGBD real, nos servirá como marco de referencia común para los ejemplos de este texto.<br></p>
-
-
-        <p><b>Observación:</b> Queda a discreción del lector ampliarla y/o adaptarla como convenga a sus necesidades.</p>
+        <p><b>Observaciones:</b>
+          <ul>
+           <li>A pesar de que esta nomenclatura puede resultar insuficiente en el entorno de trabajo de
+            un SGBD real, nos servirá como marco de referencia común para los ejemplos de este texto.</li><br>
+           <li> Queda a discreción del lector ampliarla y/o adaptarla como convenga a sus necesidades.</li>
+          </ul>
+        </p>
 
 
         <h2 class="number-title"> Reglas de transformación</h2>
