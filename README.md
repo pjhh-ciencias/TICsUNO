@@ -1,2 +1,4 @@
-# TIyCUNO
-Pagina del curso Tecnologías de la Información y Comunicación UNO impartido en la Universidad del Mar, a la carrera de Administración Turística.    
+# Tecnologías de la Infomación y Comunicación Uno
+
+Página del curso <b>Tecnologías de la Información y Comunicación UNO</b> impartido a estudiantes de la <b>Licenciatura en Administración Turística</b> en la <b>Universidad del Mar, Campus Huatulco, Oaxaca, México.</b>    
+
