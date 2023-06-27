@@ -132,7 +132,8 @@ width: 100%;
   padding: 0.75%; 
   border-radius: 10px;
   /* background-color: rgba(109, 195, 248, 0.747); */
-  background-color:  rgba(218, 165, 32, 0.841);
+  /* background-color:  rgba(218, 165, 32, 0.841); */
+  background-color: rgb(228, 255, 255);
   width: 100%;
 }
 
@@ -144,8 +145,8 @@ width: 100%;
 
 .top-nav a{
   padding: 0.75%; 
-  font-size: 170%;
-  /* font-weight: 800; */
+  font-size: 180%;
+  font-weight: 450;
   text-decoration: none;
   color: rgb(25,25,112);
   font-family: system-ui;
@@ -158,9 +159,9 @@ width: 100%;
   transition: background-color 0.25s ease;
   /*transition: font-size 0.5s ease;
   */
-  background-color: rgb(245,222,179);
+  background-color: rgba(200, 200, 200, 0.756);
   padding: 0.75%; 
-  font-size: 170%;
+  font-size: 180%;
   border-radius: 5px;
   color: rgb(25,25,112);
   width: 100%;
@@ -266,20 +267,19 @@ width: 100%;
   text-align: center;
   font-family: "Cinzel";
   /* color:  rgb(0, 46, 145); */
-  /* color: rgb(0, 85, 175); */
+  color: rgb(184,134,11); 
   width: 100%;
 }
 
 
 .subtitle{
-  font-size: 180%;
+  font-size: 190%;
   font: italic monospace;
-  font-style: oblique;
   padding: 0.15%;
   font-weight: 800;
   margin-bottom: 0%;
   margin-top: -1%;
-  /* color:  rgba(0, 111, 208, 0.867); */
+  color:  rgb(0,0,128); 
   width: 100%;
   
 }
@@ -297,9 +297,9 @@ width: 100%;
   padding: 0px;
   font-family: "Muli";
   font-weight: 800;
-  margin-bottom: 1px;
-  /* color: rgb(138, 50, 50); */
-  /*color: rgba(0, 136, 255, 0.682);*/
+  margin-top: 0.25%;
+  color: rgb(15, 108, 185);
+
   width: 100%;
 }
 
@@ -308,13 +308,36 @@ width: 100%;
   /* color:  rgba(255, 157, 0, 0.867); */
   /* color: rgba(0, 136, 255, 0.682); */
   text-decoration: none;
+  width: 100%;
 }
 
 .subsubtitle a:visited {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  margin-top: 1%;
 }
 
+.title_nombre{
+  font-size: 135%;
+  padding: .8%;
+  font-weight: 800;
+  margin-bottom: 0.25%;
+  text-align: center;
+  color:  rgb(105,105,105);
+  width: 100%;
+}
+
+
+.subtitle_nombre{
+  font-size: 130%;
+  padding: 0.15%;
+  font-weight: 800;
+  margin-bottom: 0%;
+  margin-top: -1%;
+  color:  rgb(105,105,105);
+  width: 100%;
+  
+}
 
 .contenedor_titulo{
   width: 100%;
@@ -421,17 +444,18 @@ h2.number-title:before{
 
 
 .info-box{
-  background:  rgb(218, 237, 245);
+  /* background:  rgb(218, 237, 245); */
+    background: rgb(252, 252, 244);
     color: black;
     border-radius: 20px;
     padding: 50px;
-    border: 5px solid  rgb(0, 120, 175);
+    border: 0px solid  rgb(218,165,32);
     margin: auto;
     margin-bottom: 50px;
     margin-top: 50px;
     font-size: 20px;
     width: 80%;
-    box-shadow: 2px 2px 15px 2px  rgb(31, 147, 201);
+    box-shadow: 0px 0px 10px 0px  rgb(218,165,32);
 }
 
 
