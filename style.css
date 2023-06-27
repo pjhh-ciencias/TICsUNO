@@ -131,7 +131,8 @@ width: 100%;
   margin-bottom: 0.5%;
   padding: 0.75%; 
   border-radius: 10px;
-  background-color: rgba(109, 195, 248, 0.747);
+  /* background-color: rgba(109, 195, 248, 0.747); */
+  background-color:  rgba(218, 165, 32, 0.841);
   width: 100%;
 }
 
@@ -144,10 +145,10 @@ width: 100%;
 .top-nav a{
   padding: 0.75%; 
   font-size: 170%;
-  font-weight: 800;
+  /* font-weight: 800; */
   text-decoration: none;
-  color: #014ab8e7;
-  font-family: "Muli";
+  color: rgb(25,25,112);
+  font-family: system-ui;
   /* color:  rgb(0, 0, 0); */
   width: 100%;
 
@@ -157,12 +158,11 @@ width: 100%;
   transition: background-color 0.25s ease;
   /*transition: font-size 0.5s ease;
   */
-  background-color: #ffa600;
+  background-color: rgb(245,222,179);
   padding: 0.75%; 
   font-size: 170%;
   border-radius: 5px;
-  font-family: "Muli"; 
-  color:  rgba(255, 255, 255, 0.867);
+  color: rgb(25,25,112);
   width: 100%;
 }
 
@@ -265,19 +265,21 @@ width: 100%;
   font-weight: 800;
   text-align: center;
   font-family: "Cinzel";
-  color: rgb(0, 85, 175);
+  /* color:  rgb(0, 46, 145); */
+  /* color: rgb(0, 85, 175); */
   width: 100%;
 }
 
 
 .subtitle{
   font-size: 180%;
-  font-family: "Muli";
+  font: italic monospace;
+  font-style: oblique;
   padding: 0.15%;
   font-weight: 800;
   margin-bottom: 0%;
   margin-top: -1%;
-  color:  rgba(0, 111, 208, 0.867);
+  /* color:  rgba(0, 111, 208, 0.867); */
   width: 100%;
   
 }
@@ -296,20 +298,21 @@ width: 100%;
   font-family: "Muli";
   font-weight: 800;
   margin-bottom: 1px;
-  color: rgb(138, 50, 50);
+  /* color: rgb(138, 50, 50); */
   /*color: rgba(0, 136, 255, 0.682);*/
   width: 100%;
 }
 
 .subsubtitle a{
   content:" ";
-  color: rgb(138, 50, 50);
-  /*color: rgba(0, 136, 255, 0.682);*/
+  /* color:  rgba(255, 157, 0, 0.867); */
+  /* color: rgba(0, 136, 255, 0.682); */
   text-decoration: none;
 }
 
 .subsubtitle a:visited {
   text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 
