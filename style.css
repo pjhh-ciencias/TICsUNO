@@ -301,9 +301,6 @@ width: 100%;
   width: 100%;
 }
 
-
-
-
 .subsubtitle a{
   content:" ";
   color: rgb(138, 50, 50);
@@ -314,7 +311,6 @@ width: 100%;
 .subsubtitle a:visited {
   text-decoration: none;
 }
-
 
 
 .contenedor_titulo{
