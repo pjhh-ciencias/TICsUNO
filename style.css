@@ -123,6 +123,7 @@ width: 100%;
 .top-nav{
 text-align:center; 
 padding: 1%;
+width: 100%;
 }
 
 .top-nav ul {
@@ -131,23 +132,24 @@ padding: 1%;
   padding: 0.75%; 
   border-radius: 10px;
   background-color: rgba(109, 195, 248, 0.747);
+  width: 100%;
 }
 
 .top-nav li{
   display: inline;
   color: #ffffff;
-
+  width: 100%;
 }
 
 .top-nav a{
   padding: 0.75%; 
-  font-size: 135%;
+  font-size: 170%;
   font-weight: 800;
   text-decoration: none;
-  color: #000000;
+  color: #014ab8e7;
   font-family: "Muli";
-  color:  rgb(0, 0, 0);
-
+  /* color:  rgb(0, 0, 0); */
+  width: 100%;
 
 }
 
@@ -157,10 +159,11 @@ padding: 1%;
   */
   background-color: #ffa600;
   padding: 0.75%; 
-  font-size: 135%;
+  font-size: 170%;
   border-radius: 5px;
   font-family: "Muli"; 
   color:  rgba(255, 255, 255, 0.867);
+  width: 100%;
 }
 
 .small-nav button{
