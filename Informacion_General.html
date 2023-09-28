@@ -23,9 +23,22 @@
           macros: {
             sen: "\\operatorname{sen}",
             seg: ["\\overrightarrow{#1}", 1]
-          }
+          },
+          tags: "ams" /* this part is for numbered equations */
         }
       };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
     </script>
 
     <!-- CSS -->
@@ -33,7 +46,6 @@
     <link rel="stylesheet" , href="style.css" />
     <!-- Top Menu  -->
     
-       
     
     <!-- Top Menu  -->
 
